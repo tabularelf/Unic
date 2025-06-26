@@ -47,10 +47,6 @@ function __UnicGenerateDatabase() {
 	buffer_delete(_buff);
 }
 
-__UnicGenerateDatabase();
-
-
-
 function __LocaleDbEntry(_locale, _fileDbEntry) constructor {
 	var _dateTimePath = _fileDbEntry.datetime;
 	var _numbersPath = _fileDbEntry.numbers;
