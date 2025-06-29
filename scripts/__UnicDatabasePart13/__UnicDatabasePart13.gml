@@ -2,4072 +2,5990 @@
 /// @ignore 
 function __UnicDatabasePart13(_inst) {
 
-	_inst.ja = {};
-
-	_inst.ja.timeFormat = {};
-	_inst.ja.timeFormat.short = "H:mm";
-	_inst.ja.timeFormat.medium = "H:mm:ss";
-	_inst.ja.timeFormat.long = "H:mm:ss z";
-	_inst.ja.timeFormat.full = "H時mm分ss秒 zzzz";
-	_inst.ja.currencyFormat = "¤#,##0.00";
-	_inst.ja.decimalFormat = "#,##0.###";
-
-	_inst.ja.dateTimeFormat = {};
-	_inst.ja.dateTimeFormat.short = "{1} {0}";
-	_inst.ja.dateTimeFormat.medium = "{1} {0}";
-	_inst.ja.dateTimeFormat.long = "{1} {0}";
-	_inst.ja.dateTimeFormat.full = "{1} {0}";
-
-	_inst.ja.dateFormat = {};
-	_inst.ja.dateFormat.short = "y/MM/dd";
-	_inst.ja.dateFormat.medium = "y/MM/dd";
-	_inst.ja.dateFormat.long = "y年M月d日";
-	_inst.ja.dateFormat.full = "y年M月d日EEEE";
-
-	_inst.ja.daysFormat = {};
-
-	_inst.ja.daysFormat.short = {};
-	_inst.ja.daysFormat.short.sun = "日";
-	_inst.ja.daysFormat.short.mon = "月";
-	_inst.ja.daysFormat.short.tue = "火";
-	_inst.ja.daysFormat.short.wed = "水";
-	_inst.ja.daysFormat.short.thu = "木";
-	_inst.ja.daysFormat.short.fri = "金";
-	_inst.ja.daysFormat.short.sat = "土";
-
-	_inst.ja.daysFormat.narrow = {};
-	_inst.ja.daysFormat.narrow.sun = "日";
-	_inst.ja.daysFormat.narrow.mon = "月";
-	_inst.ja.daysFormat.narrow.tue = "火";
-	_inst.ja.daysFormat.narrow.wed = "水";
-	_inst.ja.daysFormat.narrow.thu = "木";
-	_inst.ja.daysFormat.narrow.fri = "金";
-	_inst.ja.daysFormat.narrow.sat = "土";
-
-	_inst.ja.daysFormat.abbreviated = {};
-	_inst.ja.daysFormat.abbreviated.sun = "日";
-	_inst.ja.daysFormat.abbreviated.mon = "月";
-	_inst.ja.daysFormat.abbreviated.tue = "火";
-	_inst.ja.daysFormat.abbreviated.wed = "水";
-	_inst.ja.daysFormat.abbreviated.thu = "木";
-	_inst.ja.daysFormat.abbreviated.fri = "金";
-	_inst.ja.daysFormat.abbreviated.sat = "土";
-
-	_inst.ja.daysFormat.wide = {};
-	_inst.ja.daysFormat.wide.sun = "日曜日";
-	_inst.ja.daysFormat.wide.mon = "月曜日";
-	_inst.ja.daysFormat.wide.tue = "火曜日";
-	_inst.ja.daysFormat.wide.wed = "水曜日";
-	_inst.ja.daysFormat.wide.thu = "木曜日";
-	_inst.ja.daysFormat.wide.fri = "金曜日";
-	_inst.ja.daysFormat.wide.sat = "土曜日";
-
-	_inst.ja.monthsFormat = {};
-
-	_inst.ja.monthsFormat.narrow = {};
-	_inst.ja.monthsFormat.narrow.one = "1";
-	_inst.ja.monthsFormat.narrow.two = "2";
-	_inst.ja.monthsFormat.narrow.three = "3";
-	_inst.ja.monthsFormat.narrow.four = "4";
-	_inst.ja.monthsFormat.narrow.five = "5";
-	_inst.ja.monthsFormat.narrow.six = "6";
-	_inst.ja.monthsFormat.narrow.seven = "7";
-	_inst.ja.monthsFormat.narrow.eight = "8";
-	_inst.ja.monthsFormat.narrow.nine = "9";
-	_inst.ja.monthsFormat.narrow.ten = "10";
-	_inst.ja.monthsFormat.narrow.eleven = "11";
-	_inst.ja.monthsFormat.narrow.twelve = "12";
-
-	_inst.ja.monthsFormat.abbreviated = {};
-	_inst.ja.monthsFormat.abbreviated.one = "1月";
-	_inst.ja.monthsFormat.abbreviated.two = "2月";
-	_inst.ja.monthsFormat.abbreviated.three = "3月";
-	_inst.ja.monthsFormat.abbreviated.four = "4月";
-	_inst.ja.monthsFormat.abbreviated.five = "5月";
-	_inst.ja.monthsFormat.abbreviated.six = "6月";
-	_inst.ja.monthsFormat.abbreviated.seven = "7月";
-	_inst.ja.monthsFormat.abbreviated.eight = "8月";
-	_inst.ja.monthsFormat.abbreviated.nine = "9月";
-	_inst.ja.monthsFormat.abbreviated.ten = "10月";
-	_inst.ja.monthsFormat.abbreviated.eleven = "11月";
-	_inst.ja.monthsFormat.abbreviated.twelve = "12月";
-
-	_inst.ja.monthsFormat.wide = {};
-	_inst.ja.monthsFormat.wide.one = "1月";
-	_inst.ja.monthsFormat.wide.two = "2月";
-	_inst.ja.monthsFormat.wide.three = "3月";
-	_inst.ja.monthsFormat.wide.four = "4月";
-	_inst.ja.monthsFormat.wide.five = "5月";
-	_inst.ja.monthsFormat.wide.six = "6月";
-	_inst.ja.monthsFormat.wide.seven = "7月";
-	_inst.ja.monthsFormat.wide.eight = "8月";
-	_inst.ja.monthsFormat.wide.nine = "9月";
-	_inst.ja.monthsFormat.wide.ten = "10月";
-	_inst.ja.monthsFormat.wide.eleven = "11月";
-	_inst.ja.monthsFormat.wide.twelve = "12月";
-
-	_inst.ja.symbols = {};
-	_inst.ja.symbols.currency = "¤";
-
-	_inst.ny = {};
-
-	_inst.ny.timeFormat = {};
-	_inst.ny.timeFormat.short = "h:mm a";
-	_inst.ny.timeFormat.medium = "h:mm:ss a";
-	_inst.ny.timeFormat.long = "h:mm:ss a z";
-	_inst.ny.timeFormat.full = "h:mm:ss a zzzz";
-	_inst.ny.currencyFormat = "¤ #,##0.00";
-	_inst.ny.decimalFormat = "#,##0.###";
-
-	_inst.ny.dateTimeFormat = {};
-	_inst.ny.dateTimeFormat.short = "{1} {0}";
-	_inst.ny.dateTimeFormat.medium = "{1} {0}";
-	_inst.ny.dateTimeFormat.long = "{1} {0}";
-	_inst.ny.dateTimeFormat.full = "{1} {0}";
-
-	_inst.ny.dateFormat = {};
-	_inst.ny.dateFormat.short = "y-MM-dd";
-	_inst.ny.dateFormat.medium = "y MMM d";
-	_inst.ny.dateFormat.long = "y MMMM d";
-	_inst.ny.dateFormat.full = "y MMMM d, EEEE";
-
-	_inst.ny.daysFormat = {};
-
-	_inst.ny.daysFormat.short = {};
-	_inst.ny.daysFormat.short.sun = "Sun";
-	_inst.ny.daysFormat.short.mon = "Mon";
-	_inst.ny.daysFormat.short.tue = "Tue";
-	_inst.ny.daysFormat.short.wed = "Wed";
-	_inst.ny.daysFormat.short.thu = "Thu";
-	_inst.ny.daysFormat.short.fri = "Fri";
-	_inst.ny.daysFormat.short.sat = "Sat";
-
-	_inst.ny.daysFormat.narrow = {};
-	_inst.ny.daysFormat.narrow.sun = "S";
-	_inst.ny.daysFormat.narrow.mon = "M";
-	_inst.ny.daysFormat.narrow.tue = "T";
-	_inst.ny.daysFormat.narrow.wed = "W";
-	_inst.ny.daysFormat.narrow.thu = "T";
-	_inst.ny.daysFormat.narrow.fri = "F";
-	_inst.ny.daysFormat.narrow.sat = "S";
-
-	_inst.ny.daysFormat.abbreviated = {};
-	_inst.ny.daysFormat.abbreviated.sun = "Sun";
-	_inst.ny.daysFormat.abbreviated.mon = "Mon";
-	_inst.ny.daysFormat.abbreviated.tue = "Tue";
-	_inst.ny.daysFormat.abbreviated.wed = "Wed";
-	_inst.ny.daysFormat.abbreviated.thu = "Thu";
-	_inst.ny.daysFormat.abbreviated.fri = "Fri";
-	_inst.ny.daysFormat.abbreviated.sat = "Sat";
-
-	_inst.ny.daysFormat.wide = {};
-	_inst.ny.daysFormat.wide.sun = "Sun";
-	_inst.ny.daysFormat.wide.mon = "Mon";
-	_inst.ny.daysFormat.wide.tue = "Tue";
-	_inst.ny.daysFormat.wide.wed = "Wed";
-	_inst.ny.daysFormat.wide.thu = "Thu";
-	_inst.ny.daysFormat.wide.fri = "Fri";
-	_inst.ny.daysFormat.wide.sat = "Sat";
-
-	_inst.ny.monthsFormat = {};
-
-	_inst.ny.monthsFormat.narrow = {};
-	_inst.ny.monthsFormat.narrow.one = "1";
-	_inst.ny.monthsFormat.narrow.two = "2";
-	_inst.ny.monthsFormat.narrow.three = "3";
-	_inst.ny.monthsFormat.narrow.four = "4";
-	_inst.ny.monthsFormat.narrow.five = "5";
-	_inst.ny.monthsFormat.narrow.six = "6";
-	_inst.ny.monthsFormat.narrow.seven = "7";
-	_inst.ny.monthsFormat.narrow.eight = "8";
-	_inst.ny.monthsFormat.narrow.nine = "9";
-	_inst.ny.monthsFormat.narrow.ten = "10";
-	_inst.ny.monthsFormat.narrow.eleven = "11";
-	_inst.ny.monthsFormat.narrow.twelve = "12";
-
-	_inst.ny.monthsFormat.abbreviated = {};
-	_inst.ny.monthsFormat.abbreviated.one = "M01";
-	_inst.ny.monthsFormat.abbreviated.two = "M02";
-	_inst.ny.monthsFormat.abbreviated.three = "M03";
-	_inst.ny.monthsFormat.abbreviated.four = "M04";
-	_inst.ny.monthsFormat.abbreviated.five = "M05";
-	_inst.ny.monthsFormat.abbreviated.six = "M06";
-	_inst.ny.monthsFormat.abbreviated.seven = "M07";
-	_inst.ny.monthsFormat.abbreviated.eight = "M08";
-	_inst.ny.monthsFormat.abbreviated.nine = "M09";
-	_inst.ny.monthsFormat.abbreviated.ten = "M10";
-	_inst.ny.monthsFormat.abbreviated.eleven = "M11";
-	_inst.ny.monthsFormat.abbreviated.twelve = "M12";
-
-	_inst.ny.monthsFormat.wide = {};
-	_inst.ny.monthsFormat.wide.one = "M01";
-	_inst.ny.monthsFormat.wide.two = "M02";
-	_inst.ny.monthsFormat.wide.three = "M03";
-	_inst.ny.monthsFormat.wide.four = "M04";
-	_inst.ny.monthsFormat.wide.five = "M05";
-	_inst.ny.monthsFormat.wide.six = "M06";
-	_inst.ny.monthsFormat.wide.seven = "M07";
-	_inst.ny.monthsFormat.wide.eight = "M08";
-	_inst.ny.monthsFormat.wide.nine = "M09";
-	_inst.ny.monthsFormat.wide.ten = "M10";
-	_inst.ny.monthsFormat.wide.eleven = "M11";
-	_inst.ny.monthsFormat.wide.twelve = "M12";
-
-	_inst.ny.symbols = {};
-	_inst.ny.symbols.currency = "¤";
-
-	_inst.rm = {};
-
-	_inst.rm.timeFormat = {};
-	_inst.rm.timeFormat.short = "HH:mm";
-	_inst.rm.timeFormat.medium = "HH:mm:ss";
-	_inst.rm.timeFormat.long = "HH:mm:ss z";
-	_inst.rm.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.rm.currencyFormat = "#,##0.00 ¤";
-	_inst.rm.decimalFormat = "#,##0.###";
-
-	_inst.rm.dateTimeFormat = {};
-	_inst.rm.dateTimeFormat.short = "{1} {0}";
-	_inst.rm.dateTimeFormat.medium = "{1} {0}";
-	_inst.rm.dateTimeFormat.long = "{1} {0}";
-	_inst.rm.dateTimeFormat.full = "{1} {0}";
-
-	_inst.rm.dateFormat = {};
-	_inst.rm.dateFormat.short = "dd-MM-yy";
-	_inst.rm.dateFormat.medium = "dd-MM-y";
-	_inst.rm.dateFormat.long = "d MMMM y";
-	_inst.rm.dateFormat.full = "EEEE, 'ils' d MMMM y";
-
-	_inst.rm.daysFormat = {};
-
-	_inst.rm.daysFormat.short = {};
-	_inst.rm.daysFormat.short.sun = "du";
-	_inst.rm.daysFormat.short.mon = "gli";
-	_inst.rm.daysFormat.short.tue = "ma";
-	_inst.rm.daysFormat.short.wed = "me";
-	_inst.rm.daysFormat.short.thu = "gie";
-	_inst.rm.daysFormat.short.fri = "ve";
-	_inst.rm.daysFormat.short.sat = "so";
-
-	_inst.rm.daysFormat.narrow = {};
-	_inst.rm.daysFormat.narrow.sun = "D";
-	_inst.rm.daysFormat.narrow.mon = "G";
-	_inst.rm.daysFormat.narrow.tue = "M";
-	_inst.rm.daysFormat.narrow.wed = "M";
-	_inst.rm.daysFormat.narrow.thu = "G";
-	_inst.rm.daysFormat.narrow.fri = "V";
-	_inst.rm.daysFormat.narrow.sat = "S";
-
-	_inst.rm.daysFormat.abbreviated = {};
-	_inst.rm.daysFormat.abbreviated.sun = "du";
-	_inst.rm.daysFormat.abbreviated.mon = "gli";
-	_inst.rm.daysFormat.abbreviated.tue = "ma";
-	_inst.rm.daysFormat.abbreviated.wed = "me";
-	_inst.rm.daysFormat.abbreviated.thu = "gie";
-	_inst.rm.daysFormat.abbreviated.fri = "ve";
-	_inst.rm.daysFormat.abbreviated.sat = "so";
-
-	_inst.rm.daysFormat.wide = {};
-	_inst.rm.daysFormat.wide.sun = "dumengia";
-	_inst.rm.daysFormat.wide.mon = "glindesdi";
-	_inst.rm.daysFormat.wide.tue = "mardi";
-	_inst.rm.daysFormat.wide.wed = "mesemna";
-	_inst.rm.daysFormat.wide.thu = "gievgia";
-	_inst.rm.daysFormat.wide.fri = "venderdi";
-	_inst.rm.daysFormat.wide.sat = "sonda";
-
-	_inst.rm.monthsFormat = {};
-
-	_inst.rm.monthsFormat.narrow = {};
-	_inst.rm.monthsFormat.narrow.one = "S";
-	_inst.rm.monthsFormat.narrow.two = "F";
-	_inst.rm.monthsFormat.narrow.three = "M";
-	_inst.rm.monthsFormat.narrow.four = "A";
-	_inst.rm.monthsFormat.narrow.five = "M";
-	_inst.rm.monthsFormat.narrow.six = "Z";
-	_inst.rm.monthsFormat.narrow.seven = "F";
-	_inst.rm.monthsFormat.narrow.eight = "A";
-	_inst.rm.monthsFormat.narrow.nine = "S";
-	_inst.rm.monthsFormat.narrow.ten = "O";
-	_inst.rm.monthsFormat.narrow.eleven = "N";
-	_inst.rm.monthsFormat.narrow.twelve = "D";
-
-	_inst.rm.monthsFormat.abbreviated = {};
-	_inst.rm.monthsFormat.abbreviated.one = "schan.";
-	_inst.rm.monthsFormat.abbreviated.two = "favr.";
-	_inst.rm.monthsFormat.abbreviated.three = "mars";
-	_inst.rm.monthsFormat.abbreviated.four = "avr.";
-	_inst.rm.monthsFormat.abbreviated.five = "matg";
-	_inst.rm.monthsFormat.abbreviated.six = "zercl.";
-	_inst.rm.monthsFormat.abbreviated.seven = "fan.";
-	_inst.rm.monthsFormat.abbreviated.eight = "avust";
-	_inst.rm.monthsFormat.abbreviated.nine = "sett.";
-	_inst.rm.monthsFormat.abbreviated.ten = "oct.";
-	_inst.rm.monthsFormat.abbreviated.eleven = "nov.";
-	_inst.rm.monthsFormat.abbreviated.twelve = "dec.";
-
-	_inst.rm.monthsFormat.wide = {};
-	_inst.rm.monthsFormat.wide.one = "da schaner";
-	_inst.rm.monthsFormat.wide.two = "da favrer";
-	_inst.rm.monthsFormat.wide.three = "da mars";
-	_inst.rm.monthsFormat.wide.four = "d’avrigl";
-	_inst.rm.monthsFormat.wide.five = "da matg";
-	_inst.rm.monthsFormat.wide.six = "da zercladur";
-	_inst.rm.monthsFormat.wide.seven = "da fanadur";
-	_inst.rm.monthsFormat.wide.eight = "d’avust";
-	_inst.rm.monthsFormat.wide.nine = "da settember";
-	_inst.rm.monthsFormat.wide.ten = "d’october";
-	_inst.rm.monthsFormat.wide.eleven = "da november";
-	_inst.rm.monthsFormat.wide.twelve = "da december";
-
-	_inst.rm.symbols = {};
-	_inst.rm.symbols.currency = "¤";
-
-	_inst.en_SE = {};
-
-	_inst.en_SE.timeFormat = {};
-	_inst.en_SE.timeFormat.short = "h:mm a";
-	_inst.en_SE.timeFormat.medium = "h:mm:ss a";
-	_inst.en_SE.timeFormat.long = "h:mm:ss a z";
-	_inst.en_SE.timeFormat.full = "h:mm:ss a zzzz";
-	_inst.en_SE.currencyFormat = "#,##0.00 ¤";
-	_inst.en_SE.decimalFormat = "#,##0.###";
-
-	_inst.en_SE.dateTimeFormat = {};
-	_inst.en_SE.dateTimeFormat.short = "{1}, {0}";
-	_inst.en_SE.dateTimeFormat.medium = "{1}, {0}";
-	_inst.en_SE.dateTimeFormat.long = "{1}, {0}";
-	_inst.en_SE.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.en_SE.dateFormat = {};
-	_inst.en_SE.dateFormat.short = "y-MM-dd";
-	_inst.en_SE.dateFormat.medium = "d MMM y";
-	_inst.en_SE.dateFormat.long = "d MMMM y";
-	_inst.en_SE.dateFormat.full = "EEEE, d MMMM y";
-
-	_inst.en_SE.daysFormat = {};
-
-	_inst.en_SE.daysFormat.short = {};
-	_inst.en_SE.daysFormat.short.sun = "Su";
-	_inst.en_SE.daysFormat.short.mon = "Mo";
-	_inst.en_SE.daysFormat.short.tue = "Tu";
-	_inst.en_SE.daysFormat.short.wed = "We";
-	_inst.en_SE.daysFormat.short.thu = "Th";
-	_inst.en_SE.daysFormat.short.fri = "Fr";
-	_inst.en_SE.daysFormat.short.sat = "Sa";
-
-	_inst.en_SE.daysFormat.narrow = {};
-	_inst.en_SE.daysFormat.narrow.sun = "S";
-	_inst.en_SE.daysFormat.narrow.mon = "M";
-	_inst.en_SE.daysFormat.narrow.tue = "T";
-	_inst.en_SE.daysFormat.narrow.wed = "W";
-	_inst.en_SE.daysFormat.narrow.thu = "T";
-	_inst.en_SE.daysFormat.narrow.fri = "F";
-	_inst.en_SE.daysFormat.narrow.sat = "S";
-
-	_inst.en_SE.daysFormat.abbreviated = {};
-	_inst.en_SE.daysFormat.abbreviated.sun = "Sun";
-	_inst.en_SE.daysFormat.abbreviated.mon = "Mon";
-	_inst.en_SE.daysFormat.abbreviated.tue = "Tue";
-	_inst.en_SE.daysFormat.abbreviated.wed = "Wed";
-	_inst.en_SE.daysFormat.abbreviated.thu = "Thu";
-	_inst.en_SE.daysFormat.abbreviated.fri = "Fri";
-	_inst.en_SE.daysFormat.abbreviated.sat = "Sat";
-
-	_inst.en_SE.daysFormat.wide = {};
-	_inst.en_SE.daysFormat.wide.sun = "Sunday";
-	_inst.en_SE.daysFormat.wide.mon = "Monday";
-	_inst.en_SE.daysFormat.wide.tue = "Tuesday";
-	_inst.en_SE.daysFormat.wide.wed = "Wednesday";
-	_inst.en_SE.daysFormat.wide.thu = "Thursday";
-	_inst.en_SE.daysFormat.wide.fri = "Friday";
-	_inst.en_SE.daysFormat.wide.sat = "Saturday";
-
-	_inst.en_SE.monthsFormat = {};
-
-	_inst.en_SE.monthsFormat.narrow = {};
-	_inst.en_SE.monthsFormat.narrow.one = "J";
-	_inst.en_SE.monthsFormat.narrow.two = "F";
-	_inst.en_SE.monthsFormat.narrow.three = "M";
-	_inst.en_SE.monthsFormat.narrow.four = "A";
-	_inst.en_SE.monthsFormat.narrow.five = "M";
-	_inst.en_SE.monthsFormat.narrow.six = "J";
-	_inst.en_SE.monthsFormat.narrow.seven = "J";
-	_inst.en_SE.monthsFormat.narrow.eight = "A";
-	_inst.en_SE.monthsFormat.narrow.nine = "S";
-	_inst.en_SE.monthsFormat.narrow.ten = "O";
-	_inst.en_SE.monthsFormat.narrow.eleven = "N";
-	_inst.en_SE.monthsFormat.narrow.twelve = "D";
-
-	_inst.en_SE.monthsFormat.abbreviated = {};
-	_inst.en_SE.monthsFormat.abbreviated.one = "Jan";
-	_inst.en_SE.monthsFormat.abbreviated.two = "Feb";
-	_inst.en_SE.monthsFormat.abbreviated.three = "Mar";
-	_inst.en_SE.monthsFormat.abbreviated.four = "Apr";
-	_inst.en_SE.monthsFormat.abbreviated.five = "May";
-	_inst.en_SE.monthsFormat.abbreviated.six = "Jun";
-	_inst.en_SE.monthsFormat.abbreviated.seven = "Jul";
-	_inst.en_SE.monthsFormat.abbreviated.eight = "Aug";
-	_inst.en_SE.monthsFormat.abbreviated.nine = "Sept";
-	_inst.en_SE.monthsFormat.abbreviated.ten = "Oct";
-	_inst.en_SE.monthsFormat.abbreviated.eleven = "Nov";
-	_inst.en_SE.monthsFormat.abbreviated.twelve = "Dec";
-
-	_inst.en_SE.monthsFormat.wide = {};
-	_inst.en_SE.monthsFormat.wide.one = "January";
-	_inst.en_SE.monthsFormat.wide.two = "February";
-	_inst.en_SE.monthsFormat.wide.three = "March";
-	_inst.en_SE.monthsFormat.wide.four = "April";
-	_inst.en_SE.monthsFormat.wide.five = "May";
-	_inst.en_SE.monthsFormat.wide.six = "June";
-	_inst.en_SE.monthsFormat.wide.seven = "July";
-	_inst.en_SE.monthsFormat.wide.eight = "August";
-	_inst.en_SE.monthsFormat.wide.nine = "September";
-	_inst.en_SE.monthsFormat.wide.ten = "October";
-	_inst.en_SE.monthsFormat.wide.eleven = "November";
-	_inst.en_SE.monthsFormat.wide.twelve = "December";
-
-	_inst.en_SE.symbols = {};
-	_inst.en_SE.symbols.currency = "kr";
-
-	_inst.nl_BE = {};
-
-	_inst.nl_BE.timeFormat = {};
-	_inst.nl_BE.timeFormat.short = "HH:mm";
-	_inst.nl_BE.timeFormat.medium = "HH:mm:ss";
-	_inst.nl_BE.timeFormat.long = "HH:mm:ss z";
-	_inst.nl_BE.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.nl_BE.currencyFormat = "¤ #,##0.00;¤ -#,##0.00";
-	_inst.nl_BE.decimalFormat = "#,##0.###";
-
-	_inst.nl_BE.dateTimeFormat = {};
-	_inst.nl_BE.dateTimeFormat.short = "{1}, {0}";
-	_inst.nl_BE.dateTimeFormat.medium = "{1}, {0}";
-	_inst.nl_BE.dateTimeFormat.long = "{1}, {0}";
-	_inst.nl_BE.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.nl_BE.dateFormat = {};
-	_inst.nl_BE.dateFormat.short = "d/MM/y";
-	_inst.nl_BE.dateFormat.medium = "d MMM y";
-	_inst.nl_BE.dateFormat.long = "d MMMM y";
-	_inst.nl_BE.dateFormat.full = "EEEE d MMMM y";
-
-	_inst.nl_BE.daysFormat = {};
-
-	_inst.nl_BE.daysFormat.short = {};
-	_inst.nl_BE.daysFormat.short.sun = "zo";
-	_inst.nl_BE.daysFormat.short.mon = "ma";
-	_inst.nl_BE.daysFormat.short.tue = "di";
-	_inst.nl_BE.daysFormat.short.wed = "wo";
-	_inst.nl_BE.daysFormat.short.thu = "do";
-	_inst.nl_BE.daysFormat.short.fri = "vr";
-	_inst.nl_BE.daysFormat.short.sat = "za";
-
-	_inst.nl_BE.daysFormat.narrow = {};
-	_inst.nl_BE.daysFormat.narrow.sun = "Z";
-	_inst.nl_BE.daysFormat.narrow.mon = "M";
-	_inst.nl_BE.daysFormat.narrow.tue = "D";
-	_inst.nl_BE.daysFormat.narrow.wed = "W";
-	_inst.nl_BE.daysFormat.narrow.thu = "D";
-	_inst.nl_BE.daysFormat.narrow.fri = "V";
-	_inst.nl_BE.daysFormat.narrow.sat = "Z";
-
-	_inst.nl_BE.daysFormat.abbreviated = {};
-	_inst.nl_BE.daysFormat.abbreviated.sun = "zo";
-	_inst.nl_BE.daysFormat.abbreviated.mon = "ma";
-	_inst.nl_BE.daysFormat.abbreviated.tue = "di";
-	_inst.nl_BE.daysFormat.abbreviated.wed = "wo";
-	_inst.nl_BE.daysFormat.abbreviated.thu = "do";
-	_inst.nl_BE.daysFormat.abbreviated.fri = "vr";
-	_inst.nl_BE.daysFormat.abbreviated.sat = "za";
-
-	_inst.nl_BE.daysFormat.wide = {};
-	_inst.nl_BE.daysFormat.wide.sun = "zondag";
-	_inst.nl_BE.daysFormat.wide.mon = "maandag";
-	_inst.nl_BE.daysFormat.wide.tue = "dinsdag";
-	_inst.nl_BE.daysFormat.wide.wed = "woensdag";
-	_inst.nl_BE.daysFormat.wide.thu = "donderdag";
-	_inst.nl_BE.daysFormat.wide.fri = "vrijdag";
-	_inst.nl_BE.daysFormat.wide.sat = "zaterdag";
-
-	_inst.nl_BE.monthsFormat = {};
-
-	_inst.nl_BE.monthsFormat.narrow = {};
-	_inst.nl_BE.monthsFormat.narrow.one = "J";
-	_inst.nl_BE.monthsFormat.narrow.two = "F";
-	_inst.nl_BE.monthsFormat.narrow.three = "M";
-	_inst.nl_BE.monthsFormat.narrow.four = "A";
-	_inst.nl_BE.monthsFormat.narrow.five = "M";
-	_inst.nl_BE.monthsFormat.narrow.six = "J";
-	_inst.nl_BE.monthsFormat.narrow.seven = "J";
-	_inst.nl_BE.monthsFormat.narrow.eight = "A";
-	_inst.nl_BE.monthsFormat.narrow.nine = "S";
-	_inst.nl_BE.monthsFormat.narrow.ten = "O";
-	_inst.nl_BE.monthsFormat.narrow.eleven = "N";
-	_inst.nl_BE.monthsFormat.narrow.twelve = "D";
-
-	_inst.nl_BE.monthsFormat.abbreviated = {};
-	_inst.nl_BE.monthsFormat.abbreviated.one = "jan";
-	_inst.nl_BE.monthsFormat.abbreviated.two = "feb";
-	_inst.nl_BE.monthsFormat.abbreviated.three = "mrt";
-	_inst.nl_BE.monthsFormat.abbreviated.four = "apr";
-	_inst.nl_BE.monthsFormat.abbreviated.five = "mei";
-	_inst.nl_BE.monthsFormat.abbreviated.six = "jun";
-	_inst.nl_BE.monthsFormat.abbreviated.seven = "jul";
-	_inst.nl_BE.monthsFormat.abbreviated.eight = "aug";
-	_inst.nl_BE.monthsFormat.abbreviated.nine = "sep";
-	_inst.nl_BE.monthsFormat.abbreviated.ten = "okt";
-	_inst.nl_BE.monthsFormat.abbreviated.eleven = "nov";
-	_inst.nl_BE.monthsFormat.abbreviated.twelve = "dec";
-
-	_inst.nl_BE.monthsFormat.wide = {};
-	_inst.nl_BE.monthsFormat.wide.one = "januari";
-	_inst.nl_BE.monthsFormat.wide.two = "februari";
-	_inst.nl_BE.monthsFormat.wide.three = "maart";
-	_inst.nl_BE.monthsFormat.wide.four = "april";
-	_inst.nl_BE.monthsFormat.wide.five = "mei";
-	_inst.nl_BE.monthsFormat.wide.six = "juni";
-	_inst.nl_BE.monthsFormat.wide.seven = "juli";
-	_inst.nl_BE.monthsFormat.wide.eight = "augustus";
-	_inst.nl_BE.monthsFormat.wide.nine = "september";
-	_inst.nl_BE.monthsFormat.wide.ten = "oktober";
-	_inst.nl_BE.monthsFormat.wide.eleven = "november";
-	_inst.nl_BE.monthsFormat.wide.twelve = "december";
-
-	_inst.nl_BE.symbols = {};
-	_inst.nl_BE.symbols.currency = "€";
-
-	_inst.en_FK = {};
-
-	_inst.en_FK.timeFormat = {};
-	_inst.en_FK.timeFormat.short = "h:mm a";
-	_inst.en_FK.timeFormat.medium = "h:mm:ss a";
-	_inst.en_FK.timeFormat.long = "h:mm:ss a z";
-	_inst.en_FK.timeFormat.full = "h:mm:ss a zzzz";
-	_inst.en_FK.currencyFormat = "¤#,##0.00";
-	_inst.en_FK.decimalFormat = "#,##0.###";
-
-	_inst.en_FK.dateTimeFormat = {};
-	_inst.en_FK.dateTimeFormat.short = "{1}, {0}";
-	_inst.en_FK.dateTimeFormat.medium = "{1}, {0}";
-	_inst.en_FK.dateTimeFormat.long = "{1}, {0}";
-	_inst.en_FK.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.en_FK.dateFormat = {};
-	_inst.en_FK.dateFormat.short = "dd/MM/y";
-	_inst.en_FK.dateFormat.medium = "d MMM y";
-	_inst.en_FK.dateFormat.long = "d MMMM y";
-	_inst.en_FK.dateFormat.full = "EEEE, d MMMM y";
-
-	_inst.en_FK.daysFormat = {};
-
-	_inst.en_FK.daysFormat.short = {};
-	_inst.en_FK.daysFormat.short.sun = "Su";
-	_inst.en_FK.daysFormat.short.mon = "Mo";
-	_inst.en_FK.daysFormat.short.tue = "Tu";
-	_inst.en_FK.daysFormat.short.wed = "We";
-	_inst.en_FK.daysFormat.short.thu = "Th";
-	_inst.en_FK.daysFormat.short.fri = "Fr";
-	_inst.en_FK.daysFormat.short.sat = "Sa";
-
-	_inst.en_FK.daysFormat.narrow = {};
-	_inst.en_FK.daysFormat.narrow.sun = "S";
-	_inst.en_FK.daysFormat.narrow.mon = "M";
-	_inst.en_FK.daysFormat.narrow.tue = "T";
-	_inst.en_FK.daysFormat.narrow.wed = "W";
-	_inst.en_FK.daysFormat.narrow.thu = "T";
-	_inst.en_FK.daysFormat.narrow.fri = "F";
-	_inst.en_FK.daysFormat.narrow.sat = "S";
-
-	_inst.en_FK.daysFormat.abbreviated = {};
-	_inst.en_FK.daysFormat.abbreviated.sun = "Sun";
-	_inst.en_FK.daysFormat.abbreviated.mon = "Mon";
-	_inst.en_FK.daysFormat.abbreviated.tue = "Tue";
-	_inst.en_FK.daysFormat.abbreviated.wed = "Wed";
-	_inst.en_FK.daysFormat.abbreviated.thu = "Thu";
-	_inst.en_FK.daysFormat.abbreviated.fri = "Fri";
-	_inst.en_FK.daysFormat.abbreviated.sat = "Sat";
-
-	_inst.en_FK.daysFormat.wide = {};
-	_inst.en_FK.daysFormat.wide.sun = "Sunday";
-	_inst.en_FK.daysFormat.wide.mon = "Monday";
-	_inst.en_FK.daysFormat.wide.tue = "Tuesday";
-	_inst.en_FK.daysFormat.wide.wed = "Wednesday";
-	_inst.en_FK.daysFormat.wide.thu = "Thursday";
-	_inst.en_FK.daysFormat.wide.fri = "Friday";
-	_inst.en_FK.daysFormat.wide.sat = "Saturday";
-
-	_inst.en_FK.monthsFormat = {};
-
-	_inst.en_FK.monthsFormat.narrow = {};
-	_inst.en_FK.monthsFormat.narrow.one = "J";
-	_inst.en_FK.monthsFormat.narrow.two = "F";
-	_inst.en_FK.monthsFormat.narrow.three = "M";
-	_inst.en_FK.monthsFormat.narrow.four = "A";
-	_inst.en_FK.monthsFormat.narrow.five = "M";
-	_inst.en_FK.monthsFormat.narrow.six = "J";
-	_inst.en_FK.monthsFormat.narrow.seven = "J";
-	_inst.en_FK.monthsFormat.narrow.eight = "A";
-	_inst.en_FK.monthsFormat.narrow.nine = "S";
-	_inst.en_FK.monthsFormat.narrow.ten = "O";
-	_inst.en_FK.monthsFormat.narrow.eleven = "N";
-	_inst.en_FK.monthsFormat.narrow.twelve = "D";
-
-	_inst.en_FK.monthsFormat.abbreviated = {};
-	_inst.en_FK.monthsFormat.abbreviated.one = "Jan";
-	_inst.en_FK.monthsFormat.abbreviated.two = "Feb";
-	_inst.en_FK.monthsFormat.abbreviated.three = "Mar";
-	_inst.en_FK.monthsFormat.abbreviated.four = "Apr";
-	_inst.en_FK.monthsFormat.abbreviated.five = "May";
-	_inst.en_FK.monthsFormat.abbreviated.six = "Jun";
-	_inst.en_FK.monthsFormat.abbreviated.seven = "Jul";
-	_inst.en_FK.monthsFormat.abbreviated.eight = "Aug";
-	_inst.en_FK.monthsFormat.abbreviated.nine = "Sept";
-	_inst.en_FK.monthsFormat.abbreviated.ten = "Oct";
-	_inst.en_FK.monthsFormat.abbreviated.eleven = "Nov";
-	_inst.en_FK.monthsFormat.abbreviated.twelve = "Dec";
-
-	_inst.en_FK.monthsFormat.wide = {};
-	_inst.en_FK.monthsFormat.wide.one = "January";
-	_inst.en_FK.monthsFormat.wide.two = "February";
-	_inst.en_FK.monthsFormat.wide.three = "March";
-	_inst.en_FK.monthsFormat.wide.four = "April";
-	_inst.en_FK.monthsFormat.wide.five = "May";
-	_inst.en_FK.monthsFormat.wide.six = "June";
-	_inst.en_FK.monthsFormat.wide.seven = "July";
-	_inst.en_FK.monthsFormat.wide.eight = "August";
-	_inst.en_FK.monthsFormat.wide.nine = "September";
-	_inst.en_FK.monthsFormat.wide.ten = "October";
-	_inst.en_FK.monthsFormat.wide.eleven = "November";
-	_inst.en_FK.monthsFormat.wide.twelve = "December";
-
-	_inst.en_FK.symbols = {};
-	_inst.en_FK.symbols.currency = "£";
-
-	_inst.sms = {};
-
-	_inst.sms.timeFormat = {};
-	_inst.sms.timeFormat.short = "HH:mm";
-	_inst.sms.timeFormat.medium = "HH:mm:ss";
-	_inst.sms.timeFormat.long = "HH:mm:ss z";
-	_inst.sms.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.sms.currencyFormat = "¤ #,##0.00";
-	_inst.sms.decimalFormat = "#,##0.###";
-
-	_inst.sms.dateTimeFormat = {};
-	_inst.sms.dateTimeFormat.short = "{1} {0}";
-	_inst.sms.dateTimeFormat.medium = "{1} {0}";
-	_inst.sms.dateTimeFormat.long = "{1} {0}";
-	_inst.sms.dateTimeFormat.full = "{1} {0}";
-
-	_inst.sms.dateFormat = {};
-	_inst.sms.dateFormat.short = "y-MM-dd";
-	_inst.sms.dateFormat.medium = "y MMM d";
-	_inst.sms.dateFormat.long = "y MMMM d";
-	_inst.sms.dateFormat.full = "y MMMM d, EEEE";
-
-	_inst.sms.daysFormat = {};
-
-	_inst.sms.daysFormat.short = {};
-	_inst.sms.daysFormat.short.sun = "Sun";
-	_inst.sms.daysFormat.short.mon = "Mon";
-	_inst.sms.daysFormat.short.tue = "Tue";
-	_inst.sms.daysFormat.short.wed = "Wed";
-	_inst.sms.daysFormat.short.thu = "Thu";
-	_inst.sms.daysFormat.short.fri = "Fri";
-	_inst.sms.daysFormat.short.sat = "Sat";
-
-	_inst.sms.daysFormat.narrow = {};
-	_inst.sms.daysFormat.narrow.sun = "S";
-	_inst.sms.daysFormat.narrow.mon = "M";
-	_inst.sms.daysFormat.narrow.tue = "T";
-	_inst.sms.daysFormat.narrow.wed = "W";
-	_inst.sms.daysFormat.narrow.thu = "T";
-	_inst.sms.daysFormat.narrow.fri = "F";
-	_inst.sms.daysFormat.narrow.sat = "S";
-
-	_inst.sms.daysFormat.abbreviated = {};
-	_inst.sms.daysFormat.abbreviated.sun = "Sun";
-	_inst.sms.daysFormat.abbreviated.mon = "Mon";
-	_inst.sms.daysFormat.abbreviated.tue = "Tue";
-	_inst.sms.daysFormat.abbreviated.wed = "Wed";
-	_inst.sms.daysFormat.abbreviated.thu = "Thu";
-	_inst.sms.daysFormat.abbreviated.fri = "Fri";
-	_inst.sms.daysFormat.abbreviated.sat = "Sat";
-
-	_inst.sms.daysFormat.wide = {};
-	_inst.sms.daysFormat.wide.sun = "Sun";
-	_inst.sms.daysFormat.wide.mon = "Mon";
-	_inst.sms.daysFormat.wide.tue = "Tue";
-	_inst.sms.daysFormat.wide.wed = "Wed";
-	_inst.sms.daysFormat.wide.thu = "Thu";
-	_inst.sms.daysFormat.wide.fri = "Fri";
-	_inst.sms.daysFormat.wide.sat = "Sat";
-
-	_inst.sms.monthsFormat = {};
-
-	_inst.sms.monthsFormat.narrow = {};
-	_inst.sms.monthsFormat.narrow.one = "1";
-	_inst.sms.monthsFormat.narrow.two = "2";
-	_inst.sms.monthsFormat.narrow.three = "3";
-	_inst.sms.monthsFormat.narrow.four = "4";
-	_inst.sms.monthsFormat.narrow.five = "5";
-	_inst.sms.monthsFormat.narrow.six = "6";
-	_inst.sms.monthsFormat.narrow.seven = "7";
-	_inst.sms.monthsFormat.narrow.eight = "8";
-	_inst.sms.monthsFormat.narrow.nine = "9";
-	_inst.sms.monthsFormat.narrow.ten = "10";
-	_inst.sms.monthsFormat.narrow.eleven = "11";
-	_inst.sms.monthsFormat.narrow.twelve = "12";
-
-	_inst.sms.monthsFormat.abbreviated = {};
-	_inst.sms.monthsFormat.abbreviated.one = "M01";
-	_inst.sms.monthsFormat.abbreviated.two = "M02";
-	_inst.sms.monthsFormat.abbreviated.three = "M03";
-	_inst.sms.monthsFormat.abbreviated.four = "M04";
-	_inst.sms.monthsFormat.abbreviated.five = "M05";
-	_inst.sms.monthsFormat.abbreviated.six = "M06";
-	_inst.sms.monthsFormat.abbreviated.seven = "M07";
-	_inst.sms.monthsFormat.abbreviated.eight = "M08";
-	_inst.sms.monthsFormat.abbreviated.nine = "M09";
-	_inst.sms.monthsFormat.abbreviated.ten = "M10";
-	_inst.sms.monthsFormat.abbreviated.eleven = "M11";
-	_inst.sms.monthsFormat.abbreviated.twelve = "M12";
-
-	_inst.sms.monthsFormat.wide = {};
-	_inst.sms.monthsFormat.wide.one = "M01";
-	_inst.sms.monthsFormat.wide.two = "M02";
-	_inst.sms.monthsFormat.wide.three = "M03";
-	_inst.sms.monthsFormat.wide.four = "M04";
-	_inst.sms.monthsFormat.wide.five = "M05";
-	_inst.sms.monthsFormat.wide.six = "M06";
-	_inst.sms.monthsFormat.wide.seven = "M07";
-	_inst.sms.monthsFormat.wide.eight = "M08";
-	_inst.sms.monthsFormat.wide.nine = "M09";
-	_inst.sms.monthsFormat.wide.ten = "M10";
-	_inst.sms.monthsFormat.wide.eleven = "M11";
-	_inst.sms.monthsFormat.wide.twelve = "M12";
-
-	_inst.sms.symbols = {};
-	_inst.sms.symbols.currency = "¤";
-
-	_inst.lv = {};
-
-	_inst.lv.timeFormat = {};
-	_inst.lv.timeFormat.short = "HH:mm";
-	_inst.lv.timeFormat.medium = "HH:mm:ss";
-	_inst.lv.timeFormat.long = "HH:mm:ss z";
-	_inst.lv.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.lv.currencyFormat = "#,##0.00 ¤";
-	_inst.lv.decimalFormat = "#,##0.###";
-
-	_inst.lv.dateTimeFormat = {};
-	_inst.lv.dateTimeFormat.short = "{1} {0}";
-	_inst.lv.dateTimeFormat.medium = "{1} {0}";
-	_inst.lv.dateTimeFormat.long = "{1} {0}";
-	_inst.lv.dateTimeFormat.full = "{1} {0}";
-
-	_inst.lv.dateFormat = {};
-	_inst.lv.dateFormat.short = "dd.MM.yy";
-	_inst.lv.dateFormat.medium = "y. 'gada' d. MMM";
-	_inst.lv.dateFormat.long = "y. 'gada' d. MMMM";
-	_inst.lv.dateFormat.full = "EEEE, y. 'gada' d. MMMM";
-
-	_inst.lv.daysFormat = {};
-
-	_inst.lv.daysFormat.short = {};
-	_inst.lv.daysFormat.short.sun = "Sv";
-	_inst.lv.daysFormat.short.mon = "Pr";
-	_inst.lv.daysFormat.short.tue = "Ot";
-	_inst.lv.daysFormat.short.wed = "Tr";
-	_inst.lv.daysFormat.short.thu = "Ce";
-	_inst.lv.daysFormat.short.fri = "Pk";
-	_inst.lv.daysFormat.short.sat = "Se";
-
-	_inst.lv.daysFormat.narrow = {};
-	_inst.lv.daysFormat.narrow.sun = "S";
-	_inst.lv.daysFormat.narrow.mon = "P";
-	_inst.lv.daysFormat.narrow.tue = "O";
-	_inst.lv.daysFormat.narrow.wed = "T";
-	_inst.lv.daysFormat.narrow.thu = "C";
-	_inst.lv.daysFormat.narrow.fri = "P";
-	_inst.lv.daysFormat.narrow.sat = "S";
-
-	_inst.lv.daysFormat.abbreviated = {};
-	_inst.lv.daysFormat.abbreviated.sun = "svētd.";
-	_inst.lv.daysFormat.abbreviated.mon = "pirmd.";
-	_inst.lv.daysFormat.abbreviated.tue = "otrd.";
-	_inst.lv.daysFormat.abbreviated.wed = "trešd.";
-	_inst.lv.daysFormat.abbreviated.thu = "ceturtd.";
-	_inst.lv.daysFormat.abbreviated.fri = "piektd.";
-	_inst.lv.daysFormat.abbreviated.sat = "sestd.";
-
-	_inst.lv.daysFormat.wide = {};
-	_inst.lv.daysFormat.wide.sun = "svētdiena";
-	_inst.lv.daysFormat.wide.mon = "pirmdiena";
-	_inst.lv.daysFormat.wide.tue = "otrdiena";
-	_inst.lv.daysFormat.wide.wed = "trešdiena";
-	_inst.lv.daysFormat.wide.thu = "ceturtdiena";
-	_inst.lv.daysFormat.wide.fri = "piektdiena";
-	_inst.lv.daysFormat.wide.sat = "sestdiena";
-
-	_inst.lv.monthsFormat = {};
-
-	_inst.lv.monthsFormat.narrow = {};
-	_inst.lv.monthsFormat.narrow.one = "J";
-	_inst.lv.monthsFormat.narrow.two = "F";
-	_inst.lv.monthsFormat.narrow.three = "M";
-	_inst.lv.monthsFormat.narrow.four = "A";
-	_inst.lv.monthsFormat.narrow.five = "M";
-	_inst.lv.monthsFormat.narrow.six = "J";
-	_inst.lv.monthsFormat.narrow.seven = "J";
-	_inst.lv.monthsFormat.narrow.eight = "A";
-	_inst.lv.monthsFormat.narrow.nine = "S";
-	_inst.lv.monthsFormat.narrow.ten = "O";
-	_inst.lv.monthsFormat.narrow.eleven = "N";
-	_inst.lv.monthsFormat.narrow.twelve = "D";
-
-	_inst.lv.monthsFormat.abbreviated = {};
-	_inst.lv.monthsFormat.abbreviated.one = "janv.";
-	_inst.lv.monthsFormat.abbreviated.two = "febr.";
-	_inst.lv.monthsFormat.abbreviated.three = "marts";
-	_inst.lv.monthsFormat.abbreviated.four = "apr.";
-	_inst.lv.monthsFormat.abbreviated.five = "maijs";
-	_inst.lv.monthsFormat.abbreviated.six = "jūn.";
-	_inst.lv.monthsFormat.abbreviated.seven = "jūl.";
-	_inst.lv.monthsFormat.abbreviated.eight = "aug.";
-	_inst.lv.monthsFormat.abbreviated.nine = "sept.";
-	_inst.lv.monthsFormat.abbreviated.ten = "okt.";
-	_inst.lv.monthsFormat.abbreviated.eleven = "nov.";
-	_inst.lv.monthsFormat.abbreviated.twelve = "dec.";
-
-	_inst.lv.monthsFormat.wide = {};
-	_inst.lv.monthsFormat.wide.one = "janvāris";
-	_inst.lv.monthsFormat.wide.two = "februāris";
-	_inst.lv.monthsFormat.wide.three = "marts";
-	_inst.lv.monthsFormat.wide.four = "aprīlis";
-	_inst.lv.monthsFormat.wide.five = "maijs";
-	_inst.lv.monthsFormat.wide.six = "jūnijs";
-	_inst.lv.monthsFormat.wide.seven = "jūlijs";
-	_inst.lv.monthsFormat.wide.eight = "augusts";
-	_inst.lv.monthsFormat.wide.nine = "septembris";
-	_inst.lv.monthsFormat.wide.ten = "oktobris";
-	_inst.lv.monthsFormat.wide.eleven = "novembris";
-	_inst.lv.monthsFormat.wide.twelve = "decembris";
-
-	_inst.lv.symbols = {};
-	_inst.lv.symbols.currency = "€";
-
-	_inst.apc = {};
-
-	_inst.apc.timeFormat = {};
-	_inst.apc.timeFormat.short = "HH:mm";
-	_inst.apc.timeFormat.medium = "HH:mm:ss";
-	_inst.apc.timeFormat.long = "HH:mm:ss z";
-	_inst.apc.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.apc.currencyFormat = "¤ #,##0.00";
-	_inst.apc.decimalFormat = "#,##0.###";
-
-	_inst.apc.dateTimeFormat = {};
-	_inst.apc.dateTimeFormat.short = "{1} {0}";
-	_inst.apc.dateTimeFormat.medium = "{1} {0}";
-	_inst.apc.dateTimeFormat.long = "{1} {0}";
-	_inst.apc.dateTimeFormat.full = "{1} {0}";
-
-	_inst.apc.dateFormat = {};
-	_inst.apc.dateFormat.short = "y-MM-dd";
-	_inst.apc.dateFormat.medium = "y MMM d";
-	_inst.apc.dateFormat.long = "y MMMM d";
-	_inst.apc.dateFormat.full = "y MMMM d, EEEE";
-
-	_inst.apc.daysFormat = {};
-
-	_inst.apc.daysFormat.short = {};
-	_inst.apc.daysFormat.short.sun = "Sun";
-	_inst.apc.daysFormat.short.mon = "Mon";
-	_inst.apc.daysFormat.short.tue = "Tue";
-	_inst.apc.daysFormat.short.wed = "Wed";
-	_inst.apc.daysFormat.short.thu = "Thu";
-	_inst.apc.daysFormat.short.fri = "Fri";
-	_inst.apc.daysFormat.short.sat = "Sat";
-
-	_inst.apc.daysFormat.narrow = {};
-	_inst.apc.daysFormat.narrow.sun = "S";
-	_inst.apc.daysFormat.narrow.mon = "M";
-	_inst.apc.daysFormat.narrow.tue = "T";
-	_inst.apc.daysFormat.narrow.wed = "W";
-	_inst.apc.daysFormat.narrow.thu = "T";
-	_inst.apc.daysFormat.narrow.fri = "F";
-	_inst.apc.daysFormat.narrow.sat = "S";
-
-	_inst.apc.daysFormat.abbreviated = {};
-	_inst.apc.daysFormat.abbreviated.sun = "Sun";
-	_inst.apc.daysFormat.abbreviated.mon = "Mon";
-	_inst.apc.daysFormat.abbreviated.tue = "Tue";
-	_inst.apc.daysFormat.abbreviated.wed = "Wed";
-	_inst.apc.daysFormat.abbreviated.thu = "Thu";
-	_inst.apc.daysFormat.abbreviated.fri = "Fri";
-	_inst.apc.daysFormat.abbreviated.sat = "Sat";
-
-	_inst.apc.daysFormat.wide = {};
-	_inst.apc.daysFormat.wide.sun = "Sun";
-	_inst.apc.daysFormat.wide.mon = "Mon";
-	_inst.apc.daysFormat.wide.tue = "Tue";
-	_inst.apc.daysFormat.wide.wed = "Wed";
-	_inst.apc.daysFormat.wide.thu = "Thu";
-	_inst.apc.daysFormat.wide.fri = "Fri";
-	_inst.apc.daysFormat.wide.sat = "Sat";
-
-	_inst.apc.monthsFormat = {};
-
-	_inst.apc.monthsFormat.narrow = {};
-	_inst.apc.monthsFormat.narrow.one = "1";
-	_inst.apc.monthsFormat.narrow.two = "2";
-	_inst.apc.monthsFormat.narrow.three = "3";
-	_inst.apc.monthsFormat.narrow.four = "4";
-	_inst.apc.monthsFormat.narrow.five = "5";
-	_inst.apc.monthsFormat.narrow.six = "6";
-	_inst.apc.monthsFormat.narrow.seven = "7";
-	_inst.apc.monthsFormat.narrow.eight = "8";
-	_inst.apc.monthsFormat.narrow.nine = "9";
-	_inst.apc.monthsFormat.narrow.ten = "10";
-	_inst.apc.monthsFormat.narrow.eleven = "11";
-	_inst.apc.monthsFormat.narrow.twelve = "12";
-
-	_inst.apc.monthsFormat.abbreviated = {};
-	_inst.apc.monthsFormat.abbreviated.one = "M01";
-	_inst.apc.monthsFormat.abbreviated.two = "M02";
-	_inst.apc.monthsFormat.abbreviated.three = "M03";
-	_inst.apc.monthsFormat.abbreviated.four = "M04";
-	_inst.apc.monthsFormat.abbreviated.five = "M05";
-	_inst.apc.monthsFormat.abbreviated.six = "M06";
-	_inst.apc.monthsFormat.abbreviated.seven = "M07";
-	_inst.apc.monthsFormat.abbreviated.eight = "M08";
-	_inst.apc.monthsFormat.abbreviated.nine = "M09";
-	_inst.apc.monthsFormat.abbreviated.ten = "M10";
-	_inst.apc.monthsFormat.abbreviated.eleven = "M11";
-	_inst.apc.monthsFormat.abbreviated.twelve = "M12";
-
-	_inst.apc.monthsFormat.wide = {};
-	_inst.apc.monthsFormat.wide.one = "M01";
-	_inst.apc.monthsFormat.wide.two = "M02";
-	_inst.apc.monthsFormat.wide.three = "M03";
-	_inst.apc.monthsFormat.wide.four = "M04";
-	_inst.apc.monthsFormat.wide.five = "M05";
-	_inst.apc.monthsFormat.wide.six = "M06";
-	_inst.apc.monthsFormat.wide.seven = "M07";
-	_inst.apc.monthsFormat.wide.eight = "M08";
-	_inst.apc.monthsFormat.wide.nine = "M09";
-	_inst.apc.monthsFormat.wide.ten = "M10";
-	_inst.apc.monthsFormat.wide.eleven = "M11";
-	_inst.apc.monthsFormat.wide.twelve = "M12";
-
-	_inst.apc.symbols = {};
-	_inst.apc.symbols.currency = "¤";
-
-	_inst.cho = {};
-
-	_inst.cho.timeFormat = {};
-	_inst.cho.timeFormat.short = "HH:mm";
-	_inst.cho.timeFormat.medium = "HH:mm:ss";
-	_inst.cho.timeFormat.long = "HH:mm:ss z";
-	_inst.cho.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.cho.currencyFormat = "¤ #,##0.00";
-	_inst.cho.decimalFormat = "#,##0.###";
-
-	_inst.cho.dateTimeFormat = {};
-	_inst.cho.dateTimeFormat.short = "{1} {0}";
-	_inst.cho.dateTimeFormat.medium = "{1} {0}";
-	_inst.cho.dateTimeFormat.long = "{1} {0}";
-	_inst.cho.dateTimeFormat.full = "{1} {0}";
-
-	_inst.cho.dateFormat = {};
-	_inst.cho.dateFormat.short = "y-MM-dd";
-	_inst.cho.dateFormat.medium = "y MMM d";
-	_inst.cho.dateFormat.long = "y MMMM d";
-	_inst.cho.dateFormat.full = "y MMMM d, EEEE";
-
-	_inst.cho.daysFormat = {};
-
-	_inst.cho.daysFormat.short = {};
-	_inst.cho.daysFormat.short.sun = "Sun";
-	_inst.cho.daysFormat.short.mon = "Mon";
-	_inst.cho.daysFormat.short.tue = "Tue";
-	_inst.cho.daysFormat.short.wed = "Wed";
-	_inst.cho.daysFormat.short.thu = "Thu";
-	_inst.cho.daysFormat.short.fri = "Fri";
-	_inst.cho.daysFormat.short.sat = "Sat";
-
-	_inst.cho.daysFormat.narrow = {};
-	_inst.cho.daysFormat.narrow.sun = "S";
-	_inst.cho.daysFormat.narrow.mon = "M";
-	_inst.cho.daysFormat.narrow.tue = "T";
-	_inst.cho.daysFormat.narrow.wed = "W";
-	_inst.cho.daysFormat.narrow.thu = "T";
-	_inst.cho.daysFormat.narrow.fri = "F";
-	_inst.cho.daysFormat.narrow.sat = "S";
-
-	_inst.cho.daysFormat.abbreviated = {};
-	_inst.cho.daysFormat.abbreviated.sun = "Sun";
-	_inst.cho.daysFormat.abbreviated.mon = "Mon";
-	_inst.cho.daysFormat.abbreviated.tue = "Tue";
-	_inst.cho.daysFormat.abbreviated.wed = "Wed";
-	_inst.cho.daysFormat.abbreviated.thu = "Thu";
-	_inst.cho.daysFormat.abbreviated.fri = "Fri";
-	_inst.cho.daysFormat.abbreviated.sat = "Sat";
-
-	_inst.cho.daysFormat.wide = {};
-	_inst.cho.daysFormat.wide.sun = "Sun";
-	_inst.cho.daysFormat.wide.mon = "Mon";
-	_inst.cho.daysFormat.wide.tue = "Tue";
-	_inst.cho.daysFormat.wide.wed = "Wed";
-	_inst.cho.daysFormat.wide.thu = "Thu";
-	_inst.cho.daysFormat.wide.fri = "Fri";
-	_inst.cho.daysFormat.wide.sat = "Sat";
-
-	_inst.cho.monthsFormat = {};
-
-	_inst.cho.monthsFormat.narrow = {};
-	_inst.cho.monthsFormat.narrow.one = "1";
-	_inst.cho.monthsFormat.narrow.two = "2";
-	_inst.cho.monthsFormat.narrow.three = "3";
-	_inst.cho.monthsFormat.narrow.four = "4";
-	_inst.cho.monthsFormat.narrow.five = "5";
-	_inst.cho.monthsFormat.narrow.six = "6";
-	_inst.cho.monthsFormat.narrow.seven = "7";
-	_inst.cho.monthsFormat.narrow.eight = "8";
-	_inst.cho.monthsFormat.narrow.nine = "9";
-	_inst.cho.monthsFormat.narrow.ten = "10";
-	_inst.cho.monthsFormat.narrow.eleven = "11";
-	_inst.cho.monthsFormat.narrow.twelve = "12";
-
-	_inst.cho.monthsFormat.abbreviated = {};
-	_inst.cho.monthsFormat.abbreviated.one = "M01";
-	_inst.cho.monthsFormat.abbreviated.two = "M02";
-	_inst.cho.monthsFormat.abbreviated.three = "M03";
-	_inst.cho.monthsFormat.abbreviated.four = "M04";
-	_inst.cho.monthsFormat.abbreviated.five = "M05";
-	_inst.cho.monthsFormat.abbreviated.six = "M06";
-	_inst.cho.monthsFormat.abbreviated.seven = "M07";
-	_inst.cho.monthsFormat.abbreviated.eight = "M08";
-	_inst.cho.monthsFormat.abbreviated.nine = "M09";
-	_inst.cho.monthsFormat.abbreviated.ten = "M10";
-	_inst.cho.monthsFormat.abbreviated.eleven = "M11";
-	_inst.cho.monthsFormat.abbreviated.twelve = "M12";
-
-	_inst.cho.monthsFormat.wide = {};
-	_inst.cho.monthsFormat.wide.one = "M01";
-	_inst.cho.monthsFormat.wide.two = "M02";
-	_inst.cho.monthsFormat.wide.three = "M03";
-	_inst.cho.monthsFormat.wide.four = "M04";
-	_inst.cho.monthsFormat.wide.five = "M05";
-	_inst.cho.monthsFormat.wide.six = "M06";
-	_inst.cho.monthsFormat.wide.seven = "M07";
-	_inst.cho.monthsFormat.wide.eight = "M08";
-	_inst.cho.monthsFormat.wide.nine = "M09";
-	_inst.cho.monthsFormat.wide.ten = "M10";
-	_inst.cho.monthsFormat.wide.eleven = "M11";
-	_inst.cho.monthsFormat.wide.twelve = "M12";
-
-	_inst.cho.symbols = {};
-	_inst.cho.symbols.currency = "¤";
-
-	_inst.fr_GQ = {};
-
-	_inst.fr_GQ.timeFormat = {};
-	_inst.fr_GQ.timeFormat.short = "HH:mm";
-	_inst.fr_GQ.timeFormat.medium = "HH:mm:ss";
-	_inst.fr_GQ.timeFormat.long = "HH:mm:ss z";
-	_inst.fr_GQ.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.fr_GQ.currencyFormat = "#,##0.00 ¤";
-	_inst.fr_GQ.decimalFormat = "#,##0.###";
-
-	_inst.fr_GQ.dateTimeFormat = {};
-	_inst.fr_GQ.dateTimeFormat.short = "{1} {0}";
-	_inst.fr_GQ.dateTimeFormat.medium = "{1}, {0}";
-	_inst.fr_GQ.dateTimeFormat.long = "{1}, {0}";
-	_inst.fr_GQ.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.fr_GQ.dateFormat = {};
-	_inst.fr_GQ.dateFormat.short = "dd/MM/y";
-	_inst.fr_GQ.dateFormat.medium = "d MMM y";
-	_inst.fr_GQ.dateFormat.long = "d MMMM y";
-	_inst.fr_GQ.dateFormat.full = "EEEE d MMMM y";
-
-	_inst.fr_GQ.daysFormat = {};
-
-	_inst.fr_GQ.daysFormat.short = {};
-	_inst.fr_GQ.daysFormat.short.sun = "di";
-	_inst.fr_GQ.daysFormat.short.mon = "lu";
-	_inst.fr_GQ.daysFormat.short.tue = "ma";
-	_inst.fr_GQ.daysFormat.short.wed = "me";
-	_inst.fr_GQ.daysFormat.short.thu = "je";
-	_inst.fr_GQ.daysFormat.short.fri = "ve";
-	_inst.fr_GQ.daysFormat.short.sat = "sa";
-
-	_inst.fr_GQ.daysFormat.narrow = {};
-	_inst.fr_GQ.daysFormat.narrow.sun = "D";
-	_inst.fr_GQ.daysFormat.narrow.mon = "L";
-	_inst.fr_GQ.daysFormat.narrow.tue = "M";
-	_inst.fr_GQ.daysFormat.narrow.wed = "M";
-	_inst.fr_GQ.daysFormat.narrow.thu = "J";
-	_inst.fr_GQ.daysFormat.narrow.fri = "V";
-	_inst.fr_GQ.daysFormat.narrow.sat = "S";
-
-	_inst.fr_GQ.daysFormat.abbreviated = {};
-	_inst.fr_GQ.daysFormat.abbreviated.sun = "dim.";
-	_inst.fr_GQ.daysFormat.abbreviated.mon = "lun.";
-	_inst.fr_GQ.daysFormat.abbreviated.tue = "mar.";
-	_inst.fr_GQ.daysFormat.abbreviated.wed = "mer.";
-	_inst.fr_GQ.daysFormat.abbreviated.thu = "jeu.";
-	_inst.fr_GQ.daysFormat.abbreviated.fri = "ven.";
-	_inst.fr_GQ.daysFormat.abbreviated.sat = "sam.";
-
-	_inst.fr_GQ.daysFormat.wide = {};
-	_inst.fr_GQ.daysFormat.wide.sun = "dimanche";
-	_inst.fr_GQ.daysFormat.wide.mon = "lundi";
-	_inst.fr_GQ.daysFormat.wide.tue = "mardi";
-	_inst.fr_GQ.daysFormat.wide.wed = "mercredi";
-	_inst.fr_GQ.daysFormat.wide.thu = "jeudi";
-	_inst.fr_GQ.daysFormat.wide.fri = "vendredi";
-	_inst.fr_GQ.daysFormat.wide.sat = "samedi";
-
-	_inst.fr_GQ.monthsFormat = {};
-
-	_inst.fr_GQ.monthsFormat.narrow = {};
-	_inst.fr_GQ.monthsFormat.narrow.one = "J";
-	_inst.fr_GQ.monthsFormat.narrow.two = "F";
-	_inst.fr_GQ.monthsFormat.narrow.three = "M";
-	_inst.fr_GQ.monthsFormat.narrow.four = "A";
-	_inst.fr_GQ.monthsFormat.narrow.five = "M";
-	_inst.fr_GQ.monthsFormat.narrow.six = "J";
-	_inst.fr_GQ.monthsFormat.narrow.seven = "J";
-	_inst.fr_GQ.monthsFormat.narrow.eight = "A";
-	_inst.fr_GQ.monthsFormat.narrow.nine = "S";
-	_inst.fr_GQ.monthsFormat.narrow.ten = "O";
-	_inst.fr_GQ.monthsFormat.narrow.eleven = "N";
-	_inst.fr_GQ.monthsFormat.narrow.twelve = "D";
-
-	_inst.fr_GQ.monthsFormat.abbreviated = {};
-	_inst.fr_GQ.monthsFormat.abbreviated.one = "janv.";
-	_inst.fr_GQ.monthsFormat.abbreviated.two = "févr.";
-	_inst.fr_GQ.monthsFormat.abbreviated.three = "mars";
-	_inst.fr_GQ.monthsFormat.abbreviated.four = "avr.";
-	_inst.fr_GQ.monthsFormat.abbreviated.five = "mai";
-	_inst.fr_GQ.monthsFormat.abbreviated.six = "juin";
-	_inst.fr_GQ.monthsFormat.abbreviated.seven = "juil.";
-	_inst.fr_GQ.monthsFormat.abbreviated.eight = "août";
-	_inst.fr_GQ.monthsFormat.abbreviated.nine = "sept.";
-	_inst.fr_GQ.monthsFormat.abbreviated.ten = "oct.";
-	_inst.fr_GQ.monthsFormat.abbreviated.eleven = "nov.";
-	_inst.fr_GQ.monthsFormat.abbreviated.twelve = "déc.";
-
-	_inst.fr_GQ.monthsFormat.wide = {};
-	_inst.fr_GQ.monthsFormat.wide.one = "janvier";
-	_inst.fr_GQ.monthsFormat.wide.two = "février";
-	_inst.fr_GQ.monthsFormat.wide.three = "mars";
-	_inst.fr_GQ.monthsFormat.wide.four = "avril";
-	_inst.fr_GQ.monthsFormat.wide.five = "mai";
-	_inst.fr_GQ.monthsFormat.wide.six = "juin";
-	_inst.fr_GQ.monthsFormat.wide.seven = "juillet";
-	_inst.fr_GQ.monthsFormat.wide.eight = "août";
-	_inst.fr_GQ.monthsFormat.wide.nine = "septembre";
-	_inst.fr_GQ.monthsFormat.wide.ten = "octobre";
-	_inst.fr_GQ.monthsFormat.wide.eleven = "novembre";
-	_inst.fr_GQ.monthsFormat.wide.twelve = "décembre";
-
-	_inst.fr_GQ.symbols = {};
-	_inst.fr_GQ.symbols.currency = "FCFA";
-
-	_inst.fr_NE = {};
-
-	_inst.fr_NE.timeFormat = {};
-	_inst.fr_NE.timeFormat.short = "HH:mm";
-	_inst.fr_NE.timeFormat.medium = "HH:mm:ss";
-	_inst.fr_NE.timeFormat.long = "HH:mm:ss z";
-	_inst.fr_NE.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.fr_NE.currencyFormat = "#,##0.00 ¤";
-	_inst.fr_NE.decimalFormat = "#,##0.###";
-
-	_inst.fr_NE.dateTimeFormat = {};
-	_inst.fr_NE.dateTimeFormat.short = "{1} {0}";
-	_inst.fr_NE.dateTimeFormat.medium = "{1}, {0}";
-	_inst.fr_NE.dateTimeFormat.long = "{1}, {0}";
-	_inst.fr_NE.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.fr_NE.dateFormat = {};
-	_inst.fr_NE.dateFormat.short = "dd/MM/y";
-	_inst.fr_NE.dateFormat.medium = "d MMM y";
-	_inst.fr_NE.dateFormat.long = "d MMMM y";
-	_inst.fr_NE.dateFormat.full = "EEEE d MMMM y";
-
-	_inst.fr_NE.daysFormat = {};
-
-	_inst.fr_NE.daysFormat.short = {};
-	_inst.fr_NE.daysFormat.short.sun = "di";
-	_inst.fr_NE.daysFormat.short.mon = "lu";
-	_inst.fr_NE.daysFormat.short.tue = "ma";
-	_inst.fr_NE.daysFormat.short.wed = "me";
-	_inst.fr_NE.daysFormat.short.thu = "je";
-	_inst.fr_NE.daysFormat.short.fri = "ve";
-	_inst.fr_NE.daysFormat.short.sat = "sa";
-
-	_inst.fr_NE.daysFormat.narrow = {};
-	_inst.fr_NE.daysFormat.narrow.sun = "D";
-	_inst.fr_NE.daysFormat.narrow.mon = "L";
-	_inst.fr_NE.daysFormat.narrow.tue = "M";
-	_inst.fr_NE.daysFormat.narrow.wed = "M";
-	_inst.fr_NE.daysFormat.narrow.thu = "J";
-	_inst.fr_NE.daysFormat.narrow.fri = "V";
-	_inst.fr_NE.daysFormat.narrow.sat = "S";
-
-	_inst.fr_NE.daysFormat.abbreviated = {};
-	_inst.fr_NE.daysFormat.abbreviated.sun = "dim.";
-	_inst.fr_NE.daysFormat.abbreviated.mon = "lun.";
-	_inst.fr_NE.daysFormat.abbreviated.tue = "mar.";
-	_inst.fr_NE.daysFormat.abbreviated.wed = "mer.";
-	_inst.fr_NE.daysFormat.abbreviated.thu = "jeu.";
-	_inst.fr_NE.daysFormat.abbreviated.fri = "ven.";
-	_inst.fr_NE.daysFormat.abbreviated.sat = "sam.";
-
-	_inst.fr_NE.daysFormat.wide = {};
-	_inst.fr_NE.daysFormat.wide.sun = "dimanche";
-	_inst.fr_NE.daysFormat.wide.mon = "lundi";
-	_inst.fr_NE.daysFormat.wide.tue = "mardi";
-	_inst.fr_NE.daysFormat.wide.wed = "mercredi";
-	_inst.fr_NE.daysFormat.wide.thu = "jeudi";
-	_inst.fr_NE.daysFormat.wide.fri = "vendredi";
-	_inst.fr_NE.daysFormat.wide.sat = "samedi";
-
-	_inst.fr_NE.monthsFormat = {};
-
-	_inst.fr_NE.monthsFormat.narrow = {};
-	_inst.fr_NE.monthsFormat.narrow.one = "J";
-	_inst.fr_NE.monthsFormat.narrow.two = "F";
-	_inst.fr_NE.monthsFormat.narrow.three = "M";
-	_inst.fr_NE.monthsFormat.narrow.four = "A";
-	_inst.fr_NE.monthsFormat.narrow.five = "M";
-	_inst.fr_NE.monthsFormat.narrow.six = "J";
-	_inst.fr_NE.monthsFormat.narrow.seven = "J";
-	_inst.fr_NE.monthsFormat.narrow.eight = "A";
-	_inst.fr_NE.monthsFormat.narrow.nine = "S";
-	_inst.fr_NE.monthsFormat.narrow.ten = "O";
-	_inst.fr_NE.monthsFormat.narrow.eleven = "N";
-	_inst.fr_NE.monthsFormat.narrow.twelve = "D";
-
-	_inst.fr_NE.monthsFormat.abbreviated = {};
-	_inst.fr_NE.monthsFormat.abbreviated.one = "janv.";
-	_inst.fr_NE.monthsFormat.abbreviated.two = "févr.";
-	_inst.fr_NE.monthsFormat.abbreviated.three = "mars";
-	_inst.fr_NE.monthsFormat.abbreviated.four = "avr.";
-	_inst.fr_NE.monthsFormat.abbreviated.five = "mai";
-	_inst.fr_NE.monthsFormat.abbreviated.six = "juin";
-	_inst.fr_NE.monthsFormat.abbreviated.seven = "juil.";
-	_inst.fr_NE.monthsFormat.abbreviated.eight = "août";
-	_inst.fr_NE.monthsFormat.abbreviated.nine = "sept.";
-	_inst.fr_NE.monthsFormat.abbreviated.ten = "oct.";
-	_inst.fr_NE.monthsFormat.abbreviated.eleven = "nov.";
-	_inst.fr_NE.monthsFormat.abbreviated.twelve = "déc.";
-
-	_inst.fr_NE.monthsFormat.wide = {};
-	_inst.fr_NE.monthsFormat.wide.one = "janvier";
-	_inst.fr_NE.monthsFormat.wide.two = "février";
-	_inst.fr_NE.monthsFormat.wide.three = "mars";
-	_inst.fr_NE.monthsFormat.wide.four = "avril";
-	_inst.fr_NE.monthsFormat.wide.five = "mai";
-	_inst.fr_NE.monthsFormat.wide.six = "juin";
-	_inst.fr_NE.monthsFormat.wide.seven = "juillet";
-	_inst.fr_NE.monthsFormat.wide.eight = "août";
-	_inst.fr_NE.monthsFormat.wide.nine = "septembre";
-	_inst.fr_NE.monthsFormat.wide.ten = "octobre";
-	_inst.fr_NE.monthsFormat.wide.eleven = "novembre";
-	_inst.fr_NE.monthsFormat.wide.twelve = "décembre";
-
-	_inst.fr_NE.symbols = {};
-	_inst.fr_NE.symbols.currency = "F CFA";
-
-	_inst.nb_SJ = {};
-
-	_inst.nb_SJ.timeFormat = {};
-	_inst.nb_SJ.timeFormat.short = "HH:mm";
-	_inst.nb_SJ.timeFormat.medium = "HH:mm:ss";
-	_inst.nb_SJ.timeFormat.long = "HH:mm:ss z";
-	_inst.nb_SJ.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.nb_SJ.currencyFormat = "#,##0.00 ¤;-#,##0.00 ¤";
-	_inst.nb_SJ.decimalFormat = "#,##0.###";
-
-	_inst.nb_SJ.dateTimeFormat = {};
-	_inst.nb_SJ.dateTimeFormat.short = "{1}, {0}";
-	_inst.nb_SJ.dateTimeFormat.medium = "{1}, {0}";
-	_inst.nb_SJ.dateTimeFormat.long = "{1}, {0}";
-	_inst.nb_SJ.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.nb_SJ.dateFormat = {};
-	_inst.nb_SJ.dateFormat.short = "dd.MM.y";
-	_inst.nb_SJ.dateFormat.medium = "d. MMM y";
-	_inst.nb_SJ.dateFormat.long = "d. MMMM y";
-	_inst.nb_SJ.dateFormat.full = "EEEE d. MMMM y";
-
-	_inst.nb_SJ.daysFormat = {};
-
-	_inst.nb_SJ.daysFormat.short = {};
-	_inst.nb_SJ.daysFormat.short.sun = "sø.";
-	_inst.nb_SJ.daysFormat.short.mon = "ma.";
-	_inst.nb_SJ.daysFormat.short.tue = "ti.";
-	_inst.nb_SJ.daysFormat.short.wed = "on.";
-	_inst.nb_SJ.daysFormat.short.thu = "to.";
-	_inst.nb_SJ.daysFormat.short.fri = "fr.";
-	_inst.nb_SJ.daysFormat.short.sat = "lø.";
-
-	_inst.nb_SJ.daysFormat.narrow = {};
-	_inst.nb_SJ.daysFormat.narrow.sun = "S";
-	_inst.nb_SJ.daysFormat.narrow.mon = "M";
-	_inst.nb_SJ.daysFormat.narrow.tue = "T";
-	_inst.nb_SJ.daysFormat.narrow.wed = "O";
-	_inst.nb_SJ.daysFormat.narrow.thu = "T";
-	_inst.nb_SJ.daysFormat.narrow.fri = "F";
-	_inst.nb_SJ.daysFormat.narrow.sat = "L";
-
-	_inst.nb_SJ.daysFormat.abbreviated = {};
-	_inst.nb_SJ.daysFormat.abbreviated.sun = "søn.";
-	_inst.nb_SJ.daysFormat.abbreviated.mon = "man.";
-	_inst.nb_SJ.daysFormat.abbreviated.tue = "tir.";
-	_inst.nb_SJ.daysFormat.abbreviated.wed = "ons.";
-	_inst.nb_SJ.daysFormat.abbreviated.thu = "tor.";
-	_inst.nb_SJ.daysFormat.abbreviated.fri = "fre.";
-	_inst.nb_SJ.daysFormat.abbreviated.sat = "lør.";
-
-	_inst.nb_SJ.daysFormat.wide = {};
-	_inst.nb_SJ.daysFormat.wide.sun = "søndag";
-	_inst.nb_SJ.daysFormat.wide.mon = "mandag";
-	_inst.nb_SJ.daysFormat.wide.tue = "tirsdag";
-	_inst.nb_SJ.daysFormat.wide.wed = "onsdag";
-	_inst.nb_SJ.daysFormat.wide.thu = "torsdag";
-	_inst.nb_SJ.daysFormat.wide.fri = "fredag";
-	_inst.nb_SJ.daysFormat.wide.sat = "lørdag";
-
-	_inst.nb_SJ.monthsFormat = {};
-
-	_inst.nb_SJ.monthsFormat.narrow = {};
-	_inst.nb_SJ.monthsFormat.narrow.one = "J";
-	_inst.nb_SJ.monthsFormat.narrow.two = "F";
-	_inst.nb_SJ.monthsFormat.narrow.three = "M";
-	_inst.nb_SJ.monthsFormat.narrow.four = "A";
-	_inst.nb_SJ.monthsFormat.narrow.five = "M";
-	_inst.nb_SJ.monthsFormat.narrow.six = "J";
-	_inst.nb_SJ.monthsFormat.narrow.seven = "J";
-	_inst.nb_SJ.monthsFormat.narrow.eight = "A";
-	_inst.nb_SJ.monthsFormat.narrow.nine = "S";
-	_inst.nb_SJ.monthsFormat.narrow.ten = "O";
-	_inst.nb_SJ.monthsFormat.narrow.eleven = "N";
-	_inst.nb_SJ.monthsFormat.narrow.twelve = "D";
-
-	_inst.nb_SJ.monthsFormat.abbreviated = {};
-	_inst.nb_SJ.monthsFormat.abbreviated.one = "jan.";
-	_inst.nb_SJ.monthsFormat.abbreviated.two = "feb.";
-	_inst.nb_SJ.monthsFormat.abbreviated.three = "mars";
-	_inst.nb_SJ.monthsFormat.abbreviated.four = "apr.";
-	_inst.nb_SJ.monthsFormat.abbreviated.five = "mai";
-	_inst.nb_SJ.monthsFormat.abbreviated.six = "juni";
-	_inst.nb_SJ.monthsFormat.abbreviated.seven = "juli";
-	_inst.nb_SJ.monthsFormat.abbreviated.eight = "aug.";
-	_inst.nb_SJ.monthsFormat.abbreviated.nine = "sep.";
-	_inst.nb_SJ.monthsFormat.abbreviated.ten = "okt.";
-	_inst.nb_SJ.monthsFormat.abbreviated.eleven = "nov.";
-	_inst.nb_SJ.monthsFormat.abbreviated.twelve = "des.";
-
-	_inst.nb_SJ.monthsFormat.wide = {};
-	_inst.nb_SJ.monthsFormat.wide.one = "januar";
-	_inst.nb_SJ.monthsFormat.wide.two = "februar";
-	_inst.nb_SJ.monthsFormat.wide.three = "mars";
-	_inst.nb_SJ.monthsFormat.wide.four = "april";
-	_inst.nb_SJ.monthsFormat.wide.five = "mai";
-	_inst.nb_SJ.monthsFormat.wide.six = "juni";
-	_inst.nb_SJ.monthsFormat.wide.seven = "juli";
-	_inst.nb_SJ.monthsFormat.wide.eight = "august";
-	_inst.nb_SJ.monthsFormat.wide.nine = "september";
-	_inst.nb_SJ.monthsFormat.wide.ten = "oktober";
-	_inst.nb_SJ.monthsFormat.wide.eleven = "november";
-	_inst.nb_SJ.monthsFormat.wide.twelve = "desember";
-
-	_inst.nb_SJ.symbols = {};
-	_inst.nb_SJ.symbols.currency = "kr";
-
-	_inst.en_GU = {};
-
-	_inst.en_GU.timeFormat = {};
-	_inst.en_GU.timeFormat.short = "h:mm a";
-	_inst.en_GU.timeFormat.medium = "h:mm:ss a";
-	_inst.en_GU.timeFormat.long = "h:mm:ss a z";
-	_inst.en_GU.timeFormat.full = "h:mm:ss a zzzz";
-	_inst.en_GU.currencyFormat = "¤#,##0.00";
-	_inst.en_GU.decimalFormat = "#,##0.###";
-
-	_inst.en_GU.dateTimeFormat = {};
-	_inst.en_GU.dateTimeFormat.short = "{1}, {0}";
-	_inst.en_GU.dateTimeFormat.medium = "{1}, {0}";
-	_inst.en_GU.dateTimeFormat.long = "{1}, {0}";
-	_inst.en_GU.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.en_GU.dateFormat = {};
-	_inst.en_GU.dateFormat.short = "M/d/yy";
-	_inst.en_GU.dateFormat.medium = "MMM d, y";
-	_inst.en_GU.dateFormat.long = "MMMM d, y";
-	_inst.en_GU.dateFormat.full = "EEEE, MMMM d, y";
-
-	_inst.en_GU.daysFormat = {};
-
-	_inst.en_GU.daysFormat.short = {};
-	_inst.en_GU.daysFormat.short.sun = "Su";
-	_inst.en_GU.daysFormat.short.mon = "Mo";
-	_inst.en_GU.daysFormat.short.tue = "Tu";
-	_inst.en_GU.daysFormat.short.wed = "We";
-	_inst.en_GU.daysFormat.short.thu = "Th";
-	_inst.en_GU.daysFormat.short.fri = "Fr";
-	_inst.en_GU.daysFormat.short.sat = "Sa";
-
-	_inst.en_GU.daysFormat.narrow = {};
-	_inst.en_GU.daysFormat.narrow.sun = "S";
-	_inst.en_GU.daysFormat.narrow.mon = "M";
-	_inst.en_GU.daysFormat.narrow.tue = "T";
-	_inst.en_GU.daysFormat.narrow.wed = "W";
-	_inst.en_GU.daysFormat.narrow.thu = "T";
-	_inst.en_GU.daysFormat.narrow.fri = "F";
-	_inst.en_GU.daysFormat.narrow.sat = "S";
-
-	_inst.en_GU.daysFormat.abbreviated = {};
-	_inst.en_GU.daysFormat.abbreviated.sun = "Sun";
-	_inst.en_GU.daysFormat.abbreviated.mon = "Mon";
-	_inst.en_GU.daysFormat.abbreviated.tue = "Tue";
-	_inst.en_GU.daysFormat.abbreviated.wed = "Wed";
-	_inst.en_GU.daysFormat.abbreviated.thu = "Thu";
-	_inst.en_GU.daysFormat.abbreviated.fri = "Fri";
-	_inst.en_GU.daysFormat.abbreviated.sat = "Sat";
-
-	_inst.en_GU.daysFormat.wide = {};
-	_inst.en_GU.daysFormat.wide.sun = "Sunday";
-	_inst.en_GU.daysFormat.wide.mon = "Monday";
-	_inst.en_GU.daysFormat.wide.tue = "Tuesday";
-	_inst.en_GU.daysFormat.wide.wed = "Wednesday";
-	_inst.en_GU.daysFormat.wide.thu = "Thursday";
-	_inst.en_GU.daysFormat.wide.fri = "Friday";
-	_inst.en_GU.daysFormat.wide.sat = "Saturday";
-
-	_inst.en_GU.monthsFormat = {};
-
-	_inst.en_GU.monthsFormat.narrow = {};
-	_inst.en_GU.monthsFormat.narrow.one = "J";
-	_inst.en_GU.monthsFormat.narrow.two = "F";
-	_inst.en_GU.monthsFormat.narrow.three = "M";
-	_inst.en_GU.monthsFormat.narrow.four = "A";
-	_inst.en_GU.monthsFormat.narrow.five = "M";
-	_inst.en_GU.monthsFormat.narrow.six = "J";
-	_inst.en_GU.monthsFormat.narrow.seven = "J";
-	_inst.en_GU.monthsFormat.narrow.eight = "A";
-	_inst.en_GU.monthsFormat.narrow.nine = "S";
-	_inst.en_GU.monthsFormat.narrow.ten = "O";
-	_inst.en_GU.monthsFormat.narrow.eleven = "N";
-	_inst.en_GU.monthsFormat.narrow.twelve = "D";
-
-	_inst.en_GU.monthsFormat.abbreviated = {};
-	_inst.en_GU.monthsFormat.abbreviated.one = "Jan";
-	_inst.en_GU.monthsFormat.abbreviated.two = "Feb";
-	_inst.en_GU.monthsFormat.abbreviated.three = "Mar";
-	_inst.en_GU.monthsFormat.abbreviated.four = "Apr";
-	_inst.en_GU.monthsFormat.abbreviated.five = "May";
-	_inst.en_GU.monthsFormat.abbreviated.six = "Jun";
-	_inst.en_GU.monthsFormat.abbreviated.seven = "Jul";
-	_inst.en_GU.monthsFormat.abbreviated.eight = "Aug";
-	_inst.en_GU.monthsFormat.abbreviated.nine = "Sep";
-	_inst.en_GU.monthsFormat.abbreviated.ten = "Oct";
-	_inst.en_GU.monthsFormat.abbreviated.eleven = "Nov";
-	_inst.en_GU.monthsFormat.abbreviated.twelve = "Dec";
-
-	_inst.en_GU.monthsFormat.wide = {};
-	_inst.en_GU.monthsFormat.wide.one = "January";
-	_inst.en_GU.monthsFormat.wide.two = "February";
-	_inst.en_GU.monthsFormat.wide.three = "March";
-	_inst.en_GU.monthsFormat.wide.four = "April";
-	_inst.en_GU.monthsFormat.wide.five = "May";
-	_inst.en_GU.monthsFormat.wide.six = "June";
-	_inst.en_GU.monthsFormat.wide.seven = "July";
-	_inst.en_GU.monthsFormat.wide.eight = "August";
-	_inst.en_GU.monthsFormat.wide.nine = "September";
-	_inst.en_GU.monthsFormat.wide.ten = "October";
-	_inst.en_GU.monthsFormat.wide.eleven = "November";
-	_inst.en_GU.monthsFormat.wide.twelve = "December";
-
-	_inst.en_GU.symbols = {};
-	_inst.en_GU.symbols.currency = "$";
-
-	_inst.en_SH = {};
-
-	_inst.en_SH.timeFormat = {};
-	_inst.en_SH.timeFormat.short = "h:mm a";
-	_inst.en_SH.timeFormat.medium = "h:mm:ss a";
-	_inst.en_SH.timeFormat.long = "h:mm:ss a z";
-	_inst.en_SH.timeFormat.full = "h:mm:ss a zzzz";
-	_inst.en_SH.currencyFormat = "¤#,##0.00";
-	_inst.en_SH.decimalFormat = "#,##0.###";
-
-	_inst.en_SH.dateTimeFormat = {};
-	_inst.en_SH.dateTimeFormat.short = "{1}, {0}";
-	_inst.en_SH.dateTimeFormat.medium = "{1}, {0}";
-	_inst.en_SH.dateTimeFormat.long = "{1}, {0}";
-	_inst.en_SH.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.en_SH.dateFormat = {};
-	_inst.en_SH.dateFormat.short = "dd/MM/y";
-	_inst.en_SH.dateFormat.medium = "d MMM y";
-	_inst.en_SH.dateFormat.long = "d MMMM y";
-	_inst.en_SH.dateFormat.full = "EEEE, d MMMM y";
-
-	_inst.en_SH.daysFormat = {};
-
-	_inst.en_SH.daysFormat.short = {};
-	_inst.en_SH.daysFormat.short.sun = "Su";
-	_inst.en_SH.daysFormat.short.mon = "Mo";
-	_inst.en_SH.daysFormat.short.tue = "Tu";
-	_inst.en_SH.daysFormat.short.wed = "We";
-	_inst.en_SH.daysFormat.short.thu = "Th";
-	_inst.en_SH.daysFormat.short.fri = "Fr";
-	_inst.en_SH.daysFormat.short.sat = "Sa";
-
-	_inst.en_SH.daysFormat.narrow = {};
-	_inst.en_SH.daysFormat.narrow.sun = "S";
-	_inst.en_SH.daysFormat.narrow.mon = "M";
-	_inst.en_SH.daysFormat.narrow.tue = "T";
-	_inst.en_SH.daysFormat.narrow.wed = "W";
-	_inst.en_SH.daysFormat.narrow.thu = "T";
-	_inst.en_SH.daysFormat.narrow.fri = "F";
-	_inst.en_SH.daysFormat.narrow.sat = "S";
-
-	_inst.en_SH.daysFormat.abbreviated = {};
-	_inst.en_SH.daysFormat.abbreviated.sun = "Sun";
-	_inst.en_SH.daysFormat.abbreviated.mon = "Mon";
-	_inst.en_SH.daysFormat.abbreviated.tue = "Tue";
-	_inst.en_SH.daysFormat.abbreviated.wed = "Wed";
-	_inst.en_SH.daysFormat.abbreviated.thu = "Thu";
-	_inst.en_SH.daysFormat.abbreviated.fri = "Fri";
-	_inst.en_SH.daysFormat.abbreviated.sat = "Sat";
-
-	_inst.en_SH.daysFormat.wide = {};
-	_inst.en_SH.daysFormat.wide.sun = "Sunday";
-	_inst.en_SH.daysFormat.wide.mon = "Monday";
-	_inst.en_SH.daysFormat.wide.tue = "Tuesday";
-	_inst.en_SH.daysFormat.wide.wed = "Wednesday";
-	_inst.en_SH.daysFormat.wide.thu = "Thursday";
-	_inst.en_SH.daysFormat.wide.fri = "Friday";
-	_inst.en_SH.daysFormat.wide.sat = "Saturday";
-
-	_inst.en_SH.monthsFormat = {};
-
-	_inst.en_SH.monthsFormat.narrow = {};
-	_inst.en_SH.monthsFormat.narrow.one = "J";
-	_inst.en_SH.monthsFormat.narrow.two = "F";
-	_inst.en_SH.monthsFormat.narrow.three = "M";
-	_inst.en_SH.monthsFormat.narrow.four = "A";
-	_inst.en_SH.monthsFormat.narrow.five = "M";
-	_inst.en_SH.monthsFormat.narrow.six = "J";
-	_inst.en_SH.monthsFormat.narrow.seven = "J";
-	_inst.en_SH.monthsFormat.narrow.eight = "A";
-	_inst.en_SH.monthsFormat.narrow.nine = "S";
-	_inst.en_SH.monthsFormat.narrow.ten = "O";
-	_inst.en_SH.monthsFormat.narrow.eleven = "N";
-	_inst.en_SH.monthsFormat.narrow.twelve = "D";
-
-	_inst.en_SH.monthsFormat.abbreviated = {};
-	_inst.en_SH.monthsFormat.abbreviated.one = "Jan";
-	_inst.en_SH.monthsFormat.abbreviated.two = "Feb";
-	_inst.en_SH.monthsFormat.abbreviated.three = "Mar";
-	_inst.en_SH.monthsFormat.abbreviated.four = "Apr";
-	_inst.en_SH.monthsFormat.abbreviated.five = "May";
-	_inst.en_SH.monthsFormat.abbreviated.six = "Jun";
-	_inst.en_SH.monthsFormat.abbreviated.seven = "Jul";
-	_inst.en_SH.monthsFormat.abbreviated.eight = "Aug";
-	_inst.en_SH.monthsFormat.abbreviated.nine = "Sept";
-	_inst.en_SH.monthsFormat.abbreviated.ten = "Oct";
-	_inst.en_SH.monthsFormat.abbreviated.eleven = "Nov";
-	_inst.en_SH.monthsFormat.abbreviated.twelve = "Dec";
-
-	_inst.en_SH.monthsFormat.wide = {};
-	_inst.en_SH.monthsFormat.wide.one = "January";
-	_inst.en_SH.monthsFormat.wide.two = "February";
-	_inst.en_SH.monthsFormat.wide.three = "March";
-	_inst.en_SH.monthsFormat.wide.four = "April";
-	_inst.en_SH.monthsFormat.wide.five = "May";
-	_inst.en_SH.monthsFormat.wide.six = "June";
-	_inst.en_SH.monthsFormat.wide.seven = "July";
-	_inst.en_SH.monthsFormat.wide.eight = "August";
-	_inst.en_SH.monthsFormat.wide.nine = "September";
-	_inst.en_SH.monthsFormat.wide.ten = "October";
-	_inst.en_SH.monthsFormat.wide.eleven = "November";
-	_inst.en_SH.monthsFormat.wide.twelve = "December";
-
-	_inst.en_SH.symbols = {};
-	_inst.en_SH.symbols.currency = "£";
-
-	_inst.cch = {};
-
-	_inst.cch.timeFormat = {};
-	_inst.cch.timeFormat.short = "HH:mm";
-	_inst.cch.timeFormat.medium = "HH:mm:ss";
-	_inst.cch.timeFormat.long = "HH:mm:ss z";
-	_inst.cch.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.cch.currencyFormat = "¤ #,##0.00";
-	_inst.cch.decimalFormat = "#,##0.###";
-
-	_inst.cch.dateTimeFormat = {};
-	_inst.cch.dateTimeFormat.short = "{1} {0}";
-	_inst.cch.dateTimeFormat.medium = "{1} {0}";
-	_inst.cch.dateTimeFormat.long = "{1} {0}";
-	_inst.cch.dateTimeFormat.full = "{1} {0}";
-
-	_inst.cch.dateFormat = {};
-	_inst.cch.dateFormat.short = "y-MM-dd";
-	_inst.cch.dateFormat.medium = "y MMM d";
-	_inst.cch.dateFormat.long = "y MMMM d";
-	_inst.cch.dateFormat.full = "y MMMM d, EEEE";
-
-	_inst.cch.daysFormat = {};
-
-	_inst.cch.daysFormat.short = {};
-	_inst.cch.daysFormat.short.sun = "Sun";
-	_inst.cch.daysFormat.short.mon = "Mon";
-	_inst.cch.daysFormat.short.tue = "Tue";
-	_inst.cch.daysFormat.short.wed = "Wed";
-	_inst.cch.daysFormat.short.thu = "Thu";
-	_inst.cch.daysFormat.short.fri = "Fri";
-	_inst.cch.daysFormat.short.sat = "Sat";
-
-	_inst.cch.daysFormat.narrow = {};
-	_inst.cch.daysFormat.narrow.sun = "S";
-	_inst.cch.daysFormat.narrow.mon = "M";
-	_inst.cch.daysFormat.narrow.tue = "T";
-	_inst.cch.daysFormat.narrow.wed = "W";
-	_inst.cch.daysFormat.narrow.thu = "T";
-	_inst.cch.daysFormat.narrow.fri = "F";
-	_inst.cch.daysFormat.narrow.sat = "S";
-
-	_inst.cch.daysFormat.abbreviated = {};
-	_inst.cch.daysFormat.abbreviated.sun = "Sun";
-	_inst.cch.daysFormat.abbreviated.mon = "Mon";
-	_inst.cch.daysFormat.abbreviated.tue = "Tue";
-	_inst.cch.daysFormat.abbreviated.wed = "Wed";
-	_inst.cch.daysFormat.abbreviated.thu = "Thu";
-	_inst.cch.daysFormat.abbreviated.fri = "Fri";
-	_inst.cch.daysFormat.abbreviated.sat = "Sat";
-
-	_inst.cch.daysFormat.wide = {};
-	_inst.cch.daysFormat.wide.sun = "Sun";
-	_inst.cch.daysFormat.wide.mon = "Mon";
-	_inst.cch.daysFormat.wide.tue = "Tue";
-	_inst.cch.daysFormat.wide.wed = "Wed";
-	_inst.cch.daysFormat.wide.thu = "Thu";
-	_inst.cch.daysFormat.wide.fri = "Fri";
-	_inst.cch.daysFormat.wide.sat = "Sat";
-
-	_inst.cch.monthsFormat = {};
-
-	_inst.cch.monthsFormat.narrow = {};
-	_inst.cch.monthsFormat.narrow.one = "1";
-	_inst.cch.monthsFormat.narrow.two = "2";
-	_inst.cch.monthsFormat.narrow.three = "3";
-	_inst.cch.monthsFormat.narrow.four = "4";
-	_inst.cch.monthsFormat.narrow.five = "5";
-	_inst.cch.monthsFormat.narrow.six = "6";
-	_inst.cch.monthsFormat.narrow.seven = "7";
-	_inst.cch.monthsFormat.narrow.eight = "8";
-	_inst.cch.monthsFormat.narrow.nine = "9";
-	_inst.cch.monthsFormat.narrow.ten = "10";
-	_inst.cch.monthsFormat.narrow.eleven = "11";
-	_inst.cch.monthsFormat.narrow.twelve = "12";
-
-	_inst.cch.monthsFormat.abbreviated = {};
-	_inst.cch.monthsFormat.abbreviated.one = "M01";
-	_inst.cch.monthsFormat.abbreviated.two = "M02";
-	_inst.cch.monthsFormat.abbreviated.three = "M03";
-	_inst.cch.monthsFormat.abbreviated.four = "M04";
-	_inst.cch.monthsFormat.abbreviated.five = "M05";
-	_inst.cch.monthsFormat.abbreviated.six = "M06";
-	_inst.cch.monthsFormat.abbreviated.seven = "M07";
-	_inst.cch.monthsFormat.abbreviated.eight = "M08";
-	_inst.cch.monthsFormat.abbreviated.nine = "M09";
-	_inst.cch.monthsFormat.abbreviated.ten = "M10";
-	_inst.cch.monthsFormat.abbreviated.eleven = "M11";
-	_inst.cch.monthsFormat.abbreviated.twelve = "M12";
-
-	_inst.cch.monthsFormat.wide = {};
-	_inst.cch.monthsFormat.wide.one = "M01";
-	_inst.cch.monthsFormat.wide.two = "M02";
-	_inst.cch.monthsFormat.wide.three = "M03";
-	_inst.cch.monthsFormat.wide.four = "M04";
-	_inst.cch.monthsFormat.wide.five = "M05";
-	_inst.cch.monthsFormat.wide.six = "M06";
-	_inst.cch.monthsFormat.wide.seven = "M07";
-	_inst.cch.monthsFormat.wide.eight = "M08";
-	_inst.cch.monthsFormat.wide.nine = "M09";
-	_inst.cch.monthsFormat.wide.ten = "M10";
-	_inst.cch.monthsFormat.wide.eleven = "M11";
-	_inst.cch.monthsFormat.wide.twelve = "M12";
-
-	_inst.cch.symbols = {};
-	_inst.cch.symbols.currency = "¤";
-
-	_inst.ii = {};
-
-	_inst.ii.timeFormat = {};
-	_inst.ii.timeFormat.short = "HH:mm";
-	_inst.ii.timeFormat.medium = "HH:mm:ss";
-	_inst.ii.timeFormat.long = "HH:mm:ss z";
-	_inst.ii.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.ii.currencyFormat = "¤ #,##0.00";
-	_inst.ii.decimalFormat = "#,##0.###";
-
-	_inst.ii.dateTimeFormat = {};
-	_inst.ii.dateTimeFormat.short = "{1} {0}";
-	_inst.ii.dateTimeFormat.medium = "{1} {0}";
-	_inst.ii.dateTimeFormat.long = "{1} {0}";
-	_inst.ii.dateTimeFormat.full = "{1} {0}";
-
-	_inst.ii.dateFormat = {};
-	_inst.ii.dateFormat.short = "y-MM-dd";
-	_inst.ii.dateFormat.medium = "y MMM d";
-	_inst.ii.dateFormat.long = "y MMMM d";
-	_inst.ii.dateFormat.full = "y MMMM d, EEEE";
-
-	_inst.ii.daysFormat = {};
-
-	_inst.ii.daysFormat.short = {};
-	_inst.ii.daysFormat.short.sun = "ꑬꆏ";
-	_inst.ii.daysFormat.short.mon = "ꆏꋍ";
-	_inst.ii.daysFormat.short.tue = "ꆏꑍ";
-	_inst.ii.daysFormat.short.wed = "ꆏꌕ";
-	_inst.ii.daysFormat.short.thu = "ꆏꇖ";
-	_inst.ii.daysFormat.short.fri = "ꆏꉬ";
-	_inst.ii.daysFormat.short.sat = "ꆏꃘ";
-
-	_inst.ii.daysFormat.narrow = {};
-	_inst.ii.daysFormat.narrow.sun = "ꆏ";
-	_inst.ii.daysFormat.narrow.mon = "ꋍ";
-	_inst.ii.daysFormat.narrow.tue = "ꑍ";
-	_inst.ii.daysFormat.narrow.wed = "ꌕ";
-	_inst.ii.daysFormat.narrow.thu = "ꇖ";
-	_inst.ii.daysFormat.narrow.fri = "ꉬ";
-	_inst.ii.daysFormat.narrow.sat = "ꃘ";
-
-	_inst.ii.daysFormat.abbreviated = {};
-	_inst.ii.daysFormat.abbreviated.sun = "ꑬꆏ";
-	_inst.ii.daysFormat.abbreviated.mon = "ꆏꋍ";
-	_inst.ii.daysFormat.abbreviated.tue = "ꆏꑍ";
-	_inst.ii.daysFormat.abbreviated.wed = "ꆏꌕ";
-	_inst.ii.daysFormat.abbreviated.thu = "ꆏꇖ";
-	_inst.ii.daysFormat.abbreviated.fri = "ꆏꉬ";
-	_inst.ii.daysFormat.abbreviated.sat = "ꆏꃘ";
-
-	_inst.ii.daysFormat.wide = {};
-	_inst.ii.daysFormat.wide.sun = "ꑬꆏꑍ";
-	_inst.ii.daysFormat.wide.mon = "ꆏꊂꋍ";
-	_inst.ii.daysFormat.wide.tue = "ꆏꊂꑍ";
-	_inst.ii.daysFormat.wide.wed = "ꆏꊂꌕ";
-	_inst.ii.daysFormat.wide.thu = "ꆏꊂꇖ";
-	_inst.ii.daysFormat.wide.fri = "ꆏꊂꉬ";
-	_inst.ii.daysFormat.wide.sat = "ꆏꊂꃘ";
-
-	_inst.ii.monthsFormat = {};
-
-	_inst.ii.monthsFormat.narrow = {};
-	_inst.ii.monthsFormat.narrow.one = "1";
-	_inst.ii.monthsFormat.narrow.two = "2";
-	_inst.ii.monthsFormat.narrow.three = "3";
-	_inst.ii.monthsFormat.narrow.four = "4";
-	_inst.ii.monthsFormat.narrow.five = "5";
-	_inst.ii.monthsFormat.narrow.six = "6";
-	_inst.ii.monthsFormat.narrow.seven = "7";
-	_inst.ii.monthsFormat.narrow.eight = "8";
-	_inst.ii.monthsFormat.narrow.nine = "9";
-	_inst.ii.monthsFormat.narrow.ten = "10";
-	_inst.ii.monthsFormat.narrow.eleven = "11";
-	_inst.ii.monthsFormat.narrow.twelve = "12";
-
-	_inst.ii.monthsFormat.abbreviated = {};
-	_inst.ii.monthsFormat.abbreviated.one = "ꋍꆪ";
-	_inst.ii.monthsFormat.abbreviated.two = "ꑍꆪ";
-	_inst.ii.monthsFormat.abbreviated.three = "ꌕꆪ";
-	_inst.ii.monthsFormat.abbreviated.four = "ꇖꆪ";
-	_inst.ii.monthsFormat.abbreviated.five = "ꉬꆪ";
-	_inst.ii.monthsFormat.abbreviated.six = "ꃘꆪ";
-	_inst.ii.monthsFormat.abbreviated.seven = "ꏃꆪ";
-	_inst.ii.monthsFormat.abbreviated.eight = "ꉆꆪ";
-	_inst.ii.monthsFormat.abbreviated.nine = "ꈬꆪ";
-	_inst.ii.monthsFormat.abbreviated.ten = "ꊰꆪ";
-	_inst.ii.monthsFormat.abbreviated.eleven = "ꊯꊪꆪ";
-	_inst.ii.monthsFormat.abbreviated.twelve = "ꊰꑋꆪ";
-
-	_inst.ii.monthsFormat.wide = {};
-	_inst.ii.monthsFormat.wide.one = "ꋍꆪ";
-	_inst.ii.monthsFormat.wide.two = "ꑍꆪ";
-	_inst.ii.monthsFormat.wide.three = "ꌕꆪ";
-	_inst.ii.monthsFormat.wide.four = "ꇖꆪ";
-	_inst.ii.monthsFormat.wide.five = "ꉬꆪ";
-	_inst.ii.monthsFormat.wide.six = "ꃘꆪ";
-	_inst.ii.monthsFormat.wide.seven = "ꏃꆪ";
-	_inst.ii.monthsFormat.wide.eight = "ꉆꆪ";
-	_inst.ii.monthsFormat.wide.nine = "ꈬꆪ";
-	_inst.ii.monthsFormat.wide.ten = "ꊰꆪ";
-	_inst.ii.monthsFormat.wide.eleven = "ꊯꊪꆪ";
-	_inst.ii.monthsFormat.wide.twelve = "ꊰꑋꆪ";
-
-	_inst.ii.symbols = {};
-	_inst.ii.symbols.currency = "¤";
-
-	_inst.en_CZ = {};
-
-	_inst.en_CZ.timeFormat = {};
-	_inst.en_CZ.timeFormat.short = "h:mm a";
-	_inst.en_CZ.timeFormat.medium = "h:mm:ss a";
-	_inst.en_CZ.timeFormat.long = "h:mm:ss a z";
-	_inst.en_CZ.timeFormat.full = "h:mm:ss a zzzz";
-	_inst.en_CZ.currencyFormat = "#,##0.00 ¤";
-	_inst.en_CZ.decimalFormat = "#,##0.###";
-
-	_inst.en_CZ.dateTimeFormat = {};
-	_inst.en_CZ.dateTimeFormat.short = "{1}, {0}";
-	_inst.en_CZ.dateTimeFormat.medium = "{1}, {0}";
-	_inst.en_CZ.dateTimeFormat.long = "{1}, {0}";
-	_inst.en_CZ.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.en_CZ.dateFormat = {};
-	_inst.en_CZ.dateFormat.short = "dd/MM/y";
-	_inst.en_CZ.dateFormat.medium = "d MMM y";
-	_inst.en_CZ.dateFormat.long = "d MMMM y";
-	_inst.en_CZ.dateFormat.full = "EEEE, d MMMM y";
-
-	_inst.en_CZ.daysFormat = {};
-
-	_inst.en_CZ.daysFormat.short = {};
-	_inst.en_CZ.daysFormat.short.sun = "Su";
-	_inst.en_CZ.daysFormat.short.mon = "Mo";
-	_inst.en_CZ.daysFormat.short.tue = "Tu";
-	_inst.en_CZ.daysFormat.short.wed = "We";
-	_inst.en_CZ.daysFormat.short.thu = "Th";
-	_inst.en_CZ.daysFormat.short.fri = "Fr";
-	_inst.en_CZ.daysFormat.short.sat = "Sa";
-
-	_inst.en_CZ.daysFormat.narrow = {};
-	_inst.en_CZ.daysFormat.narrow.sun = "S";
-	_inst.en_CZ.daysFormat.narrow.mon = "M";
-	_inst.en_CZ.daysFormat.narrow.tue = "T";
-	_inst.en_CZ.daysFormat.narrow.wed = "W";
-	_inst.en_CZ.daysFormat.narrow.thu = "T";
-	_inst.en_CZ.daysFormat.narrow.fri = "F";
-	_inst.en_CZ.daysFormat.narrow.sat = "S";
-
-	_inst.en_CZ.daysFormat.abbreviated = {};
-	_inst.en_CZ.daysFormat.abbreviated.sun = "Sun";
-	_inst.en_CZ.daysFormat.abbreviated.mon = "Mon";
-	_inst.en_CZ.daysFormat.abbreviated.tue = "Tue";
-	_inst.en_CZ.daysFormat.abbreviated.wed = "Wed";
-	_inst.en_CZ.daysFormat.abbreviated.thu = "Thu";
-	_inst.en_CZ.daysFormat.abbreviated.fri = "Fri";
-	_inst.en_CZ.daysFormat.abbreviated.sat = "Sat";
-
-	_inst.en_CZ.daysFormat.wide = {};
-	_inst.en_CZ.daysFormat.wide.sun = "Sunday";
-	_inst.en_CZ.daysFormat.wide.mon = "Monday";
-	_inst.en_CZ.daysFormat.wide.tue = "Tuesday";
-	_inst.en_CZ.daysFormat.wide.wed = "Wednesday";
-	_inst.en_CZ.daysFormat.wide.thu = "Thursday";
-	_inst.en_CZ.daysFormat.wide.fri = "Friday";
-	_inst.en_CZ.daysFormat.wide.sat = "Saturday";
-
-	_inst.en_CZ.monthsFormat = {};
-
-	_inst.en_CZ.monthsFormat.narrow = {};
-	_inst.en_CZ.monthsFormat.narrow.one = "J";
-	_inst.en_CZ.monthsFormat.narrow.two = "F";
-	_inst.en_CZ.monthsFormat.narrow.three = "M";
-	_inst.en_CZ.monthsFormat.narrow.four = "A";
-	_inst.en_CZ.monthsFormat.narrow.five = "M";
-	_inst.en_CZ.monthsFormat.narrow.six = "J";
-	_inst.en_CZ.monthsFormat.narrow.seven = "J";
-	_inst.en_CZ.monthsFormat.narrow.eight = "A";
-	_inst.en_CZ.monthsFormat.narrow.nine = "S";
-	_inst.en_CZ.monthsFormat.narrow.ten = "O";
-	_inst.en_CZ.monthsFormat.narrow.eleven = "N";
-	_inst.en_CZ.monthsFormat.narrow.twelve = "D";
-
-	_inst.en_CZ.monthsFormat.abbreviated = {};
-	_inst.en_CZ.monthsFormat.abbreviated.one = "Jan";
-	_inst.en_CZ.monthsFormat.abbreviated.two = "Feb";
-	_inst.en_CZ.monthsFormat.abbreviated.three = "Mar";
-	_inst.en_CZ.monthsFormat.abbreviated.four = "Apr";
-	_inst.en_CZ.monthsFormat.abbreviated.five = "May";
-	_inst.en_CZ.monthsFormat.abbreviated.six = "Jun";
-	_inst.en_CZ.monthsFormat.abbreviated.seven = "Jul";
-	_inst.en_CZ.monthsFormat.abbreviated.eight = "Aug";
-	_inst.en_CZ.monthsFormat.abbreviated.nine = "Sept";
-	_inst.en_CZ.monthsFormat.abbreviated.ten = "Oct";
-	_inst.en_CZ.monthsFormat.abbreviated.eleven = "Nov";
-	_inst.en_CZ.monthsFormat.abbreviated.twelve = "Dec";
-
-	_inst.en_CZ.monthsFormat.wide = {};
-	_inst.en_CZ.monthsFormat.wide.one = "January";
-	_inst.en_CZ.monthsFormat.wide.two = "February";
-	_inst.en_CZ.monthsFormat.wide.three = "March";
-	_inst.en_CZ.monthsFormat.wide.four = "April";
-	_inst.en_CZ.monthsFormat.wide.five = "May";
-	_inst.en_CZ.monthsFormat.wide.six = "June";
-	_inst.en_CZ.monthsFormat.wide.seven = "July";
-	_inst.en_CZ.monthsFormat.wide.eight = "August";
-	_inst.en_CZ.monthsFormat.wide.nine = "September";
-	_inst.en_CZ.monthsFormat.wide.ten = "October";
-	_inst.en_CZ.monthsFormat.wide.eleven = "November";
-	_inst.en_CZ.monthsFormat.wide.twelve = "December";
-
-	_inst.en_CZ.symbols = {};
-	_inst.en_CZ.symbols.currency = "Kč";
-
-	_inst.en_SG = {};
-
-	_inst.en_SG.timeFormat = {};
-	_inst.en_SG.timeFormat.short = "h:mm a";
-	_inst.en_SG.timeFormat.medium = "h:mm:ss a";
-	_inst.en_SG.timeFormat.long = "h:mm:ss a z";
-	_inst.en_SG.timeFormat.full = "h:mm:ss a zzzz";
-	_inst.en_SG.currencyFormat = "¤#,##0.00";
-	_inst.en_SG.decimalFormat = "#,##0.###";
-
-	_inst.en_SG.dateTimeFormat = {};
-	_inst.en_SG.dateTimeFormat.short = "{1}, {0}";
-	_inst.en_SG.dateTimeFormat.medium = "{1}, {0}";
-	_inst.en_SG.dateTimeFormat.long = "{1}, {0}";
-	_inst.en_SG.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.en_SG.dateFormat = {};
-	_inst.en_SG.dateFormat.short = "d/M/yy";
-	_inst.en_SG.dateFormat.medium = "d MMM y";
-	_inst.en_SG.dateFormat.long = "d MMMM y";
-	_inst.en_SG.dateFormat.full = "EEEE, d MMMM y";
-
-	_inst.en_SG.daysFormat = {};
-
-	_inst.en_SG.daysFormat.short = {};
-	_inst.en_SG.daysFormat.short.sun = "Su";
-	_inst.en_SG.daysFormat.short.mon = "Mo";
-	_inst.en_SG.daysFormat.short.tue = "Tu";
-	_inst.en_SG.daysFormat.short.wed = "We";
-	_inst.en_SG.daysFormat.short.thu = "Th";
-	_inst.en_SG.daysFormat.short.fri = "Fr";
-	_inst.en_SG.daysFormat.short.sat = "Sa";
-
-	_inst.en_SG.daysFormat.narrow = {};
-	_inst.en_SG.daysFormat.narrow.sun = "S";
-	_inst.en_SG.daysFormat.narrow.mon = "M";
-	_inst.en_SG.daysFormat.narrow.tue = "T";
-	_inst.en_SG.daysFormat.narrow.wed = "W";
-	_inst.en_SG.daysFormat.narrow.thu = "T";
-	_inst.en_SG.daysFormat.narrow.fri = "F";
-	_inst.en_SG.daysFormat.narrow.sat = "S";
-
-	_inst.en_SG.daysFormat.abbreviated = {};
-	_inst.en_SG.daysFormat.abbreviated.sun = "Sun";
-	_inst.en_SG.daysFormat.abbreviated.mon = "Mon";
-	_inst.en_SG.daysFormat.abbreviated.tue = "Tue";
-	_inst.en_SG.daysFormat.abbreviated.wed = "Wed";
-	_inst.en_SG.daysFormat.abbreviated.thu = "Thu";
-	_inst.en_SG.daysFormat.abbreviated.fri = "Fri";
-	_inst.en_SG.daysFormat.abbreviated.sat = "Sat";
-
-	_inst.en_SG.daysFormat.wide = {};
-	_inst.en_SG.daysFormat.wide.sun = "Sunday";
-	_inst.en_SG.daysFormat.wide.mon = "Monday";
-	_inst.en_SG.daysFormat.wide.tue = "Tuesday";
-	_inst.en_SG.daysFormat.wide.wed = "Wednesday";
-	_inst.en_SG.daysFormat.wide.thu = "Thursday";
-	_inst.en_SG.daysFormat.wide.fri = "Friday";
-	_inst.en_SG.daysFormat.wide.sat = "Saturday";
-
-	_inst.en_SG.monthsFormat = {};
-
-	_inst.en_SG.monthsFormat.narrow = {};
-	_inst.en_SG.monthsFormat.narrow.one = "J";
-	_inst.en_SG.monthsFormat.narrow.two = "F";
-	_inst.en_SG.monthsFormat.narrow.three = "M";
-	_inst.en_SG.monthsFormat.narrow.four = "A";
-	_inst.en_SG.monthsFormat.narrow.five = "M";
-	_inst.en_SG.monthsFormat.narrow.six = "J";
-	_inst.en_SG.monthsFormat.narrow.seven = "J";
-	_inst.en_SG.monthsFormat.narrow.eight = "A";
-	_inst.en_SG.monthsFormat.narrow.nine = "S";
-	_inst.en_SG.monthsFormat.narrow.ten = "O";
-	_inst.en_SG.monthsFormat.narrow.eleven = "N";
-	_inst.en_SG.monthsFormat.narrow.twelve = "D";
-
-	_inst.en_SG.monthsFormat.abbreviated = {};
-	_inst.en_SG.monthsFormat.abbreviated.one = "Jan";
-	_inst.en_SG.monthsFormat.abbreviated.two = "Feb";
-	_inst.en_SG.monthsFormat.abbreviated.three = "Mar";
-	_inst.en_SG.monthsFormat.abbreviated.four = "Apr";
-	_inst.en_SG.monthsFormat.abbreviated.five = "May";
-	_inst.en_SG.monthsFormat.abbreviated.six = "Jun";
-	_inst.en_SG.monthsFormat.abbreviated.seven = "Jul";
-	_inst.en_SG.monthsFormat.abbreviated.eight = "Aug";
-	_inst.en_SG.monthsFormat.abbreviated.nine = "Sept";
-	_inst.en_SG.monthsFormat.abbreviated.ten = "Oct";
-	_inst.en_SG.monthsFormat.abbreviated.eleven = "Nov";
-	_inst.en_SG.monthsFormat.abbreviated.twelve = "Dec";
-
-	_inst.en_SG.monthsFormat.wide = {};
-	_inst.en_SG.monthsFormat.wide.one = "January";
-	_inst.en_SG.monthsFormat.wide.two = "February";
-	_inst.en_SG.monthsFormat.wide.three = "March";
-	_inst.en_SG.monthsFormat.wide.four = "April";
-	_inst.en_SG.monthsFormat.wide.five = "May";
-	_inst.en_SG.monthsFormat.wide.six = "June";
-	_inst.en_SG.monthsFormat.wide.seven = "July";
-	_inst.en_SG.monthsFormat.wide.eight = "August";
-	_inst.en_SG.monthsFormat.wide.nine = "September";
-	_inst.en_SG.monthsFormat.wide.ten = "October";
-	_inst.en_SG.monthsFormat.wide.eleven = "November";
-	_inst.en_SG.monthsFormat.wide.twelve = "December";
-
-	_inst.en_SG.symbols = {};
-	_inst.en_SG.symbols.currency = "$";
-
-	_inst.sr_Cyrl = {};
-
-	_inst.sr_Cyrl.timeFormat = {};
-	_inst.sr_Cyrl.timeFormat.short = "HH:mm";
-	_inst.sr_Cyrl.timeFormat.medium = "HH:mm:ss";
-	_inst.sr_Cyrl.timeFormat.long = "HH:mm:ss z";
-	_inst.sr_Cyrl.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.sr_Cyrl.currencyFormat = "#,##0.00 ¤";
-	_inst.sr_Cyrl.decimalFormat = "#,##0.###";
-
-	_inst.sr_Cyrl.dateTimeFormat = {};
-	_inst.sr_Cyrl.dateTimeFormat.short = "{1} {0}";
-	_inst.sr_Cyrl.dateTimeFormat.medium = "{1} {0}";
-	_inst.sr_Cyrl.dateTimeFormat.long = "{1} {0}";
-	_inst.sr_Cyrl.dateTimeFormat.full = "{1} {0}";
-
-	_inst.sr_Cyrl.dateFormat = {};
-	_inst.sr_Cyrl.dateFormat.short = "d. M. y.";
-	_inst.sr_Cyrl.dateFormat.medium = "d. M. y.";
-	_inst.sr_Cyrl.dateFormat.long = "d. MMMM y.";
-	_inst.sr_Cyrl.dateFormat.full = "EEEE, d. MMMM y.";
-
-	_inst.sr_Cyrl.daysFormat = {};
-
-	_inst.sr_Cyrl.daysFormat.short = {};
-	_inst.sr_Cyrl.daysFormat.short.sun = "не";
-	_inst.sr_Cyrl.daysFormat.short.mon = "по";
-	_inst.sr_Cyrl.daysFormat.short.tue = "ут";
-	_inst.sr_Cyrl.daysFormat.short.wed = "ср";
-	_inst.sr_Cyrl.daysFormat.short.thu = "че";
-	_inst.sr_Cyrl.daysFormat.short.fri = "пе";
-	_inst.sr_Cyrl.daysFormat.short.sat = "су";
-
-	_inst.sr_Cyrl.daysFormat.narrow = {};
-	_inst.sr_Cyrl.daysFormat.narrow.sun = "н";
-	_inst.sr_Cyrl.daysFormat.narrow.mon = "п";
-	_inst.sr_Cyrl.daysFormat.narrow.tue = "у";
-	_inst.sr_Cyrl.daysFormat.narrow.wed = "с";
-	_inst.sr_Cyrl.daysFormat.narrow.thu = "ч";
-	_inst.sr_Cyrl.daysFormat.narrow.fri = "п";
-	_inst.sr_Cyrl.daysFormat.narrow.sat = "с";
-
-	_inst.sr_Cyrl.daysFormat.abbreviated = {};
-	_inst.sr_Cyrl.daysFormat.abbreviated.sun = "нед";
-	_inst.sr_Cyrl.daysFormat.abbreviated.mon = "пон";
-	_inst.sr_Cyrl.daysFormat.abbreviated.tue = "уто";
-	_inst.sr_Cyrl.daysFormat.abbreviated.wed = "сре";
-	_inst.sr_Cyrl.daysFormat.abbreviated.thu = "чет";
-	_inst.sr_Cyrl.daysFormat.abbreviated.fri = "пет";
-	_inst.sr_Cyrl.daysFormat.abbreviated.sat = "суб";
-
-	_inst.sr_Cyrl.daysFormat.wide = {};
-	_inst.sr_Cyrl.daysFormat.wide.sun = "недеља";
-	_inst.sr_Cyrl.daysFormat.wide.mon = "понедељак";
-	_inst.sr_Cyrl.daysFormat.wide.tue = "уторак";
-	_inst.sr_Cyrl.daysFormat.wide.wed = "среда";
-	_inst.sr_Cyrl.daysFormat.wide.thu = "четвртак";
-	_inst.sr_Cyrl.daysFormat.wide.fri = "петак";
-	_inst.sr_Cyrl.daysFormat.wide.sat = "субота";
-
-	_inst.sr_Cyrl.monthsFormat = {};
-
-	_inst.sr_Cyrl.monthsFormat.narrow = {};
-	_inst.sr_Cyrl.monthsFormat.narrow.one = "ј";
-	_inst.sr_Cyrl.monthsFormat.narrow.two = "ф";
-	_inst.sr_Cyrl.monthsFormat.narrow.three = "м";
-	_inst.sr_Cyrl.monthsFormat.narrow.four = "а";
-	_inst.sr_Cyrl.monthsFormat.narrow.five = "м";
-	_inst.sr_Cyrl.monthsFormat.narrow.six = "ј";
-	_inst.sr_Cyrl.monthsFormat.narrow.seven = "ј";
-	_inst.sr_Cyrl.monthsFormat.narrow.eight = "а";
-	_inst.sr_Cyrl.monthsFormat.narrow.nine = "с";
-	_inst.sr_Cyrl.monthsFormat.narrow.ten = "о";
-	_inst.sr_Cyrl.monthsFormat.narrow.eleven = "н";
-	_inst.sr_Cyrl.monthsFormat.narrow.twelve = "д";
-
-	_inst.sr_Cyrl.monthsFormat.abbreviated = {};
-	_inst.sr_Cyrl.monthsFormat.abbreviated.one = "јан";
-	_inst.sr_Cyrl.monthsFormat.abbreviated.two = "феб";
-	_inst.sr_Cyrl.monthsFormat.abbreviated.three = "мар";
-	_inst.sr_Cyrl.monthsFormat.abbreviated.four = "апр";
-	_inst.sr_Cyrl.monthsFormat.abbreviated.five = "мај";
-	_inst.sr_Cyrl.monthsFormat.abbreviated.six = "јун";
-	_inst.sr_Cyrl.monthsFormat.abbreviated.seven = "јул";
-	_inst.sr_Cyrl.monthsFormat.abbreviated.eight = "авг";
-	_inst.sr_Cyrl.monthsFormat.abbreviated.nine = "сеп";
-	_inst.sr_Cyrl.monthsFormat.abbreviated.ten = "окт";
-	_inst.sr_Cyrl.monthsFormat.abbreviated.eleven = "нов";
-	_inst.sr_Cyrl.monthsFormat.abbreviated.twelve = "дец";
-
-	_inst.sr_Cyrl.monthsFormat.wide = {};
-	_inst.sr_Cyrl.monthsFormat.wide.one = "јануар";
-	_inst.sr_Cyrl.monthsFormat.wide.two = "фебруар";
-	_inst.sr_Cyrl.monthsFormat.wide.three = "март";
-	_inst.sr_Cyrl.monthsFormat.wide.four = "април";
-	_inst.sr_Cyrl.monthsFormat.wide.five = "мај";
-	_inst.sr_Cyrl.monthsFormat.wide.six = "јун";
-	_inst.sr_Cyrl.monthsFormat.wide.seven = "јул";
-	_inst.sr_Cyrl.monthsFormat.wide.eight = "август";
-	_inst.sr_Cyrl.monthsFormat.wide.nine = "септембар";
-	_inst.sr_Cyrl.monthsFormat.wide.ten = "октобар";
-	_inst.sr_Cyrl.monthsFormat.wide.eleven = "новембар";
-	_inst.sr_Cyrl.monthsFormat.wide.twelve = "децембар";
-
-	_inst.sr_Cyrl.symbols = {};
-	_inst.sr_Cyrl.symbols.currency = "¤";
-
-	_inst.en_FJ = {};
-
-	_inst.en_FJ.timeFormat = {};
-	_inst.en_FJ.timeFormat.short = "h:mm a";
-	_inst.en_FJ.timeFormat.medium = "h:mm:ss a";
-	_inst.en_FJ.timeFormat.long = "h:mm:ss a z";
-	_inst.en_FJ.timeFormat.full = "h:mm:ss a zzzz";
-	_inst.en_FJ.currencyFormat = "¤#,##0.00";
-	_inst.en_FJ.decimalFormat = "#,##0.###";
-
-	_inst.en_FJ.dateTimeFormat = {};
-	_inst.en_FJ.dateTimeFormat.short = "{1}, {0}";
-	_inst.en_FJ.dateTimeFormat.medium = "{1}, {0}";
-	_inst.en_FJ.dateTimeFormat.long = "{1}, {0}";
-	_inst.en_FJ.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.en_FJ.dateFormat = {};
-	_inst.en_FJ.dateFormat.short = "dd/MM/y";
-	_inst.en_FJ.dateFormat.medium = "d MMM y";
-	_inst.en_FJ.dateFormat.long = "d MMMM y";
-	_inst.en_FJ.dateFormat.full = "EEEE, d MMMM y";
-
-	_inst.en_FJ.daysFormat = {};
-
-	_inst.en_FJ.daysFormat.short = {};
-	_inst.en_FJ.daysFormat.short.sun = "Su";
-	_inst.en_FJ.daysFormat.short.mon = "Mo";
-	_inst.en_FJ.daysFormat.short.tue = "Tu";
-	_inst.en_FJ.daysFormat.short.wed = "We";
-	_inst.en_FJ.daysFormat.short.thu = "Th";
-	_inst.en_FJ.daysFormat.short.fri = "Fr";
-	_inst.en_FJ.daysFormat.short.sat = "Sa";
-
-	_inst.en_FJ.daysFormat.narrow = {};
-	_inst.en_FJ.daysFormat.narrow.sun = "S";
-	_inst.en_FJ.daysFormat.narrow.mon = "M";
-	_inst.en_FJ.daysFormat.narrow.tue = "T";
-	_inst.en_FJ.daysFormat.narrow.wed = "W";
-	_inst.en_FJ.daysFormat.narrow.thu = "T";
-	_inst.en_FJ.daysFormat.narrow.fri = "F";
-	_inst.en_FJ.daysFormat.narrow.sat = "S";
-
-	_inst.en_FJ.daysFormat.abbreviated = {};
-	_inst.en_FJ.daysFormat.abbreviated.sun = "Sun";
-	_inst.en_FJ.daysFormat.abbreviated.mon = "Mon";
-	_inst.en_FJ.daysFormat.abbreviated.tue = "Tue";
-	_inst.en_FJ.daysFormat.abbreviated.wed = "Wed";
-	_inst.en_FJ.daysFormat.abbreviated.thu = "Thu";
-	_inst.en_FJ.daysFormat.abbreviated.fri = "Fri";
-	_inst.en_FJ.daysFormat.abbreviated.sat = "Sat";
-
-	_inst.en_FJ.daysFormat.wide = {};
-	_inst.en_FJ.daysFormat.wide.sun = "Sunday";
-	_inst.en_FJ.daysFormat.wide.mon = "Monday";
-	_inst.en_FJ.daysFormat.wide.tue = "Tuesday";
-	_inst.en_FJ.daysFormat.wide.wed = "Wednesday";
-	_inst.en_FJ.daysFormat.wide.thu = "Thursday";
-	_inst.en_FJ.daysFormat.wide.fri = "Friday";
-	_inst.en_FJ.daysFormat.wide.sat = "Saturday";
-
-	_inst.en_FJ.monthsFormat = {};
-
-	_inst.en_FJ.monthsFormat.narrow = {};
-	_inst.en_FJ.monthsFormat.narrow.one = "J";
-	_inst.en_FJ.monthsFormat.narrow.two = "F";
-	_inst.en_FJ.monthsFormat.narrow.three = "M";
-	_inst.en_FJ.monthsFormat.narrow.four = "A";
-	_inst.en_FJ.monthsFormat.narrow.five = "M";
-	_inst.en_FJ.monthsFormat.narrow.six = "J";
-	_inst.en_FJ.monthsFormat.narrow.seven = "J";
-	_inst.en_FJ.monthsFormat.narrow.eight = "A";
-	_inst.en_FJ.monthsFormat.narrow.nine = "S";
-	_inst.en_FJ.monthsFormat.narrow.ten = "O";
-	_inst.en_FJ.monthsFormat.narrow.eleven = "N";
-	_inst.en_FJ.monthsFormat.narrow.twelve = "D";
-
-	_inst.en_FJ.monthsFormat.abbreviated = {};
-	_inst.en_FJ.monthsFormat.abbreviated.one = "Jan";
-	_inst.en_FJ.monthsFormat.abbreviated.two = "Feb";
-	_inst.en_FJ.monthsFormat.abbreviated.three = "Mar";
-	_inst.en_FJ.monthsFormat.abbreviated.four = "Apr";
-	_inst.en_FJ.monthsFormat.abbreviated.five = "May";
-	_inst.en_FJ.monthsFormat.abbreviated.six = "Jun";
-	_inst.en_FJ.monthsFormat.abbreviated.seven = "Jul";
-	_inst.en_FJ.monthsFormat.abbreviated.eight = "Aug";
-	_inst.en_FJ.monthsFormat.abbreviated.nine = "Sept";
-	_inst.en_FJ.monthsFormat.abbreviated.ten = "Oct";
-	_inst.en_FJ.monthsFormat.abbreviated.eleven = "Nov";
-	_inst.en_FJ.monthsFormat.abbreviated.twelve = "Dec";
-
-	_inst.en_FJ.monthsFormat.wide = {};
-	_inst.en_FJ.monthsFormat.wide.one = "January";
-	_inst.en_FJ.monthsFormat.wide.two = "February";
-	_inst.en_FJ.monthsFormat.wide.three = "March";
-	_inst.en_FJ.monthsFormat.wide.four = "April";
-	_inst.en_FJ.monthsFormat.wide.five = "May";
-	_inst.en_FJ.monthsFormat.wide.six = "June";
-	_inst.en_FJ.monthsFormat.wide.seven = "July";
-	_inst.en_FJ.monthsFormat.wide.eight = "August";
-	_inst.en_FJ.monthsFormat.wide.nine = "September";
-	_inst.en_FJ.monthsFormat.wide.ten = "October";
-	_inst.en_FJ.monthsFormat.wide.eleven = "November";
-	_inst.en_FJ.monthsFormat.wide.twelve = "December";
-
-	_inst.en_FJ.symbols = {};
-	_inst.en_FJ.symbols.currency = "$";
-
-	_inst.ko_CN = {};
-
-	_inst.ko_CN.timeFormat = {};
-	_inst.ko_CN.timeFormat.short = "HH:mm";
-	_inst.ko_CN.timeFormat.medium = "HH:mm:ss";
-	_inst.ko_CN.timeFormat.long = "z HH:mm:ss";
-	_inst.ko_CN.timeFormat.full = "zzzz HH:mm:ss";
-	_inst.ko_CN.currencyFormat = "¤#,##0.00";
-	_inst.ko_CN.decimalFormat = "#,##0.###";
-
-	_inst.ko_CN.dateTimeFormat = {};
-	_inst.ko_CN.dateTimeFormat.short = "{1} {0}";
-	_inst.ko_CN.dateTimeFormat.medium = "{1} {0}";
-	_inst.ko_CN.dateTimeFormat.long = "{1} {0}";
-	_inst.ko_CN.dateTimeFormat.full = "{1} {0}";
-
-	_inst.ko_CN.dateFormat = {};
-	_inst.ko_CN.dateFormat.short = "yy. M. d.";
-	_inst.ko_CN.dateFormat.medium = "y. M. d.";
-	_inst.ko_CN.dateFormat.long = "y년 MMMM d일";
-	_inst.ko_CN.dateFormat.full = "y년 MMMM d일 EEEE";
-
-	_inst.ko_CN.daysFormat = {};
-
-	_inst.ko_CN.daysFormat.short = {};
-	_inst.ko_CN.daysFormat.short.sun = "일";
-	_inst.ko_CN.daysFormat.short.mon = "월";
-	_inst.ko_CN.daysFormat.short.tue = "화";
-	_inst.ko_CN.daysFormat.short.wed = "수";
-	_inst.ko_CN.daysFormat.short.thu = "목";
-	_inst.ko_CN.daysFormat.short.fri = "금";
-	_inst.ko_CN.daysFormat.short.sat = "토";
-
-	_inst.ko_CN.daysFormat.narrow = {};
-	_inst.ko_CN.daysFormat.narrow.sun = "일";
-	_inst.ko_CN.daysFormat.narrow.mon = "월";
-	_inst.ko_CN.daysFormat.narrow.tue = "화";
-	_inst.ko_CN.daysFormat.narrow.wed = "수";
-	_inst.ko_CN.daysFormat.narrow.thu = "목";
-	_inst.ko_CN.daysFormat.narrow.fri = "금";
-	_inst.ko_CN.daysFormat.narrow.sat = "토";
-
-	_inst.ko_CN.daysFormat.abbreviated = {};
-	_inst.ko_CN.daysFormat.abbreviated.sun = "일";
-	_inst.ko_CN.daysFormat.abbreviated.mon = "월";
-	_inst.ko_CN.daysFormat.abbreviated.tue = "화";
-	_inst.ko_CN.daysFormat.abbreviated.wed = "수";
-	_inst.ko_CN.daysFormat.abbreviated.thu = "목";
-	_inst.ko_CN.daysFormat.abbreviated.fri = "금";
-	_inst.ko_CN.daysFormat.abbreviated.sat = "토";
-
-	_inst.ko_CN.daysFormat.wide = {};
-	_inst.ko_CN.daysFormat.wide.sun = "일요일";
-	_inst.ko_CN.daysFormat.wide.mon = "월요일";
-	_inst.ko_CN.daysFormat.wide.tue = "화요일";
-	_inst.ko_CN.daysFormat.wide.wed = "수요일";
-	_inst.ko_CN.daysFormat.wide.thu = "목요일";
-	_inst.ko_CN.daysFormat.wide.fri = "금요일";
-	_inst.ko_CN.daysFormat.wide.sat = "토요일";
-
-	_inst.ko_CN.monthsFormat = {};
-
-	_inst.ko_CN.monthsFormat.narrow = {};
-	_inst.ko_CN.monthsFormat.narrow.one = "1월";
-	_inst.ko_CN.monthsFormat.narrow.two = "2월";
-	_inst.ko_CN.monthsFormat.narrow.three = "3월";
-	_inst.ko_CN.monthsFormat.narrow.four = "4월";
-	_inst.ko_CN.monthsFormat.narrow.five = "5월";
-	_inst.ko_CN.monthsFormat.narrow.six = "6월";
-	_inst.ko_CN.monthsFormat.narrow.seven = "7월";
-	_inst.ko_CN.monthsFormat.narrow.eight = "8월";
-	_inst.ko_CN.monthsFormat.narrow.nine = "9월";
-	_inst.ko_CN.monthsFormat.narrow.ten = "10월";
-	_inst.ko_CN.monthsFormat.narrow.eleven = "11월";
-	_inst.ko_CN.monthsFormat.narrow.twelve = "12월";
-
-	_inst.ko_CN.monthsFormat.abbreviated = {};
-	_inst.ko_CN.monthsFormat.abbreviated.one = "1월";
-	_inst.ko_CN.monthsFormat.abbreviated.two = "2월";
-	_inst.ko_CN.monthsFormat.abbreviated.three = "3월";
-	_inst.ko_CN.monthsFormat.abbreviated.four = "4월";
-	_inst.ko_CN.monthsFormat.abbreviated.five = "5월";
-	_inst.ko_CN.monthsFormat.abbreviated.six = "6월";
-	_inst.ko_CN.monthsFormat.abbreviated.seven = "7월";
-	_inst.ko_CN.monthsFormat.abbreviated.eight = "8월";
-	_inst.ko_CN.monthsFormat.abbreviated.nine = "9월";
-	_inst.ko_CN.monthsFormat.abbreviated.ten = "10월";
-	_inst.ko_CN.monthsFormat.abbreviated.eleven = "11월";
-	_inst.ko_CN.monthsFormat.abbreviated.twelve = "12월";
-
-	_inst.ko_CN.monthsFormat.wide = {};
-	_inst.ko_CN.monthsFormat.wide.one = "1월";
-	_inst.ko_CN.monthsFormat.wide.two = "2월";
-	_inst.ko_CN.monthsFormat.wide.three = "3월";
-	_inst.ko_CN.monthsFormat.wide.four = "4월";
-	_inst.ko_CN.monthsFormat.wide.five = "5월";
-	_inst.ko_CN.monthsFormat.wide.six = "6월";
-	_inst.ko_CN.monthsFormat.wide.seven = "7월";
-	_inst.ko_CN.monthsFormat.wide.eight = "8월";
-	_inst.ko_CN.monthsFormat.wide.nine = "9월";
-	_inst.ko_CN.monthsFormat.wide.ten = "10월";
-	_inst.ko_CN.monthsFormat.wide.eleven = "11월";
-	_inst.ko_CN.monthsFormat.wide.twelve = "12월";
-
-	_inst.ko_CN.symbols = {};
-	_inst.ko_CN.symbols.currency = "¥";
-
-	_inst.haw = {};
-
-	_inst.haw.timeFormat = {};
-	_inst.haw.timeFormat.short = "h:mm a";
-	_inst.haw.timeFormat.medium = "h:mm:ss a";
-	_inst.haw.timeFormat.long = "h:mm:ss a z";
-	_inst.haw.timeFormat.full = "h:mm:ss a zzzz";
-	_inst.haw.currencyFormat = "¤#,##0.00";
-	_inst.haw.decimalFormat = "#,##0.###";
-
-	_inst.haw.dateTimeFormat = {};
-	_inst.haw.dateTimeFormat.short = "{1} {0}";
-	_inst.haw.dateTimeFormat.medium = "{1} {0}";
-	_inst.haw.dateTimeFormat.long = "{1} {0}";
-	_inst.haw.dateTimeFormat.full = "{1} {0}";
-
-	_inst.haw.dateFormat = {};
-
-	_inst.haw.dateFormat.short = {};
-	_inst.haw.dateFormat.short._value = "d/M/yy";
-	_inst.haw.dateFormat.short._numbers = "M=romanlow";
-	_inst.haw.dateFormat.medium = "d MMM y";
-	_inst.haw.dateFormat.long = "d MMMM y";
-	_inst.haw.dateFormat.full = "EEEE, d MMMM y";
-
-	_inst.haw.daysFormat = {};
-
-	_inst.haw.daysFormat.short = {};
-	_inst.haw.daysFormat.short.sun = "LP";
-	_inst.haw.daysFormat.short.mon = "P1";
-	_inst.haw.daysFormat.short.tue = "P2";
-	_inst.haw.daysFormat.short.wed = "P3";
-	_inst.haw.daysFormat.short.thu = "P4";
-	_inst.haw.daysFormat.short.fri = "P5";
-	_inst.haw.daysFormat.short.sat = "P6";
-
-	_inst.haw.daysFormat.narrow = {};
-	_inst.haw.daysFormat.narrow.sun = "S";
-	_inst.haw.daysFormat.narrow.mon = "M";
-	_inst.haw.daysFormat.narrow.tue = "T";
-	_inst.haw.daysFormat.narrow.wed = "W";
-	_inst.haw.daysFormat.narrow.thu = "T";
-	_inst.haw.daysFormat.narrow.fri = "F";
-	_inst.haw.daysFormat.narrow.sat = "S";
-
-	_inst.haw.daysFormat.abbreviated = {};
-	_inst.haw.daysFormat.abbreviated.sun = "LP";
-	_inst.haw.daysFormat.abbreviated.mon = "P1";
-	_inst.haw.daysFormat.abbreviated.tue = "P2";
-	_inst.haw.daysFormat.abbreviated.wed = "P3";
-	_inst.haw.daysFormat.abbreviated.thu = "P4";
-	_inst.haw.daysFormat.abbreviated.fri = "P5";
-	_inst.haw.daysFormat.abbreviated.sat = "P6";
-
-	_inst.haw.daysFormat.wide = {};
-	_inst.haw.daysFormat.wide.sun = "Lāpule";
-	_inst.haw.daysFormat.wide.mon = "Poʻakahi";
-	_inst.haw.daysFormat.wide.tue = "Poʻalua";
-	_inst.haw.daysFormat.wide.wed = "Poʻakolu";
-	_inst.haw.daysFormat.wide.thu = "Poʻahā";
-	_inst.haw.daysFormat.wide.fri = "Poʻalima";
-	_inst.haw.daysFormat.wide.sat = "Poʻaono";
-
-	_inst.haw.monthsFormat = {};
-
-	_inst.haw.monthsFormat.narrow = {};
-	_inst.haw.monthsFormat.narrow.one = "1";
-	_inst.haw.monthsFormat.narrow.two = "2";
-	_inst.haw.monthsFormat.narrow.three = "3";
-	_inst.haw.monthsFormat.narrow.four = "4";
-	_inst.haw.monthsFormat.narrow.five = "5";
-	_inst.haw.monthsFormat.narrow.six = "6";
-	_inst.haw.monthsFormat.narrow.seven = "7";
-	_inst.haw.monthsFormat.narrow.eight = "8";
-	_inst.haw.monthsFormat.narrow.nine = "9";
-	_inst.haw.monthsFormat.narrow.ten = "10";
-	_inst.haw.monthsFormat.narrow.eleven = "11";
-	_inst.haw.monthsFormat.narrow.twelve = "12";
-
-	_inst.haw.monthsFormat.abbreviated = {};
-	_inst.haw.monthsFormat.abbreviated.one = "Ian.";
-	_inst.haw.monthsFormat.abbreviated.two = "Pep.";
-	_inst.haw.monthsFormat.abbreviated.three = "Mal.";
-	_inst.haw.monthsFormat.abbreviated.four = "ʻAp.";
-	_inst.haw.monthsFormat.abbreviated.five = "Mei";
-	_inst.haw.monthsFormat.abbreviated.six = "Iun.";
-	_inst.haw.monthsFormat.abbreviated.seven = "Iul.";
-	_inst.haw.monthsFormat.abbreviated.eight = "ʻAu.";
-	_inst.haw.monthsFormat.abbreviated.nine = "Kep.";
-	_inst.haw.monthsFormat.abbreviated.ten = "ʻOk.";
-	_inst.haw.monthsFormat.abbreviated.eleven = "Now.";
-	_inst.haw.monthsFormat.abbreviated.twelve = "Kek.";
-
-	_inst.haw.monthsFormat.wide = {};
-	_inst.haw.monthsFormat.wide.one = "Ianuali";
-	_inst.haw.monthsFormat.wide.two = "Pepeluali";
-	_inst.haw.monthsFormat.wide.three = "Malaki";
-	_inst.haw.monthsFormat.wide.four = "ʻApelila";
-	_inst.haw.monthsFormat.wide.five = "Mei";
-	_inst.haw.monthsFormat.wide.six = "Iune";
-	_inst.haw.monthsFormat.wide.seven = "Iulai";
-	_inst.haw.monthsFormat.wide.eight = "ʻAukake";
-	_inst.haw.monthsFormat.wide.nine = "Kepakemapa";
-	_inst.haw.monthsFormat.wide.ten = "ʻOkakopa";
-	_inst.haw.monthsFormat.wide.eleven = "Nowemapa";
-	_inst.haw.monthsFormat.wide.twelve = "Kekemapa";
-
-	_inst.haw.symbols = {};
-	_inst.haw.symbols.currency = "¤";
-
-	_inst.syr = {};
-
-	_inst.syr.timeFormat = {};
-	_inst.syr.timeFormat.short = "h:mm a";
-	_inst.syr.timeFormat.medium = "h:mm:ss a";
-	_inst.syr.timeFormat.long = "h:mm:ss a z";
-	_inst.syr.timeFormat.full = "h:mm:ss a zzzz";
-	_inst.syr.currencyFormat = "¤ #,##0.00";
-	_inst.syr.decimalFormat = "#,##0.###";
-
-	_inst.syr.dateTimeFormat = {};
-	_inst.syr.dateTimeFormat.short = "{1}، {0}";
-	_inst.syr.dateTimeFormat.medium = "{1}، {0}";
-	_inst.syr.dateTimeFormat.long = "{1}، {0}";
-	_inst.syr.dateTimeFormat.full = "{1}، {0}";
-
-	_inst.syr.dateFormat = {};
-	_inst.syr.dateFormat.short = "d-MM-y";
-	_inst.syr.dateFormat.medium = "d ܒMMM y";
-	_inst.syr.dateFormat.long = "d ܒMMMM y";
-	_inst.syr.dateFormat.full = "EEEE، d ܒMMMM y";
-
-	_inst.syr.daysFormat = {};
-
-	_inst.syr.daysFormat.short = {};
-	_inst.syr.daysFormat.short.sun = "ܚܕ";
-	_inst.syr.daysFormat.short.mon = "ܬܪܝܢ";
-	_inst.syr.daysFormat.short.tue = "ܬܠܬ";
-	_inst.syr.daysFormat.short.wed = "ܐܪܒܥ";
-	_inst.syr.daysFormat.short.thu = "ܚܡܫ";
-	_inst.syr.daysFormat.short.fri = "ܥܪܘ";
-	_inst.syr.daysFormat.short.sat = "ܫܒܬܐ";
-
-	_inst.syr.daysFormat.narrow = {};
-	_inst.syr.daysFormat.narrow.sun = "ܚ";
-	_inst.syr.daysFormat.narrow.mon = "ܬ";
-	_inst.syr.daysFormat.narrow.tue = "ܬ";
-	_inst.syr.daysFormat.narrow.wed = "ܐ";
-	_inst.syr.daysFormat.narrow.thu = "ܚ";
-	_inst.syr.daysFormat.narrow.fri = "ܥ";
-	_inst.syr.daysFormat.narrow.sat = "ܫ";
-
-	_inst.syr.daysFormat.abbreviated = {};
-	_inst.syr.daysFormat.abbreviated.sun = "ܚܕ";
-	_inst.syr.daysFormat.abbreviated.mon = "ܬܪܝܢ";
-	_inst.syr.daysFormat.abbreviated.tue = "ܬܠܬ";
-	_inst.syr.daysFormat.abbreviated.wed = "ܐܪܒܥ";
-	_inst.syr.daysFormat.abbreviated.thu = "ܚܡܫ";
-	_inst.syr.daysFormat.abbreviated.fri = "ܥܪܘ";
-	_inst.syr.daysFormat.abbreviated.sat = "ܫܒܬܐ";
-
-	_inst.syr.daysFormat.wide = {};
-	_inst.syr.daysFormat.wide.sun = "ܚܕܒܫܒܐ";
-	_inst.syr.daysFormat.wide.mon = "ܬܪܝܢܒܫܒܐ";
-	_inst.syr.daysFormat.wide.tue = "ܬܠܬܒܫܒܐ";
-	_inst.syr.daysFormat.wide.wed = "ܐܪܒܥܒܫܒܐ";
-	_inst.syr.daysFormat.wide.thu = "ܚܡܫܒܫܒܐ";
-	_inst.syr.daysFormat.wide.fri = "ܥܪܘܒܬܐ";
-	_inst.syr.daysFormat.wide.sat = "ܫܒܬܐ";
-
-	_inst.syr.monthsFormat = {};
-
-	_inst.syr.monthsFormat.narrow = {};
-	_inst.syr.monthsFormat.narrow.one = "ܟ";
-	_inst.syr.monthsFormat.narrow.two = "ܫ";
-	_inst.syr.monthsFormat.narrow.three = "ܐ";
-	_inst.syr.monthsFormat.narrow.four = "ܢ";
-	_inst.syr.monthsFormat.narrow.five = "ܐ";
-	_inst.syr.monthsFormat.narrow.six = "ܚ";
-	_inst.syr.monthsFormat.narrow.seven = "ܬ";
-	_inst.syr.monthsFormat.narrow.eight = "ܐ";
-	_inst.syr.monthsFormat.narrow.nine = "ܐ";
-	_inst.syr.monthsFormat.narrow.ten = "ܬ";
-	_inst.syr.monthsFormat.narrow.eleven = "ܬ";
-	_inst.syr.monthsFormat.narrow.twelve = "ܟ";
-
-	_inst.syr.monthsFormat.abbreviated = {};
-	_inst.syr.monthsFormat.abbreviated.one = "ܟܢܘܢ ܒ";
-	_inst.syr.monthsFormat.abbreviated.two = "ܫܒܛ";
-	_inst.syr.monthsFormat.abbreviated.three = "ܐܕܪ";
-	_inst.syr.monthsFormat.abbreviated.four = "ܢܝܣܢ";
-	_inst.syr.monthsFormat.abbreviated.five = "ܐܝܪ";
-	_inst.syr.monthsFormat.abbreviated.six = "ܚܙܝܪܢ";
-	_inst.syr.monthsFormat.abbreviated.seven = "ܬܡܘܙ";
-	_inst.syr.monthsFormat.abbreviated.eight = "ܐܒ";
-	_inst.syr.monthsFormat.abbreviated.nine = "ܐܝܠܘܠ";
-	_inst.syr.monthsFormat.abbreviated.ten = "ܬܫܪܝܢ ܐ";
-	_inst.syr.monthsFormat.abbreviated.eleven = "ܬܫܪܝܢ ܒ";
-	_inst.syr.monthsFormat.abbreviated.twelve = "ܟܢܘܢ ܐ";
-
-	_inst.syr.monthsFormat.wide = {};
-	_inst.syr.monthsFormat.wide.one = "ܟܢܘܢ ܐܚܪܝܐ";
-	_inst.syr.monthsFormat.wide.two = "ܫܒܛ";
-	_inst.syr.monthsFormat.wide.three = "ܐܕܪ";
-	_inst.syr.monthsFormat.wide.four = "ܢܝܣܢ";
-	_inst.syr.monthsFormat.wide.five = "ܐܝܪ";
-	_inst.syr.monthsFormat.wide.six = "ܚܙܝܪܢ";
-	_inst.syr.monthsFormat.wide.seven = "ܬܡܘܙ";
-	_inst.syr.monthsFormat.wide.eight = "ܐܒ";
-	_inst.syr.monthsFormat.wide.nine = "ܐܝܠܘܠ";
-	_inst.syr.monthsFormat.wide.ten = "ܬܫܪܝܢ ܩܕܡܝܐ";
-	_inst.syr.monthsFormat.wide.eleven = "ܬܫܪܝܢ ܐܚܪܝܐ";
-	_inst.syr.monthsFormat.wide.twelve = "ܟܢܘܢ ܩܕܡܝܐ";
-
-	_inst.syr.symbols = {};
-	_inst.syr.symbols.currency = "¤";
-
-	_inst.gsw = {};
-
-	_inst.gsw.timeFormat = {};
-	_inst.gsw.timeFormat.short = "HH:mm";
-	_inst.gsw.timeFormat.medium = "HH:mm:ss";
-	_inst.gsw.timeFormat.long = "HH:mm:ss z";
-	_inst.gsw.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.gsw.currencyFormat = "#,##0.00 ¤";
-	_inst.gsw.decimalFormat = "#,##0.###";
-
-	_inst.gsw.dateTimeFormat = {};
-	_inst.gsw.dateTimeFormat.short = "{1} {0}";
-	_inst.gsw.dateTimeFormat.medium = "{1} {0}";
-	_inst.gsw.dateTimeFormat.long = "{1} {0}";
-	_inst.gsw.dateTimeFormat.full = "{1} {0}";
-
-	_inst.gsw.dateFormat = {};
-	_inst.gsw.dateFormat.short = "dd.MM.yy";
-	_inst.gsw.dateFormat.medium = "dd.MM.y";
-	_inst.gsw.dateFormat.long = "d. MMMM y";
-	_inst.gsw.dateFormat.full = "EEEE, d. MMMM y";
-
-	_inst.gsw.daysFormat = {};
-
-	_inst.gsw.daysFormat.short = {};
-	_inst.gsw.daysFormat.short.sun = "Su.";
-	_inst.gsw.daysFormat.short.mon = "Mä.";
-	_inst.gsw.daysFormat.short.tue = "Zi.";
-	_inst.gsw.daysFormat.short.wed = "Mi.";
-	_inst.gsw.daysFormat.short.thu = "Du.";
-	_inst.gsw.daysFormat.short.fri = "Fr.";
-	_inst.gsw.daysFormat.short.sat = "Sa.";
-
-	_inst.gsw.daysFormat.narrow = {};
-	_inst.gsw.daysFormat.narrow.sun = "S";
-	_inst.gsw.daysFormat.narrow.mon = "M";
-	_inst.gsw.daysFormat.narrow.tue = "D";
-	_inst.gsw.daysFormat.narrow.wed = "M";
-	_inst.gsw.daysFormat.narrow.thu = "D";
-	_inst.gsw.daysFormat.narrow.fri = "F";
-	_inst.gsw.daysFormat.narrow.sat = "S";
-
-	_inst.gsw.daysFormat.abbreviated = {};
-	_inst.gsw.daysFormat.abbreviated.sun = "Su.";
-	_inst.gsw.daysFormat.abbreviated.mon = "Mä.";
-	_inst.gsw.daysFormat.abbreviated.tue = "Zi.";
-	_inst.gsw.daysFormat.abbreviated.wed = "Mi.";
-	_inst.gsw.daysFormat.abbreviated.thu = "Du.";
-	_inst.gsw.daysFormat.abbreviated.fri = "Fr.";
-	_inst.gsw.daysFormat.abbreviated.sat = "Sa.";
-
-	_inst.gsw.daysFormat.wide = {};
-	_inst.gsw.daysFormat.wide.sun = "Sunntig";
-	_inst.gsw.daysFormat.wide.mon = "Määntig";
-	_inst.gsw.daysFormat.wide.tue = "Ziischtig";
-	_inst.gsw.daysFormat.wide.wed = "Mittwuch";
-	_inst.gsw.daysFormat.wide.thu = "Dunschtig";
-	_inst.gsw.daysFormat.wide.fri = "Friitig";
-	_inst.gsw.daysFormat.wide.sat = "Samschtig";
-
-	_inst.gsw.monthsFormat = {};
-
-	_inst.gsw.monthsFormat.narrow = {};
-	_inst.gsw.monthsFormat.narrow.one = "J";
-	_inst.gsw.monthsFormat.narrow.two = "F";
-	_inst.gsw.monthsFormat.narrow.three = "M";
-	_inst.gsw.monthsFormat.narrow.four = "A";
-	_inst.gsw.monthsFormat.narrow.five = "M";
-	_inst.gsw.monthsFormat.narrow.six = "J";
-	_inst.gsw.monthsFormat.narrow.seven = "J";
-	_inst.gsw.monthsFormat.narrow.eight = "A";
-	_inst.gsw.monthsFormat.narrow.nine = "S";
-	_inst.gsw.monthsFormat.narrow.ten = "O";
-	_inst.gsw.monthsFormat.narrow.eleven = "N";
-	_inst.gsw.monthsFormat.narrow.twelve = "D";
-
-	_inst.gsw.monthsFormat.abbreviated = {};
-	_inst.gsw.monthsFormat.abbreviated.one = "Jan";
-	_inst.gsw.monthsFormat.abbreviated.two = "Feb";
-	_inst.gsw.monthsFormat.abbreviated.three = "Mär";
-	_inst.gsw.monthsFormat.abbreviated.four = "Apr";
-	_inst.gsw.monthsFormat.abbreviated.five = "Mai";
-	_inst.gsw.monthsFormat.abbreviated.six = "Jun";
-	_inst.gsw.monthsFormat.abbreviated.seven = "Jul";
-	_inst.gsw.monthsFormat.abbreviated.eight = "Aug";
-	_inst.gsw.monthsFormat.abbreviated.nine = "Sep";
-	_inst.gsw.monthsFormat.abbreviated.ten = "Okt";
-	_inst.gsw.monthsFormat.abbreviated.eleven = "Nov";
-	_inst.gsw.monthsFormat.abbreviated.twelve = "Dez";
-
-	_inst.gsw.monthsFormat.wide = {};
-	_inst.gsw.monthsFormat.wide.one = "Januar";
-	_inst.gsw.monthsFormat.wide.two = "Februar";
-	_inst.gsw.monthsFormat.wide.three = "März";
-	_inst.gsw.monthsFormat.wide.four = "April";
-	_inst.gsw.monthsFormat.wide.five = "Mai";
-	_inst.gsw.monthsFormat.wide.six = "Juni";
-	_inst.gsw.monthsFormat.wide.seven = "Juli";
-	_inst.gsw.monthsFormat.wide.eight = "Auguscht";
-	_inst.gsw.monthsFormat.wide.nine = "Septämber";
-	_inst.gsw.monthsFormat.wide.ten = "Oktoober";
-	_inst.gsw.monthsFormat.wide.eleven = "Novämber";
-	_inst.gsw.monthsFormat.wide.twelve = "Dezämber";
-
-	_inst.gsw.symbols = {};
-	_inst.gsw.symbols.currency = "¤";
-
-	_inst.bs = {};
-
-	_inst.bs.timeFormat = {};
-	_inst.bs.timeFormat.short = "HH:mm";
-	_inst.bs.timeFormat.medium = "HH:mm:ss";
-	_inst.bs.timeFormat.long = "HH:mm:ss z";
-	_inst.bs.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.bs.currencyFormat = "#,##0.00 ¤";
-	_inst.bs.decimalFormat = "#,##0.###";
-
-	_inst.bs.dateTimeFormat = {};
-	_inst.bs.dateTimeFormat.short = "{1} {0}";
-	_inst.bs.dateTimeFormat.medium = "{1} {0}";
-	_inst.bs.dateTimeFormat.long = "{1}, {0}";
-	_inst.bs.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.bs.dateFormat = {};
-	_inst.bs.dateFormat.short = "d. M. y.";
-	_inst.bs.dateFormat.medium = "d. MMM y.";
-	_inst.bs.dateFormat.long = "d. MMMM y.";
-	_inst.bs.dateFormat.full = "EEEE, d. MMMM y.";
-
-	_inst.bs.daysFormat = {};
-
-	_inst.bs.daysFormat.short = {};
-	_inst.bs.daysFormat.short.sun = "ned";
-	_inst.bs.daysFormat.short.mon = "pon";
-	_inst.bs.daysFormat.short.tue = "uto";
-	_inst.bs.daysFormat.short.wed = "sri";
-	_inst.bs.daysFormat.short.thu = "čet";
-	_inst.bs.daysFormat.short.fri = "pet";
-	_inst.bs.daysFormat.short.sat = "sub";
-
-	_inst.bs.daysFormat.narrow = {};
-	_inst.bs.daysFormat.narrow.sun = "N";
-	_inst.bs.daysFormat.narrow.mon = "P";
-	_inst.bs.daysFormat.narrow.tue = "U";
-	_inst.bs.daysFormat.narrow.wed = "S";
-	_inst.bs.daysFormat.narrow.thu = "Č";
-	_inst.bs.daysFormat.narrow.fri = "P";
-	_inst.bs.daysFormat.narrow.sat = "S";
-
-	_inst.bs.daysFormat.abbreviated = {};
-	_inst.bs.daysFormat.abbreviated.sun = "ned";
-	_inst.bs.daysFormat.abbreviated.mon = "pon";
-	_inst.bs.daysFormat.abbreviated.tue = "uto";
-	_inst.bs.daysFormat.abbreviated.wed = "sri";
-	_inst.bs.daysFormat.abbreviated.thu = "čet";
-	_inst.bs.daysFormat.abbreviated.fri = "pet";
-	_inst.bs.daysFormat.abbreviated.sat = "sub";
-
-	_inst.bs.daysFormat.wide = {};
-	_inst.bs.daysFormat.wide.sun = "nedjelja";
-	_inst.bs.daysFormat.wide.mon = "ponedjeljak";
-	_inst.bs.daysFormat.wide.tue = "utorak";
-	_inst.bs.daysFormat.wide.wed = "srijeda";
-	_inst.bs.daysFormat.wide.thu = "četvrtak";
-	_inst.bs.daysFormat.wide.fri = "petak";
-	_inst.bs.daysFormat.wide.sat = "subota";
-
-	_inst.bs.monthsFormat = {};
-
-	_inst.bs.monthsFormat.narrow = {};
-	_inst.bs.monthsFormat.narrow.one = "j";
-	_inst.bs.monthsFormat.narrow.two = "f";
-	_inst.bs.monthsFormat.narrow.three = "m";
-	_inst.bs.monthsFormat.narrow.four = "a";
-	_inst.bs.monthsFormat.narrow.five = "m";
-	_inst.bs.monthsFormat.narrow.six = "j";
-	_inst.bs.monthsFormat.narrow.seven = "j";
-	_inst.bs.monthsFormat.narrow.eight = "a";
-	_inst.bs.monthsFormat.narrow.nine = "s";
-	_inst.bs.monthsFormat.narrow.ten = "o";
-	_inst.bs.monthsFormat.narrow.eleven = "n";
-	_inst.bs.monthsFormat.narrow.twelve = "d";
-
-	_inst.bs.monthsFormat.abbreviated = {};
-	_inst.bs.monthsFormat.abbreviated.one = "jan";
-	_inst.bs.monthsFormat.abbreviated.two = "feb";
-	_inst.bs.monthsFormat.abbreviated.three = "mar";
-	_inst.bs.monthsFormat.abbreviated.four = "apr";
-	_inst.bs.monthsFormat.abbreviated.five = "maj";
-	_inst.bs.monthsFormat.abbreviated.six = "jun";
-	_inst.bs.monthsFormat.abbreviated.seven = "jul";
-	_inst.bs.monthsFormat.abbreviated.eight = "aug";
-	_inst.bs.monthsFormat.abbreviated.nine = "sep";
-	_inst.bs.monthsFormat.abbreviated.ten = "okt";
-	_inst.bs.monthsFormat.abbreviated.eleven = "nov";
-	_inst.bs.monthsFormat.abbreviated.twelve = "dec";
-
-	_inst.bs.monthsFormat.wide = {};
-	_inst.bs.monthsFormat.wide.one = "januar";
-	_inst.bs.monthsFormat.wide.two = "februar";
-	_inst.bs.monthsFormat.wide.three = "mart";
-	_inst.bs.monthsFormat.wide.four = "april";
-	_inst.bs.monthsFormat.wide.five = "maj";
-	_inst.bs.monthsFormat.wide.six = "juni";
-	_inst.bs.monthsFormat.wide.seven = "juli";
-	_inst.bs.monthsFormat.wide.eight = "august";
-	_inst.bs.monthsFormat.wide.nine = "septembar";
-	_inst.bs.monthsFormat.wide.ten = "oktobar";
-	_inst.bs.monthsFormat.wide.eleven = "novembar";
-	_inst.bs.monthsFormat.wide.twelve = "decembar";
-
-	_inst.bs.symbols = {};
-	_inst.bs.symbols.currency = "$";
-
-	_inst.yav = {};
-
-	_inst.yav.timeFormat = {};
-	_inst.yav.timeFormat.short = "HH:mm";
-	_inst.yav.timeFormat.medium = "HH:mm:ss";
-	_inst.yav.timeFormat.long = "HH:mm:ss z";
-	_inst.yav.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.yav.currencyFormat = "#,##0.00 ¤";
-	_inst.yav.decimalFormat = "#,##0.###";
-
-	_inst.yav.dateTimeFormat = {};
-	_inst.yav.dateTimeFormat.short = "{1} {0}";
-	_inst.yav.dateTimeFormat.medium = "{1} {0}";
-	_inst.yav.dateTimeFormat.long = "{1} {0}";
-	_inst.yav.dateTimeFormat.full = "{1} {0}";
-
-	_inst.yav.dateFormat = {};
-	_inst.yav.dateFormat.short = "d/M/y";
-	_inst.yav.dateFormat.medium = "d MMM y";
-	_inst.yav.dateFormat.long = "d MMMM y";
-	_inst.yav.dateFormat.full = "EEEE d MMMM y";
-
-	_inst.yav.daysFormat = {};
-
-	_inst.yav.daysFormat.short = {};
-	_inst.yav.daysFormat.short.sun = "sd";
-	_inst.yav.daysFormat.short.mon = "md";
-	_inst.yav.daysFormat.short.tue = "mw";
-	_inst.yav.daysFormat.short.wed = "et";
-	_inst.yav.daysFormat.short.thu = "kl";
-	_inst.yav.daysFormat.short.fri = "fl";
-	_inst.yav.daysFormat.short.sat = "ss";
-
-	_inst.yav.daysFormat.narrow = {};
-	_inst.yav.daysFormat.narrow.sun = "s";
-	_inst.yav.daysFormat.narrow.mon = "m";
-	_inst.yav.daysFormat.narrow.tue = "m";
-	_inst.yav.daysFormat.narrow.wed = "e";
-	_inst.yav.daysFormat.narrow.thu = "k";
-	_inst.yav.daysFormat.narrow.fri = "f";
-	_inst.yav.daysFormat.narrow.sat = "s";
-
-	_inst.yav.daysFormat.abbreviated = {};
-	_inst.yav.daysFormat.abbreviated.sun = "sd";
-	_inst.yav.daysFormat.abbreviated.mon = "md";
-	_inst.yav.daysFormat.abbreviated.tue = "mw";
-	_inst.yav.daysFormat.abbreviated.wed = "et";
-	_inst.yav.daysFormat.abbreviated.thu = "kl";
-	_inst.yav.daysFormat.abbreviated.fri = "fl";
-	_inst.yav.daysFormat.abbreviated.sat = "ss";
-
-	_inst.yav.daysFormat.wide = {};
-	_inst.yav.daysFormat.wide.sun = "sɔ́ndiɛ";
-	_inst.yav.daysFormat.wide.mon = "móndie";
-	_inst.yav.daysFormat.wide.tue = "muányáŋmóndie";
-	_inst.yav.daysFormat.wide.wed = "metúkpíápɛ";
-	_inst.yav.daysFormat.wide.thu = "kúpélimetúkpiapɛ";
-	_inst.yav.daysFormat.wide.fri = "feléte";
-	_inst.yav.daysFormat.wide.sat = "séselé";
-
-	_inst.yav.monthsFormat = {};
-
-	_inst.yav.monthsFormat.narrow = {};
-	_inst.yav.monthsFormat.narrow.one = "1";
-	_inst.yav.monthsFormat.narrow.two = "2";
-	_inst.yav.monthsFormat.narrow.three = "3";
-	_inst.yav.monthsFormat.narrow.four = "4";
-	_inst.yav.monthsFormat.narrow.five = "5";
-	_inst.yav.monthsFormat.narrow.six = "6";
-	_inst.yav.monthsFormat.narrow.seven = "7";
-	_inst.yav.monthsFormat.narrow.eight = "8";
-	_inst.yav.monthsFormat.narrow.nine = "9";
-	_inst.yav.monthsFormat.narrow.ten = "10";
-	_inst.yav.monthsFormat.narrow.eleven = "11";
-	_inst.yav.monthsFormat.narrow.twelve = "12";
-
-	_inst.yav.monthsFormat.abbreviated = {};
-	_inst.yav.monthsFormat.abbreviated.one = "o.1";
-	_inst.yav.monthsFormat.abbreviated.two = "o.2";
-	_inst.yav.monthsFormat.abbreviated.three = "o.3";
-	_inst.yav.monthsFormat.abbreviated.four = "o.4";
-	_inst.yav.monthsFormat.abbreviated.five = "o.5";
-	_inst.yav.monthsFormat.abbreviated.six = "o.6";
-	_inst.yav.monthsFormat.abbreviated.seven = "o.7";
-	_inst.yav.monthsFormat.abbreviated.eight = "o.8";
-	_inst.yav.monthsFormat.abbreviated.nine = "o.9";
-	_inst.yav.monthsFormat.abbreviated.ten = "o.10";
-	_inst.yav.monthsFormat.abbreviated.eleven = "o.11";
-	_inst.yav.monthsFormat.abbreviated.twelve = "o.12";
-
-	_inst.yav.monthsFormat.wide = {};
-	_inst.yav.monthsFormat.wide.one = "pikítíkítie, oólí ú kutúan";
-	_inst.yav.monthsFormat.wide.two = "siɛyɛ́, oóli ú kándíɛ";
-	_inst.yav.monthsFormat.wide.three = "ɔnsúmbɔl, oóli ú kátátúɛ";
-	_inst.yav.monthsFormat.wide.four = "mesiŋ, oóli ú kénie";
-	_inst.yav.monthsFormat.wide.five = "ensil, oóli ú kátánuɛ";
-	_inst.yav.monthsFormat.wide.six = "ɔsɔn";
-	_inst.yav.monthsFormat.wide.seven = "efute";
-	_inst.yav.monthsFormat.wide.eight = "pisuyú";
-	_inst.yav.monthsFormat.wide.nine = "imɛŋ i puɔs";
-	_inst.yav.monthsFormat.wide.ten = "imɛŋ i putúk,oóli ú kátíɛ";
-	_inst.yav.monthsFormat.wide.eleven = "makandikɛ";
-	_inst.yav.monthsFormat.wide.twelve = "pilɔndɔ́";
-
-	_inst.yav.symbols = {};
-	_inst.yav.symbols.currency = "¤";
-
-	_inst.fr_SY = {};
-
-	_inst.fr_SY.timeFormat = {};
-	_inst.fr_SY.timeFormat.short = "h:mm a";
-	_inst.fr_SY.timeFormat.medium = "h:mm:ss a";
-	_inst.fr_SY.timeFormat.long = "h:mm:ss a z";
-	_inst.fr_SY.timeFormat.full = "h:mm:ss a zzzz";
-	_inst.fr_SY.currencyFormat = "#,##0.00 ¤";
-	_inst.fr_SY.decimalFormat = "#,##0.###";
-
-	_inst.fr_SY.dateTimeFormat = {};
-	_inst.fr_SY.dateTimeFormat.short = "{1} {0}";
-	_inst.fr_SY.dateTimeFormat.medium = "{1}, {0}";
-	_inst.fr_SY.dateTimeFormat.long = "{1}, {0}";
-	_inst.fr_SY.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.fr_SY.dateFormat = {};
-	_inst.fr_SY.dateFormat.short = "dd/MM/y";
-	_inst.fr_SY.dateFormat.medium = "d MMM y";
-	_inst.fr_SY.dateFormat.long = "d MMMM y";
-	_inst.fr_SY.dateFormat.full = "EEEE d MMMM y";
-
-	_inst.fr_SY.daysFormat = {};
-
-	_inst.fr_SY.daysFormat.short = {};
-	_inst.fr_SY.daysFormat.short.sun = "di";
-	_inst.fr_SY.daysFormat.short.mon = "lu";
-	_inst.fr_SY.daysFormat.short.tue = "ma";
-	_inst.fr_SY.daysFormat.short.wed = "me";
-	_inst.fr_SY.daysFormat.short.thu = "je";
-	_inst.fr_SY.daysFormat.short.fri = "ve";
-	_inst.fr_SY.daysFormat.short.sat = "sa";
-
-	_inst.fr_SY.daysFormat.narrow = {};
-	_inst.fr_SY.daysFormat.narrow.sun = "D";
-	_inst.fr_SY.daysFormat.narrow.mon = "L";
-	_inst.fr_SY.daysFormat.narrow.tue = "M";
-	_inst.fr_SY.daysFormat.narrow.wed = "M";
-	_inst.fr_SY.daysFormat.narrow.thu = "J";
-	_inst.fr_SY.daysFormat.narrow.fri = "V";
-	_inst.fr_SY.daysFormat.narrow.sat = "S";
-
-	_inst.fr_SY.daysFormat.abbreviated = {};
-	_inst.fr_SY.daysFormat.abbreviated.sun = "dim.";
-	_inst.fr_SY.daysFormat.abbreviated.mon = "lun.";
-	_inst.fr_SY.daysFormat.abbreviated.tue = "mar.";
-	_inst.fr_SY.daysFormat.abbreviated.wed = "mer.";
-	_inst.fr_SY.daysFormat.abbreviated.thu = "jeu.";
-	_inst.fr_SY.daysFormat.abbreviated.fri = "ven.";
-	_inst.fr_SY.daysFormat.abbreviated.sat = "sam.";
-
-	_inst.fr_SY.daysFormat.wide = {};
-	_inst.fr_SY.daysFormat.wide.sun = "dimanche";
-	_inst.fr_SY.daysFormat.wide.mon = "lundi";
-	_inst.fr_SY.daysFormat.wide.tue = "mardi";
-	_inst.fr_SY.daysFormat.wide.wed = "mercredi";
-	_inst.fr_SY.daysFormat.wide.thu = "jeudi";
-	_inst.fr_SY.daysFormat.wide.fri = "vendredi";
-	_inst.fr_SY.daysFormat.wide.sat = "samedi";
-
-	_inst.fr_SY.monthsFormat = {};
-
-	_inst.fr_SY.monthsFormat.narrow = {};
-	_inst.fr_SY.monthsFormat.narrow.one = "J";
-	_inst.fr_SY.monthsFormat.narrow.two = "F";
-	_inst.fr_SY.monthsFormat.narrow.three = "M";
-	_inst.fr_SY.monthsFormat.narrow.four = "A";
-	_inst.fr_SY.monthsFormat.narrow.five = "M";
-	_inst.fr_SY.monthsFormat.narrow.six = "J";
-	_inst.fr_SY.monthsFormat.narrow.seven = "J";
-	_inst.fr_SY.monthsFormat.narrow.eight = "A";
-	_inst.fr_SY.monthsFormat.narrow.nine = "S";
-	_inst.fr_SY.monthsFormat.narrow.ten = "O";
-	_inst.fr_SY.monthsFormat.narrow.eleven = "N";
-	_inst.fr_SY.monthsFormat.narrow.twelve = "D";
-
-	_inst.fr_SY.monthsFormat.abbreviated = {};
-	_inst.fr_SY.monthsFormat.abbreviated.one = "janv.";
-	_inst.fr_SY.monthsFormat.abbreviated.two = "févr.";
-	_inst.fr_SY.monthsFormat.abbreviated.three = "mars";
-	_inst.fr_SY.monthsFormat.abbreviated.four = "avr.";
-	_inst.fr_SY.monthsFormat.abbreviated.five = "mai";
-	_inst.fr_SY.monthsFormat.abbreviated.six = "juin";
-	_inst.fr_SY.monthsFormat.abbreviated.seven = "juil.";
-	_inst.fr_SY.monthsFormat.abbreviated.eight = "août";
-	_inst.fr_SY.monthsFormat.abbreviated.nine = "sept.";
-	_inst.fr_SY.monthsFormat.abbreviated.ten = "oct.";
-	_inst.fr_SY.monthsFormat.abbreviated.eleven = "nov.";
-	_inst.fr_SY.monthsFormat.abbreviated.twelve = "déc.";
-
-	_inst.fr_SY.monthsFormat.wide = {};
-	_inst.fr_SY.monthsFormat.wide.one = "janvier";
-	_inst.fr_SY.monthsFormat.wide.two = "février";
-	_inst.fr_SY.monthsFormat.wide.three = "mars";
-	_inst.fr_SY.monthsFormat.wide.four = "avril";
-	_inst.fr_SY.monthsFormat.wide.five = "mai";
-	_inst.fr_SY.monthsFormat.wide.six = "juin";
-	_inst.fr_SY.monthsFormat.wide.seven = "juillet";
-	_inst.fr_SY.monthsFormat.wide.eight = "août";
-	_inst.fr_SY.monthsFormat.wide.nine = "septembre";
-	_inst.fr_SY.monthsFormat.wide.ten = "octobre";
-	_inst.fr_SY.monthsFormat.wide.eleven = "novembre";
-	_inst.fr_SY.monthsFormat.wide.twelve = "décembre";
-
-	_inst.fr_SY.symbols = {};
-	_inst.fr_SY.symbols.currency = "£";
-
-	_inst.sd_Arab = {};
-
-	_inst.sd_Arab.timeFormat = {};
-	_inst.sd_Arab.timeFormat.short = "h:mm a";
-	_inst.sd_Arab.timeFormat.medium = "h:mm:ss a";
-	_inst.sd_Arab.timeFormat.long = "h:mm:ss a z";
-	_inst.sd_Arab.timeFormat.full = "h:mm:ss a zzzz";
-	_inst.sd_Arab.currencyFormat = "¤ #,##0.00";
-	_inst.sd_Arab.decimalFormat = "#,##0.###";
-
-	_inst.sd_Arab.dateTimeFormat = {};
-	_inst.sd_Arab.dateTimeFormat.short = "{1} {0}";
-	_inst.sd_Arab.dateTimeFormat.medium = "{1} {0}";
-	_inst.sd_Arab.dateTimeFormat.long = "{1} {0}";
-	_inst.sd_Arab.dateTimeFormat.full = "{1} {0}";
-
-	_inst.sd_Arab.dateFormat = {};
-	_inst.sd_Arab.dateFormat.short = "y-MM-dd";
-	_inst.sd_Arab.dateFormat.medium = "y MMM d";
-	_inst.sd_Arab.dateFormat.long = "y MMMM d";
-	_inst.sd_Arab.dateFormat.full = "EEEE, MMMM d, y";
-
-	_inst.sd_Arab.daysFormat = {};
-
-	_inst.sd_Arab.daysFormat.short = {};
-	_inst.sd_Arab.daysFormat.short.sun = "آچر";
-	_inst.sd_Arab.daysFormat.short.mon = "سومر";
-	_inst.sd_Arab.daysFormat.short.tue = "اڱارو";
-	_inst.sd_Arab.daysFormat.short.wed = "اربع";
-	_inst.sd_Arab.daysFormat.short.thu = "خميس";
-	_inst.sd_Arab.daysFormat.short.fri = "جمعو";
-	_inst.sd_Arab.daysFormat.short.sat = "ڇنڇر";
-
-	_inst.sd_Arab.daysFormat.narrow = {};
-	_inst.sd_Arab.daysFormat.narrow.sun = "آچر";
-	_inst.sd_Arab.daysFormat.narrow.mon = "سو";
-	_inst.sd_Arab.daysFormat.narrow.tue = "اڱارو";
-	_inst.sd_Arab.daysFormat.narrow.wed = "اربع";
-	_inst.sd_Arab.daysFormat.narrow.thu = "خم";
-	_inst.sd_Arab.daysFormat.narrow.fri = "جمعو";
-	_inst.sd_Arab.daysFormat.narrow.sat = "ڇنڇر";
-
-	_inst.sd_Arab.daysFormat.abbreviated = {};
-	_inst.sd_Arab.daysFormat.abbreviated.sun = "آچر";
-	_inst.sd_Arab.daysFormat.abbreviated.mon = "سومر";
-	_inst.sd_Arab.daysFormat.abbreviated.tue = "اڱارو";
-	_inst.sd_Arab.daysFormat.abbreviated.wed = "اربع";
-	_inst.sd_Arab.daysFormat.abbreviated.thu = "خميس";
-	_inst.sd_Arab.daysFormat.abbreviated.fri = "جمعو";
-	_inst.sd_Arab.daysFormat.abbreviated.sat = "ڇنڇر";
-
-	_inst.sd_Arab.daysFormat.wide = {};
-	_inst.sd_Arab.daysFormat.wide.sun = "آچر";
-	_inst.sd_Arab.daysFormat.wide.mon = "سومر";
-	_inst.sd_Arab.daysFormat.wide.tue = "اڱارو";
-	_inst.sd_Arab.daysFormat.wide.wed = "اربع";
-	_inst.sd_Arab.daysFormat.wide.thu = "خميس";
-	_inst.sd_Arab.daysFormat.wide.fri = "جمعو";
-	_inst.sd_Arab.daysFormat.wide.sat = "ڇنڇر";
-
-	_inst.sd_Arab.monthsFormat = {};
-
-	_inst.sd_Arab.monthsFormat.narrow = {};
-	_inst.sd_Arab.monthsFormat.narrow.one = "J";
-	_inst.sd_Arab.monthsFormat.narrow.two = "F";
-	_inst.sd_Arab.monthsFormat.narrow.three = "M";
-	_inst.sd_Arab.monthsFormat.narrow.four = "A";
-	_inst.sd_Arab.monthsFormat.narrow.five = "M";
-	_inst.sd_Arab.monthsFormat.narrow.six = "J";
-	_inst.sd_Arab.monthsFormat.narrow.seven = "J";
-	_inst.sd_Arab.monthsFormat.narrow.eight = "A";
-	_inst.sd_Arab.monthsFormat.narrow.nine = "S";
-	_inst.sd_Arab.monthsFormat.narrow.ten = "O";
-	_inst.sd_Arab.monthsFormat.narrow.eleven = "N";
-	_inst.sd_Arab.monthsFormat.narrow.twelve = "D";
-
-	_inst.sd_Arab.monthsFormat.abbreviated = {};
-	_inst.sd_Arab.monthsFormat.abbreviated.one = "جنوري";
-	_inst.sd_Arab.monthsFormat.abbreviated.two = "فيبروري";
-	_inst.sd_Arab.monthsFormat.abbreviated.three = "مارچ";
-	_inst.sd_Arab.monthsFormat.abbreviated.four = "اپريل";
-	_inst.sd_Arab.monthsFormat.abbreviated.five = "مئي";
-	_inst.sd_Arab.monthsFormat.abbreviated.six = "جون";
-	_inst.sd_Arab.monthsFormat.abbreviated.seven = "جولاءِ";
-	_inst.sd_Arab.monthsFormat.abbreviated.eight = "آگسٽ";
-	_inst.sd_Arab.monthsFormat.abbreviated.nine = "سيپٽمبر";
-	_inst.sd_Arab.monthsFormat.abbreviated.ten = "آڪٽوبر";
-	_inst.sd_Arab.monthsFormat.abbreviated.eleven = "نومبر";
-	_inst.sd_Arab.monthsFormat.abbreviated.twelve = "ڊسمبر";
-
-	_inst.sd_Arab.monthsFormat.wide = {};
-	_inst.sd_Arab.monthsFormat.wide.one = "جنوري";
-	_inst.sd_Arab.monthsFormat.wide.two = "فيبروري";
-	_inst.sd_Arab.monthsFormat.wide.three = "مارچ";
-	_inst.sd_Arab.monthsFormat.wide.four = "اپريل";
-	_inst.sd_Arab.monthsFormat.wide.five = "مئي";
-	_inst.sd_Arab.monthsFormat.wide.six = "جون";
-	_inst.sd_Arab.monthsFormat.wide.seven = "جولاءِ";
-	_inst.sd_Arab.monthsFormat.wide.eight = "آگسٽ";
-	_inst.sd_Arab.monthsFormat.wide.nine = "سيپٽمبر";
-	_inst.sd_Arab.monthsFormat.wide.ten = "آڪٽوبر";
-	_inst.sd_Arab.monthsFormat.wide.eleven = "نومبر";
-	_inst.sd_Arab.monthsFormat.wide.twelve = "ڊسمبر";
-
-	_inst.sd_Arab.symbols = {};
-	_inst.sd_Arab.symbols.currency = "¤";
-
-	_inst.ru_MD = {};
-
-	_inst.ru_MD.timeFormat = {};
-	_inst.ru_MD.timeFormat.short = "HH:mm";
-	_inst.ru_MD.timeFormat.medium = "HH:mm:ss";
-	_inst.ru_MD.timeFormat.long = "HH:mm:ss z";
-	_inst.ru_MD.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.ru_MD.currencyFormat = "#,##0.00 ¤";
-	_inst.ru_MD.decimalFormat = "#,##0.###";
-
-	_inst.ru_MD.dateTimeFormat = {};
-	_inst.ru_MD.dateTimeFormat.short = "{1}, {0}";
-	_inst.ru_MD.dateTimeFormat.medium = "{1}, {0}";
-	_inst.ru_MD.dateTimeFormat.long = "{1}, {0}";
-	_inst.ru_MD.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.ru_MD.dateFormat = {};
-	_inst.ru_MD.dateFormat.short = "dd.MM.y";
-	_inst.ru_MD.dateFormat.medium = "d MMM y 'г'.";
-	_inst.ru_MD.dateFormat.long = "d MMMM y 'г'.";
-	_inst.ru_MD.dateFormat.full = "EEEE, d MMMM y 'г'.";
-
-	_inst.ru_MD.daysFormat = {};
-
-	_inst.ru_MD.daysFormat.short = {};
-	_inst.ru_MD.daysFormat.short.sun = "вс";
-	_inst.ru_MD.daysFormat.short.mon = "пн";
-	_inst.ru_MD.daysFormat.short.tue = "вт";
-	_inst.ru_MD.daysFormat.short.wed = "ср";
-	_inst.ru_MD.daysFormat.short.thu = "чт";
-	_inst.ru_MD.daysFormat.short.fri = "пт";
-	_inst.ru_MD.daysFormat.short.sat = "сб";
-
-	_inst.ru_MD.daysFormat.narrow = {};
-	_inst.ru_MD.daysFormat.narrow.sun = "В";
-	_inst.ru_MD.daysFormat.narrow.mon = "П";
-	_inst.ru_MD.daysFormat.narrow.tue = "В";
-	_inst.ru_MD.daysFormat.narrow.wed = "С";
-	_inst.ru_MD.daysFormat.narrow.thu = "Ч";
-	_inst.ru_MD.daysFormat.narrow.fri = "П";
-	_inst.ru_MD.daysFormat.narrow.sat = "С";
-
-	_inst.ru_MD.daysFormat.abbreviated = {};
-	_inst.ru_MD.daysFormat.abbreviated.sun = "вс";
-	_inst.ru_MD.daysFormat.abbreviated.mon = "пн";
-	_inst.ru_MD.daysFormat.abbreviated.tue = "вт";
-	_inst.ru_MD.daysFormat.abbreviated.wed = "ср";
-	_inst.ru_MD.daysFormat.abbreviated.thu = "чт";
-	_inst.ru_MD.daysFormat.abbreviated.fri = "пт";
-	_inst.ru_MD.daysFormat.abbreviated.sat = "сб";
-
-	_inst.ru_MD.daysFormat.wide = {};
-	_inst.ru_MD.daysFormat.wide.sun = "воскресенье";
-	_inst.ru_MD.daysFormat.wide.mon = "понедельник";
-	_inst.ru_MD.daysFormat.wide.tue = "вторник";
-	_inst.ru_MD.daysFormat.wide.wed = "среда";
-	_inst.ru_MD.daysFormat.wide.thu = "четверг";
-	_inst.ru_MD.daysFormat.wide.fri = "пятница";
-	_inst.ru_MD.daysFormat.wide.sat = "суббота";
-
-	_inst.ru_MD.monthsFormat = {};
-
-	_inst.ru_MD.monthsFormat.narrow = {};
-	_inst.ru_MD.monthsFormat.narrow.one = "Я";
-	_inst.ru_MD.monthsFormat.narrow.two = "Ф";
-	_inst.ru_MD.monthsFormat.narrow.three = "М";
-	_inst.ru_MD.monthsFormat.narrow.four = "А";
-	_inst.ru_MD.monthsFormat.narrow.five = "М";
-	_inst.ru_MD.monthsFormat.narrow.six = "И";
-	_inst.ru_MD.monthsFormat.narrow.seven = "И";
-	_inst.ru_MD.monthsFormat.narrow.eight = "А";
-	_inst.ru_MD.monthsFormat.narrow.nine = "С";
-	_inst.ru_MD.monthsFormat.narrow.ten = "О";
-	_inst.ru_MD.monthsFormat.narrow.eleven = "Н";
-	_inst.ru_MD.monthsFormat.narrow.twelve = "Д";
-
-	_inst.ru_MD.monthsFormat.abbreviated = {};
-	_inst.ru_MD.monthsFormat.abbreviated.one = "янв.";
-	_inst.ru_MD.monthsFormat.abbreviated.two = "февр.";
-	_inst.ru_MD.monthsFormat.abbreviated.three = "мар.";
-	_inst.ru_MD.monthsFormat.abbreviated.four = "апр.";
-	_inst.ru_MD.monthsFormat.abbreviated.five = "мая";
-	_inst.ru_MD.monthsFormat.abbreviated.six = "июн.";
-	_inst.ru_MD.monthsFormat.abbreviated.seven = "июл.";
-	_inst.ru_MD.monthsFormat.abbreviated.eight = "авг.";
-	_inst.ru_MD.monthsFormat.abbreviated.nine = "сент.";
-	_inst.ru_MD.monthsFormat.abbreviated.ten = "окт.";
-	_inst.ru_MD.monthsFormat.abbreviated.eleven = "нояб.";
-	_inst.ru_MD.monthsFormat.abbreviated.twelve = "дек.";
-
-	_inst.ru_MD.monthsFormat.wide = {};
-	_inst.ru_MD.monthsFormat.wide.one = "января";
-	_inst.ru_MD.monthsFormat.wide.two = "февраля";
-	_inst.ru_MD.monthsFormat.wide.three = "марта";
-	_inst.ru_MD.monthsFormat.wide.four = "апреля";
-	_inst.ru_MD.monthsFormat.wide.five = "мая";
-	_inst.ru_MD.monthsFormat.wide.six = "июня";
-	_inst.ru_MD.monthsFormat.wide.seven = "июля";
-	_inst.ru_MD.monthsFormat.wide.eight = "августа";
-	_inst.ru_MD.monthsFormat.wide.nine = "сентября";
-	_inst.ru_MD.monthsFormat.wide.ten = "октября";
-	_inst.ru_MD.monthsFormat.wide.eleven = "ноября";
-	_inst.ru_MD.monthsFormat.wide.twelve = "декабря";
-
-	_inst.ru_MD.symbols = {};
-	_inst.ru_MD.symbols.currency = "L";
-
-	_inst.en_MY = {};
-
-	_inst.en_MY.timeFormat = {};
-	_inst.en_MY.timeFormat.short = "h:mm a";
-	_inst.en_MY.timeFormat.medium = "h:mm:ss a";
-	_inst.en_MY.timeFormat.long = "h:mm:ss a z";
-	_inst.en_MY.timeFormat.full = "h:mm:ss a zzzz";
-	_inst.en_MY.currencyFormat = "¤#,##0.00";
-	_inst.en_MY.decimalFormat = "#,##0.###";
-
-	_inst.en_MY.dateTimeFormat = {};
-	_inst.en_MY.dateTimeFormat.short = "{1}, {0}";
-	_inst.en_MY.dateTimeFormat.medium = "{1}, {0}";
-	_inst.en_MY.dateTimeFormat.long = "{1}, {0}";
-	_inst.en_MY.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.en_MY.dateFormat = {};
-	_inst.en_MY.dateFormat.short = "dd/MM/y";
-	_inst.en_MY.dateFormat.medium = "d MMM y";
-	_inst.en_MY.dateFormat.long = "d MMMM y";
-	_inst.en_MY.dateFormat.full = "EEEE, d MMMM y";
-
-	_inst.en_MY.daysFormat = {};
-
-	_inst.en_MY.daysFormat.short = {};
-	_inst.en_MY.daysFormat.short.sun = "Su";
-	_inst.en_MY.daysFormat.short.mon = "Mo";
-	_inst.en_MY.daysFormat.short.tue = "Tu";
-	_inst.en_MY.daysFormat.short.wed = "We";
-	_inst.en_MY.daysFormat.short.thu = "Th";
-	_inst.en_MY.daysFormat.short.fri = "Fr";
-	_inst.en_MY.daysFormat.short.sat = "Sa";
-
-	_inst.en_MY.daysFormat.narrow = {};
-	_inst.en_MY.daysFormat.narrow.sun = "S";
-	_inst.en_MY.daysFormat.narrow.mon = "M";
-	_inst.en_MY.daysFormat.narrow.tue = "T";
-	_inst.en_MY.daysFormat.narrow.wed = "W";
-	_inst.en_MY.daysFormat.narrow.thu = "T";
-	_inst.en_MY.daysFormat.narrow.fri = "F";
-	_inst.en_MY.daysFormat.narrow.sat = "S";
-
-	_inst.en_MY.daysFormat.abbreviated = {};
-	_inst.en_MY.daysFormat.abbreviated.sun = "Sun";
-	_inst.en_MY.daysFormat.abbreviated.mon = "Mon";
-	_inst.en_MY.daysFormat.abbreviated.tue = "Tue";
-	_inst.en_MY.daysFormat.abbreviated.wed = "Wed";
-	_inst.en_MY.daysFormat.abbreviated.thu = "Thu";
-	_inst.en_MY.daysFormat.abbreviated.fri = "Fri";
-	_inst.en_MY.daysFormat.abbreviated.sat = "Sat";
-
-	_inst.en_MY.daysFormat.wide = {};
-	_inst.en_MY.daysFormat.wide.sun = "Sunday";
-	_inst.en_MY.daysFormat.wide.mon = "Monday";
-	_inst.en_MY.daysFormat.wide.tue = "Tuesday";
-	_inst.en_MY.daysFormat.wide.wed = "Wednesday";
-	_inst.en_MY.daysFormat.wide.thu = "Thursday";
-	_inst.en_MY.daysFormat.wide.fri = "Friday";
-	_inst.en_MY.daysFormat.wide.sat = "Saturday";
-
-	_inst.en_MY.monthsFormat = {};
-
-	_inst.en_MY.monthsFormat.narrow = {};
-	_inst.en_MY.monthsFormat.narrow.one = "J";
-	_inst.en_MY.monthsFormat.narrow.two = "F";
-	_inst.en_MY.monthsFormat.narrow.three = "M";
-	_inst.en_MY.monthsFormat.narrow.four = "A";
-	_inst.en_MY.monthsFormat.narrow.five = "M";
-	_inst.en_MY.monthsFormat.narrow.six = "J";
-	_inst.en_MY.monthsFormat.narrow.seven = "J";
-	_inst.en_MY.monthsFormat.narrow.eight = "A";
-	_inst.en_MY.monthsFormat.narrow.nine = "S";
-	_inst.en_MY.monthsFormat.narrow.ten = "O";
-	_inst.en_MY.monthsFormat.narrow.eleven = "N";
-	_inst.en_MY.monthsFormat.narrow.twelve = "D";
-
-	_inst.en_MY.monthsFormat.abbreviated = {};
-	_inst.en_MY.monthsFormat.abbreviated.one = "Jan";
-	_inst.en_MY.monthsFormat.abbreviated.two = "Feb";
-	_inst.en_MY.monthsFormat.abbreviated.three = "Mar";
-	_inst.en_MY.monthsFormat.abbreviated.four = "Apr";
-	_inst.en_MY.monthsFormat.abbreviated.five = "May";
-	_inst.en_MY.monthsFormat.abbreviated.six = "Jun";
-	_inst.en_MY.monthsFormat.abbreviated.seven = "Jul";
-	_inst.en_MY.monthsFormat.abbreviated.eight = "Aug";
-	_inst.en_MY.monthsFormat.abbreviated.nine = "Sept";
-	_inst.en_MY.monthsFormat.abbreviated.ten = "Oct";
-	_inst.en_MY.monthsFormat.abbreviated.eleven = "Nov";
-	_inst.en_MY.monthsFormat.abbreviated.twelve = "Dec";
-
-	_inst.en_MY.monthsFormat.wide = {};
-	_inst.en_MY.monthsFormat.wide.one = "January";
-	_inst.en_MY.monthsFormat.wide.two = "February";
-	_inst.en_MY.monthsFormat.wide.three = "March";
-	_inst.en_MY.monthsFormat.wide.four = "April";
-	_inst.en_MY.monthsFormat.wide.five = "May";
-	_inst.en_MY.monthsFormat.wide.six = "June";
-	_inst.en_MY.monthsFormat.wide.seven = "July";
-	_inst.en_MY.monthsFormat.wide.eight = "August";
-	_inst.en_MY.monthsFormat.wide.nine = "September";
-	_inst.en_MY.monthsFormat.wide.ten = "October";
-	_inst.en_MY.monthsFormat.wide.eleven = "November";
-	_inst.en_MY.monthsFormat.wide.twelve = "December";
-
-	_inst.en_MY.symbols = {};
-	_inst.en_MY.symbols.currency = "RM";
-
-	_inst.ast = {};
-
-	_inst.ast.timeFormat = {};
-	_inst.ast.timeFormat.short = "HH:mm";
-	_inst.ast.timeFormat.medium = "HH:mm:ss";
-	_inst.ast.timeFormat.long = "HH:mm:ss z";
-	_inst.ast.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.ast.currencyFormat = "#,##0.00 ¤";
-	_inst.ast.decimalFormat = "#,##0.###";
-
-	_inst.ast.dateTimeFormat = {};
-	_inst.ast.dateTimeFormat.short = "{1} {0}";
-	_inst.ast.dateTimeFormat.medium = "{1}, {0}";
-	_inst.ast.dateTimeFormat.long = "{1}, {0}";
-	_inst.ast.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.ast.dateFormat = {};
-	_inst.ast.dateFormat.short = "d/M/yy";
-	_inst.ast.dateFormat.medium = "d MMM y";
-	_inst.ast.dateFormat.long = "d MMMM 'de' y";
-	_inst.ast.dateFormat.full = "EEEE, d MMMM 'de' y";
-
-	_inst.ast.daysFormat = {};
-
-	_inst.ast.daysFormat.short = {};
-	_inst.ast.daysFormat.short.sun = "do";
-	_inst.ast.daysFormat.short.mon = "ll";
-	_inst.ast.daysFormat.short.tue = "ma";
-	_inst.ast.daysFormat.short.wed = "mi";
-	_inst.ast.daysFormat.short.thu = "xu";
-	_inst.ast.daysFormat.short.fri = "vi";
-	_inst.ast.daysFormat.short.sat = "sá";
-
-	_inst.ast.daysFormat.narrow = {};
-	_inst.ast.daysFormat.narrow.sun = "D";
-	_inst.ast.daysFormat.narrow.mon = "L";
-	_inst.ast.daysFormat.narrow.tue = "M";
-	_inst.ast.daysFormat.narrow.wed = "M";
-	_inst.ast.daysFormat.narrow.thu = "X";
-	_inst.ast.daysFormat.narrow.fri = "V";
-	_inst.ast.daysFormat.narrow.sat = "S";
-
-	_inst.ast.daysFormat.abbreviated = {};
-	_inst.ast.daysFormat.abbreviated.sun = "dom";
-	_inst.ast.daysFormat.abbreviated.mon = "llu";
-	_inst.ast.daysFormat.abbreviated.tue = "mar";
-	_inst.ast.daysFormat.abbreviated.wed = "mié";
-	_inst.ast.daysFormat.abbreviated.thu = "xue";
-	_inst.ast.daysFormat.abbreviated.fri = "vie";
-	_inst.ast.daysFormat.abbreviated.sat = "sáb";
-
-	_inst.ast.daysFormat.wide = {};
-	_inst.ast.daysFormat.wide.sun = "domingu";
-	_inst.ast.daysFormat.wide.mon = "llunes";
-	_inst.ast.daysFormat.wide.tue = "martes";
-	_inst.ast.daysFormat.wide.wed = "miércoles";
-	_inst.ast.daysFormat.wide.thu = "xueves";
-	_inst.ast.daysFormat.wide.fri = "vienres";
-	_inst.ast.daysFormat.wide.sat = "sábadu";
-
-	_inst.ast.monthsFormat = {};
-
-	_inst.ast.monthsFormat.narrow = {};
-	_inst.ast.monthsFormat.narrow.one = "X";
-	_inst.ast.monthsFormat.narrow.two = "F";
-	_inst.ast.monthsFormat.narrow.three = "M";
-	_inst.ast.monthsFormat.narrow.four = "A";
-	_inst.ast.monthsFormat.narrow.five = "M";
-	_inst.ast.monthsFormat.narrow.six = "X";
-	_inst.ast.monthsFormat.narrow.seven = "X";
-	_inst.ast.monthsFormat.narrow.eight = "A";
-	_inst.ast.monthsFormat.narrow.nine = "S";
-	_inst.ast.monthsFormat.narrow.ten = "O";
-	_inst.ast.monthsFormat.narrow.eleven = "P";
-	_inst.ast.monthsFormat.narrow.twelve = "A";
-
-	_inst.ast.monthsFormat.abbreviated = {};
-	_inst.ast.monthsFormat.abbreviated.one = "xin";
-	_inst.ast.monthsFormat.abbreviated.two = "feb";
-	_inst.ast.monthsFormat.abbreviated.three = "mar";
-	_inst.ast.monthsFormat.abbreviated.four = "abr";
-	_inst.ast.monthsFormat.abbreviated.five = "may";
-	_inst.ast.monthsFormat.abbreviated.six = "xun";
-	_inst.ast.monthsFormat.abbreviated.seven = "xnt";
-	_inst.ast.monthsFormat.abbreviated.eight = "ago";
-	_inst.ast.monthsFormat.abbreviated.nine = "set";
-	_inst.ast.monthsFormat.abbreviated.ten = "och";
-	_inst.ast.monthsFormat.abbreviated.eleven = "pay";
-	_inst.ast.monthsFormat.abbreviated.twelve = "avi";
-
-	_inst.ast.monthsFormat.wide = {};
-	_inst.ast.monthsFormat.wide.one = "de xineru";
-	_inst.ast.monthsFormat.wide.two = "de febreru";
-	_inst.ast.monthsFormat.wide.three = "de marzu";
-	_inst.ast.monthsFormat.wide.four = "d’abril";
-	_inst.ast.monthsFormat.wide.five = "de mayu";
-	_inst.ast.monthsFormat.wide.six = "de xunu";
-	_inst.ast.monthsFormat.wide.seven = "de xunetu";
-	_inst.ast.monthsFormat.wide.eight = "d’agostu";
-	_inst.ast.monthsFormat.wide.nine = "de setiembre";
-	_inst.ast.monthsFormat.wide.ten = "d’ochobre";
-	_inst.ast.monthsFormat.wide.eleven = "de payares";
-	_inst.ast.monthsFormat.wide.twelve = "d’avientu";
-
-	_inst.ast.symbols = {};
-	_inst.ast.symbols.currency = "¤";
-
-	_inst.en_TC = {};
-
-	_inst.en_TC.timeFormat = {};
-	_inst.en_TC.timeFormat.short = "h:mm a";
-	_inst.en_TC.timeFormat.medium = "h:mm:ss a";
-	_inst.en_TC.timeFormat.long = "h:mm:ss a z";
-	_inst.en_TC.timeFormat.full = "h:mm:ss a zzzz";
-	_inst.en_TC.currencyFormat = "¤#,##0.00";
-	_inst.en_TC.decimalFormat = "#,##0.###";
-
-	_inst.en_TC.dateTimeFormat = {};
-	_inst.en_TC.dateTimeFormat.short = "{1}, {0}";
-	_inst.en_TC.dateTimeFormat.medium = "{1}, {0}";
-	_inst.en_TC.dateTimeFormat.long = "{1}, {0}";
-	_inst.en_TC.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.en_TC.dateFormat = {};
-	_inst.en_TC.dateFormat.short = "dd/MM/y";
-	_inst.en_TC.dateFormat.medium = "d MMM y";
-	_inst.en_TC.dateFormat.long = "d MMMM y";
-	_inst.en_TC.dateFormat.full = "EEEE, d MMMM y";
-
-	_inst.en_TC.daysFormat = {};
-
-	_inst.en_TC.daysFormat.short = {};
-	_inst.en_TC.daysFormat.short.sun = "Su";
-	_inst.en_TC.daysFormat.short.mon = "Mo";
-	_inst.en_TC.daysFormat.short.tue = "Tu";
-	_inst.en_TC.daysFormat.short.wed = "We";
-	_inst.en_TC.daysFormat.short.thu = "Th";
-	_inst.en_TC.daysFormat.short.fri = "Fr";
-	_inst.en_TC.daysFormat.short.sat = "Sa";
-
-	_inst.en_TC.daysFormat.narrow = {};
-	_inst.en_TC.daysFormat.narrow.sun = "S";
-	_inst.en_TC.daysFormat.narrow.mon = "M";
-	_inst.en_TC.daysFormat.narrow.tue = "T";
-	_inst.en_TC.daysFormat.narrow.wed = "W";
-	_inst.en_TC.daysFormat.narrow.thu = "T";
-	_inst.en_TC.daysFormat.narrow.fri = "F";
-	_inst.en_TC.daysFormat.narrow.sat = "S";
-
-	_inst.en_TC.daysFormat.abbreviated = {};
-	_inst.en_TC.daysFormat.abbreviated.sun = "Sun";
-	_inst.en_TC.daysFormat.abbreviated.mon = "Mon";
-	_inst.en_TC.daysFormat.abbreviated.tue = "Tue";
-	_inst.en_TC.daysFormat.abbreviated.wed = "Wed";
-	_inst.en_TC.daysFormat.abbreviated.thu = "Thu";
-	_inst.en_TC.daysFormat.abbreviated.fri = "Fri";
-	_inst.en_TC.daysFormat.abbreviated.sat = "Sat";
-
-	_inst.en_TC.daysFormat.wide = {};
-	_inst.en_TC.daysFormat.wide.sun = "Sunday";
-	_inst.en_TC.daysFormat.wide.mon = "Monday";
-	_inst.en_TC.daysFormat.wide.tue = "Tuesday";
-	_inst.en_TC.daysFormat.wide.wed = "Wednesday";
-	_inst.en_TC.daysFormat.wide.thu = "Thursday";
-	_inst.en_TC.daysFormat.wide.fri = "Friday";
-	_inst.en_TC.daysFormat.wide.sat = "Saturday";
-
-	_inst.en_TC.monthsFormat = {};
-
-	_inst.en_TC.monthsFormat.narrow = {};
-	_inst.en_TC.monthsFormat.narrow.one = "J";
-	_inst.en_TC.monthsFormat.narrow.two = "F";
-	_inst.en_TC.monthsFormat.narrow.three = "M";
-	_inst.en_TC.monthsFormat.narrow.four = "A";
-	_inst.en_TC.monthsFormat.narrow.five = "M";
-	_inst.en_TC.monthsFormat.narrow.six = "J";
-	_inst.en_TC.monthsFormat.narrow.seven = "J";
-	_inst.en_TC.monthsFormat.narrow.eight = "A";
-	_inst.en_TC.monthsFormat.narrow.nine = "S";
-	_inst.en_TC.monthsFormat.narrow.ten = "O";
-	_inst.en_TC.monthsFormat.narrow.eleven = "N";
-	_inst.en_TC.monthsFormat.narrow.twelve = "D";
-
-	_inst.en_TC.monthsFormat.abbreviated = {};
-	_inst.en_TC.monthsFormat.abbreviated.one = "Jan";
-	_inst.en_TC.monthsFormat.abbreviated.two = "Feb";
-	_inst.en_TC.monthsFormat.abbreviated.three = "Mar";
-	_inst.en_TC.monthsFormat.abbreviated.four = "Apr";
-	_inst.en_TC.monthsFormat.abbreviated.five = "May";
-	_inst.en_TC.monthsFormat.abbreviated.six = "Jun";
-	_inst.en_TC.monthsFormat.abbreviated.seven = "Jul";
-	_inst.en_TC.monthsFormat.abbreviated.eight = "Aug";
-	_inst.en_TC.monthsFormat.abbreviated.nine = "Sept";
-	_inst.en_TC.monthsFormat.abbreviated.ten = "Oct";
-	_inst.en_TC.monthsFormat.abbreviated.eleven = "Nov";
-	_inst.en_TC.monthsFormat.abbreviated.twelve = "Dec";
-
-	_inst.en_TC.monthsFormat.wide = {};
-	_inst.en_TC.monthsFormat.wide.one = "January";
-	_inst.en_TC.monthsFormat.wide.two = "February";
-	_inst.en_TC.monthsFormat.wide.three = "March";
-	_inst.en_TC.monthsFormat.wide.four = "April";
-	_inst.en_TC.monthsFormat.wide.five = "May";
-	_inst.en_TC.monthsFormat.wide.six = "June";
-	_inst.en_TC.monthsFormat.wide.seven = "July";
-	_inst.en_TC.monthsFormat.wide.eight = "August";
-	_inst.en_TC.monthsFormat.wide.nine = "September";
-	_inst.en_TC.monthsFormat.wide.ten = "October";
-	_inst.en_TC.monthsFormat.wide.eleven = "November";
-	_inst.en_TC.monthsFormat.wide.twelve = "December";
-
-	_inst.en_TC.symbols = {};
-	_inst.en_TC.symbols.currency = "$";
-
-	_inst.kxv_Latn = {};
-
-	_inst.kxv_Latn.timeFormat = {};
-	_inst.kxv_Latn.timeFormat.short = "h:mm a";
-	_inst.kxv_Latn.timeFormat.medium = "h:mm:ss a";
-	_inst.kxv_Latn.timeFormat.long = "h:mm:ss a z";
-	_inst.kxv_Latn.timeFormat.full = "h:mm:ss a zzzz";
-	_inst.kxv_Latn.currencyFormat = "¤#,##,##0.00";
-	_inst.kxv_Latn.decimalFormat = "#,##,##0.###";
-
-	_inst.kxv_Latn.dateTimeFormat = {};
-	_inst.kxv_Latn.dateTimeFormat.short = "{1}, {0}";
-	_inst.kxv_Latn.dateTimeFormat.medium = "{1}, {0}";
-	_inst.kxv_Latn.dateTimeFormat.long = "{1}, {0}";
-	_inst.kxv_Latn.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.kxv_Latn.dateFormat = {};
-	_inst.kxv_Latn.dateFormat.short = "d/M/yy";
-	_inst.kxv_Latn.dateFormat.medium = "d MMM y";
-	_inst.kxv_Latn.dateFormat.long = "d MMMM y";
-	_inst.kxv_Latn.dateFormat.full = "EEEE, d MMMM y";
-
-	_inst.kxv_Latn.daysFormat = {};
-
-	_inst.kxv_Latn.daysFormat.short = {};
-	_inst.kxv_Latn.daysFormat.short.sun = "aa";
-	_inst.kxv_Latn.daysFormat.short.mon = "s";
-	_inst.kxv_Latn.daysFormat.short.tue = "ma";
-	_inst.kxv_Latn.daysFormat.short.wed = "pu";
-	_inst.kxv_Latn.daysFormat.short.thu = "laki";
-	_inst.kxv_Latn.daysFormat.short.fri = "su";
-	_inst.kxv_Latn.daysFormat.short.sat = "sa";
-
-	_inst.kxv_Latn.daysFormat.narrow = {};
-	_inst.kxv_Latn.daysFormat.narrow.sun = "aa";
-	_inst.kxv_Latn.daysFormat.narrow.mon = "s";
-	_inst.kxv_Latn.daysFormat.narrow.tue = "ma";
-	_inst.kxv_Latn.daysFormat.narrow.wed = "pu";
-	_inst.kxv_Latn.daysFormat.narrow.thu = "la";
-	_inst.kxv_Latn.daysFormat.narrow.fri = "su";
-	_inst.kxv_Latn.daysFormat.narrow.sat = "sa";
-
-	_inst.kxv_Latn.daysFormat.abbreviated = {};
-	_inst.kxv_Latn.daysFormat.abbreviated.sun = "aadi";
-	_inst.kxv_Latn.daysFormat.abbreviated.mon = "smba";
-	_inst.kxv_Latn.daysFormat.abbreviated.tue = "manga";
-	_inst.kxv_Latn.daysFormat.abbreviated.wed = "puda";
-	_inst.kxv_Latn.daysFormat.abbreviated.thu = "laki";
-	_inst.kxv_Latn.daysFormat.abbreviated.fri = "sukru";
-	_inst.kxv_Latn.daysFormat.abbreviated.sat = "sani";
-
-	_inst.kxv_Latn.daysFormat.wide = {};
-	_inst.kxv_Latn.daysFormat.wide.sun = "aadi vara";
-	_inst.kxv_Latn.daysFormat.wide.mon = "smbara";
-	_inst.kxv_Latn.daysFormat.wide.tue = "mangaḍa";
-	_inst.kxv_Latn.daysFormat.wide.wed = "pudara";
-	_inst.kxv_Latn.daysFormat.wide.thu = "laki vara";
-	_inst.kxv_Latn.daysFormat.wide.fri = "sukru vara";
-	_inst.kxv_Latn.daysFormat.wide.sat = "sani vara";
-
-	_inst.kxv_Latn.monthsFormat = {};
-
-	_inst.kxv_Latn.monthsFormat.narrow = {};
-	_inst.kxv_Latn.monthsFormat.narrow.one = "pu";
-	_inst.kxv_Latn.monthsFormat.narrow.two = "ma";
-	_inst.kxv_Latn.monthsFormat.narrow.three = "pa";
-	_inst.kxv_Latn.monthsFormat.narrow.four = "hi";
-	_inst.kxv_Latn.monthsFormat.narrow.five = "be";
-	_inst.kxv_Latn.monthsFormat.narrow.six = "ja";
-	_inst.kxv_Latn.monthsFormat.narrow.seven = "aa";
-	_inst.kxv_Latn.monthsFormat.narrow.eight = "sra";
-	_inst.kxv_Latn.monthsFormat.narrow.nine = "b";
-	_inst.kxv_Latn.monthsFormat.narrow.ten = "da";
-	_inst.kxv_Latn.monthsFormat.narrow.eleven = "di";
-	_inst.kxv_Latn.monthsFormat.narrow.twelve = "pa";
-
-	_inst.kxv_Latn.monthsFormat.abbreviated = {};
-	_inst.kxv_Latn.monthsFormat.abbreviated.one = "pusu";
-	_inst.kxv_Latn.monthsFormat.abbreviated.two = "maha";
-	_inst.kxv_Latn.monthsFormat.abbreviated.three = "pagu";
-	_inst.kxv_Latn.monthsFormat.abbreviated.four = "hire";
-	_inst.kxv_Latn.monthsFormat.abbreviated.five = "bese";
-	_inst.kxv_Latn.monthsFormat.abbreviated.six = "jaṭṭa";
-	_inst.kxv_Latn.monthsFormat.abbreviated.seven = "aasaḍi";
-	_inst.kxv_Latn.monthsFormat.abbreviated.eight = "srabĩ";
-	_inst.kxv_Latn.monthsFormat.abbreviated.nine = "bado";
-	_inst.kxv_Latn.monthsFormat.abbreviated.ten = "dasara";
-	_inst.kxv_Latn.monthsFormat.abbreviated.eleven = "divi";
-	_inst.kxv_Latn.monthsFormat.abbreviated.twelve = "pande";
-
-	_inst.kxv_Latn.monthsFormat.wide = {};
-	_inst.kxv_Latn.monthsFormat.wide.one = "pusu lenju";
-	_inst.kxv_Latn.monthsFormat.wide.two = "maha lenju";
-	_inst.kxv_Latn.monthsFormat.wide.three = "pagu lenju";
-	_inst.kxv_Latn.monthsFormat.wide.four = "hire lenju";
-	_inst.kxv_Latn.monthsFormat.wide.five = "bese lenju";
-	_inst.kxv_Latn.monthsFormat.wide.six = "jaṭṭa lenju";
-	_inst.kxv_Latn.monthsFormat.wide.seven = "aasaḍi lenju";
-	_inst.kxv_Latn.monthsFormat.wide.eight = "srabĩ lenju";
-	_inst.kxv_Latn.monthsFormat.wide.nine = "bado lenju";
-	_inst.kxv_Latn.monthsFormat.wide.ten = "dasara lenju";
-	_inst.kxv_Latn.monthsFormat.wide.eleven = "divi lenju";
-	_inst.kxv_Latn.monthsFormat.wide.twelve = "pande lenju";
-
-	_inst.kxv_Latn.symbols = {};
-	_inst.kxv_Latn.symbols.currency = "¤";
-
-	_inst.sk = {};
-
-	_inst.sk.timeFormat = {};
-	_inst.sk.timeFormat.short = "H:mm";
-	_inst.sk.timeFormat.medium = "H:mm:ss";
-	_inst.sk.timeFormat.long = "H:mm:ss z";
-	_inst.sk.timeFormat.full = "H:mm:ss zzzz";
-	_inst.sk.currencyFormat = "#,##0.00 ¤";
-	_inst.sk.decimalFormat = "#,##0.###";
-
-	_inst.sk.dateTimeFormat = {};
-	_inst.sk.dateTimeFormat.short = "{1} {0}";
-	_inst.sk.dateTimeFormat.medium = "{1}, {0}";
-	_inst.sk.dateTimeFormat.long = "{1}, {0}";
-	_inst.sk.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.sk.dateFormat = {};
-	_inst.sk.dateFormat.short = "d. M. y";
-	_inst.sk.dateFormat.medium = "d. M. y";
-	_inst.sk.dateFormat.long = "d. MMMM y";
-	_inst.sk.dateFormat.full = "EEEE d. MMMM y";
-
-	_inst.sk.daysFormat = {};
-
-	_inst.sk.daysFormat.short = {};
-	_inst.sk.daysFormat.short.sun = "ne";
-	_inst.sk.daysFormat.short.mon = "po";
-	_inst.sk.daysFormat.short.tue = "ut";
-	_inst.sk.daysFormat.short.wed = "st";
-	_inst.sk.daysFormat.short.thu = "št";
-	_inst.sk.daysFormat.short.fri = "pi";
-	_inst.sk.daysFormat.short.sat = "so";
-
-	_inst.sk.daysFormat.narrow = {};
-	_inst.sk.daysFormat.narrow.sun = "n";
-	_inst.sk.daysFormat.narrow.mon = "p";
-	_inst.sk.daysFormat.narrow.tue = "u";
-	_inst.sk.daysFormat.narrow.wed = "s";
-	_inst.sk.daysFormat.narrow.thu = "š";
-	_inst.sk.daysFormat.narrow.fri = "p";
-	_inst.sk.daysFormat.narrow.sat = "s";
-
-	_inst.sk.daysFormat.abbreviated = {};
-	_inst.sk.daysFormat.abbreviated.sun = "ne";
-	_inst.sk.daysFormat.abbreviated.mon = "po";
-	_inst.sk.daysFormat.abbreviated.tue = "ut";
-	_inst.sk.daysFormat.abbreviated.wed = "st";
-	_inst.sk.daysFormat.abbreviated.thu = "št";
-	_inst.sk.daysFormat.abbreviated.fri = "pi";
-	_inst.sk.daysFormat.abbreviated.sat = "so";
-
-	_inst.sk.daysFormat.wide = {};
-	_inst.sk.daysFormat.wide.sun = "nedeľa";
-	_inst.sk.daysFormat.wide.mon = "pondelok";
-	_inst.sk.daysFormat.wide.tue = "utorok";
-	_inst.sk.daysFormat.wide.wed = "streda";
-	_inst.sk.daysFormat.wide.thu = "štvrtok";
-	_inst.sk.daysFormat.wide.fri = "piatok";
-	_inst.sk.daysFormat.wide.sat = "sobota";
-
-	_inst.sk.monthsFormat = {};
-
-	_inst.sk.monthsFormat.narrow = {};
-	_inst.sk.monthsFormat.narrow.one = "j";
-	_inst.sk.monthsFormat.narrow.two = "f";
-	_inst.sk.monthsFormat.narrow.three = "m";
-	_inst.sk.monthsFormat.narrow.four = "a";
-	_inst.sk.monthsFormat.narrow.five = "m";
-	_inst.sk.monthsFormat.narrow.six = "j";
-	_inst.sk.monthsFormat.narrow.seven = "j";
-	_inst.sk.monthsFormat.narrow.eight = "a";
-	_inst.sk.monthsFormat.narrow.nine = "s";
-	_inst.sk.monthsFormat.narrow.ten = "o";
-	_inst.sk.monthsFormat.narrow.eleven = "n";
-	_inst.sk.monthsFormat.narrow.twelve = "d";
-
-	_inst.sk.monthsFormat.abbreviated = {};
-	_inst.sk.monthsFormat.abbreviated.one = "jan";
-	_inst.sk.monthsFormat.abbreviated.two = "feb";
-	_inst.sk.monthsFormat.abbreviated.three = "mar";
-	_inst.sk.monthsFormat.abbreviated.four = "apr";
-	_inst.sk.monthsFormat.abbreviated.five = "máj";
-	_inst.sk.monthsFormat.abbreviated.six = "jún";
-	_inst.sk.monthsFormat.abbreviated.seven = "júl";
-	_inst.sk.monthsFormat.abbreviated.eight = "aug";
-	_inst.sk.monthsFormat.abbreviated.nine = "sep";
-	_inst.sk.monthsFormat.abbreviated.ten = "okt";
-	_inst.sk.monthsFormat.abbreviated.eleven = "nov";
-	_inst.sk.monthsFormat.abbreviated.twelve = "dec";
-
-	_inst.sk.monthsFormat.wide = {};
-	_inst.sk.monthsFormat.wide.one = "januára";
-	_inst.sk.monthsFormat.wide.two = "februára";
-	_inst.sk.monthsFormat.wide.three = "marca";
-	_inst.sk.monthsFormat.wide.four = "apríla";
-	_inst.sk.monthsFormat.wide.five = "mája";
-	_inst.sk.monthsFormat.wide.six = "júna";
-	_inst.sk.monthsFormat.wide.seven = "júla";
-	_inst.sk.monthsFormat.wide.eight = "augusta";
-	_inst.sk.monthsFormat.wide.nine = "septembra";
-	_inst.sk.monthsFormat.wide.ten = "októbra";
-	_inst.sk.monthsFormat.wide.eleven = "novembra";
-	_inst.sk.monthsFormat.wide.twelve = "decembra";
-
-	_inst.sk.symbols = {};
-	_inst.sk.symbols.currency = "€";
-
-	_inst.en_FM = {};
-
-	_inst.en_FM.timeFormat = {};
-	_inst.en_FM.timeFormat.short = "h:mm a";
-	_inst.en_FM.timeFormat.medium = "h:mm:ss a";
-	_inst.en_FM.timeFormat.long = "h:mm:ss a z";
-	_inst.en_FM.timeFormat.full = "h:mm:ss a zzzz";
-	_inst.en_FM.currencyFormat = "¤#,##0.00";
-	_inst.en_FM.decimalFormat = "#,##0.###";
-
-	_inst.en_FM.dateTimeFormat = {};
-	_inst.en_FM.dateTimeFormat.short = "{1}, {0}";
-	_inst.en_FM.dateTimeFormat.medium = "{1}, {0}";
-	_inst.en_FM.dateTimeFormat.long = "{1}, {0}";
-	_inst.en_FM.dateTimeFormat.full = "{1}, {0}";
-
-	_inst.en_FM.dateFormat = {};
-	_inst.en_FM.dateFormat.short = "dd/MM/y";
-	_inst.en_FM.dateFormat.medium = "d MMM y";
-	_inst.en_FM.dateFormat.long = "d MMMM y";
-	_inst.en_FM.dateFormat.full = "EEEE, d MMMM y";
-
-	_inst.en_FM.daysFormat = {};
-
-	_inst.en_FM.daysFormat.short = {};
-	_inst.en_FM.daysFormat.short.sun = "Su";
-	_inst.en_FM.daysFormat.short.mon = "Mo";
-	_inst.en_FM.daysFormat.short.tue = "Tu";
-	_inst.en_FM.daysFormat.short.wed = "We";
-	_inst.en_FM.daysFormat.short.thu = "Th";
-	_inst.en_FM.daysFormat.short.fri = "Fr";
-	_inst.en_FM.daysFormat.short.sat = "Sa";
-
-	_inst.en_FM.daysFormat.narrow = {};
-	_inst.en_FM.daysFormat.narrow.sun = "S";
-	_inst.en_FM.daysFormat.narrow.mon = "M";
-	_inst.en_FM.daysFormat.narrow.tue = "T";
-	_inst.en_FM.daysFormat.narrow.wed = "W";
-	_inst.en_FM.daysFormat.narrow.thu = "T";
-	_inst.en_FM.daysFormat.narrow.fri = "F";
-	_inst.en_FM.daysFormat.narrow.sat = "S";
-
-	_inst.en_FM.daysFormat.abbreviated = {};
-	_inst.en_FM.daysFormat.abbreviated.sun = "Sun";
-	_inst.en_FM.daysFormat.abbreviated.mon = "Mon";
-	_inst.en_FM.daysFormat.abbreviated.tue = "Tue";
-	_inst.en_FM.daysFormat.abbreviated.wed = "Wed";
-	_inst.en_FM.daysFormat.abbreviated.thu = "Thu";
-	_inst.en_FM.daysFormat.abbreviated.fri = "Fri";
-	_inst.en_FM.daysFormat.abbreviated.sat = "Sat";
-
-	_inst.en_FM.daysFormat.wide = {};
-	_inst.en_FM.daysFormat.wide.sun = "Sunday";
-	_inst.en_FM.daysFormat.wide.mon = "Monday";
-	_inst.en_FM.daysFormat.wide.tue = "Tuesday";
-	_inst.en_FM.daysFormat.wide.wed = "Wednesday";
-	_inst.en_FM.daysFormat.wide.thu = "Thursday";
-	_inst.en_FM.daysFormat.wide.fri = "Friday";
-	_inst.en_FM.daysFormat.wide.sat = "Saturday";
-
-	_inst.en_FM.monthsFormat = {};
-
-	_inst.en_FM.monthsFormat.narrow = {};
-	_inst.en_FM.monthsFormat.narrow.one = "J";
-	_inst.en_FM.monthsFormat.narrow.two = "F";
-	_inst.en_FM.monthsFormat.narrow.three = "M";
-	_inst.en_FM.monthsFormat.narrow.four = "A";
-	_inst.en_FM.monthsFormat.narrow.five = "M";
-	_inst.en_FM.monthsFormat.narrow.six = "J";
-	_inst.en_FM.monthsFormat.narrow.seven = "J";
-	_inst.en_FM.monthsFormat.narrow.eight = "A";
-	_inst.en_FM.monthsFormat.narrow.nine = "S";
-	_inst.en_FM.monthsFormat.narrow.ten = "O";
-	_inst.en_FM.monthsFormat.narrow.eleven = "N";
-	_inst.en_FM.monthsFormat.narrow.twelve = "D";
-
-	_inst.en_FM.monthsFormat.abbreviated = {};
-	_inst.en_FM.monthsFormat.abbreviated.one = "Jan";
-	_inst.en_FM.monthsFormat.abbreviated.two = "Feb";
-	_inst.en_FM.monthsFormat.abbreviated.three = "Mar";
-	_inst.en_FM.monthsFormat.abbreviated.four = "Apr";
-	_inst.en_FM.monthsFormat.abbreviated.five = "May";
-	_inst.en_FM.monthsFormat.abbreviated.six = "Jun";
-	_inst.en_FM.monthsFormat.abbreviated.seven = "Jul";
-	_inst.en_FM.monthsFormat.abbreviated.eight = "Aug";
-	_inst.en_FM.monthsFormat.abbreviated.nine = "Sept";
-	_inst.en_FM.monthsFormat.abbreviated.ten = "Oct";
-	_inst.en_FM.monthsFormat.abbreviated.eleven = "Nov";
-	_inst.en_FM.monthsFormat.abbreviated.twelve = "Dec";
-
-	_inst.en_FM.monthsFormat.wide = {};
-	_inst.en_FM.monthsFormat.wide.one = "January";
-	_inst.en_FM.monthsFormat.wide.two = "February";
-	_inst.en_FM.monthsFormat.wide.three = "March";
-	_inst.en_FM.monthsFormat.wide.four = "April";
-	_inst.en_FM.monthsFormat.wide.five = "May";
-	_inst.en_FM.monthsFormat.wide.six = "June";
-	_inst.en_FM.monthsFormat.wide.seven = "July";
-	_inst.en_FM.monthsFormat.wide.eight = "August";
-	_inst.en_FM.monthsFormat.wide.nine = "September";
-	_inst.en_FM.monthsFormat.wide.ten = "October";
-	_inst.en_FM.monthsFormat.wide.eleven = "November";
-	_inst.en_FM.monthsFormat.wide.twelve = "December";
-
-	_inst.en_FM.symbols = {};
-	_inst.en_FM.symbols.currency = "$";
-
-	_inst.smj = {};
-
-	_inst.smj.timeFormat = {};
-	_inst.smj.timeFormat.short = "HH:mm";
-	_inst.smj.timeFormat.medium = "HH:mm:ss";
-	_inst.smj.timeFormat.long = "HH:mm:ss z";
-	_inst.smj.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.smj.currencyFormat = "¤ #,##0.00";
-	_inst.smj.decimalFormat = "#,##0.###";
-
-	_inst.smj.dateTimeFormat = {};
-	_inst.smj.dateTimeFormat.short = "{1} {0}";
-	_inst.smj.dateTimeFormat.medium = "{1} {0}";
-	_inst.smj.dateTimeFormat.long = "{1} {0}";
-	_inst.smj.dateTimeFormat.full = "{1} {0}";
-
-	_inst.smj.dateFormat = {};
-	_inst.smj.dateFormat.short = "y-MM-dd";
-	_inst.smj.dateFormat.medium = "y MMM d";
-	_inst.smj.dateFormat.long = "y MMMM d";
-	_inst.smj.dateFormat.full = "y MMMM d, EEEE";
-
-	_inst.smj.daysFormat = {};
-
-	_inst.smj.daysFormat.short = {};
-	_inst.smj.daysFormat.short.sun = "Sun";
-	_inst.smj.daysFormat.short.mon = "Mon";
-	_inst.smj.daysFormat.short.tue = "Tue";
-	_inst.smj.daysFormat.short.wed = "Wed";
-	_inst.smj.daysFormat.short.thu = "Thu";
-	_inst.smj.daysFormat.short.fri = "Fri";
-	_inst.smj.daysFormat.short.sat = "Sat";
-
-	_inst.smj.daysFormat.narrow = {};
-	_inst.smj.daysFormat.narrow.sun = "S";
-	_inst.smj.daysFormat.narrow.mon = "M";
-	_inst.smj.daysFormat.narrow.tue = "T";
-	_inst.smj.daysFormat.narrow.wed = "W";
-	_inst.smj.daysFormat.narrow.thu = "T";
-	_inst.smj.daysFormat.narrow.fri = "F";
-	_inst.smj.daysFormat.narrow.sat = "S";
-
-	_inst.smj.daysFormat.abbreviated = {};
-	_inst.smj.daysFormat.abbreviated.sun = "Sun";
-	_inst.smj.daysFormat.abbreviated.mon = "Mon";
-	_inst.smj.daysFormat.abbreviated.tue = "Tue";
-	_inst.smj.daysFormat.abbreviated.wed = "Wed";
-	_inst.smj.daysFormat.abbreviated.thu = "Thu";
-	_inst.smj.daysFormat.abbreviated.fri = "Fri";
-	_inst.smj.daysFormat.abbreviated.sat = "Sat";
-
-	_inst.smj.daysFormat.wide = {};
-	_inst.smj.daysFormat.wide.sun = "Sun";
-	_inst.smj.daysFormat.wide.mon = "Mon";
-	_inst.smj.daysFormat.wide.tue = "Tue";
-	_inst.smj.daysFormat.wide.wed = "Wed";
-	_inst.smj.daysFormat.wide.thu = "Thu";
-	_inst.smj.daysFormat.wide.fri = "Fri";
-	_inst.smj.daysFormat.wide.sat = "Sat";
-
-	_inst.smj.monthsFormat = {};
-
-	_inst.smj.monthsFormat.narrow = {};
-	_inst.smj.monthsFormat.narrow.one = "1";
-	_inst.smj.monthsFormat.narrow.two = "2";
-	_inst.smj.monthsFormat.narrow.three = "3";
-	_inst.smj.monthsFormat.narrow.four = "4";
-	_inst.smj.monthsFormat.narrow.five = "5";
-	_inst.smj.monthsFormat.narrow.six = "6";
-	_inst.smj.monthsFormat.narrow.seven = "7";
-	_inst.smj.monthsFormat.narrow.eight = "8";
-	_inst.smj.monthsFormat.narrow.nine = "9";
-	_inst.smj.monthsFormat.narrow.ten = "10";
-	_inst.smj.monthsFormat.narrow.eleven = "11";
-	_inst.smj.monthsFormat.narrow.twelve = "12";
-
-	_inst.smj.monthsFormat.abbreviated = {};
-	_inst.smj.monthsFormat.abbreviated.one = "M01";
-	_inst.smj.monthsFormat.abbreviated.two = "M02";
-	_inst.smj.monthsFormat.abbreviated.three = "M03";
-	_inst.smj.monthsFormat.abbreviated.four = "M04";
-	_inst.smj.monthsFormat.abbreviated.five = "M05";
-	_inst.smj.monthsFormat.abbreviated.six = "M06";
-	_inst.smj.monthsFormat.abbreviated.seven = "M07";
-	_inst.smj.monthsFormat.abbreviated.eight = "M08";
-	_inst.smj.monthsFormat.abbreviated.nine = "M09";
-	_inst.smj.monthsFormat.abbreviated.ten = "M10";
-	_inst.smj.monthsFormat.abbreviated.eleven = "M11";
-	_inst.smj.monthsFormat.abbreviated.twelve = "M12";
-
-	_inst.smj.monthsFormat.wide = {};
-	_inst.smj.monthsFormat.wide.one = "M01";
-	_inst.smj.monthsFormat.wide.two = "M02";
-	_inst.smj.monthsFormat.wide.three = "M03";
-	_inst.smj.monthsFormat.wide.four = "M04";
-	_inst.smj.monthsFormat.wide.five = "M05";
-	_inst.smj.monthsFormat.wide.six = "M06";
-	_inst.smj.monthsFormat.wide.seven = "M07";
-	_inst.smj.monthsFormat.wide.eight = "M08";
-	_inst.smj.monthsFormat.wide.nine = "M09";
-	_inst.smj.monthsFormat.wide.ten = "M10";
-	_inst.smj.monthsFormat.wide.eleven = "M11";
-	_inst.smj.monthsFormat.wide.twelve = "M12";
-
-	_inst.smj.symbols = {};
-	_inst.smj.symbols.currency = "¤";
-
-	_inst.ha_NE = {};
-
-	_inst.ha_NE.timeFormat = {};
-	_inst.ha_NE.timeFormat.short = "HH:mm";
-	_inst.ha_NE.timeFormat.medium = "HH:mm:ss";
-	_inst.ha_NE.timeFormat.long = "HH:mm:ss z";
-	_inst.ha_NE.timeFormat.full = "HH:mm:ss zzzz";
-	_inst.ha_NE.currencyFormat = "¤ #,##0.00";
-	_inst.ha_NE.decimalFormat = "#,##0.###";
-
-	_inst.ha_NE.dateTimeFormat = {};
-	_inst.ha_NE.dateTimeFormat.short = "{1}, {0}";
-	_inst.ha_NE.dateTimeFormat.medium = "{1}, {0}";
-	_inst.ha_NE.dateTimeFormat.long = "{1}, {0}";
-	_inst.ha_NE.dateTimeFormat.full = "{1} {0}";
-
-	_inst.ha_NE.dateFormat = {};
-	_inst.ha_NE.dateFormat.short = "d/M/yy";
-	_inst.ha_NE.dateFormat.medium = "d MMM, y";
-	_inst.ha_NE.dateFormat.long = "d MMMM, y";
-	_inst.ha_NE.dateFormat.full = "EEEE d MMMM, y";
-
-	_inst.ha_NE.daysFormat = {};
-
-	_inst.ha_NE.daysFormat.short = {};
-	_inst.ha_NE.daysFormat.short.sun = "Lh";
-	_inst.ha_NE.daysFormat.short.mon = "Li";
-	_inst.ha_NE.daysFormat.short.tue = "Ta";
-	_inst.ha_NE.daysFormat.short.wed = "Lr";
-	_inst.ha_NE.daysFormat.short.thu = "Al";
-	_inst.ha_NE.daysFormat.short.fri = "Ju";
-	_inst.ha_NE.daysFormat.short.sat = "As";
-
-	_inst.ha_NE.daysFormat.narrow = {};
-	_inst.ha_NE.daysFormat.narrow.sun = "L";
-	_inst.ha_NE.daysFormat.narrow.mon = "L";
-	_inst.ha_NE.daysFormat.narrow.tue = "T";
-	_inst.ha_NE.daysFormat.narrow.wed = "L";
-	_inst.ha_NE.daysFormat.narrow.thu = "A";
-	_inst.ha_NE.daysFormat.narrow.fri = "J";
-	_inst.ha_NE.daysFormat.narrow.sat = "A";
-
-	_inst.ha_NE.daysFormat.abbreviated = {};
-	_inst.ha_NE.daysFormat.abbreviated.sun = "Lah";
-	_inst.ha_NE.daysFormat.abbreviated.mon = "Lit";
-	_inst.ha_NE.daysFormat.abbreviated.tue = "Tal";
-	_inst.ha_NE.daysFormat.abbreviated.wed = "Lar";
-	_inst.ha_NE.daysFormat.abbreviated.thu = "Alh";
-	_inst.ha_NE.daysFormat.abbreviated.fri = "Jum";
-	_inst.ha_NE.daysFormat.abbreviated.sat = "Asa";
-
-	_inst.ha_NE.daysFormat.wide = {};
-	_inst.ha_NE.daysFormat.wide.sun = "Lahadi";
-	_inst.ha_NE.daysFormat.wide.mon = "Litinin";
-	_inst.ha_NE.daysFormat.wide.tue = "Talata";
-	_inst.ha_NE.daysFormat.wide.wed = "Laraba";
-	_inst.ha_NE.daysFormat.wide.thu = "Alhamis";
-	_inst.ha_NE.daysFormat.wide.fri = "Jummaʼa";
-	_inst.ha_NE.daysFormat.wide.sat = "Asabar";
-
-	_inst.ha_NE.monthsFormat = {};
-
-	_inst.ha_NE.monthsFormat.narrow = {};
-	_inst.ha_NE.monthsFormat.narrow.one = "J";
-	_inst.ha_NE.monthsFormat.narrow.two = "F";
-	_inst.ha_NE.monthsFormat.narrow.three = "M";
-	_inst.ha_NE.monthsFormat.narrow.four = "A";
-	_inst.ha_NE.monthsFormat.narrow.five = "M";
-	_inst.ha_NE.monthsFormat.narrow.six = "Y";
-	_inst.ha_NE.monthsFormat.narrow.seven = "Y";
-	_inst.ha_NE.monthsFormat.narrow.eight = "A";
-	_inst.ha_NE.monthsFormat.narrow.nine = "S";
-	_inst.ha_NE.monthsFormat.narrow.ten = "O";
-	_inst.ha_NE.monthsFormat.narrow.eleven = "N";
-	_inst.ha_NE.monthsFormat.narrow.twelve = "D";
-
-	_inst.ha_NE.monthsFormat.abbreviated = {};
-	_inst.ha_NE.monthsFormat.abbreviated.one = "Jan";
-	_inst.ha_NE.monthsFormat.abbreviated.two = "Fab";
-	_inst.ha_NE.monthsFormat.abbreviated.three = "Mar";
-	_inst.ha_NE.monthsFormat.abbreviated.four = "Afi";
-	_inst.ha_NE.monthsFormat.abbreviated.five = "May";
-	_inst.ha_NE.monthsFormat.abbreviated.six = "Yun";
-	_inst.ha_NE.monthsFormat.abbreviated.seven = "Yul";
-	_inst.ha_NE.monthsFormat.abbreviated.eight = "Agu";
-	_inst.ha_NE.monthsFormat.abbreviated.nine = "Sat";
-	_inst.ha_NE.monthsFormat.abbreviated.ten = "Okt";
-	_inst.ha_NE.monthsFormat.abbreviated.eleven = "Nuw";
-	_inst.ha_NE.monthsFormat.abbreviated.twelve = "Dis";
-
-	_inst.ha_NE.monthsFormat.wide = {};
-	_inst.ha_NE.monthsFormat.wide.one = "Janairu";
-	_inst.ha_NE.monthsFormat.wide.two = "Faburairu";
-	_inst.ha_NE.monthsFormat.wide.three = "Maris";
-	_inst.ha_NE.monthsFormat.wide.four = "Afirilu";
-	_inst.ha_NE.monthsFormat.wide.five = "Mayu";
-	_inst.ha_NE.monthsFormat.wide.six = "Yuni";
-	_inst.ha_NE.monthsFormat.wide.seven = "Yuli";
-	_inst.ha_NE.monthsFormat.wide.eight = "Agusta";
-	_inst.ha_NE.monthsFormat.wide.nine = "Satumba";
-	_inst.ha_NE.monthsFormat.wide.ten = "Oktoba";
-	_inst.ha_NE.monthsFormat.wide.eleven = "Nuwamba";
-	_inst.ha_NE.monthsFormat.wide.twelve = "Disamba";
-
-	_inst.ha_NE.symbols = {};
-	_inst.ha_NE.symbols.currency = "F CFA";
+	_inst.en_RO = {};
+
+	_inst.en_RO.monthsFormat = {};
+
+	_inst.en_RO.monthsFormat.narrow = {};
+	_inst.en_RO.monthsFormat.narrow.two = "F";
+	_inst.en_RO.monthsFormat.narrow.three = "M";
+	_inst.en_RO.monthsFormat.narrow.four = "A";
+	_inst.en_RO.monthsFormat.narrow.five = "M";
+	_inst.en_RO.monthsFormat.narrow.six = "J";
+	_inst.en_RO.monthsFormat.narrow.seven = "J";
+	_inst.en_RO.monthsFormat.narrow.eight = "A";
+	_inst.en_RO.monthsFormat.narrow.nine = "S";
+	_inst.en_RO.monthsFormat.narrow.ten = "O";
+	_inst.en_RO.monthsFormat.narrow.eleven = "N";
+	_inst.en_RO.monthsFormat.narrow.twelve = "D";
+	_inst.en_RO.monthsFormat.narrow.one = "J";
+
+	_inst.en_RO.monthsFormat.abbreviated = {};
+	_inst.en_RO.monthsFormat.abbreviated.two = "Feb";
+	_inst.en_RO.monthsFormat.abbreviated.three = "Mar";
+	_inst.en_RO.monthsFormat.abbreviated.four = "Apr";
+	_inst.en_RO.monthsFormat.abbreviated.five = "May";
+	_inst.en_RO.monthsFormat.abbreviated.six = "Jun";
+	_inst.en_RO.monthsFormat.abbreviated.seven = "Jul";
+	_inst.en_RO.monthsFormat.abbreviated.eight = "Aug";
+	_inst.en_RO.monthsFormat.abbreviated.nine = "Sept";
+	_inst.en_RO.monthsFormat.abbreviated.ten = "Oct";
+	_inst.en_RO.monthsFormat.abbreviated.eleven = "Nov";
+	_inst.en_RO.monthsFormat.abbreviated.twelve = "Dec";
+	_inst.en_RO.monthsFormat.abbreviated.one = "Jan";
+
+	_inst.en_RO.monthsFormat.wide = {};
+	_inst.en_RO.monthsFormat.wide.two = "February";
+	_inst.en_RO.monthsFormat.wide.three = "March";
+	_inst.en_RO.monthsFormat.wide.four = "April";
+	_inst.en_RO.monthsFormat.wide.five = "May";
+	_inst.en_RO.monthsFormat.wide.six = "June";
+	_inst.en_RO.monthsFormat.wide.seven = "July";
+	_inst.en_RO.monthsFormat.wide.eight = "August";
+	_inst.en_RO.monthsFormat.wide.nine = "September";
+	_inst.en_RO.monthsFormat.wide.ten = "October";
+	_inst.en_RO.monthsFormat.wide.eleven = "November";
+	_inst.en_RO.monthsFormat.wide.twelve = "December";
+	_inst.en_RO.monthsFormat.wide.one = "January";
+
+	_inst.en_RO.symbols = {};
+	_inst.en_RO.symbols.currency = "lei";
+
+	_inst.en_RO.timeFormat = {};
+	_inst.en_RO.timeFormat.short = "h:mm a";
+	_inst.en_RO.timeFormat.medium = "h:mm:ss a";
+	_inst.en_RO.currencyFormat = "#,##0.00 ¤";
+	_inst.en_RO.decimalFormat = "#,##0.###";
+
+	_inst.en_RO.dateTimeFormat = {};
+	_inst.en_RO.dateTimeFormat.full = "{1}, {0}";
+	_inst.en_RO.dateTimeFormat.short = "{1}, {0}";
+	_inst.en_RO.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.en_RO.dateTimeFormat.availableFormats = {};
+	_inst.en_RO.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.en_RO.dateTimeFormat.availableFormats.yM = "MM/y";
+	_inst.en_RO.dateTimeFormat.availableFormats.y = "y";
+	_inst.en_RO.dateTimeFormat.availableFormats.yMd = "dd/MM/y";
+	_inst.en_RO.dateTimeFormat.availableFormats.yMEd = "E, dd/MM/y";
+	_inst.en_RO.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.en_RO.dateTimeFormat.availableFormats.yMMMd = "d MMM y";
+	_inst.en_RO.dateTimeFormat.availableFormats.yMMMEd = "E, d MMM y";
+	_inst.en_RO.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.en_RO.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.en_RO.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.en_RO.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y";
+	_inst.en_RO.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.en_RO.dateTimeFormat.availableFormats.MMMMW_count_one = "'week' W 'of' MMMM";
+	_inst.en_RO.dateTimeFormat.availableFormats.yw_count_one = "'week' w 'of' Y";
+	_inst.en_RO.dateTimeFormat.availableFormats.Ehm_alt_ascii = "E h:mm a";
+	_inst.en_RO.dateTimeFormat.availableFormats.Ehms_alt_ascii = "E h:mm:ss a";
+	_inst.en_RO.dateTimeFormat.availableFormats.h_alt_ascii = "h a";
+	_inst.en_RO.dateTimeFormat.availableFormats.hm_alt_ascii = "h:mm a";
+	_inst.en_RO.dateTimeFormat.availableFormats.hms_alt_ascii = "h:mm:ss a";
+	_inst.en_RO.dateTimeFormat.availableFormats.hmsv_alt_ascii = "h:mm:ss a v";
+	_inst.en_RO.dateTimeFormat.availableFormats.hmv_alt_ascii = "h:mm a v";
+	_inst.en_RO.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.en_RO.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.en_RO.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.en_RO.dateTimeFormat.availableFormats.d = "d";
+	_inst.en_RO.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.en_RO.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.en_RO.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.en_RO.dateTimeFormat.availableFormats.Ed = "E d";
+	_inst.en_RO.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.en_RO.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.en_RO.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.en_RO.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.en_RO.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.en_RO.dateTimeFormat.availableFormats.GyMd = "d/M/y G";
+	_inst.en_RO.dateTimeFormat.availableFormats.GyMMM = "MMM y G";
+	_inst.en_RO.dateTimeFormat.availableFormats.GyMMMd = "d MMM y G";
+	_inst.en_RO.dateTimeFormat.availableFormats.GyMMMEd = "E, d MMM y G";
+	_inst.en_RO.dateTimeFormat.availableFormats.h = "h a";
+	_inst.en_RO.dateTimeFormat.availableFormats.H = "HH";
+	_inst.en_RO.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.en_RO.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.en_RO.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.en_RO.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.en_RO.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.en_RO.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.en_RO.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.en_RO.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.en_RO.dateTimeFormat.availableFormats.M = "L";
+	_inst.en_RO.dateTimeFormat.availableFormats.Md = "dd/MM";
+	_inst.en_RO.dateTimeFormat.availableFormats.MEd = "E, dd/MM";
+	_inst.en_RO.dateTimeFormat.availableFormats.MMdd = "dd/MM";
+	_inst.en_RO.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.en_RO.dateTimeFormat.availableFormats.MMMd = "d MMM";
+	_inst.en_RO.dateTimeFormat.availableFormats.MMMEd = "E, d MMM";
+	_inst.en_RO.dateTimeFormat.availableFormats.MMMMd = "d MMMM";
+	_inst.en_RO.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.en_RO.dateFormat = {};
+	_inst.en_RO.dateFormat.short = "dd/MM/y";
+	_inst.en_RO.dateFormat.medium = "d MMM y";
+	_inst.en_RO.dateFormat.long = "d MMMM y";
+	_inst.en_RO.dateFormat.full = "EEEE, d MMMM y";
+
+	_inst.en_RO.daysFormat = {};
+
+	_inst.en_RO.daysFormat.narrow = {};
+	_inst.en_RO.daysFormat.narrow.sun = "S";
+	_inst.en_RO.daysFormat.narrow.mon = "M";
+	_inst.en_RO.daysFormat.narrow.tue = "T";
+	_inst.en_RO.daysFormat.narrow.wed = "W";
+	_inst.en_RO.daysFormat.narrow.thu = "T";
+	_inst.en_RO.daysFormat.narrow.fri = "F";
+	_inst.en_RO.daysFormat.narrow.sat = "S";
+
+	_inst.en_RO.daysFormat.abbreviated = {};
+	_inst.en_RO.daysFormat.abbreviated.sun = "Sun";
+	_inst.en_RO.daysFormat.abbreviated.mon = "Mon";
+	_inst.en_RO.daysFormat.abbreviated.tue = "Tue";
+	_inst.en_RO.daysFormat.abbreviated.wed = "Wed";
+	_inst.en_RO.daysFormat.abbreviated.thu = "Thu";
+	_inst.en_RO.daysFormat.abbreviated.fri = "Fri";
+	_inst.en_RO.daysFormat.abbreviated.sat = "Sat";
+
+	_inst.en_RO.daysFormat.short = {};
+	_inst.en_RO.daysFormat.short.sun = "Su";
+	_inst.en_RO.daysFormat.short.mon = "Mo";
+	_inst.en_RO.daysFormat.short.tue = "Tu";
+	_inst.en_RO.daysFormat.short.wed = "We";
+	_inst.en_RO.daysFormat.short.thu = "Th";
+	_inst.en_RO.daysFormat.short.fri = "Fr";
+	_inst.en_RO.daysFormat.short.sat = "Sa";
+
+	_inst.en_RO.daysFormat.wide = {};
+	_inst.en_RO.daysFormat.wide.sun = "Sunday";
+	_inst.en_RO.daysFormat.wide.mon = "Monday";
+	_inst.en_RO.daysFormat.wide.tue = "Tuesday";
+	_inst.en_RO.daysFormat.wide.wed = "Wednesday";
+	_inst.en_RO.daysFormat.wide.thu = "Thursday";
+	_inst.en_RO.daysFormat.wide.fri = "Friday";
+	_inst.en_RO.daysFormat.wide.sat = "Saturday";
+
+	_inst.fr_NC = {};
+
+	_inst.fr_NC.monthsFormat = {};
+
+	_inst.fr_NC.monthsFormat.narrow = {};
+	_inst.fr_NC.monthsFormat.narrow.two = "F";
+	_inst.fr_NC.monthsFormat.narrow.three = "M";
+	_inst.fr_NC.monthsFormat.narrow.four = "A";
+	_inst.fr_NC.monthsFormat.narrow.five = "M";
+	_inst.fr_NC.monthsFormat.narrow.six = "J";
+	_inst.fr_NC.monthsFormat.narrow.seven = "J";
+	_inst.fr_NC.monthsFormat.narrow.eight = "A";
+	_inst.fr_NC.monthsFormat.narrow.nine = "S";
+	_inst.fr_NC.monthsFormat.narrow.ten = "O";
+	_inst.fr_NC.monthsFormat.narrow.eleven = "N";
+	_inst.fr_NC.monthsFormat.narrow.twelve = "D";
+	_inst.fr_NC.monthsFormat.narrow.one = "J";
+
+	_inst.fr_NC.monthsFormat.abbreviated = {};
+	_inst.fr_NC.monthsFormat.abbreviated.two = "févr.";
+	_inst.fr_NC.monthsFormat.abbreviated.three = "mars";
+	_inst.fr_NC.monthsFormat.abbreviated.four = "avr.";
+	_inst.fr_NC.monthsFormat.abbreviated.five = "mai";
+	_inst.fr_NC.monthsFormat.abbreviated.six = "juin";
+	_inst.fr_NC.monthsFormat.abbreviated.seven = "juil.";
+	_inst.fr_NC.monthsFormat.abbreviated.eight = "août";
+	_inst.fr_NC.monthsFormat.abbreviated.nine = "sept.";
+	_inst.fr_NC.monthsFormat.abbreviated.ten = "oct.";
+	_inst.fr_NC.monthsFormat.abbreviated.eleven = "nov.";
+	_inst.fr_NC.monthsFormat.abbreviated.twelve = "déc.";
+	_inst.fr_NC.monthsFormat.abbreviated.one = "janv.";
+
+	_inst.fr_NC.monthsFormat.wide = {};
+	_inst.fr_NC.monthsFormat.wide.two = "février";
+	_inst.fr_NC.monthsFormat.wide.three = "mars";
+	_inst.fr_NC.monthsFormat.wide.four = "avril";
+	_inst.fr_NC.monthsFormat.wide.five = "mai";
+	_inst.fr_NC.monthsFormat.wide.six = "juin";
+	_inst.fr_NC.monthsFormat.wide.seven = "juillet";
+	_inst.fr_NC.monthsFormat.wide.eight = "août";
+	_inst.fr_NC.monthsFormat.wide.nine = "septembre";
+	_inst.fr_NC.monthsFormat.wide.ten = "octobre";
+	_inst.fr_NC.monthsFormat.wide.eleven = "novembre";
+	_inst.fr_NC.monthsFormat.wide.twelve = "décembre";
+	_inst.fr_NC.monthsFormat.wide.one = "janvier";
+
+	_inst.fr_NC.symbols = {};
+	_inst.fr_NC.symbols.currency = "FCFP";
+
+	_inst.fr_NC.timeFormat = {};
+	_inst.fr_NC.timeFormat.short = "HH:mm";
+	_inst.fr_NC.timeFormat.medium = "HH:mm:ss";
+	_inst.fr_NC.currencyFormat = "#,##0.00 ¤";
+	_inst.fr_NC.decimalFormat = "#,##0.###";
+
+	_inst.fr_NC.dateTimeFormat = {};
+	_inst.fr_NC.dateTimeFormat.full = "{1}, {0}";
+	_inst.fr_NC.dateTimeFormat.short = "{1} {0}";
+	_inst.fr_NC.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.fr_NC.dateTimeFormat.availableFormats = {};
+	_inst.fr_NC.dateTimeFormat.availableFormats.MMMMW_count_other = "'semaine' W (MMMM)";
+	_inst.fr_NC.dateTimeFormat.availableFormats.yM = "MM/y";
+	_inst.fr_NC.dateTimeFormat.availableFormats.y = "y";
+	_inst.fr_NC.dateTimeFormat.availableFormats.yMd = "dd/MM/y";
+	_inst.fr_NC.dateTimeFormat.availableFormats.yMEd = "E dd/MM/y";
+	_inst.fr_NC.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.fr_NC.dateTimeFormat.availableFormats.yMMMd = "d MMM y";
+	_inst.fr_NC.dateTimeFormat.availableFormats.yMMMEd = "E d MMM y";
+	_inst.fr_NC.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.fr_NC.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.fr_NC.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.fr_NC.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y";
+	_inst.fr_NC.dateTimeFormat.availableFormats.yw_count_other = "'semaine' w 'de' Y";
+	_inst.fr_NC.dateTimeFormat.availableFormats.MMMMW_count_one = "'semaine' W (MMMM)";
+	_inst.fr_NC.dateTimeFormat.availableFormats.yw_count_one = "'semaine' w 'de' Y";
+	_inst.fr_NC.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.fr_NC.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.fr_NC.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.fr_NC.dateTimeFormat.availableFormats.d = "d";
+	_inst.fr_NC.dateTimeFormat.availableFormats.E = "E";
+	_inst.fr_NC.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.fr_NC.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.fr_NC.dateTimeFormat.availableFormats.Ed = "E d";
+	_inst.fr_NC.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.fr_NC.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.fr_NC.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.fr_NC.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.fr_NC.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.fr_NC.dateTimeFormat.availableFormats.GyMd = "dd/MM/y GGGGG";
+	_inst.fr_NC.dateTimeFormat.availableFormats.GyMMM = "MMM y G";
+	_inst.fr_NC.dateTimeFormat.availableFormats.GyMMMd = "d MMM y G";
+	_inst.fr_NC.dateTimeFormat.availableFormats.GyMMMEd = "E d MMM y G";
+	_inst.fr_NC.dateTimeFormat.availableFormats.h = "h a";
+	_inst.fr_NC.dateTimeFormat.availableFormats.H = "HH 'h'";
+	_inst.fr_NC.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.fr_NC.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.fr_NC.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.fr_NC.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.fr_NC.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.fr_NC.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.fr_NC.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.fr_NC.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.fr_NC.dateTimeFormat.availableFormats.M = "L";
+	_inst.fr_NC.dateTimeFormat.availableFormats.Md = "dd/MM";
+	_inst.fr_NC.dateTimeFormat.availableFormats.MEd = "E dd/MM";
+	_inst.fr_NC.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.fr_NC.dateTimeFormat.availableFormats.MMMd = "d MMM";
+	_inst.fr_NC.dateTimeFormat.availableFormats.MMMEd = "E d MMM";
+	_inst.fr_NC.dateTimeFormat.availableFormats.MMMMd = "d MMMM";
+	_inst.fr_NC.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.fr_NC.dateFormat = {};
+	_inst.fr_NC.dateFormat.short = "dd/MM/y";
+	_inst.fr_NC.dateFormat.medium = "d MMM y";
+	_inst.fr_NC.dateFormat.long = "d MMMM y";
+	_inst.fr_NC.dateFormat.full = "EEEE d MMMM y";
+
+	_inst.fr_NC.daysFormat = {};
+
+	_inst.fr_NC.daysFormat.narrow = {};
+	_inst.fr_NC.daysFormat.narrow.sun = "D";
+	_inst.fr_NC.daysFormat.narrow.mon = "L";
+	_inst.fr_NC.daysFormat.narrow.tue = "M";
+	_inst.fr_NC.daysFormat.narrow.wed = "M";
+	_inst.fr_NC.daysFormat.narrow.thu = "J";
+	_inst.fr_NC.daysFormat.narrow.fri = "V";
+	_inst.fr_NC.daysFormat.narrow.sat = "S";
+
+	_inst.fr_NC.daysFormat.abbreviated = {};
+	_inst.fr_NC.daysFormat.abbreviated.sun = "dim.";
+	_inst.fr_NC.daysFormat.abbreviated.mon = "lun.";
+	_inst.fr_NC.daysFormat.abbreviated.tue = "mar.";
+	_inst.fr_NC.daysFormat.abbreviated.wed = "mer.";
+	_inst.fr_NC.daysFormat.abbreviated.thu = "jeu.";
+	_inst.fr_NC.daysFormat.abbreviated.fri = "ven.";
+	_inst.fr_NC.daysFormat.abbreviated.sat = "sam.";
+
+	_inst.fr_NC.daysFormat.short = {};
+	_inst.fr_NC.daysFormat.short.sun = "di";
+	_inst.fr_NC.daysFormat.short.mon = "lu";
+	_inst.fr_NC.daysFormat.short.tue = "ma";
+	_inst.fr_NC.daysFormat.short.wed = "me";
+	_inst.fr_NC.daysFormat.short.thu = "je";
+	_inst.fr_NC.daysFormat.short.fri = "ve";
+	_inst.fr_NC.daysFormat.short.sat = "sa";
+
+	_inst.fr_NC.daysFormat.wide = {};
+	_inst.fr_NC.daysFormat.wide.sun = "dimanche";
+	_inst.fr_NC.daysFormat.wide.mon = "lundi";
+	_inst.fr_NC.daysFormat.wide.tue = "mardi";
+	_inst.fr_NC.daysFormat.wide.wed = "mercredi";
+	_inst.fr_NC.daysFormat.wide.thu = "jeudi";
+	_inst.fr_NC.daysFormat.wide.fri = "vendredi";
+	_inst.fr_NC.daysFormat.wide.sat = "samedi";
+
+	_inst.kcg = {};
+
+	_inst.kcg.monthsFormat = {};
+
+	_inst.kcg.monthsFormat.narrow = {};
+	_inst.kcg.monthsFormat.narrow.two = "2";
+	_inst.kcg.monthsFormat.narrow.three = "3";
+	_inst.kcg.monthsFormat.narrow.four = "4";
+	_inst.kcg.monthsFormat.narrow.five = "5";
+	_inst.kcg.monthsFormat.narrow.six = "6";
+	_inst.kcg.monthsFormat.narrow.seven = "7";
+	_inst.kcg.monthsFormat.narrow.eight = "8";
+	_inst.kcg.monthsFormat.narrow.nine = "9";
+	_inst.kcg.monthsFormat.narrow.ten = "10";
+	_inst.kcg.monthsFormat.narrow.eleven = "11";
+	_inst.kcg.monthsFormat.narrow.twelve = "12";
+	_inst.kcg.monthsFormat.narrow.one = "1";
+
+	_inst.kcg.monthsFormat.abbreviated = {};
+	_inst.kcg.monthsFormat.abbreviated.two = "M02";
+	_inst.kcg.monthsFormat.abbreviated.three = "M03";
+	_inst.kcg.monthsFormat.abbreviated.four = "M04";
+	_inst.kcg.monthsFormat.abbreviated.five = "M05";
+	_inst.kcg.monthsFormat.abbreviated.six = "M06";
+	_inst.kcg.monthsFormat.abbreviated.seven = "M07";
+	_inst.kcg.monthsFormat.abbreviated.eight = "M08";
+	_inst.kcg.monthsFormat.abbreviated.nine = "M09";
+	_inst.kcg.monthsFormat.abbreviated.ten = "M10";
+	_inst.kcg.monthsFormat.abbreviated.eleven = "M11";
+	_inst.kcg.monthsFormat.abbreviated.twelve = "M12";
+	_inst.kcg.monthsFormat.abbreviated.one = "M01";
+
+	_inst.kcg.monthsFormat.wide = {};
+	_inst.kcg.monthsFormat.wide.two = "M02";
+	_inst.kcg.monthsFormat.wide.three = "M03";
+	_inst.kcg.monthsFormat.wide.four = "M04";
+	_inst.kcg.monthsFormat.wide.five = "M05";
+	_inst.kcg.monthsFormat.wide.six = "M06";
+	_inst.kcg.monthsFormat.wide.seven = "M07";
+	_inst.kcg.monthsFormat.wide.eight = "M08";
+	_inst.kcg.monthsFormat.wide.nine = "M09";
+	_inst.kcg.monthsFormat.wide.ten = "M10";
+	_inst.kcg.monthsFormat.wide.eleven = "M11";
+	_inst.kcg.monthsFormat.wide.twelve = "M12";
+	_inst.kcg.monthsFormat.wide.one = "M01";
+
+	_inst.kcg.symbols = {};
+	_inst.kcg.symbols.currency = "¤";
+
+	_inst.kcg.timeFormat = {};
+	_inst.kcg.timeFormat.short = "HH:mm";
+	_inst.kcg.timeFormat.medium = "HH:mm:ss";
+	_inst.kcg.currencyFormat = "¤ #,##0.00";
+	_inst.kcg.decimalFormat = "#,##0.###";
+
+	_inst.kcg.dateTimeFormat = {};
+	_inst.kcg.dateTimeFormat.full = "{1} {0}";
+	_inst.kcg.dateTimeFormat.short = "{1} {0}";
+	_inst.kcg.dateTimeFormat.medium = "{1} {0}";
+
+	_inst.kcg.dateTimeFormat.availableFormats = {};
+	_inst.kcg.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.kcg.dateTimeFormat.availableFormats.yM = "y-MM";
+	_inst.kcg.dateTimeFormat.availableFormats.y = "y";
+	_inst.kcg.dateTimeFormat.availableFormats.yMd = "y-MM-dd";
+	_inst.kcg.dateTimeFormat.availableFormats.yMEd = "y-MM-dd, E";
+	_inst.kcg.dateTimeFormat.availableFormats.yMMM = "y MMM";
+	_inst.kcg.dateTimeFormat.availableFormats.yMMMd = "y MMM d";
+	_inst.kcg.dateTimeFormat.availableFormats.yMMMEd = "y MMM d, E";
+	_inst.kcg.dateTimeFormat.availableFormats.yMMMM = "y MMMM";
+	_inst.kcg.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.kcg.dateTimeFormat.availableFormats.yQQQ = "y QQQ";
+	_inst.kcg.dateTimeFormat.availableFormats.yQQQQ = "y QQQQ";
+	_inst.kcg.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.kcg.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.kcg.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.kcg.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.kcg.dateTimeFormat.availableFormats.d = "d";
+	_inst.kcg.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.kcg.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.kcg.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.kcg.dateTimeFormat.availableFormats.Ed = "d, E";
+	_inst.kcg.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.kcg.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.kcg.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.kcg.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.kcg.dateTimeFormat.availableFormats.Gy = "G y";
+	_inst.kcg.dateTimeFormat.availableFormats.GyMd = "GGGGG y-MM-dd";
+	_inst.kcg.dateTimeFormat.availableFormats.GyMMM = "G y MMM";
+	_inst.kcg.dateTimeFormat.availableFormats.GyMMMd = "G y MMM d";
+	_inst.kcg.dateTimeFormat.availableFormats.GyMMMEd = "G y MMM d, E";
+	_inst.kcg.dateTimeFormat.availableFormats.h = "h a";
+	_inst.kcg.dateTimeFormat.availableFormats.H = "HH";
+	_inst.kcg.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.kcg.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.kcg.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.kcg.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.kcg.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.kcg.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.kcg.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.kcg.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.kcg.dateTimeFormat.availableFormats.M = "L";
+	_inst.kcg.dateTimeFormat.availableFormats.Md = "MM-dd";
+	_inst.kcg.dateTimeFormat.availableFormats.MEd = "MM-dd, E";
+	_inst.kcg.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.kcg.dateTimeFormat.availableFormats.MMMd = "MMM d";
+	_inst.kcg.dateTimeFormat.availableFormats.MMMEd = "MMM d, E";
+	_inst.kcg.dateTimeFormat.availableFormats.MMMMd = "MMMM d";
+	_inst.kcg.dateTimeFormat.long = "{1} {0}";
+
+	_inst.kcg.dateFormat = {};
+	_inst.kcg.dateFormat.short = "y-MM-dd";
+	_inst.kcg.dateFormat.medium = "y MMM d";
+	_inst.kcg.dateFormat.long = "y MMMM d";
+	_inst.kcg.dateFormat.full = "y MMMM d, EEEE";
+
+	_inst.kcg.daysFormat = {};
+
+	_inst.kcg.daysFormat.narrow = {};
+	_inst.kcg.daysFormat.narrow.sun = "S";
+	_inst.kcg.daysFormat.narrow.mon = "M";
+	_inst.kcg.daysFormat.narrow.tue = "T";
+	_inst.kcg.daysFormat.narrow.wed = "W";
+	_inst.kcg.daysFormat.narrow.thu = "T";
+	_inst.kcg.daysFormat.narrow.fri = "F";
+	_inst.kcg.daysFormat.narrow.sat = "S";
+
+	_inst.kcg.daysFormat.abbreviated = {};
+	_inst.kcg.daysFormat.abbreviated.sun = "Sun";
+	_inst.kcg.daysFormat.abbreviated.mon = "Mon";
+	_inst.kcg.daysFormat.abbreviated.tue = "Tue";
+	_inst.kcg.daysFormat.abbreviated.wed = "Wed";
+	_inst.kcg.daysFormat.abbreviated.thu = "Thu";
+	_inst.kcg.daysFormat.abbreviated.fri = "Fri";
+	_inst.kcg.daysFormat.abbreviated.sat = "Sat";
+
+	_inst.kcg.daysFormat.short = {};
+	_inst.kcg.daysFormat.short.sun = "Sun";
+	_inst.kcg.daysFormat.short.mon = "Mon";
+	_inst.kcg.daysFormat.short.tue = "Tue";
+	_inst.kcg.daysFormat.short.wed = "Wed";
+	_inst.kcg.daysFormat.short.thu = "Thu";
+	_inst.kcg.daysFormat.short.fri = "Fri";
+	_inst.kcg.daysFormat.short.sat = "Sat";
+
+	_inst.kcg.daysFormat.wide = {};
+	_inst.kcg.daysFormat.wide.sun = "Sun";
+	_inst.kcg.daysFormat.wide.mon = "Mon";
+	_inst.kcg.daysFormat.wide.tue = "Tue";
+	_inst.kcg.daysFormat.wide.wed = "Wed";
+	_inst.kcg.daysFormat.wide.thu = "Thu";
+	_inst.kcg.daysFormat.wide.fri = "Fri";
+	_inst.kcg.daysFormat.wide.sat = "Sat";
+
+	_inst.mus = {};
+
+	_inst.mus.monthsFormat = {};
+
+	_inst.mus.monthsFormat.narrow = {};
+	_inst.mus.monthsFormat.narrow.two = "2";
+	_inst.mus.monthsFormat.narrow.three = "3";
+	_inst.mus.monthsFormat.narrow.four = "4";
+	_inst.mus.monthsFormat.narrow.five = "5";
+	_inst.mus.monthsFormat.narrow.six = "6";
+	_inst.mus.monthsFormat.narrow.seven = "7";
+	_inst.mus.monthsFormat.narrow.eight = "8";
+	_inst.mus.monthsFormat.narrow.nine = "9";
+	_inst.mus.monthsFormat.narrow.ten = "10";
+	_inst.mus.monthsFormat.narrow.eleven = "11";
+	_inst.mus.monthsFormat.narrow.twelve = "12";
+	_inst.mus.monthsFormat.narrow.one = "1";
+
+	_inst.mus.monthsFormat.abbreviated = {};
+	_inst.mus.monthsFormat.abbreviated.two = "Hotvle Hvse";
+	_inst.mus.monthsFormat.abbreviated.three = "Tasahcuce";
+	_inst.mus.monthsFormat.abbreviated.four = "Tasahce Rakko";
+	_inst.mus.monthsFormat.abbreviated.five = "Ke Hvse";
+	_inst.mus.monthsFormat.abbreviated.six = "Kvco Hvse";
+	_inst.mus.monthsFormat.abbreviated.seven = "Hiyuce";
+	_inst.mus.monthsFormat.abbreviated.eight = "Hiyo Rakko";
+	_inst.mus.monthsFormat.abbreviated.nine = "Otowoskuce";
+	_inst.mus.monthsFormat.abbreviated.ten = "Otowoskv Rakko";
+	_inst.mus.monthsFormat.abbreviated.eleven = "Ehole";
+	_inst.mus.monthsFormat.abbreviated.twelve = "Rvfo Rakko";
+	_inst.mus.monthsFormat.abbreviated.one = "Rvfo Cuse";
+
+	_inst.mus.monthsFormat.wide = {};
+	_inst.mus.monthsFormat.wide.two = "Hotvle Hvse";
+	_inst.mus.monthsFormat.wide.three = "Tasahcuce";
+	_inst.mus.monthsFormat.wide.four = "Tasahce Rakko";
+	_inst.mus.monthsFormat.wide.five = "Ke Hvse";
+	_inst.mus.monthsFormat.wide.six = "Kvco Hvse";
+	_inst.mus.monthsFormat.wide.seven = "Hiyuce";
+	_inst.mus.monthsFormat.wide.eight = "Hiyo Rakko";
+	_inst.mus.monthsFormat.wide.nine = "Otowoskuce";
+	_inst.mus.monthsFormat.wide.ten = "Otowoskv Rakko";
+	_inst.mus.monthsFormat.wide.eleven = "Ehole";
+	_inst.mus.monthsFormat.wide.twelve = "Rvfo Rakko";
+	_inst.mus.monthsFormat.wide.one = "Rvfo Cuse";
+
+	_inst.mus.symbols = {};
+	_inst.mus.symbols.currency = "¤";
+
+	_inst.mus.timeFormat = {};
+	_inst.mus.timeFormat.short = "HH:mm";
+	_inst.mus.timeFormat.medium = "HH:mm:ss";
+	_inst.mus.currencyFormat = "¤ #,##0.00";
+	_inst.mus.decimalFormat = "#,##0.###";
+
+	_inst.mus.dateTimeFormat = {};
+	_inst.mus.dateTimeFormat.full = "{1} {0}";
+	_inst.mus.dateTimeFormat.short = "{1} {0}";
+	_inst.mus.dateTimeFormat.medium = "{1} {0}";
+
+	_inst.mus.dateTimeFormat.availableFormats = {};
+	_inst.mus.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.mus.dateTimeFormat.availableFormats.yM = "y-MM";
+	_inst.mus.dateTimeFormat.availableFormats.y = "y";
+	_inst.mus.dateTimeFormat.availableFormats.yMd = "y-MM-dd";
+	_inst.mus.dateTimeFormat.availableFormats.yMEd = "y-MM-dd, E";
+	_inst.mus.dateTimeFormat.availableFormats.yMMM = "y MMM";
+	_inst.mus.dateTimeFormat.availableFormats.yMMMd = "y MMM d";
+	_inst.mus.dateTimeFormat.availableFormats.yMMMEd = "y MMM d, E";
+	_inst.mus.dateTimeFormat.availableFormats.yMMMM = "y MMMM";
+	_inst.mus.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.mus.dateTimeFormat.availableFormats.yQQQ = "y QQQ";
+	_inst.mus.dateTimeFormat.availableFormats.yQQQQ = "y QQQQ";
+	_inst.mus.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.mus.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.mus.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.mus.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.mus.dateTimeFormat.availableFormats.d = "d";
+	_inst.mus.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.mus.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.mus.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.mus.dateTimeFormat.availableFormats.Ed = "d, E";
+	_inst.mus.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.mus.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.mus.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.mus.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.mus.dateTimeFormat.availableFormats.Gy = "G y";
+	_inst.mus.dateTimeFormat.availableFormats.GyMd = "GGGGG y-MM-dd";
+	_inst.mus.dateTimeFormat.availableFormats.GyMMM = "G y MMM";
+	_inst.mus.dateTimeFormat.availableFormats.GyMMMd = "G y MMM d";
+	_inst.mus.dateTimeFormat.availableFormats.GyMMMEd = "G y MMM d, E";
+	_inst.mus.dateTimeFormat.availableFormats.h = "h a";
+	_inst.mus.dateTimeFormat.availableFormats.H = "HH";
+	_inst.mus.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.mus.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.mus.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.mus.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.mus.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.mus.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.mus.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.mus.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.mus.dateTimeFormat.availableFormats.M = "L";
+	_inst.mus.dateTimeFormat.availableFormats.Md = "MM-dd";
+	_inst.mus.dateTimeFormat.availableFormats.MEd = "MM-dd, E";
+	_inst.mus.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.mus.dateTimeFormat.availableFormats.MMMd = "MMM d";
+	_inst.mus.dateTimeFormat.availableFormats.MMMEd = "MMM d, E";
+	_inst.mus.dateTimeFormat.availableFormats.MMMMd = "MMMM d";
+	_inst.mus.dateTimeFormat.long = "{1} {0}";
+
+	_inst.mus.dateFormat = {};
+	_inst.mus.dateFormat.short = "y-MM-dd";
+	_inst.mus.dateFormat.medium = "y MMM d";
+	_inst.mus.dateFormat.long = "y MMMM d";
+	_inst.mus.dateFormat.full = "y MMMM d, EEEE";
+
+	_inst.mus.daysFormat = {};
+
+	_inst.mus.daysFormat.narrow = {};
+	_inst.mus.daysFormat.narrow.sun = "S";
+	_inst.mus.daysFormat.narrow.mon = "M";
+	_inst.mus.daysFormat.narrow.tue = "T";
+	_inst.mus.daysFormat.narrow.wed = "W";
+	_inst.mus.daysFormat.narrow.thu = "T";
+	_inst.mus.daysFormat.narrow.fri = "F";
+	_inst.mus.daysFormat.narrow.sat = "S";
+
+	_inst.mus.daysFormat.abbreviated = {};
+	_inst.mus.daysFormat.abbreviated.sun = "Nettvʼcako";
+	_inst.mus.daysFormat.abbreviated.mon = "Enhvteceskv";
+	_inst.mus.daysFormat.abbreviated.tue = "Enhvteceskv Enhvyvtke";
+	_inst.mus.daysFormat.abbreviated.wed = "Ennvrkvpv";
+	_inst.mus.daysFormat.abbreviated.thu = "Ennvrkvpv Enhvyvtke";
+	_inst.mus.daysFormat.abbreviated.fri = "Nak Okkoskv Nettv";
+	_inst.mus.daysFormat.abbreviated.sat = "Nettv Cakʼcuse";
+
+	_inst.mus.daysFormat.short = {};
+	_inst.mus.daysFormat.short.sun = "Nettvʼcako";
+	_inst.mus.daysFormat.short.mon = "Enhvteceskv";
+	_inst.mus.daysFormat.short.tue = "Enhvteceskv Enhvyvtke";
+	_inst.mus.daysFormat.short.wed = "Ennvrkvpv";
+	_inst.mus.daysFormat.short.thu = "Ennvrkvpv Enhvyvtke";
+	_inst.mus.daysFormat.short.fri = "Nak Okkoskv Nettv";
+	_inst.mus.daysFormat.short.sat = "Nettv Cakʼcuse";
+
+	_inst.mus.daysFormat.wide = {};
+	_inst.mus.daysFormat.wide.sun = "Nettvʼcako";
+	_inst.mus.daysFormat.wide.mon = "Enhvteceskv";
+	_inst.mus.daysFormat.wide.tue = "Enhvteceskv Enhvyvtke";
+	_inst.mus.daysFormat.wide.wed = "Ennvrkvpv";
+	_inst.mus.daysFormat.wide.thu = "Ennvrkvpv Enhvyvtke";
+	_inst.mus.daysFormat.wide.fri = "Nak Okkoskv Nettv";
+	_inst.mus.daysFormat.wide.sat = "Nettv Cakʼcuse";
+
+	_inst.en_ZA = {};
+
+	_inst.en_ZA.monthsFormat = {};
+
+	_inst.en_ZA.monthsFormat.narrow = {};
+	_inst.en_ZA.monthsFormat.narrow.two = "F";
+	_inst.en_ZA.monthsFormat.narrow.three = "M";
+	_inst.en_ZA.monthsFormat.narrow.four = "A";
+	_inst.en_ZA.monthsFormat.narrow.five = "M";
+	_inst.en_ZA.monthsFormat.narrow.six = "J";
+	_inst.en_ZA.monthsFormat.narrow.seven = "J";
+	_inst.en_ZA.monthsFormat.narrow.eight = "A";
+	_inst.en_ZA.monthsFormat.narrow.nine = "S";
+	_inst.en_ZA.monthsFormat.narrow.ten = "O";
+	_inst.en_ZA.monthsFormat.narrow.eleven = "N";
+	_inst.en_ZA.monthsFormat.narrow.twelve = "D";
+	_inst.en_ZA.monthsFormat.narrow.one = "J";
+
+	_inst.en_ZA.monthsFormat.abbreviated = {};
+	_inst.en_ZA.monthsFormat.abbreviated.two = "Feb";
+	_inst.en_ZA.monthsFormat.abbreviated.three = "Mar";
+	_inst.en_ZA.monthsFormat.abbreviated.four = "Apr";
+	_inst.en_ZA.monthsFormat.abbreviated.five = "May";
+	_inst.en_ZA.monthsFormat.abbreviated.six = "Jun";
+	_inst.en_ZA.monthsFormat.abbreviated.seven = "Jul";
+	_inst.en_ZA.monthsFormat.abbreviated.eight = "Aug";
+	_inst.en_ZA.monthsFormat.abbreviated.nine = "Sept";
+	_inst.en_ZA.monthsFormat.abbreviated.ten = "Oct";
+	_inst.en_ZA.monthsFormat.abbreviated.eleven = "Nov";
+	_inst.en_ZA.monthsFormat.abbreviated.twelve = "Dec";
+	_inst.en_ZA.monthsFormat.abbreviated.one = "Jan";
+
+	_inst.en_ZA.monthsFormat.wide = {};
+	_inst.en_ZA.monthsFormat.wide.two = "February";
+	_inst.en_ZA.monthsFormat.wide.three = "March";
+	_inst.en_ZA.monthsFormat.wide.four = "April";
+	_inst.en_ZA.monthsFormat.wide.five = "May";
+	_inst.en_ZA.monthsFormat.wide.six = "June";
+	_inst.en_ZA.monthsFormat.wide.seven = "July";
+	_inst.en_ZA.monthsFormat.wide.eight = "August";
+	_inst.en_ZA.monthsFormat.wide.nine = "September";
+	_inst.en_ZA.monthsFormat.wide.ten = "October";
+	_inst.en_ZA.monthsFormat.wide.eleven = "November";
+	_inst.en_ZA.monthsFormat.wide.twelve = "December";
+	_inst.en_ZA.monthsFormat.wide.one = "January";
+
+	_inst.en_ZA.symbols = {};
+	_inst.en_ZA.symbols.currency = "R";
+
+	_inst.en_ZA.timeFormat = {};
+	_inst.en_ZA.timeFormat.short = "h:mm a";
+	_inst.en_ZA.timeFormat.medium = "h:mm:ss a";
+	_inst.en_ZA.currencyFormat = "¤#,##0.00";
+	_inst.en_ZA.decimalFormat = "#,##0.###";
+
+	_inst.en_ZA.dateTimeFormat = {};
+	_inst.en_ZA.dateTimeFormat.full = "{1}, {0}";
+	_inst.en_ZA.dateTimeFormat.short = "{1}, {0}";
+	_inst.en_ZA.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.en_ZA.dateTimeFormat.availableFormats = {};
+	_inst.en_ZA.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.en_ZA.dateTimeFormat.availableFormats.yM = "MM/y";
+	_inst.en_ZA.dateTimeFormat.availableFormats.y = "y";
+	_inst.en_ZA.dateTimeFormat.availableFormats.yMd = "y/MM/dd";
+	_inst.en_ZA.dateTimeFormat.availableFormats.yMEd = "E, y/MM/dd";
+	_inst.en_ZA.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.en_ZA.dateTimeFormat.availableFormats.yMMMd = "dd MMM y";
+	_inst.en_ZA.dateTimeFormat.availableFormats.yMMMEd = "E, dd MMM y";
+	_inst.en_ZA.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.en_ZA.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.en_ZA.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.en_ZA.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y";
+	_inst.en_ZA.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.en_ZA.dateTimeFormat.availableFormats.MMMMW_count_one = "'week' W 'of' MMMM";
+	_inst.en_ZA.dateTimeFormat.availableFormats.yw_count_one = "'week' w 'of' Y";
+	_inst.en_ZA.dateTimeFormat.availableFormats.Ehm_alt_ascii = "E h:mm a";
+	_inst.en_ZA.dateTimeFormat.availableFormats.Ehms_alt_ascii = "E h:mm:ss a";
+	_inst.en_ZA.dateTimeFormat.availableFormats.h_alt_ascii = "h a";
+	_inst.en_ZA.dateTimeFormat.availableFormats.hm_alt_ascii = "h:mm a";
+	_inst.en_ZA.dateTimeFormat.availableFormats.hms_alt_ascii = "h:mm:ss a";
+	_inst.en_ZA.dateTimeFormat.availableFormats.hmsv_alt_ascii = "h:mm:ss a v";
+	_inst.en_ZA.dateTimeFormat.availableFormats.hmv_alt_ascii = "h:mm a v";
+	_inst.en_ZA.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.en_ZA.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.en_ZA.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.en_ZA.dateTimeFormat.availableFormats.d = "d";
+	_inst.en_ZA.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.en_ZA.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.en_ZA.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.en_ZA.dateTimeFormat.availableFormats.Ed = "E d";
+	_inst.en_ZA.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.en_ZA.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.en_ZA.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.en_ZA.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.en_ZA.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.en_ZA.dateTimeFormat.availableFormats.GyMd = "d/M/y G";
+	_inst.en_ZA.dateTimeFormat.availableFormats.GyMMM = "MMM y G";
+	_inst.en_ZA.dateTimeFormat.availableFormats.GyMMMd = "d MMM y G";
+	_inst.en_ZA.dateTimeFormat.availableFormats.GyMMMEd = "E, d MMM y G";
+	_inst.en_ZA.dateTimeFormat.availableFormats.h = "h a";
+	_inst.en_ZA.dateTimeFormat.availableFormats.H = "HH";
+	_inst.en_ZA.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.en_ZA.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.en_ZA.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.en_ZA.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.en_ZA.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.en_ZA.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.en_ZA.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.en_ZA.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.en_ZA.dateTimeFormat.availableFormats.M = "L";
+	_inst.en_ZA.dateTimeFormat.availableFormats.Md = "MM/dd";
+	_inst.en_ZA.dateTimeFormat.availableFormats.MEd = "E, MM/dd";
+	_inst.en_ZA.dateTimeFormat.availableFormats.MMdd = "dd/MM";
+	_inst.en_ZA.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.en_ZA.dateTimeFormat.availableFormats.MMMd = "dd MMM";
+	_inst.en_ZA.dateTimeFormat.availableFormats.MMMEd = "E, dd MMM";
+	_inst.en_ZA.dateTimeFormat.availableFormats.MMMMd = "d MMMM";
+	_inst.en_ZA.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.en_ZA.dateFormat = {};
+	_inst.en_ZA.dateFormat.short = "y/MM/dd";
+	_inst.en_ZA.dateFormat.medium = "dd MMM y";
+	_inst.en_ZA.dateFormat.long = "dd MMMM y";
+	_inst.en_ZA.dateFormat.full = "EEEE, dd MMMM y";
+
+	_inst.en_ZA.daysFormat = {};
+
+	_inst.en_ZA.daysFormat.narrow = {};
+	_inst.en_ZA.daysFormat.narrow.sun = "S";
+	_inst.en_ZA.daysFormat.narrow.mon = "M";
+	_inst.en_ZA.daysFormat.narrow.tue = "T";
+	_inst.en_ZA.daysFormat.narrow.wed = "W";
+	_inst.en_ZA.daysFormat.narrow.thu = "T";
+	_inst.en_ZA.daysFormat.narrow.fri = "F";
+	_inst.en_ZA.daysFormat.narrow.sat = "S";
+
+	_inst.en_ZA.daysFormat.abbreviated = {};
+	_inst.en_ZA.daysFormat.abbreviated.sun = "Sun";
+	_inst.en_ZA.daysFormat.abbreviated.mon = "Mon";
+	_inst.en_ZA.daysFormat.abbreviated.tue = "Tue";
+	_inst.en_ZA.daysFormat.abbreviated.wed = "Wed";
+	_inst.en_ZA.daysFormat.abbreviated.thu = "Thu";
+	_inst.en_ZA.daysFormat.abbreviated.fri = "Fri";
+	_inst.en_ZA.daysFormat.abbreviated.sat = "Sat";
+
+	_inst.en_ZA.daysFormat.short = {};
+	_inst.en_ZA.daysFormat.short.sun = "Su";
+	_inst.en_ZA.daysFormat.short.mon = "Mo";
+	_inst.en_ZA.daysFormat.short.tue = "Tu";
+	_inst.en_ZA.daysFormat.short.wed = "We";
+	_inst.en_ZA.daysFormat.short.thu = "Th";
+	_inst.en_ZA.daysFormat.short.fri = "Fr";
+	_inst.en_ZA.daysFormat.short.sat = "Sa";
+
+	_inst.en_ZA.daysFormat.wide = {};
+	_inst.en_ZA.daysFormat.wide.sun = "Sunday";
+	_inst.en_ZA.daysFormat.wide.mon = "Monday";
+	_inst.en_ZA.daysFormat.wide.tue = "Tuesday";
+	_inst.en_ZA.daysFormat.wide.wed = "Wednesday";
+	_inst.en_ZA.daysFormat.wide.thu = "Thursday";
+	_inst.en_ZA.daysFormat.wide.fri = "Friday";
+	_inst.en_ZA.daysFormat.wide.sat = "Saturday";
+
+	_inst.ru_KG = {};
+
+	_inst.ru_KG.monthsFormat = {};
+
+	_inst.ru_KG.monthsFormat.narrow = {};
+	_inst.ru_KG.monthsFormat.narrow.two = "Ф";
+	_inst.ru_KG.monthsFormat.narrow.three = "М";
+	_inst.ru_KG.monthsFormat.narrow.four = "А";
+	_inst.ru_KG.monthsFormat.narrow.five = "М";
+	_inst.ru_KG.monthsFormat.narrow.six = "И";
+	_inst.ru_KG.monthsFormat.narrow.seven = "И";
+	_inst.ru_KG.monthsFormat.narrow.eight = "А";
+	_inst.ru_KG.monthsFormat.narrow.nine = "С";
+	_inst.ru_KG.monthsFormat.narrow.ten = "О";
+	_inst.ru_KG.monthsFormat.narrow.eleven = "Н";
+	_inst.ru_KG.monthsFormat.narrow.twelve = "Д";
+	_inst.ru_KG.monthsFormat.narrow.one = "Я";
+
+	_inst.ru_KG.monthsFormat.abbreviated = {};
+	_inst.ru_KG.monthsFormat.abbreviated.two = "февр.";
+	_inst.ru_KG.monthsFormat.abbreviated.three = "мар.";
+	_inst.ru_KG.monthsFormat.abbreviated.four = "апр.";
+	_inst.ru_KG.monthsFormat.abbreviated.five = "мая";
+	_inst.ru_KG.monthsFormat.abbreviated.six = "июн.";
+	_inst.ru_KG.monthsFormat.abbreviated.seven = "июл.";
+	_inst.ru_KG.monthsFormat.abbreviated.eight = "авг.";
+	_inst.ru_KG.monthsFormat.abbreviated.nine = "сент.";
+	_inst.ru_KG.monthsFormat.abbreviated.ten = "окт.";
+	_inst.ru_KG.monthsFormat.abbreviated.eleven = "нояб.";
+	_inst.ru_KG.monthsFormat.abbreviated.twelve = "дек.";
+	_inst.ru_KG.monthsFormat.abbreviated.one = "янв.";
+
+	_inst.ru_KG.monthsFormat.wide = {};
+	_inst.ru_KG.monthsFormat.wide.two = "февраля";
+	_inst.ru_KG.monthsFormat.wide.three = "марта";
+	_inst.ru_KG.monthsFormat.wide.four = "апреля";
+	_inst.ru_KG.monthsFormat.wide.five = "мая";
+	_inst.ru_KG.monthsFormat.wide.six = "июня";
+	_inst.ru_KG.monthsFormat.wide.seven = "июля";
+	_inst.ru_KG.monthsFormat.wide.eight = "августа";
+	_inst.ru_KG.monthsFormat.wide.nine = "сентября";
+	_inst.ru_KG.monthsFormat.wide.ten = "октября";
+	_inst.ru_KG.monthsFormat.wide.eleven = "ноября";
+	_inst.ru_KG.monthsFormat.wide.twelve = "декабря";
+	_inst.ru_KG.monthsFormat.wide.one = "января";
+
+	_inst.ru_KG.symbols = {};
+	_inst.ru_KG.symbols.currency = "⃀";
+
+	_inst.ru_KG.timeFormat = {};
+	_inst.ru_KG.timeFormat.short = "HH:mm";
+	_inst.ru_KG.timeFormat.medium = "HH:mm:ss";
+	_inst.ru_KG.currencyFormat = "#,##0.00 ¤";
+	_inst.ru_KG.decimalFormat = "#,##0.###";
+
+	_inst.ru_KG.dateTimeFormat = {};
+	_inst.ru_KG.dateTimeFormat.full = "{1}, {0}";
+	_inst.ru_KG.dateTimeFormat.short = "{1}, {0}";
+	_inst.ru_KG.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.ru_KG.dateTimeFormat.availableFormats = {};
+	_inst.ru_KG.dateTimeFormat.availableFormats.MMMMW_count_other = "W-'я' 'неделя' MMMM";
+	_inst.ru_KG.dateTimeFormat.availableFormats.yM = "MM.y";
+	_inst.ru_KG.dateTimeFormat.availableFormats.y = "y";
+	_inst.ru_KG.dateTimeFormat.availableFormats.yMd = "dd.MM.y";
+	_inst.ru_KG.dateTimeFormat.availableFormats.yMEd = "ccc, dd.MM.y 'г'.";
+	_inst.ru_KG.dateTimeFormat.availableFormats.yMMM = "LLL y 'г'.";
+	_inst.ru_KG.dateTimeFormat.availableFormats.yMMMd = "d MMM y 'г'.";
+	_inst.ru_KG.dateTimeFormat.availableFormats.yMMMEd = "E, d MMM y 'г'.";
+	_inst.ru_KG.dateTimeFormat.availableFormats.yMMMM = "LLLL y 'г'.";
+	_inst.ru_KG.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.ru_KG.dateTimeFormat.availableFormats.yQQQ = "QQQ y 'г'.";
+	_inst.ru_KG.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y 'г'.";
+	_inst.ru_KG.dateTimeFormat.availableFormats.yw_count_other = "w-'я' 'неделя' Y 'г'.";
+	_inst.ru_KG.dateTimeFormat.availableFormats.MMMMW_count_few = "W-'я' 'неделя' MMMM";
+	_inst.ru_KG.dateTimeFormat.availableFormats.MMMMW_count_many = "W-'я' 'неделя' MMMM";
+	_inst.ru_KG.dateTimeFormat.availableFormats.yw_count_few = "w-'я' 'неделя' Y 'г'.";
+	_inst.ru_KG.dateTimeFormat.availableFormats.yw_count_many = "w-'я' 'неделя' Y 'г'.";
+	_inst.ru_KG.dateTimeFormat.availableFormats.MMMMW_count_one = "W-'я' 'неделя' MMMM";
+	_inst.ru_KG.dateTimeFormat.availableFormats.yMM = "MM.y";
+	_inst.ru_KG.dateTimeFormat.availableFormats.yw_count_one = "w-'я' 'неделя' Y 'г'.";
+	_inst.ru_KG.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.ru_KG.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.ru_KG.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.ru_KG.dateTimeFormat.availableFormats.d = "d";
+	_inst.ru_KG.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.ru_KG.dateTimeFormat.availableFormats.EBhm = "ccc, h:mm B";
+	_inst.ru_KG.dateTimeFormat.availableFormats.EBhms = "ccc, h:mm:ss B";
+	_inst.ru_KG.dateTimeFormat.availableFormats.Ed = "ccc, d";
+	_inst.ru_KG.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.ru_KG.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.ru_KG.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.ru_KG.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.ru_KG.dateTimeFormat.availableFormats.Gy = "y 'г'. G";
+	_inst.ru_KG.dateTimeFormat.availableFormats.GyMd = "dd.MM.y GGGGG";
+	_inst.ru_KG.dateTimeFormat.availableFormats.GyMMM = "LLL y 'г'. G";
+	_inst.ru_KG.dateTimeFormat.availableFormats.GyMMMd = "d MMM y 'г'. G";
+	_inst.ru_KG.dateTimeFormat.availableFormats.GyMMMEd = "E, d MMM y 'г'. G";
+	_inst.ru_KG.dateTimeFormat.availableFormats.h = "h a";
+	_inst.ru_KG.dateTimeFormat.availableFormats.H = "HH";
+	_inst.ru_KG.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.ru_KG.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.ru_KG.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.ru_KG.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.ru_KG.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.ru_KG.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.ru_KG.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.ru_KG.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.ru_KG.dateTimeFormat.availableFormats.M = "L";
+	_inst.ru_KG.dateTimeFormat.availableFormats.Md = "dd.MM";
+	_inst.ru_KG.dateTimeFormat.availableFormats.MEd = "E, dd.MM";
+	_inst.ru_KG.dateTimeFormat.availableFormats.MMdd = "dd.MM";
+	_inst.ru_KG.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.ru_KG.dateTimeFormat.availableFormats.MMMd = "d MMM";
+	_inst.ru_KG.dateTimeFormat.availableFormats.MMMEd = "ccc, d MMM";
+	_inst.ru_KG.dateTimeFormat.availableFormats.MMMMd = "d MMMM";
+	_inst.ru_KG.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.ru_KG.dateFormat = {};
+	_inst.ru_KG.dateFormat.short = "dd.MM.y";
+	_inst.ru_KG.dateFormat.medium = "d MMM y 'г'.";
+	_inst.ru_KG.dateFormat.long = "d MMMM y 'г'.";
+	_inst.ru_KG.dateFormat.full = "EEEE, d MMMM y 'г'.";
+
+	_inst.ru_KG.daysFormat = {};
+
+	_inst.ru_KG.daysFormat.narrow = {};
+	_inst.ru_KG.daysFormat.narrow.sun = "В";
+	_inst.ru_KG.daysFormat.narrow.mon = "П";
+	_inst.ru_KG.daysFormat.narrow.tue = "В";
+	_inst.ru_KG.daysFormat.narrow.wed = "С";
+	_inst.ru_KG.daysFormat.narrow.thu = "Ч";
+	_inst.ru_KG.daysFormat.narrow.fri = "П";
+	_inst.ru_KG.daysFormat.narrow.sat = "С";
+
+	_inst.ru_KG.daysFormat.abbreviated = {};
+	_inst.ru_KG.daysFormat.abbreviated.sun = "вс";
+	_inst.ru_KG.daysFormat.abbreviated.mon = "пн";
+	_inst.ru_KG.daysFormat.abbreviated.tue = "вт";
+	_inst.ru_KG.daysFormat.abbreviated.wed = "ср";
+	_inst.ru_KG.daysFormat.abbreviated.thu = "чт";
+	_inst.ru_KG.daysFormat.abbreviated.fri = "пт";
+	_inst.ru_KG.daysFormat.abbreviated.sat = "сб";
+
+	_inst.ru_KG.daysFormat.short = {};
+	_inst.ru_KG.daysFormat.short.sun = "вс";
+	_inst.ru_KG.daysFormat.short.mon = "пн";
+	_inst.ru_KG.daysFormat.short.tue = "вт";
+	_inst.ru_KG.daysFormat.short.wed = "ср";
+	_inst.ru_KG.daysFormat.short.thu = "чт";
+	_inst.ru_KG.daysFormat.short.fri = "пт";
+	_inst.ru_KG.daysFormat.short.sat = "сб";
+
+	_inst.ru_KG.daysFormat.wide = {};
+	_inst.ru_KG.daysFormat.wide.sun = "воскресенье";
+	_inst.ru_KG.daysFormat.wide.mon = "понедельник";
+	_inst.ru_KG.daysFormat.wide.tue = "вторник";
+	_inst.ru_KG.daysFormat.wide.wed = "среда";
+	_inst.ru_KG.daysFormat.wide.thu = "четверг";
+	_inst.ru_KG.daysFormat.wide.fri = "пятница";
+	_inst.ru_KG.daysFormat.wide.sat = "суббота";
+
+	_inst.bs_Latn = {};
+
+	_inst.bs_Latn.monthsFormat = {};
+
+	_inst.bs_Latn.monthsFormat.narrow = {};
+	_inst.bs_Latn.monthsFormat.narrow.two = "f";
+	_inst.bs_Latn.monthsFormat.narrow.three = "m";
+	_inst.bs_Latn.monthsFormat.narrow.four = "a";
+	_inst.bs_Latn.monthsFormat.narrow.five = "m";
+	_inst.bs_Latn.monthsFormat.narrow.six = "j";
+	_inst.bs_Latn.monthsFormat.narrow.seven = "j";
+	_inst.bs_Latn.monthsFormat.narrow.eight = "a";
+	_inst.bs_Latn.monthsFormat.narrow.nine = "s";
+	_inst.bs_Latn.monthsFormat.narrow.ten = "o";
+	_inst.bs_Latn.monthsFormat.narrow.eleven = "n";
+	_inst.bs_Latn.monthsFormat.narrow.twelve = "d";
+	_inst.bs_Latn.monthsFormat.narrow.one = "j";
+
+	_inst.bs_Latn.monthsFormat.abbreviated = {};
+	_inst.bs_Latn.monthsFormat.abbreviated.two = "feb";
+	_inst.bs_Latn.monthsFormat.abbreviated.three = "mar";
+	_inst.bs_Latn.monthsFormat.abbreviated.four = "apr";
+	_inst.bs_Latn.monthsFormat.abbreviated.five = "maj";
+	_inst.bs_Latn.monthsFormat.abbreviated.six = "jun";
+	_inst.bs_Latn.monthsFormat.abbreviated.seven = "jul";
+	_inst.bs_Latn.monthsFormat.abbreviated.eight = "aug";
+	_inst.bs_Latn.monthsFormat.abbreviated.nine = "sep";
+	_inst.bs_Latn.monthsFormat.abbreviated.ten = "okt";
+	_inst.bs_Latn.monthsFormat.abbreviated.eleven = "nov";
+	_inst.bs_Latn.monthsFormat.abbreviated.twelve = "dec";
+	_inst.bs_Latn.monthsFormat.abbreviated.one = "jan";
+
+	_inst.bs_Latn.monthsFormat.wide = {};
+	_inst.bs_Latn.monthsFormat.wide.two = "februar";
+	_inst.bs_Latn.monthsFormat.wide.three = "mart";
+	_inst.bs_Latn.monthsFormat.wide.four = "april";
+	_inst.bs_Latn.monthsFormat.wide.five = "maj";
+	_inst.bs_Latn.monthsFormat.wide.six = "juni";
+	_inst.bs_Latn.monthsFormat.wide.seven = "juli";
+	_inst.bs_Latn.monthsFormat.wide.eight = "august";
+	_inst.bs_Latn.monthsFormat.wide.nine = "septembar";
+	_inst.bs_Latn.monthsFormat.wide.ten = "oktobar";
+	_inst.bs_Latn.monthsFormat.wide.eleven = "novembar";
+	_inst.bs_Latn.monthsFormat.wide.twelve = "decembar";
+	_inst.bs_Latn.monthsFormat.wide.one = "januar";
+
+	_inst.bs_Latn.symbols = {};
+	_inst.bs_Latn.symbols.currency = "¤";
+
+	_inst.bs_Latn.timeFormat = {};
+	_inst.bs_Latn.timeFormat.short = "HH:mm";
+	_inst.bs_Latn.timeFormat.medium = "HH:mm:ss";
+	_inst.bs_Latn.currencyFormat = "#,##0.00 ¤";
+	_inst.bs_Latn.decimalFormat = "#,##0.###";
+
+	_inst.bs_Latn.dateTimeFormat = {};
+	_inst.bs_Latn.dateTimeFormat.full = "{1}, {0}";
+	_inst.bs_Latn.dateTimeFormat.short = "{1} {0}";
+	_inst.bs_Latn.dateTimeFormat.medium = "{1} {0}";
+
+	_inst.bs_Latn.dateTimeFormat.availableFormats = {};
+	_inst.bs_Latn.dateTimeFormat.availableFormats.MMMMW_count_other = "W. 'sedmica' 'mjesec' MMMM";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.yM = "MM/y";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.y = "y.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.yMd = "d. M. y.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.yMEd = "E, d. M. y.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.yMMM = "MMM y.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.yMMMd = "d. MMM y.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.yMMMEd = "E, d. MMM y.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.yMMMM = "LLLL y.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.yQQQ = "QQQ y.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.yw_count_other = "w. 'sedmica' 'u' Y.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.MMMMEd = "E, d. MMMM";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.MMMMW_count_few = "W. 'sedmica' 'mjesec' MMMM";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.yw_count_few = "w. 'sedmica' 'u' Y.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.MMMMW_count_one = "W. 'sedmica' 'mjesec' MMMM";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.yMM = "M. y.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.yw_count_one = "w. 'sedmica' 'u' Y.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.d = "d.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.Ed = "E, d.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.Gy = "y. G";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.GyMd = "d. M. y. G";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.GyMMM = "MMM y. G";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.GyMMMd = "d. MMM y. G";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.GyMMMEd = "E, d. MMM y. G";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.h = "h a";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.H = "HH";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.hm = "hh:mm a";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.hms = "hh:mm:ss a";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a (v)";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss (v)";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.hmv = "h:mm a (v)";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.Hmv = "HH:mm (v)";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.M = "L";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.Md = "d. M.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.MEd = "E, d. M.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.MMdd = "d. M.";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.MMMd = "d. MMM";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.MMMEd = "E, d. MMM";
+	_inst.bs_Latn.dateTimeFormat.availableFormats.MMMMd = "d. MMMM";
+	_inst.bs_Latn.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.bs_Latn.dateFormat = {};
+	_inst.bs_Latn.dateFormat.short = "d. M. y.";
+	_inst.bs_Latn.dateFormat.medium = "d. MMM y.";
+	_inst.bs_Latn.dateFormat.long = "d. MMMM y.";
+	_inst.bs_Latn.dateFormat.full = "EEEE, d. MMMM y.";
+
+	_inst.bs_Latn.daysFormat = {};
+
+	_inst.bs_Latn.daysFormat.narrow = {};
+	_inst.bs_Latn.daysFormat.narrow.sun = "N";
+	_inst.bs_Latn.daysFormat.narrow.mon = "P";
+	_inst.bs_Latn.daysFormat.narrow.tue = "U";
+	_inst.bs_Latn.daysFormat.narrow.wed = "S";
+	_inst.bs_Latn.daysFormat.narrow.thu = "Č";
+	_inst.bs_Latn.daysFormat.narrow.fri = "P";
+	_inst.bs_Latn.daysFormat.narrow.sat = "S";
+
+	_inst.bs_Latn.daysFormat.abbreviated = {};
+	_inst.bs_Latn.daysFormat.abbreviated.sun = "ned";
+	_inst.bs_Latn.daysFormat.abbreviated.mon = "pon";
+	_inst.bs_Latn.daysFormat.abbreviated.tue = "uto";
+	_inst.bs_Latn.daysFormat.abbreviated.wed = "sri";
+	_inst.bs_Latn.daysFormat.abbreviated.thu = "čet";
+	_inst.bs_Latn.daysFormat.abbreviated.fri = "pet";
+	_inst.bs_Latn.daysFormat.abbreviated.sat = "sub";
+
+	_inst.bs_Latn.daysFormat.short = {};
+	_inst.bs_Latn.daysFormat.short.sun = "ned";
+	_inst.bs_Latn.daysFormat.short.mon = "pon";
+	_inst.bs_Latn.daysFormat.short.tue = "uto";
+	_inst.bs_Latn.daysFormat.short.wed = "sri";
+	_inst.bs_Latn.daysFormat.short.thu = "čet";
+	_inst.bs_Latn.daysFormat.short.fri = "pet";
+	_inst.bs_Latn.daysFormat.short.sat = "sub";
+
+	_inst.bs_Latn.daysFormat.wide = {};
+	_inst.bs_Latn.daysFormat.wide.sun = "nedjelja";
+	_inst.bs_Latn.daysFormat.wide.mon = "ponedjeljak";
+	_inst.bs_Latn.daysFormat.wide.tue = "utorak";
+	_inst.bs_Latn.daysFormat.wide.wed = "srijeda";
+	_inst.bs_Latn.daysFormat.wide.thu = "četvrtak";
+	_inst.bs_Latn.daysFormat.wide.fri = "petak";
+	_inst.bs_Latn.daysFormat.wide.sat = "subota";
+
+	_inst.doi = {};
+
+	_inst.doi.monthsFormat = {};
+
+	_inst.doi.monthsFormat.narrow = {};
+	_inst.doi.monthsFormat.narrow.two = "फ";
+	_inst.doi.monthsFormat.narrow.three = "मा";
+	_inst.doi.monthsFormat.narrow.four = "अ";
+	_inst.doi.monthsFormat.narrow.five = "मे";
+	_inst.doi.monthsFormat.narrow.six = "जू";
+	_inst.doi.monthsFormat.narrow.seven = "जु";
+	_inst.doi.monthsFormat.narrow.eight = "अ";
+	_inst.doi.monthsFormat.narrow.nine = "सि";
+	_inst.doi.monthsFormat.narrow.ten = "अ";
+	_inst.doi.monthsFormat.narrow.eleven = "न";
+	_inst.doi.monthsFormat.narrow.twelve = "दि";
+	_inst.doi.monthsFormat.narrow.one = "ज";
+
+	_inst.doi.monthsFormat.abbreviated = {};
+	_inst.doi.monthsFormat.abbreviated.two = "फर.";
+	_inst.doi.monthsFormat.abbreviated.three = "मार्च";
+	_inst.doi.monthsFormat.abbreviated.four = "अप्रैल";
+	_inst.doi.monthsFormat.abbreviated.five = "मेई";
+	_inst.doi.monthsFormat.abbreviated.six = "जून";
+	_inst.doi.monthsFormat.abbreviated.seven = "जुलाई";
+	_inst.doi.monthsFormat.abbreviated.eight = "अग.";
+	_inst.doi.monthsFormat.abbreviated.nine = "सित.";
+	_inst.doi.monthsFormat.abbreviated.ten = "अक्तू.";
+	_inst.doi.monthsFormat.abbreviated.eleven = "नव.";
+	_inst.doi.monthsFormat.abbreviated.twelve = "दिस.";
+	_inst.doi.monthsFormat.abbreviated.one = "जन.";
+
+	_inst.doi.monthsFormat.wide = {};
+	_inst.doi.monthsFormat.wide.two = "फरवरी";
+	_inst.doi.monthsFormat.wide.three = "मार्च";
+	_inst.doi.monthsFormat.wide.four = "अप्रैल";
+	_inst.doi.monthsFormat.wide.five = "मेई";
+	_inst.doi.monthsFormat.wide.six = "जून";
+	_inst.doi.monthsFormat.wide.seven = "जुलाई";
+	_inst.doi.monthsFormat.wide.eight = "अगस्त";
+	_inst.doi.monthsFormat.wide.nine = "सितंबर";
+	_inst.doi.monthsFormat.wide.ten = "अक्तूबर";
+	_inst.doi.monthsFormat.wide.eleven = "नवंबर";
+	_inst.doi.monthsFormat.wide.twelve = "दिसंबर";
+	_inst.doi.monthsFormat.wide.one = "जनवरी";
+
+	_inst.doi.symbols = {};
+	_inst.doi.symbols.currency = "¤";
+
+	_inst.doi.timeFormat = {};
+	_inst.doi.timeFormat.short = "h:mm a";
+	_inst.doi.timeFormat.medium = "h:mm:ss a";
+	_inst.doi.currencyFormat = "¤#,##0.00";
+	_inst.doi.decimalFormat = "#,##0.###";
+
+	_inst.doi.dateTimeFormat = {};
+	_inst.doi.dateTimeFormat.full = "{1}, {0}";
+	_inst.doi.dateTimeFormat.short = "{1}, {0}";
+	_inst.doi.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.doi.dateTimeFormat.availableFormats = {};
+	_inst.doi.dateTimeFormat.availableFormats.MMMMW_count_other = "MMMM दा हफ्ता W";
+	_inst.doi.dateTimeFormat.availableFormats.yM = "M/y";
+	_inst.doi.dateTimeFormat.availableFormats.y = "y";
+	_inst.doi.dateTimeFormat.availableFormats.yMd = "d/M/y";
+	_inst.doi.dateTimeFormat.availableFormats.yMEd = "E, d/M/y";
+	_inst.doi.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.doi.dateTimeFormat.availableFormats.yMMMd = "d, MMM y";
+	_inst.doi.dateTimeFormat.availableFormats.yMMMEd = "E, d, MMM y";
+	_inst.doi.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.doi.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.doi.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.doi.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y";
+	_inst.doi.dateTimeFormat.availableFormats.yw_count_other = "Y दा हफ्ता w";
+	_inst.doi.dateTimeFormat.availableFormats.MMMMW_count_one = "MMMM दा हफ्ता W";
+	_inst.doi.dateTimeFormat.availableFormats.yw_count_one = "Y दा हफ्ता w";
+	_inst.doi.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.doi.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.doi.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.doi.dateTimeFormat.availableFormats.d = "d";
+	_inst.doi.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.doi.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.doi.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.doi.dateTimeFormat.availableFormats.Ed = "E d";
+	_inst.doi.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.doi.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.doi.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.doi.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.doi.dateTimeFormat.availableFormats.Gy = "G y";
+	_inst.doi.dateTimeFormat.availableFormats.GyMd = "GGGGG y-MM-dd";
+	_inst.doi.dateTimeFormat.availableFormats.GyMMM = "G y MMM";
+	_inst.doi.dateTimeFormat.availableFormats.GyMMMd = "d, MMM G y";
+	_inst.doi.dateTimeFormat.availableFormats.GyMMMEd = "E, d, MMM G y";
+	_inst.doi.dateTimeFormat.availableFormats.h = "h a";
+	_inst.doi.dateTimeFormat.availableFormats.H = "HH";
+	_inst.doi.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.doi.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.doi.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.doi.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.doi.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.doi.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.doi.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.doi.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.doi.dateTimeFormat.availableFormats.M = "L";
+	_inst.doi.dateTimeFormat.availableFormats.Md = "d/M";
+	_inst.doi.dateTimeFormat.availableFormats.MEd = "E, d/M";
+	_inst.doi.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.doi.dateTimeFormat.availableFormats.MMMd = "d MMM";
+	_inst.doi.dateTimeFormat.availableFormats.MMMEd = "E, d MMM";
+	_inst.doi.dateTimeFormat.availableFormats.MMMMd = "d MMMM";
+	_inst.doi.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.doi.dateFormat = {};
+	_inst.doi.dateFormat.short = "d/M/yy";
+	_inst.doi.dateFormat.medium = "d, MMM y";
+	_inst.doi.dateFormat.long = "d, MMMM y";
+	_inst.doi.dateFormat.full = "EEEE, d, MMMM y";
+
+	_inst.doi.daysFormat = {};
+
+	_inst.doi.daysFormat.narrow = {};
+	_inst.doi.daysFormat.narrow.sun = "ऐ.";
+	_inst.doi.daysFormat.narrow.mon = "सो.";
+	_inst.doi.daysFormat.narrow.tue = "म.";
+	_inst.doi.daysFormat.narrow.wed = "बु.";
+	_inst.doi.daysFormat.narrow.thu = "बी.";
+	_inst.doi.daysFormat.narrow.fri = "शु.";
+	_inst.doi.daysFormat.narrow.sat = "श.";
+
+	_inst.doi.daysFormat.abbreviated = {};
+	_inst.doi.daysFormat.abbreviated.sun = "ऐत";
+	_inst.doi.daysFormat.abbreviated.mon = "सोम";
+	_inst.doi.daysFormat.abbreviated.tue = "मंगल";
+	_inst.doi.daysFormat.abbreviated.wed = "बुध";
+	_inst.doi.daysFormat.abbreviated.thu = "बीर";
+	_inst.doi.daysFormat.abbreviated.fri = "शुक्र";
+	_inst.doi.daysFormat.abbreviated.sat = "शनि";
+
+	_inst.doi.daysFormat.short = {};
+	_inst.doi.daysFormat.short.sun = "ऐत";
+	_inst.doi.daysFormat.short.mon = "सोम";
+	_inst.doi.daysFormat.short.tue = "मंगल";
+	_inst.doi.daysFormat.short.wed = "बुध";
+	_inst.doi.daysFormat.short.thu = "बीर";
+	_inst.doi.daysFormat.short.fri = "शुक्र";
+	_inst.doi.daysFormat.short.sat = "शनि";
+
+	_inst.doi.daysFormat.wide = {};
+	_inst.doi.daysFormat.wide.sun = "ऐतबार";
+	_inst.doi.daysFormat.wide.mon = "सोमबार";
+	_inst.doi.daysFormat.wide.tue = "मंगलबार";
+	_inst.doi.daysFormat.wide.wed = "बुधबार";
+	_inst.doi.daysFormat.wide.thu = "बीरबार";
+	_inst.doi.daysFormat.wide.fri = "शुक्रबार";
+	_inst.doi.daysFormat.wide.sat = "शनिबार";
+
+	_inst.nso = {};
+
+	_inst.nso.monthsFormat = {};
+
+	_inst.nso.monthsFormat.narrow = {};
+	_inst.nso.monthsFormat.narrow.two = "D";
+	_inst.nso.monthsFormat.narrow.three = "H";
+	_inst.nso.monthsFormat.narrow.four = "M";
+	_inst.nso.monthsFormat.narrow.five = "M";
+	_inst.nso.monthsFormat.narrow.six = "P";
+	_inst.nso.monthsFormat.narrow.seven = "M";
+	_inst.nso.monthsFormat.narrow.eight = "P";
+	_inst.nso.monthsFormat.narrow.nine = "L";
+	_inst.nso.monthsFormat.narrow.ten = "D";
+	_inst.nso.monthsFormat.narrow.eleven = "D";
+	_inst.nso.monthsFormat.narrow.twelve = "M";
+	_inst.nso.monthsFormat.narrow.one = "P";
+
+	_inst.nso.monthsFormat.abbreviated = {};
+	_inst.nso.monthsFormat.abbreviated.two = "Dibo";
+	_inst.nso.monthsFormat.abbreviated.three = "Hlak";
+	_inst.nso.monthsFormat.abbreviated.four = "Mora";
+	_inst.nso.monthsFormat.abbreviated.five = "Mei";
+	_inst.nso.monthsFormat.abbreviated.six = "June";
+	_inst.nso.monthsFormat.abbreviated.seven = "Mose";
+	_inst.nso.monthsFormat.abbreviated.eight = "Agosetose";
+	_inst.nso.monthsFormat.abbreviated.nine = "Lewe";
+	_inst.nso.monthsFormat.abbreviated.ten = "Dipha";
+	_inst.nso.monthsFormat.abbreviated.eleven = "Diba";
+	_inst.nso.monthsFormat.abbreviated.twelve = "Manth";
+	_inst.nso.monthsFormat.abbreviated.one = "Phere";
+
+	_inst.nso.monthsFormat.wide = {};
+	_inst.nso.monthsFormat.wide.two = "Febereware";
+	_inst.nso.monthsFormat.wide.three = "Matšhe";
+	_inst.nso.monthsFormat.wide.four = "Aporele";
+	_inst.nso.monthsFormat.wide.five = "Mei";
+	_inst.nso.monthsFormat.wide.six = "June";
+	_inst.nso.monthsFormat.wide.seven = "Julae";
+	_inst.nso.monthsFormat.wide.eight = "Agosetose";
+	_inst.nso.monthsFormat.wide.nine = "Setemere";
+	_inst.nso.monthsFormat.wide.ten = "Oktobore";
+	_inst.nso.monthsFormat.wide.eleven = "Nofemere";
+	_inst.nso.monthsFormat.wide.twelve = "Disemere";
+	_inst.nso.monthsFormat.wide.one = "Janeware";
+
+	_inst.nso.symbols = {};
+	_inst.nso.symbols.currency = "¤";
+
+	_inst.nso.timeFormat = {};
+	_inst.nso.timeFormat.short = "HH:mm";
+	_inst.nso.timeFormat.medium = "HH:mm:ss";
+	_inst.nso.currencyFormat = "¤ #,##0.00";
+	_inst.nso.decimalFormat = "#,##0.###";
+
+	_inst.nso.dateTimeFormat = {};
+	_inst.nso.dateTimeFormat.full = "{1} 'ka' {0}";
+	_inst.nso.dateTimeFormat.short = "{1}, {0}";
+	_inst.nso.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.nso.dateTimeFormat.availableFormats = {};
+	_inst.nso.dateTimeFormat.availableFormats.MMMMW_count_other = "'beke' 'ya' 'bo' W 'ya' MMM";
+	_inst.nso.dateTimeFormat.availableFormats.yM = "y-MM";
+	_inst.nso.dateTimeFormat.availableFormats.y = "y";
+	_inst.nso.dateTimeFormat.availableFormats.yMd = "y-MM-dd";
+	_inst.nso.dateTimeFormat.availableFormats.yMEd = "y-MM-dd, E";
+	_inst.nso.dateTimeFormat.availableFormats.yMMM = "y MMM";
+	_inst.nso.dateTimeFormat.availableFormats.yMMMd = "y MMM d";
+	_inst.nso.dateTimeFormat.availableFormats.yMMMEd = "y MMM d, E";
+	_inst.nso.dateTimeFormat.availableFormats.yMMMM = "y MMMM";
+	_inst.nso.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.nso.dateTimeFormat.availableFormats.yQQQ = "y QQQ";
+	_inst.nso.dateTimeFormat.availableFormats.yQQQQ = "y QQQQ";
+	_inst.nso.dateTimeFormat.availableFormats.yw_count_other = "'beke' 'ya' 'bo' w 'ya' Y";
+	_inst.nso.dateTimeFormat.availableFormats.MMMMW_count_one = "'beke' W 'ya' MMM";
+	_inst.nso.dateTimeFormat.availableFormats.yw_count_one = "'beke' 'ya' 'bo' w 'ya' Y";
+	_inst.nso.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.nso.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.nso.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.nso.dateTimeFormat.availableFormats.d = "d";
+	_inst.nso.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.nso.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.nso.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.nso.dateTimeFormat.availableFormats.Ed = "d, E";
+	_inst.nso.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.nso.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.nso.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.nso.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.nso.dateTimeFormat.availableFormats.Gy = "G y";
+	_inst.nso.dateTimeFormat.availableFormats.GyMd = "GGGGG y-MM-dd";
+	_inst.nso.dateTimeFormat.availableFormats.GyMMM = "G y MMM";
+	_inst.nso.dateTimeFormat.availableFormats.GyMMMd = "G y MMM d";
+	_inst.nso.dateTimeFormat.availableFormats.GyMMMEd = "G y MMM d, E";
+	_inst.nso.dateTimeFormat.availableFormats.h = "h a";
+	_inst.nso.dateTimeFormat.availableFormats.H = "HH";
+	_inst.nso.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.nso.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.nso.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.nso.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.nso.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.nso.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.nso.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.nso.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.nso.dateTimeFormat.availableFormats.M = "L";
+	_inst.nso.dateTimeFormat.availableFormats.Md = "MM-dd";
+	_inst.nso.dateTimeFormat.availableFormats.MEd = "MM-dd, E";
+	_inst.nso.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.nso.dateTimeFormat.availableFormats.MMMd = "MMM d";
+	_inst.nso.dateTimeFormat.availableFormats.MMMEd = "MMM d, E";
+	_inst.nso.dateTimeFormat.availableFormats.MMMMd = "MMMM d";
+	_inst.nso.dateTimeFormat.long = "{1} 'ka' {0}";
+
+	_inst.nso.dateFormat = {};
+	_inst.nso.dateFormat.short = "y-MM-dd";
+	_inst.nso.dateFormat.medium = "y MMM d";
+	_inst.nso.dateFormat.long = "y MMMM d";
+	_inst.nso.dateFormat.full = "y MMMM d, EEEE";
+
+	_inst.nso.daysFormat = {};
+
+	_inst.nso.daysFormat.narrow = {};
+	_inst.nso.daysFormat.narrow.sun = "L";
+	_inst.nso.daysFormat.narrow.mon = "M";
+	_inst.nso.daysFormat.narrow.tue = "B";
+	_inst.nso.daysFormat.narrow.wed = "R";
+	_inst.nso.daysFormat.narrow.thu = "N";
+	_inst.nso.daysFormat.narrow.fri = "H";
+	_inst.nso.daysFormat.narrow.sat = "M";
+
+	_inst.nso.daysFormat.abbreviated = {};
+	_inst.nso.daysFormat.abbreviated.sun = "Lam";
+	_inst.nso.daysFormat.abbreviated.mon = "Mos";
+	_inst.nso.daysFormat.abbreviated.tue = "Bed";
+	_inst.nso.daysFormat.abbreviated.wed = "Rar";
+	_inst.nso.daysFormat.abbreviated.thu = "Ne";
+	_inst.nso.daysFormat.abbreviated.fri = "Hla";
+	_inst.nso.daysFormat.abbreviated.sat = "Mok";
+
+	_inst.nso.daysFormat.short = {};
+	_inst.nso.daysFormat.short.sun = "Lam";
+	_inst.nso.daysFormat.short.mon = "Mos";
+	_inst.nso.daysFormat.short.tue = "Bed";
+	_inst.nso.daysFormat.short.wed = "Rar";
+	_inst.nso.daysFormat.short.thu = "Ne";
+	_inst.nso.daysFormat.short.fri = "Hla";
+	_inst.nso.daysFormat.short.sat = "Mok";
+
+	_inst.nso.daysFormat.wide = {};
+	_inst.nso.daysFormat.wide.sun = "Lamorena";
+	_inst.nso.daysFormat.wide.mon = "Mošupologo";
+	_inst.nso.daysFormat.wide.tue = "Labobedi";
+	_inst.nso.daysFormat.wide.wed = "Laboraro";
+	_inst.nso.daysFormat.wide.thu = "Labone";
+	_inst.nso.daysFormat.wide.fri = "Labohlano";
+	_inst.nso.daysFormat.wide.sat = "Mokibelo";
+
+	_inst.kk_Arab = {};
+
+	_inst.kk_Arab.monthsFormat = {};
+
+	_inst.kk_Arab.monthsFormat.narrow = {};
+	_inst.kk_Arab.monthsFormat.narrow.two = "2";
+	_inst.kk_Arab.monthsFormat.narrow.three = "3";
+	_inst.kk_Arab.monthsFormat.narrow.four = "4";
+	_inst.kk_Arab.monthsFormat.narrow.five = "5";
+	_inst.kk_Arab.monthsFormat.narrow.six = "6";
+	_inst.kk_Arab.monthsFormat.narrow.seven = "7";
+	_inst.kk_Arab.monthsFormat.narrow.eight = "8";
+	_inst.kk_Arab.monthsFormat.narrow.nine = "9";
+	_inst.kk_Arab.monthsFormat.narrow.ten = "10";
+	_inst.kk_Arab.monthsFormat.narrow.eleven = "11";
+	_inst.kk_Arab.monthsFormat.narrow.twelve = "12";
+	_inst.kk_Arab.monthsFormat.narrow.one = "1";
+
+	_inst.kk_Arab.monthsFormat.abbreviated = {};
+	_inst.kk_Arab.monthsFormat.abbreviated.two = "M02";
+	_inst.kk_Arab.monthsFormat.abbreviated.three = "M03";
+	_inst.kk_Arab.monthsFormat.abbreviated.four = "M04";
+	_inst.kk_Arab.monthsFormat.abbreviated.five = "M05";
+	_inst.kk_Arab.monthsFormat.abbreviated.six = "M06";
+	_inst.kk_Arab.monthsFormat.abbreviated.seven = "M07";
+	_inst.kk_Arab.monthsFormat.abbreviated.eight = "M08";
+	_inst.kk_Arab.monthsFormat.abbreviated.nine = "M09";
+	_inst.kk_Arab.monthsFormat.abbreviated.ten = "M10";
+	_inst.kk_Arab.monthsFormat.abbreviated.eleven = "M11";
+	_inst.kk_Arab.monthsFormat.abbreviated.twelve = "M12";
+	_inst.kk_Arab.monthsFormat.abbreviated.one = "M01";
+
+	_inst.kk_Arab.monthsFormat.wide = {};
+	_inst.kk_Arab.monthsFormat.wide.two = "M02";
+	_inst.kk_Arab.monthsFormat.wide.three = "M03";
+	_inst.kk_Arab.monthsFormat.wide.four = "M04";
+	_inst.kk_Arab.monthsFormat.wide.five = "M05";
+	_inst.kk_Arab.monthsFormat.wide.six = "M06";
+	_inst.kk_Arab.monthsFormat.wide.seven = "M07";
+	_inst.kk_Arab.monthsFormat.wide.eight = "M08";
+	_inst.kk_Arab.monthsFormat.wide.nine = "M09";
+	_inst.kk_Arab.monthsFormat.wide.ten = "M10";
+	_inst.kk_Arab.monthsFormat.wide.eleven = "M11";
+	_inst.kk_Arab.monthsFormat.wide.twelve = "M12";
+	_inst.kk_Arab.monthsFormat.wide.one = "M01";
+
+	_inst.kk_Arab.symbols = {};
+	_inst.kk_Arab.symbols.currency = "¤";
+
+	_inst.kk_Arab.timeFormat = {};
+	_inst.kk_Arab.timeFormat.short = "HH:mm";
+	_inst.kk_Arab.timeFormat.medium = "HH:mm:ss";
+	_inst.kk_Arab.currencyFormat = "¤ #,##0.00";
+	_inst.kk_Arab.decimalFormat = "#,##0.###";
+
+	_inst.kk_Arab.dateTimeFormat = {};
+	_inst.kk_Arab.dateTimeFormat.full = "{1} {0}";
+	_inst.kk_Arab.dateTimeFormat.short = "{1} {0}";
+	_inst.kk_Arab.dateTimeFormat.medium = "{1} {0}";
+
+	_inst.kk_Arab.dateTimeFormat.availableFormats = {};
+	_inst.kk_Arab.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.yM = "y-MM";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.y = "y";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.yMd = "y-MM-dd";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.yMEd = "y-MM-dd, E";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.yMMM = "y MMM";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.yMMMd = "y MMM d";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.yMMMEd = "y MMM d, E";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.yMMMM = "y MMMM";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.yQQQ = "y QQQ";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.yQQQQ = "y QQQQ";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.d = "d";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.Ed = "d, E";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.Gy = "G y";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.GyMd = "GGGGG y-MM-dd";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.GyMMM = "G y MMM";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.GyMMMd = "G y MMM d";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.GyMMMEd = "G y MMM d, E";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.h = "h a";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.H = "HH";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.M = "L";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.Md = "MM-dd";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.MEd = "MM-dd, E";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.MMMd = "MMM d";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.MMMEd = "MMM d, E";
+	_inst.kk_Arab.dateTimeFormat.availableFormats.MMMMd = "MMMM d";
+	_inst.kk_Arab.dateTimeFormat.long = "{1} {0}";
+
+	_inst.kk_Arab.dateFormat = {};
+	_inst.kk_Arab.dateFormat.short = "y-MM-dd";
+	_inst.kk_Arab.dateFormat.medium = "y MMM d";
+	_inst.kk_Arab.dateFormat.long = "y MMMM d";
+	_inst.kk_Arab.dateFormat.full = "y MMMM d, EEEE";
+
+	_inst.kk_Arab.daysFormat = {};
+
+	_inst.kk_Arab.daysFormat.narrow = {};
+	_inst.kk_Arab.daysFormat.narrow.sun = "S";
+	_inst.kk_Arab.daysFormat.narrow.mon = "M";
+	_inst.kk_Arab.daysFormat.narrow.tue = "T";
+	_inst.kk_Arab.daysFormat.narrow.wed = "W";
+	_inst.kk_Arab.daysFormat.narrow.thu = "T";
+	_inst.kk_Arab.daysFormat.narrow.fri = "F";
+	_inst.kk_Arab.daysFormat.narrow.sat = "S";
+
+	_inst.kk_Arab.daysFormat.abbreviated = {};
+	_inst.kk_Arab.daysFormat.abbreviated.sun = "Sun";
+	_inst.kk_Arab.daysFormat.abbreviated.mon = "Mon";
+	_inst.kk_Arab.daysFormat.abbreviated.tue = "Tue";
+	_inst.kk_Arab.daysFormat.abbreviated.wed = "Wed";
+	_inst.kk_Arab.daysFormat.abbreviated.thu = "Thu";
+	_inst.kk_Arab.daysFormat.abbreviated.fri = "Fri";
+	_inst.kk_Arab.daysFormat.abbreviated.sat = "Sat";
+
+	_inst.kk_Arab.daysFormat.short = {};
+	_inst.kk_Arab.daysFormat.short.sun = "Sun";
+	_inst.kk_Arab.daysFormat.short.mon = "Mon";
+	_inst.kk_Arab.daysFormat.short.tue = "Tue";
+	_inst.kk_Arab.daysFormat.short.wed = "Wed";
+	_inst.kk_Arab.daysFormat.short.thu = "Thu";
+	_inst.kk_Arab.daysFormat.short.fri = "Fri";
+	_inst.kk_Arab.daysFormat.short.sat = "Sat";
+
+	_inst.kk_Arab.daysFormat.wide = {};
+	_inst.kk_Arab.daysFormat.wide.sun = "Sun";
+	_inst.kk_Arab.daysFormat.wide.mon = "Mon";
+	_inst.kk_Arab.daysFormat.wide.tue = "Tue";
+	_inst.kk_Arab.daysFormat.wide.wed = "Wed";
+	_inst.kk_Arab.daysFormat.wide.thu = "Thu";
+	_inst.kk_Arab.daysFormat.wide.fri = "Fri";
+	_inst.kk_Arab.daysFormat.wide.sat = "Sat";
+
+	_inst.fr_MC = {};
+
+	_inst.fr_MC.monthsFormat = {};
+
+	_inst.fr_MC.monthsFormat.narrow = {};
+	_inst.fr_MC.monthsFormat.narrow.two = "F";
+	_inst.fr_MC.monthsFormat.narrow.three = "M";
+	_inst.fr_MC.monthsFormat.narrow.four = "A";
+	_inst.fr_MC.monthsFormat.narrow.five = "M";
+	_inst.fr_MC.monthsFormat.narrow.six = "J";
+	_inst.fr_MC.monthsFormat.narrow.seven = "J";
+	_inst.fr_MC.monthsFormat.narrow.eight = "A";
+	_inst.fr_MC.monthsFormat.narrow.nine = "S";
+	_inst.fr_MC.monthsFormat.narrow.ten = "O";
+	_inst.fr_MC.monthsFormat.narrow.eleven = "N";
+	_inst.fr_MC.monthsFormat.narrow.twelve = "D";
+	_inst.fr_MC.monthsFormat.narrow.one = "J";
+
+	_inst.fr_MC.monthsFormat.abbreviated = {};
+	_inst.fr_MC.monthsFormat.abbreviated.two = "févr.";
+	_inst.fr_MC.monthsFormat.abbreviated.three = "mars";
+	_inst.fr_MC.monthsFormat.abbreviated.four = "avr.";
+	_inst.fr_MC.monthsFormat.abbreviated.five = "mai";
+	_inst.fr_MC.monthsFormat.abbreviated.six = "juin";
+	_inst.fr_MC.monthsFormat.abbreviated.seven = "juil.";
+	_inst.fr_MC.monthsFormat.abbreviated.eight = "août";
+	_inst.fr_MC.monthsFormat.abbreviated.nine = "sept.";
+	_inst.fr_MC.monthsFormat.abbreviated.ten = "oct.";
+	_inst.fr_MC.monthsFormat.abbreviated.eleven = "nov.";
+	_inst.fr_MC.monthsFormat.abbreviated.twelve = "déc.";
+	_inst.fr_MC.monthsFormat.abbreviated.one = "janv.";
+
+	_inst.fr_MC.monthsFormat.wide = {};
+	_inst.fr_MC.monthsFormat.wide.two = "février";
+	_inst.fr_MC.monthsFormat.wide.three = "mars";
+	_inst.fr_MC.monthsFormat.wide.four = "avril";
+	_inst.fr_MC.monthsFormat.wide.five = "mai";
+	_inst.fr_MC.monthsFormat.wide.six = "juin";
+	_inst.fr_MC.monthsFormat.wide.seven = "juillet";
+	_inst.fr_MC.monthsFormat.wide.eight = "août";
+	_inst.fr_MC.monthsFormat.wide.nine = "septembre";
+	_inst.fr_MC.monthsFormat.wide.ten = "octobre";
+	_inst.fr_MC.monthsFormat.wide.eleven = "novembre";
+	_inst.fr_MC.monthsFormat.wide.twelve = "décembre";
+	_inst.fr_MC.monthsFormat.wide.one = "janvier";
+
+	_inst.fr_MC.symbols = {};
+	_inst.fr_MC.symbols.currency = "€";
+
+	_inst.fr_MC.timeFormat = {};
+	_inst.fr_MC.timeFormat.short = "HH:mm";
+	_inst.fr_MC.timeFormat.medium = "HH:mm:ss";
+	_inst.fr_MC.currencyFormat = "#,##0.00 ¤";
+	_inst.fr_MC.decimalFormat = "#,##0.###";
+
+	_inst.fr_MC.dateTimeFormat = {};
+	_inst.fr_MC.dateTimeFormat.full = "{1}, {0}";
+	_inst.fr_MC.dateTimeFormat.short = "{1} {0}";
+	_inst.fr_MC.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.fr_MC.dateTimeFormat.availableFormats = {};
+	_inst.fr_MC.dateTimeFormat.availableFormats.MMMMW_count_other = "'semaine' W (MMMM)";
+	_inst.fr_MC.dateTimeFormat.availableFormats.yM = "MM/y";
+	_inst.fr_MC.dateTimeFormat.availableFormats.y = "y";
+	_inst.fr_MC.dateTimeFormat.availableFormats.yMd = "dd/MM/y";
+	_inst.fr_MC.dateTimeFormat.availableFormats.yMEd = "E dd/MM/y";
+	_inst.fr_MC.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.fr_MC.dateTimeFormat.availableFormats.yMMMd = "d MMM y";
+	_inst.fr_MC.dateTimeFormat.availableFormats.yMMMEd = "E d MMM y";
+	_inst.fr_MC.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.fr_MC.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.fr_MC.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.fr_MC.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y";
+	_inst.fr_MC.dateTimeFormat.availableFormats.yw_count_other = "'semaine' w 'de' Y";
+	_inst.fr_MC.dateTimeFormat.availableFormats.MMMMW_count_one = "'semaine' W (MMMM)";
+	_inst.fr_MC.dateTimeFormat.availableFormats.yw_count_one = "'semaine' w 'de' Y";
+	_inst.fr_MC.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.fr_MC.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.fr_MC.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.fr_MC.dateTimeFormat.availableFormats.d = "d";
+	_inst.fr_MC.dateTimeFormat.availableFormats.E = "E";
+	_inst.fr_MC.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.fr_MC.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.fr_MC.dateTimeFormat.availableFormats.Ed = "E d";
+	_inst.fr_MC.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.fr_MC.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.fr_MC.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.fr_MC.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.fr_MC.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.fr_MC.dateTimeFormat.availableFormats.GyMd = "dd/MM/y GGGGG";
+	_inst.fr_MC.dateTimeFormat.availableFormats.GyMMM = "MMM y G";
+	_inst.fr_MC.dateTimeFormat.availableFormats.GyMMMd = "d MMM y G";
+	_inst.fr_MC.dateTimeFormat.availableFormats.GyMMMEd = "E d MMM y G";
+	_inst.fr_MC.dateTimeFormat.availableFormats.h = "h a";
+	_inst.fr_MC.dateTimeFormat.availableFormats.H = "HH 'h'";
+	_inst.fr_MC.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.fr_MC.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.fr_MC.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.fr_MC.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.fr_MC.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.fr_MC.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.fr_MC.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.fr_MC.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.fr_MC.dateTimeFormat.availableFormats.M = "L";
+	_inst.fr_MC.dateTimeFormat.availableFormats.Md = "dd/MM";
+	_inst.fr_MC.dateTimeFormat.availableFormats.MEd = "E dd/MM";
+	_inst.fr_MC.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.fr_MC.dateTimeFormat.availableFormats.MMMd = "d MMM";
+	_inst.fr_MC.dateTimeFormat.availableFormats.MMMEd = "E d MMM";
+	_inst.fr_MC.dateTimeFormat.availableFormats.MMMMd = "d MMMM";
+	_inst.fr_MC.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.fr_MC.dateFormat = {};
+	_inst.fr_MC.dateFormat.short = "dd/MM/y";
+	_inst.fr_MC.dateFormat.medium = "d MMM y";
+	_inst.fr_MC.dateFormat.long = "d MMMM y";
+	_inst.fr_MC.dateFormat.full = "EEEE d MMMM y";
+
+	_inst.fr_MC.daysFormat = {};
+
+	_inst.fr_MC.daysFormat.narrow = {};
+	_inst.fr_MC.daysFormat.narrow.sun = "D";
+	_inst.fr_MC.daysFormat.narrow.mon = "L";
+	_inst.fr_MC.daysFormat.narrow.tue = "M";
+	_inst.fr_MC.daysFormat.narrow.wed = "M";
+	_inst.fr_MC.daysFormat.narrow.thu = "J";
+	_inst.fr_MC.daysFormat.narrow.fri = "V";
+	_inst.fr_MC.daysFormat.narrow.sat = "S";
+
+	_inst.fr_MC.daysFormat.abbreviated = {};
+	_inst.fr_MC.daysFormat.abbreviated.sun = "dim.";
+	_inst.fr_MC.daysFormat.abbreviated.mon = "lun.";
+	_inst.fr_MC.daysFormat.abbreviated.tue = "mar.";
+	_inst.fr_MC.daysFormat.abbreviated.wed = "mer.";
+	_inst.fr_MC.daysFormat.abbreviated.thu = "jeu.";
+	_inst.fr_MC.daysFormat.abbreviated.fri = "ven.";
+	_inst.fr_MC.daysFormat.abbreviated.sat = "sam.";
+
+	_inst.fr_MC.daysFormat.short = {};
+	_inst.fr_MC.daysFormat.short.sun = "di";
+	_inst.fr_MC.daysFormat.short.mon = "lu";
+	_inst.fr_MC.daysFormat.short.tue = "ma";
+	_inst.fr_MC.daysFormat.short.wed = "me";
+	_inst.fr_MC.daysFormat.short.thu = "je";
+	_inst.fr_MC.daysFormat.short.fri = "ve";
+	_inst.fr_MC.daysFormat.short.sat = "sa";
+
+	_inst.fr_MC.daysFormat.wide = {};
+	_inst.fr_MC.daysFormat.wide.sun = "dimanche";
+	_inst.fr_MC.daysFormat.wide.mon = "lundi";
+	_inst.fr_MC.daysFormat.wide.tue = "mardi";
+	_inst.fr_MC.daysFormat.wide.wed = "mercredi";
+	_inst.fr_MC.daysFormat.wide.thu = "jeudi";
+	_inst.fr_MC.daysFormat.wide.fri = "vendredi";
+	_inst.fr_MC.daysFormat.wide.sat = "samedi";
+
+	_inst.bm_Nkoo = {};
+
+	_inst.bm_Nkoo.monthsFormat = {};
+
+	_inst.bm_Nkoo.monthsFormat.narrow = {};
+	_inst.bm_Nkoo.monthsFormat.narrow.two = "2";
+	_inst.bm_Nkoo.monthsFormat.narrow.three = "3";
+	_inst.bm_Nkoo.monthsFormat.narrow.four = "4";
+	_inst.bm_Nkoo.monthsFormat.narrow.five = "5";
+	_inst.bm_Nkoo.monthsFormat.narrow.six = "6";
+	_inst.bm_Nkoo.monthsFormat.narrow.seven = "7";
+	_inst.bm_Nkoo.monthsFormat.narrow.eight = "8";
+	_inst.bm_Nkoo.monthsFormat.narrow.nine = "9";
+	_inst.bm_Nkoo.monthsFormat.narrow.ten = "10";
+	_inst.bm_Nkoo.monthsFormat.narrow.eleven = "11";
+	_inst.bm_Nkoo.monthsFormat.narrow.twelve = "12";
+	_inst.bm_Nkoo.monthsFormat.narrow.one = "1";
+
+	_inst.bm_Nkoo.monthsFormat.abbreviated = {};
+	_inst.bm_Nkoo.monthsFormat.abbreviated.two = "M02";
+	_inst.bm_Nkoo.monthsFormat.abbreviated.three = "M03";
+	_inst.bm_Nkoo.monthsFormat.abbreviated.four = "M04";
+	_inst.bm_Nkoo.monthsFormat.abbreviated.five = "M05";
+	_inst.bm_Nkoo.monthsFormat.abbreviated.six = "M06";
+	_inst.bm_Nkoo.monthsFormat.abbreviated.seven = "M07";
+	_inst.bm_Nkoo.monthsFormat.abbreviated.eight = "M08";
+	_inst.bm_Nkoo.monthsFormat.abbreviated.nine = "M09";
+	_inst.bm_Nkoo.monthsFormat.abbreviated.ten = "M10";
+	_inst.bm_Nkoo.monthsFormat.abbreviated.eleven = "M11";
+	_inst.bm_Nkoo.monthsFormat.abbreviated.twelve = "M12";
+	_inst.bm_Nkoo.monthsFormat.abbreviated.one = "M01";
+
+	_inst.bm_Nkoo.monthsFormat.wide = {};
+	_inst.bm_Nkoo.monthsFormat.wide.two = "M02";
+	_inst.bm_Nkoo.monthsFormat.wide.three = "M03";
+	_inst.bm_Nkoo.monthsFormat.wide.four = "M04";
+	_inst.bm_Nkoo.monthsFormat.wide.five = "M05";
+	_inst.bm_Nkoo.monthsFormat.wide.six = "M06";
+	_inst.bm_Nkoo.monthsFormat.wide.seven = "M07";
+	_inst.bm_Nkoo.monthsFormat.wide.eight = "M08";
+	_inst.bm_Nkoo.monthsFormat.wide.nine = "M09";
+	_inst.bm_Nkoo.monthsFormat.wide.ten = "M10";
+	_inst.bm_Nkoo.monthsFormat.wide.eleven = "M11";
+	_inst.bm_Nkoo.monthsFormat.wide.twelve = "M12";
+	_inst.bm_Nkoo.monthsFormat.wide.one = "M01";
+
+	_inst.bm_Nkoo.symbols = {};
+	_inst.bm_Nkoo.symbols.currency = "¤";
+
+	_inst.bm_Nkoo.timeFormat = {};
+	_inst.bm_Nkoo.timeFormat.short = "HH:mm";
+	_inst.bm_Nkoo.timeFormat.medium = "HH:mm:ss";
+	_inst.bm_Nkoo.currencyFormat = "¤ #,##0.00";
+	_inst.bm_Nkoo.decimalFormat = "#,##0.###";
+
+	_inst.bm_Nkoo.dateTimeFormat = {};
+	_inst.bm_Nkoo.dateTimeFormat.full = "{1} {0}";
+	_inst.bm_Nkoo.dateTimeFormat.short = "{1} {0}";
+	_inst.bm_Nkoo.dateTimeFormat.medium = "{1} {0}";
+
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats = {};
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.yM = "y-MM";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.y = "y";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.yMd = "y-MM-dd";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.yMEd = "y-MM-dd, E";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.yMMM = "y MMM";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.yMMMd = "y MMM d";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.yMMMEd = "y MMM d, E";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.yMMMM = "y MMMM";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.yQQQ = "y QQQ";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.yQQQQ = "y QQQQ";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.d = "d";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.Ed = "d, E";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.Gy = "G y";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.GyMd = "GGGGG y-MM-dd";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.GyMMM = "G y MMM";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.GyMMMd = "G y MMM d";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.GyMMMEd = "G y MMM d, E";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.h = "h a";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.H = "HH";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.M = "L";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.Md = "MM-dd";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.MEd = "MM-dd, E";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.MMMd = "MMM d";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.MMMEd = "MMM d, E";
+	_inst.bm_Nkoo.dateTimeFormat.availableFormats.MMMMd = "MMMM d";
+	_inst.bm_Nkoo.dateTimeFormat.long = "{1} {0}";
+
+	_inst.bm_Nkoo.dateFormat = {};
+	_inst.bm_Nkoo.dateFormat.short = "y-MM-dd";
+	_inst.bm_Nkoo.dateFormat.medium = "y MMM d";
+	_inst.bm_Nkoo.dateFormat.long = "y MMMM d";
+	_inst.bm_Nkoo.dateFormat.full = "y MMMM d, EEEE";
+
+	_inst.bm_Nkoo.daysFormat = {};
+
+	_inst.bm_Nkoo.daysFormat.narrow = {};
+	_inst.bm_Nkoo.daysFormat.narrow.sun = "S";
+	_inst.bm_Nkoo.daysFormat.narrow.mon = "M";
+	_inst.bm_Nkoo.daysFormat.narrow.tue = "T";
+	_inst.bm_Nkoo.daysFormat.narrow.wed = "W";
+	_inst.bm_Nkoo.daysFormat.narrow.thu = "T";
+	_inst.bm_Nkoo.daysFormat.narrow.fri = "F";
+	_inst.bm_Nkoo.daysFormat.narrow.sat = "S";
+
+	_inst.bm_Nkoo.daysFormat.abbreviated = {};
+	_inst.bm_Nkoo.daysFormat.abbreviated.sun = "Sun";
+	_inst.bm_Nkoo.daysFormat.abbreviated.mon = "Mon";
+	_inst.bm_Nkoo.daysFormat.abbreviated.tue = "Tue";
+	_inst.bm_Nkoo.daysFormat.abbreviated.wed = "Wed";
+	_inst.bm_Nkoo.daysFormat.abbreviated.thu = "Thu";
+	_inst.bm_Nkoo.daysFormat.abbreviated.fri = "Fri";
+	_inst.bm_Nkoo.daysFormat.abbreviated.sat = "Sat";
+
+	_inst.bm_Nkoo.daysFormat.short = {};
+	_inst.bm_Nkoo.daysFormat.short.sun = "Sun";
+	_inst.bm_Nkoo.daysFormat.short.mon = "Mon";
+	_inst.bm_Nkoo.daysFormat.short.tue = "Tue";
+	_inst.bm_Nkoo.daysFormat.short.wed = "Wed";
+	_inst.bm_Nkoo.daysFormat.short.thu = "Thu";
+	_inst.bm_Nkoo.daysFormat.short.fri = "Fri";
+	_inst.bm_Nkoo.daysFormat.short.sat = "Sat";
+
+	_inst.bm_Nkoo.daysFormat.wide = {};
+	_inst.bm_Nkoo.daysFormat.wide.sun = "Sun";
+	_inst.bm_Nkoo.daysFormat.wide.mon = "Mon";
+	_inst.bm_Nkoo.daysFormat.wide.tue = "Tue";
+	_inst.bm_Nkoo.daysFormat.wide.wed = "Wed";
+	_inst.bm_Nkoo.daysFormat.wide.thu = "Thu";
+	_inst.bm_Nkoo.daysFormat.wide.fri = "Fri";
+	_inst.bm_Nkoo.daysFormat.wide.sat = "Sat";
+
+	_inst.skr = {};
+
+	_inst.skr.monthsFormat = {};
+
+	_inst.skr.monthsFormat.narrow = {};
+	_inst.skr.monthsFormat.narrow.two = "2";
+	_inst.skr.monthsFormat.narrow.three = "3";
+	_inst.skr.monthsFormat.narrow.four = "4";
+	_inst.skr.monthsFormat.narrow.five = "5";
+	_inst.skr.monthsFormat.narrow.six = "6";
+	_inst.skr.monthsFormat.narrow.seven = "7";
+	_inst.skr.monthsFormat.narrow.eight = "8";
+	_inst.skr.monthsFormat.narrow.nine = "9";
+	_inst.skr.monthsFormat.narrow.ten = "10";
+	_inst.skr.monthsFormat.narrow.eleven = "11";
+	_inst.skr.monthsFormat.narrow.twelve = "12";
+	_inst.skr.monthsFormat.narrow.one = "1";
+
+	_inst.skr.monthsFormat.abbreviated = {};
+	_inst.skr.monthsFormat.abbreviated.two = "M02";
+	_inst.skr.monthsFormat.abbreviated.three = "M03";
+	_inst.skr.monthsFormat.abbreviated.four = "M04";
+	_inst.skr.monthsFormat.abbreviated.five = "M05";
+	_inst.skr.monthsFormat.abbreviated.six = "M06";
+	_inst.skr.monthsFormat.abbreviated.seven = "M07";
+	_inst.skr.monthsFormat.abbreviated.eight = "M08";
+	_inst.skr.monthsFormat.abbreviated.nine = "M09";
+	_inst.skr.monthsFormat.abbreviated.ten = "M10";
+	_inst.skr.monthsFormat.abbreviated.eleven = "M11";
+	_inst.skr.monthsFormat.abbreviated.twelve = "M12";
+	_inst.skr.monthsFormat.abbreviated.one = "M01";
+
+	_inst.skr.monthsFormat.wide = {};
+	_inst.skr.monthsFormat.wide.two = "M02";
+	_inst.skr.monthsFormat.wide.three = "M03";
+	_inst.skr.monthsFormat.wide.four = "M04";
+	_inst.skr.monthsFormat.wide.five = "M05";
+	_inst.skr.monthsFormat.wide.six = "M06";
+	_inst.skr.monthsFormat.wide.seven = "M07";
+	_inst.skr.monthsFormat.wide.eight = "M08";
+	_inst.skr.monthsFormat.wide.nine = "M09";
+	_inst.skr.monthsFormat.wide.ten = "M10";
+	_inst.skr.monthsFormat.wide.eleven = "M11";
+	_inst.skr.monthsFormat.wide.twelve = "M12";
+	_inst.skr.monthsFormat.wide.one = "M01";
+
+	_inst.skr.symbols = {};
+	_inst.skr.symbols.currency = "¤";
+
+	_inst.skr.timeFormat = {};
+	_inst.skr.timeFormat.short = "HH:mm";
+	_inst.skr.timeFormat.medium = "HH:mm:ss";
+	_inst.skr.currencyFormat = "¤ #,##0.00";
+	_inst.skr.decimalFormat = "#,##0.###";
+
+	_inst.skr.dateTimeFormat = {};
+	_inst.skr.dateTimeFormat.full = "{1} {0}";
+	_inst.skr.dateTimeFormat.short = "{1} {0}";
+	_inst.skr.dateTimeFormat.medium = "{1} {0}";
+
+	_inst.skr.dateTimeFormat.availableFormats = {};
+	_inst.skr.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.skr.dateTimeFormat.availableFormats.yM = "y-MM";
+	_inst.skr.dateTimeFormat.availableFormats.y = "y";
+	_inst.skr.dateTimeFormat.availableFormats.yMd = "y-MM-dd";
+	_inst.skr.dateTimeFormat.availableFormats.yMEd = "y-MM-dd, E";
+	_inst.skr.dateTimeFormat.availableFormats.yMMM = "y MMM";
+	_inst.skr.dateTimeFormat.availableFormats.yMMMd = "y MMM d";
+	_inst.skr.dateTimeFormat.availableFormats.yMMMEd = "y MMM d, E";
+	_inst.skr.dateTimeFormat.availableFormats.yMMMM = "y MMMM";
+	_inst.skr.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.skr.dateTimeFormat.availableFormats.yQQQ = "y QQQ";
+	_inst.skr.dateTimeFormat.availableFormats.yQQQQ = "y QQQQ";
+	_inst.skr.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.skr.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.skr.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.skr.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.skr.dateTimeFormat.availableFormats.d = "d";
+	_inst.skr.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.skr.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.skr.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.skr.dateTimeFormat.availableFormats.Ed = "d, E";
+	_inst.skr.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.skr.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.skr.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.skr.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.skr.dateTimeFormat.availableFormats.Gy = "G y";
+	_inst.skr.dateTimeFormat.availableFormats.GyMd = "GGGGG y-MM-dd";
+	_inst.skr.dateTimeFormat.availableFormats.GyMMM = "G y MMM";
+	_inst.skr.dateTimeFormat.availableFormats.GyMMMd = "G y MMM d";
+	_inst.skr.dateTimeFormat.availableFormats.GyMMMEd = "G y MMM d, E";
+	_inst.skr.dateTimeFormat.availableFormats.h = "h a";
+	_inst.skr.dateTimeFormat.availableFormats.H = "HH";
+	_inst.skr.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.skr.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.skr.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.skr.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.skr.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.skr.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.skr.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.skr.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.skr.dateTimeFormat.availableFormats.M = "L";
+	_inst.skr.dateTimeFormat.availableFormats.Md = "MM-dd";
+	_inst.skr.dateTimeFormat.availableFormats.MEd = "MM-dd, E";
+	_inst.skr.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.skr.dateTimeFormat.availableFormats.MMMd = "MMM d";
+	_inst.skr.dateTimeFormat.availableFormats.MMMEd = "MMM d, E";
+	_inst.skr.dateTimeFormat.availableFormats.MMMMd = "MMMM d";
+	_inst.skr.dateTimeFormat.long = "{1} {0}";
+
+	_inst.skr.dateFormat = {};
+	_inst.skr.dateFormat.short = "y-MM-dd";
+	_inst.skr.dateFormat.medium = "y MMM d";
+	_inst.skr.dateFormat.long = "y MMMM d";
+	_inst.skr.dateFormat.full = "y MMMM d, EEEE";
+
+	_inst.skr.daysFormat = {};
+
+	_inst.skr.daysFormat.narrow = {};
+	_inst.skr.daysFormat.narrow.sun = "S";
+	_inst.skr.daysFormat.narrow.mon = "M";
+	_inst.skr.daysFormat.narrow.tue = "T";
+	_inst.skr.daysFormat.narrow.wed = "W";
+	_inst.skr.daysFormat.narrow.thu = "T";
+	_inst.skr.daysFormat.narrow.fri = "F";
+	_inst.skr.daysFormat.narrow.sat = "S";
+
+	_inst.skr.daysFormat.abbreviated = {};
+	_inst.skr.daysFormat.abbreviated.sun = "Sun";
+	_inst.skr.daysFormat.abbreviated.mon = "Mon";
+	_inst.skr.daysFormat.abbreviated.tue = "Tue";
+	_inst.skr.daysFormat.abbreviated.wed = "Wed";
+	_inst.skr.daysFormat.abbreviated.thu = "Thu";
+	_inst.skr.daysFormat.abbreviated.fri = "Fri";
+	_inst.skr.daysFormat.abbreviated.sat = "Sat";
+
+	_inst.skr.daysFormat.short = {};
+	_inst.skr.daysFormat.short.sun = "Sun";
+	_inst.skr.daysFormat.short.mon = "Mon";
+	_inst.skr.daysFormat.short.tue = "Tue";
+	_inst.skr.daysFormat.short.wed = "Wed";
+	_inst.skr.daysFormat.short.thu = "Thu";
+	_inst.skr.daysFormat.short.fri = "Fri";
+	_inst.skr.daysFormat.short.sat = "Sat";
+
+	_inst.skr.daysFormat.wide = {};
+	_inst.skr.daysFormat.wide.sun = "Sun";
+	_inst.skr.daysFormat.wide.mon = "Mon";
+	_inst.skr.daysFormat.wide.tue = "Tue";
+	_inst.skr.daysFormat.wide.wed = "Wed";
+	_inst.skr.daysFormat.wide.thu = "Thu";
+	_inst.skr.daysFormat.wide.fri = "Fri";
+	_inst.skr.daysFormat.wide.sat = "Sat";
+
+	_inst.kxv = {};
+
+	_inst.kxv.monthsFormat = {};
+
+	_inst.kxv.monthsFormat.narrow = {};
+	_inst.kxv.monthsFormat.narrow.two = "ma";
+	_inst.kxv.monthsFormat.narrow.three = "pa";
+	_inst.kxv.monthsFormat.narrow.four = "hi";
+	_inst.kxv.monthsFormat.narrow.five = "be";
+	_inst.kxv.monthsFormat.narrow.six = "ja";
+	_inst.kxv.monthsFormat.narrow.seven = "aa";
+	_inst.kxv.monthsFormat.narrow.eight = "sra";
+	_inst.kxv.monthsFormat.narrow.nine = "b";
+	_inst.kxv.monthsFormat.narrow.ten = "da";
+	_inst.kxv.monthsFormat.narrow.eleven = "di";
+	_inst.kxv.monthsFormat.narrow.twelve = "pa";
+	_inst.kxv.monthsFormat.narrow.one = "pu";
+
+	_inst.kxv.monthsFormat.abbreviated = {};
+	_inst.kxv.monthsFormat.abbreviated.two = "maha";
+	_inst.kxv.monthsFormat.abbreviated.three = "pagu";
+	_inst.kxv.monthsFormat.abbreviated.four = "hire";
+	_inst.kxv.monthsFormat.abbreviated.five = "bese";
+	_inst.kxv.monthsFormat.abbreviated.six = "jaṭṭa";
+	_inst.kxv.monthsFormat.abbreviated.seven = "aasaḍi";
+	_inst.kxv.monthsFormat.abbreviated.eight = "srabĩ";
+	_inst.kxv.monthsFormat.abbreviated.nine = "bado";
+	_inst.kxv.monthsFormat.abbreviated.ten = "dasara";
+	_inst.kxv.monthsFormat.abbreviated.eleven = "divi";
+	_inst.kxv.monthsFormat.abbreviated.twelve = "pande";
+	_inst.kxv.monthsFormat.abbreviated.one = "pusu";
+
+	_inst.kxv.monthsFormat.wide = {};
+	_inst.kxv.monthsFormat.wide.two = "maha lenju";
+	_inst.kxv.monthsFormat.wide.three = "pagu lenju";
+	_inst.kxv.monthsFormat.wide.four = "hire lenju";
+	_inst.kxv.monthsFormat.wide.five = "bese lenju";
+	_inst.kxv.monthsFormat.wide.six = "jaṭṭa lenju";
+	_inst.kxv.monthsFormat.wide.seven = "aasaḍi lenju";
+	_inst.kxv.monthsFormat.wide.eight = "srabĩ lenju";
+	_inst.kxv.monthsFormat.wide.nine = "bado lenju";
+	_inst.kxv.monthsFormat.wide.ten = "dasara lenju";
+	_inst.kxv.monthsFormat.wide.eleven = "divi lenju";
+	_inst.kxv.monthsFormat.wide.twelve = "pande lenju";
+	_inst.kxv.monthsFormat.wide.one = "pusu lenju";
+
+	_inst.kxv.symbols = {};
+	_inst.kxv.symbols.currency = "¤";
+
+	_inst.kxv.timeFormat = {};
+	_inst.kxv.timeFormat.short = "h:mm a";
+	_inst.kxv.timeFormat.medium = "h:mm:ss a";
+	_inst.kxv.currencyFormat = "¤#,##,##0.00";
+	_inst.kxv.decimalFormat = "#,##,##0.###";
+
+	_inst.kxv.dateTimeFormat = {};
+	_inst.kxv.dateTimeFormat.full = "{1}, {0}";
+	_inst.kxv.dateTimeFormat.short = "{1}, {0}";
+	_inst.kxv.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.kxv.dateTimeFormat.availableFormats = {};
+	_inst.kxv.dateTimeFormat.availableFormats.MMMMW_count_other = "MMMM 'tã' 'vara' W";
+	_inst.kxv.dateTimeFormat.availableFormats.yM = "M/y";
+	_inst.kxv.dateTimeFormat.availableFormats.y = "y";
+	_inst.kxv.dateTimeFormat.availableFormats.yMd = "d/M/y";
+	_inst.kxv.dateTimeFormat.availableFormats.yMEd = "E, d/M/y";
+	_inst.kxv.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.kxv.dateTimeFormat.availableFormats.yMMMd = "d MMM y";
+	_inst.kxv.dateTimeFormat.availableFormats.yMMMEd = "E, d MMM y";
+	_inst.kxv.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.kxv.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.kxv.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.kxv.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y";
+	_inst.kxv.dateTimeFormat.availableFormats.yw_count_other = "Y 'tã' 'vara' w";
+	_inst.kxv.dateTimeFormat.availableFormats.Bh = "B h";
+	_inst.kxv.dateTimeFormat.availableFormats.Bhm = "B h:mm";
+	_inst.kxv.dateTimeFormat.availableFormats.Bhms = "B h:mm:ss";
+	_inst.kxv.dateTimeFormat.availableFormats.d = "d";
+	_inst.kxv.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.kxv.dateTimeFormat.availableFormats.EBhm = "E B h:mm";
+	_inst.kxv.dateTimeFormat.availableFormats.EBhms = "E B h:mm:ss";
+	_inst.kxv.dateTimeFormat.availableFormats.Ed = "E d";
+	_inst.kxv.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.kxv.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.kxv.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.kxv.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.kxv.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.kxv.dateTimeFormat.availableFormats.GyMd = "GGGGG d/M/y";
+	_inst.kxv.dateTimeFormat.availableFormats.GyMMM = "MMM G y";
+	_inst.kxv.dateTimeFormat.availableFormats.GyMMMd = "d MMM y G";
+	_inst.kxv.dateTimeFormat.availableFormats.GyMMMEd = "E, d MMM y G";
+	_inst.kxv.dateTimeFormat.availableFormats.h = "h a";
+	_inst.kxv.dateTimeFormat.availableFormats.H = "HH";
+	_inst.kxv.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.kxv.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.kxv.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.kxv.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.kxv.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.kxv.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.kxv.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.kxv.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.kxv.dateTimeFormat.availableFormats.M = "L";
+	_inst.kxv.dateTimeFormat.availableFormats.Md = "d/M";
+	_inst.kxv.dateTimeFormat.availableFormats.MEd = "E, d/M";
+	_inst.kxv.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.kxv.dateTimeFormat.availableFormats.MMMd = "d MMM";
+	_inst.kxv.dateTimeFormat.availableFormats.MMMEd = "E, d MMM";
+	_inst.kxv.dateTimeFormat.availableFormats.MMMMd = "d MMMM";
+	_inst.kxv.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.kxv.dateFormat = {};
+	_inst.kxv.dateFormat.short = "d/M/yy";
+	_inst.kxv.dateFormat.medium = "d MMM y";
+	_inst.kxv.dateFormat.long = "d MMMM y";
+	_inst.kxv.dateFormat.full = "EEEE, d MMMM y";
+
+	_inst.kxv.daysFormat = {};
+
+	_inst.kxv.daysFormat.narrow = {};
+	_inst.kxv.daysFormat.narrow.sun = "aa";
+	_inst.kxv.daysFormat.narrow.mon = "s";
+	_inst.kxv.daysFormat.narrow.tue = "ma";
+	_inst.kxv.daysFormat.narrow.wed = "pu";
+	_inst.kxv.daysFormat.narrow.thu = "la";
+	_inst.kxv.daysFormat.narrow.fri = "su";
+	_inst.kxv.daysFormat.narrow.sat = "sa";
+
+	_inst.kxv.daysFormat.abbreviated = {};
+	_inst.kxv.daysFormat.abbreviated.sun = "aadi";
+	_inst.kxv.daysFormat.abbreviated.mon = "smba";
+	_inst.kxv.daysFormat.abbreviated.tue = "manga";
+	_inst.kxv.daysFormat.abbreviated.wed = "puda";
+	_inst.kxv.daysFormat.abbreviated.thu = "laki";
+	_inst.kxv.daysFormat.abbreviated.fri = "sukru";
+	_inst.kxv.daysFormat.abbreviated.sat = "sani";
+
+	_inst.kxv.daysFormat.short = {};
+	_inst.kxv.daysFormat.short.sun = "aa";
+	_inst.kxv.daysFormat.short.mon = "s";
+	_inst.kxv.daysFormat.short.tue = "ma";
+	_inst.kxv.daysFormat.short.wed = "pu";
+	_inst.kxv.daysFormat.short.thu = "laki";
+	_inst.kxv.daysFormat.short.fri = "su";
+	_inst.kxv.daysFormat.short.sat = "sa";
+
+	_inst.kxv.daysFormat.wide = {};
+	_inst.kxv.daysFormat.wide.sun = "aadi vara";
+	_inst.kxv.daysFormat.wide.mon = "smbara";
+	_inst.kxv.daysFormat.wide.tue = "mangaḍa";
+	_inst.kxv.daysFormat.wide.wed = "pudara";
+	_inst.kxv.daysFormat.wide.thu = "laki vara";
+	_inst.kxv.daysFormat.wide.fri = "sukru vara";
+	_inst.kxv.daysFormat.wide.sat = "sani vara";
+
+	_inst.ia = {};
+
+	_inst.ia.monthsFormat = {};
+
+	_inst.ia.monthsFormat.narrow = {};
+	_inst.ia.monthsFormat.narrow.two = "f";
+	_inst.ia.monthsFormat.narrow.three = "m";
+	_inst.ia.monthsFormat.narrow.four = "a";
+	_inst.ia.monthsFormat.narrow.five = "m";
+	_inst.ia.monthsFormat.narrow.six = "j";
+	_inst.ia.monthsFormat.narrow.seven = "j";
+	_inst.ia.monthsFormat.narrow.eight = "a";
+	_inst.ia.monthsFormat.narrow.nine = "s";
+	_inst.ia.monthsFormat.narrow.ten = "o";
+	_inst.ia.monthsFormat.narrow.eleven = "n";
+	_inst.ia.monthsFormat.narrow.twelve = "d";
+	_inst.ia.monthsFormat.narrow.one = "j";
+
+	_inst.ia.monthsFormat.abbreviated = {};
+	_inst.ia.monthsFormat.abbreviated.two = "feb";
+	_inst.ia.monthsFormat.abbreviated.three = "mar";
+	_inst.ia.monthsFormat.abbreviated.four = "apr";
+	_inst.ia.monthsFormat.abbreviated.five = "mai";
+	_inst.ia.monthsFormat.abbreviated.six = "jun";
+	_inst.ia.monthsFormat.abbreviated.seven = "jul";
+	_inst.ia.monthsFormat.abbreviated.eight = "aug";
+	_inst.ia.monthsFormat.abbreviated.nine = "sep";
+	_inst.ia.monthsFormat.abbreviated.ten = "oct";
+	_inst.ia.monthsFormat.abbreviated.eleven = "nov";
+	_inst.ia.monthsFormat.abbreviated.twelve = "dec";
+	_inst.ia.monthsFormat.abbreviated.one = "jan";
+
+	_inst.ia.monthsFormat.wide = {};
+	_inst.ia.monthsFormat.wide.two = "februario";
+	_inst.ia.monthsFormat.wide.three = "martio";
+	_inst.ia.monthsFormat.wide.four = "april";
+	_inst.ia.monthsFormat.wide.five = "maio";
+	_inst.ia.monthsFormat.wide.six = "junio";
+	_inst.ia.monthsFormat.wide.seven = "julio";
+	_inst.ia.monthsFormat.wide.eight = "augusto";
+	_inst.ia.monthsFormat.wide.nine = "septembre";
+	_inst.ia.monthsFormat.wide.ten = "octobre";
+	_inst.ia.monthsFormat.wide.eleven = "novembre";
+	_inst.ia.monthsFormat.wide.twelve = "decembre";
+	_inst.ia.monthsFormat.wide.one = "januario";
+
+	_inst.ia.symbols = {};
+	_inst.ia.symbols.currency = "¤";
+
+	_inst.ia.timeFormat = {};
+	_inst.ia.timeFormat.short = "HH:mm";
+	_inst.ia.timeFormat.medium = "HH:mm:ss";
+	_inst.ia.currencyFormat = "¤ #,##0.00";
+	_inst.ia.decimalFormat = "#,##0.###";
+
+	_inst.ia.dateTimeFormat = {};
+	_inst.ia.dateTimeFormat.full = "{1}, {0}";
+	_inst.ia.dateTimeFormat.short = "{1}, {0}";
+	_inst.ia.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.ia.dateTimeFormat.availableFormats = {};
+	_inst.ia.dateTimeFormat.availableFormats.MMMMW_count_other = "'septimana' W 'de' MMMM";
+	_inst.ia.dateTimeFormat.availableFormats.yM = "MM-y";
+	_inst.ia.dateTimeFormat.availableFormats.y = "y";
+	_inst.ia.dateTimeFormat.availableFormats.yMd = "dd-MM-y";
+	_inst.ia.dateTimeFormat.availableFormats.yMEd = "E dd-MM-y";
+	_inst.ia.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.ia.dateTimeFormat.availableFormats.yMMMd = "d MMM y";
+	_inst.ia.dateTimeFormat.availableFormats.yMMMEd = "E d MMM y";
+	_inst.ia.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.ia.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.ia.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.ia.dateTimeFormat.availableFormats.yQQQQ = "QQQQ 'de' y";
+	_inst.ia.dateTimeFormat.availableFormats.yw_count_other = "'septimana' w 'de' Y";
+	_inst.ia.dateTimeFormat.availableFormats.MMMMW_count_one = "'septimana' W 'de' MMMM";
+	_inst.ia.dateTimeFormat.availableFormats.yw_count_one = "'septimana' w 'de' Y";
+	_inst.ia.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.ia.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.ia.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.ia.dateTimeFormat.availableFormats.d = "d";
+	_inst.ia.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.ia.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.ia.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.ia.dateTimeFormat.availableFormats.Ed = "E d";
+	_inst.ia.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.ia.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.ia.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.ia.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.ia.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.ia.dateTimeFormat.availableFormats.GyMd = "dd-MM-y G";
+	_inst.ia.dateTimeFormat.availableFormats.GyMMM = "MMM y G";
+	_inst.ia.dateTimeFormat.availableFormats.GyMMMd = "d MMM y G";
+	_inst.ia.dateTimeFormat.availableFormats.GyMMMEd = "E d MMM y G";
+	_inst.ia.dateTimeFormat.availableFormats.h = "h a";
+	_inst.ia.dateTimeFormat.availableFormats.H = "HH";
+	_inst.ia.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.ia.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.ia.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.ia.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.ia.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.ia.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.ia.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.ia.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.ia.dateTimeFormat.availableFormats.M = "L";
+	_inst.ia.dateTimeFormat.availableFormats.Md = "dd-MM";
+	_inst.ia.dateTimeFormat.availableFormats.MEd = "E dd-MM";
+	_inst.ia.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.ia.dateTimeFormat.availableFormats.MMMd = "d MMM";
+	_inst.ia.dateTimeFormat.availableFormats.MMMEd = "E d MMM";
+	_inst.ia.dateTimeFormat.availableFormats.MMMMd = "d 'de' MMMM";
+	_inst.ia.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.ia.dateFormat = {};
+	_inst.ia.dateFormat.short = "dd-MM-y";
+	_inst.ia.dateFormat.medium = "d MMM y";
+	_inst.ia.dateFormat.long = "d 'de' MMMM y";
+	_inst.ia.dateFormat.full = "EEEE 'le' d 'de' MMMM y";
+
+	_inst.ia.daysFormat = {};
+
+	_inst.ia.daysFormat.narrow = {};
+	_inst.ia.daysFormat.narrow.sun = "d";
+	_inst.ia.daysFormat.narrow.mon = "l";
+	_inst.ia.daysFormat.narrow.tue = "m";
+	_inst.ia.daysFormat.narrow.wed = "m";
+	_inst.ia.daysFormat.narrow.thu = "j";
+	_inst.ia.daysFormat.narrow.fri = "v";
+	_inst.ia.daysFormat.narrow.sat = "s";
+
+	_inst.ia.daysFormat.abbreviated = {};
+	_inst.ia.daysFormat.abbreviated.sun = "dom";
+	_inst.ia.daysFormat.abbreviated.mon = "lun";
+	_inst.ia.daysFormat.abbreviated.tue = "mar";
+	_inst.ia.daysFormat.abbreviated.wed = "mer";
+	_inst.ia.daysFormat.abbreviated.thu = "jov";
+	_inst.ia.daysFormat.abbreviated.fri = "ven";
+	_inst.ia.daysFormat.abbreviated.sat = "sab";
+
+	_inst.ia.daysFormat.short = {};
+	_inst.ia.daysFormat.short.sun = "do";
+	_inst.ia.daysFormat.short.mon = "lu";
+	_inst.ia.daysFormat.short.tue = "ma";
+	_inst.ia.daysFormat.short.wed = "me";
+	_inst.ia.daysFormat.short.thu = "jo";
+	_inst.ia.daysFormat.short.fri = "ve";
+	_inst.ia.daysFormat.short.sat = "sa";
+
+	_inst.ia.daysFormat.wide = {};
+	_inst.ia.daysFormat.wide.sun = "dominica";
+	_inst.ia.daysFormat.wide.mon = "lunedi";
+	_inst.ia.daysFormat.wide.tue = "martedi";
+	_inst.ia.daysFormat.wide.wed = "mercuridi";
+	_inst.ia.daysFormat.wide.thu = "jovedi";
+	_inst.ia.daysFormat.wide.fri = "venerdi";
+	_inst.ia.daysFormat.wide.sat = "sabbato";
+
+	_inst.en_PH = {};
+
+	_inst.en_PH.monthsFormat = {};
+
+	_inst.en_PH.monthsFormat.narrow = {};
+	_inst.en_PH.monthsFormat.narrow.two = "F";
+	_inst.en_PH.monthsFormat.narrow.three = "M";
+	_inst.en_PH.monthsFormat.narrow.four = "A";
+	_inst.en_PH.monthsFormat.narrow.five = "M";
+	_inst.en_PH.monthsFormat.narrow.six = "J";
+	_inst.en_PH.monthsFormat.narrow.seven = "J";
+	_inst.en_PH.monthsFormat.narrow.eight = "A";
+	_inst.en_PH.monthsFormat.narrow.nine = "S";
+	_inst.en_PH.monthsFormat.narrow.ten = "O";
+	_inst.en_PH.monthsFormat.narrow.eleven = "N";
+	_inst.en_PH.monthsFormat.narrow.twelve = "D";
+	_inst.en_PH.monthsFormat.narrow.one = "J";
+
+	_inst.en_PH.monthsFormat.abbreviated = {};
+	_inst.en_PH.monthsFormat.abbreviated.two = "Feb";
+	_inst.en_PH.monthsFormat.abbreviated.three = "Mar";
+	_inst.en_PH.monthsFormat.abbreviated.four = "Apr";
+	_inst.en_PH.monthsFormat.abbreviated.five = "May";
+	_inst.en_PH.monthsFormat.abbreviated.six = "Jun";
+	_inst.en_PH.monthsFormat.abbreviated.seven = "Jul";
+	_inst.en_PH.monthsFormat.abbreviated.eight = "Aug";
+	_inst.en_PH.monthsFormat.abbreviated.nine = "Sep";
+	_inst.en_PH.monthsFormat.abbreviated.ten = "Oct";
+	_inst.en_PH.monthsFormat.abbreviated.eleven = "Nov";
+	_inst.en_PH.monthsFormat.abbreviated.twelve = "Dec";
+	_inst.en_PH.monthsFormat.abbreviated.one = "Jan";
+
+	_inst.en_PH.monthsFormat.wide = {};
+	_inst.en_PH.monthsFormat.wide.two = "February";
+	_inst.en_PH.monthsFormat.wide.three = "March";
+	_inst.en_PH.monthsFormat.wide.four = "April";
+	_inst.en_PH.monthsFormat.wide.five = "May";
+	_inst.en_PH.monthsFormat.wide.six = "June";
+	_inst.en_PH.monthsFormat.wide.seven = "July";
+	_inst.en_PH.monthsFormat.wide.eight = "August";
+	_inst.en_PH.monthsFormat.wide.nine = "September";
+	_inst.en_PH.monthsFormat.wide.ten = "October";
+	_inst.en_PH.monthsFormat.wide.eleven = "November";
+	_inst.en_PH.monthsFormat.wide.twelve = "December";
+	_inst.en_PH.monthsFormat.wide.one = "January";
+
+	_inst.en_PH.symbols = {};
+	_inst.en_PH.symbols.currency = "₱";
+
+	_inst.en_PH.timeFormat = {};
+	_inst.en_PH.timeFormat.short = "h:mm a";
+	_inst.en_PH.timeFormat.medium = "h:mm:ss a";
+	_inst.en_PH.currencyFormat = "¤#,##0.00";
+	_inst.en_PH.decimalFormat = "#,##0.###";
+
+	_inst.en_PH.dateTimeFormat = {};
+	_inst.en_PH.dateTimeFormat.full = "{1}, {0}";
+	_inst.en_PH.dateTimeFormat.short = "{1}, {0}";
+	_inst.en_PH.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.en_PH.dateTimeFormat.availableFormats = {};
+	_inst.en_PH.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.en_PH.dateTimeFormat.availableFormats.yM = "M/y";
+	_inst.en_PH.dateTimeFormat.availableFormats.y = "y";
+	_inst.en_PH.dateTimeFormat.availableFormats.yMd = "M/d/y";
+	_inst.en_PH.dateTimeFormat.availableFormats.yMEd = "E, M/d/y";
+	_inst.en_PH.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.en_PH.dateTimeFormat.availableFormats.yMMMd = "MMM d, y";
+	_inst.en_PH.dateTimeFormat.availableFormats.yMMMEd = "E, MMM d, y";
+	_inst.en_PH.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.en_PH.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.en_PH.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.en_PH.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y";
+	_inst.en_PH.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.en_PH.dateTimeFormat.availableFormats.MMMMW_count_one = "'week' W 'of' MMMM";
+	_inst.en_PH.dateTimeFormat.availableFormats.yw_count_one = "'week' w 'of' Y";
+	_inst.en_PH.dateTimeFormat.availableFormats.Ehm_alt_ascii = "E h:mm a";
+	_inst.en_PH.dateTimeFormat.availableFormats.Ehms_alt_ascii = "E h:mm:ss a";
+	_inst.en_PH.dateTimeFormat.availableFormats.h_alt_ascii = "h a";
+	_inst.en_PH.dateTimeFormat.availableFormats.hm_alt_ascii = "h:mm a";
+	_inst.en_PH.dateTimeFormat.availableFormats.hms_alt_ascii = "h:mm:ss a";
+	_inst.en_PH.dateTimeFormat.availableFormats.hmsv_alt_ascii = "h:mm:ss a v";
+	_inst.en_PH.dateTimeFormat.availableFormats.hmv_alt_ascii = "h:mm a v";
+	_inst.en_PH.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.en_PH.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.en_PH.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.en_PH.dateTimeFormat.availableFormats.d = "d";
+	_inst.en_PH.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.en_PH.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.en_PH.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.en_PH.dateTimeFormat.availableFormats.Ed = "d E";
+	_inst.en_PH.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.en_PH.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.en_PH.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.en_PH.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.en_PH.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.en_PH.dateTimeFormat.availableFormats.GyMd = "M/d/y G";
+	_inst.en_PH.dateTimeFormat.availableFormats.GyMMM = "MMM y G";
+	_inst.en_PH.dateTimeFormat.availableFormats.GyMMMd = "MMM d, y G";
+	_inst.en_PH.dateTimeFormat.availableFormats.GyMMMEd = "E, MMM d, y G";
+	_inst.en_PH.dateTimeFormat.availableFormats.h = "h a";
+	_inst.en_PH.dateTimeFormat.availableFormats.H = "HH";
+	_inst.en_PH.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.en_PH.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.en_PH.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.en_PH.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.en_PH.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.en_PH.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.en_PH.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.en_PH.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.en_PH.dateTimeFormat.availableFormats.M = "L";
+	_inst.en_PH.dateTimeFormat.availableFormats.Md = "M/d";
+	_inst.en_PH.dateTimeFormat.availableFormats.MEd = "E, M/d";
+	_inst.en_PH.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.en_PH.dateTimeFormat.availableFormats.MMMd = "MMM d";
+	_inst.en_PH.dateTimeFormat.availableFormats.MMMEd = "E, MMM d";
+	_inst.en_PH.dateTimeFormat.availableFormats.MMMMd = "MMMM d";
+	_inst.en_PH.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.en_PH.dateFormat = {};
+	_inst.en_PH.dateFormat.short = "M/d/yy";
+	_inst.en_PH.dateFormat.medium = "MMM d, y";
+	_inst.en_PH.dateFormat.long = "MMMM d, y";
+	_inst.en_PH.dateFormat.full = "EEEE, MMMM d, y";
+
+	_inst.en_PH.daysFormat = {};
+
+	_inst.en_PH.daysFormat.narrow = {};
+	_inst.en_PH.daysFormat.narrow.sun = "S";
+	_inst.en_PH.daysFormat.narrow.mon = "M";
+	_inst.en_PH.daysFormat.narrow.tue = "T";
+	_inst.en_PH.daysFormat.narrow.wed = "W";
+	_inst.en_PH.daysFormat.narrow.thu = "T";
+	_inst.en_PH.daysFormat.narrow.fri = "F";
+	_inst.en_PH.daysFormat.narrow.sat = "S";
+
+	_inst.en_PH.daysFormat.abbreviated = {};
+	_inst.en_PH.daysFormat.abbreviated.sun = "Sun";
+	_inst.en_PH.daysFormat.abbreviated.mon = "Mon";
+	_inst.en_PH.daysFormat.abbreviated.tue = "Tue";
+	_inst.en_PH.daysFormat.abbreviated.wed = "Wed";
+	_inst.en_PH.daysFormat.abbreviated.thu = "Thu";
+	_inst.en_PH.daysFormat.abbreviated.fri = "Fri";
+	_inst.en_PH.daysFormat.abbreviated.sat = "Sat";
+
+	_inst.en_PH.daysFormat.short = {};
+	_inst.en_PH.daysFormat.short.sun = "Su";
+	_inst.en_PH.daysFormat.short.mon = "Mo";
+	_inst.en_PH.daysFormat.short.tue = "Tu";
+	_inst.en_PH.daysFormat.short.wed = "We";
+	_inst.en_PH.daysFormat.short.thu = "Th";
+	_inst.en_PH.daysFormat.short.fri = "Fr";
+	_inst.en_PH.daysFormat.short.sat = "Sa";
+
+	_inst.en_PH.daysFormat.wide = {};
+	_inst.en_PH.daysFormat.wide.sun = "Sunday";
+	_inst.en_PH.daysFormat.wide.mon = "Monday";
+	_inst.en_PH.daysFormat.wide.tue = "Tuesday";
+	_inst.en_PH.daysFormat.wide.wed = "Wednesday";
+	_inst.en_PH.daysFormat.wide.thu = "Thursday";
+	_inst.en_PH.daysFormat.wide.fri = "Friday";
+	_inst.en_PH.daysFormat.wide.sat = "Saturday";
+
+	_inst.kok_Latn = {};
+
+	_inst.kok_Latn.monthsFormat = {};
+
+	_inst.kok_Latn.monthsFormat.narrow = {};
+	_inst.kok_Latn.monthsFormat.narrow.two = "F";
+	_inst.kok_Latn.monthsFormat.narrow.three = "M";
+	_inst.kok_Latn.monthsFormat.narrow.four = "A";
+	_inst.kok_Latn.monthsFormat.narrow.five = "M";
+	_inst.kok_Latn.monthsFormat.narrow.six = "J";
+	_inst.kok_Latn.monthsFormat.narrow.seven = "J";
+	_inst.kok_Latn.monthsFormat.narrow.eight = "A";
+	_inst.kok_Latn.monthsFormat.narrow.nine = "S";
+	_inst.kok_Latn.monthsFormat.narrow.ten = "O";
+	_inst.kok_Latn.monthsFormat.narrow.eleven = "N";
+	_inst.kok_Latn.monthsFormat.narrow.twelve = "D";
+	_inst.kok_Latn.monthsFormat.narrow.one = "J";
+
+	_inst.kok_Latn.monthsFormat.abbreviated = {};
+	_inst.kok_Latn.monthsFormat.abbreviated.two = "Feb";
+	_inst.kok_Latn.monthsFormat.abbreviated.three = "Mar";
+	_inst.kok_Latn.monthsFormat.abbreviated.four = "Abr";
+	_inst.kok_Latn.monthsFormat.abbreviated.five = "Mai";
+	_inst.kok_Latn.monthsFormat.abbreviated.six = "Jun";
+	_inst.kok_Latn.monthsFormat.abbreviated.seven = "Jul";
+	_inst.kok_Latn.monthsFormat.abbreviated.eight = "Ago";
+	_inst.kok_Latn.monthsFormat.abbreviated.nine = "Set";
+	_inst.kok_Latn.monthsFormat.abbreviated.ten = "Otu";
+	_inst.kok_Latn.monthsFormat.abbreviated.eleven = "Nov";
+	_inst.kok_Latn.monthsFormat.abbreviated.twelve = "Dez";
+	_inst.kok_Latn.monthsFormat.abbreviated.one = "Jan";
+
+	_inst.kok_Latn.monthsFormat.wide = {};
+	_inst.kok_Latn.monthsFormat.wide.two = "Febrer";
+	_inst.kok_Latn.monthsFormat.wide.three = "Mars";
+	_inst.kok_Latn.monthsFormat.wide.four = "Abril";
+	_inst.kok_Latn.monthsFormat.wide.five = "Mai";
+	_inst.kok_Latn.monthsFormat.wide.six = "Jun";
+	_inst.kok_Latn.monthsFormat.wide.seven = "Julai";
+	_inst.kok_Latn.monthsFormat.wide.eight = "Agost";
+	_inst.kok_Latn.monthsFormat.wide.nine = "Setembr";
+	_inst.kok_Latn.monthsFormat.wide.ten = "Otubr";
+	_inst.kok_Latn.monthsFormat.wide.eleven = "Novembr";
+	_inst.kok_Latn.monthsFormat.wide.twelve = "Dezembr";
+	_inst.kok_Latn.monthsFormat.wide.one = "Janer";
+
+	_inst.kok_Latn.symbols = {};
+	_inst.kok_Latn.symbols.currency = "¤";
+
+	_inst.kok_Latn.timeFormat = {};
+	_inst.kok_Latn.timeFormat.short = "a h:mm";
+	_inst.kok_Latn.timeFormat.medium = "a h:mm:ss";
+	_inst.kok_Latn.currencyFormat = "¤#,##,##0.00";
+	_inst.kok_Latn.decimalFormat = "#,##,##0.###";
+
+	_inst.kok_Latn.dateTimeFormat = {};
+	_inst.kok_Latn.dateTimeFormat.full = "{1}, {0}";
+	_inst.kok_Latn.dateTimeFormat.short = "{1}, {0}";
+	_inst.kok_Latn.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.kok_Latn.dateTimeFormat.availableFormats = {};
+	_inst.kok_Latn.dateTimeFormat.availableFormats.MMMMW_count_other = "MMMM -'acho' 'suman' W";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.yM = "M-y";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.y = "y";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.yMd = "d-M-y";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.yMEd = "E, d-M-y";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.yMMMd = "d MMM, y";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.yMMMEd = "E, d MMM, y";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.yw_count_other = "Y -'acho' 'suman' w";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.Bh = "B h";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.Bhm = "B h:mm";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.Bhms = "B h:mm:ss";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.d = "d";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.EBhm = "E B h:mm";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.EBhms = "E B h:mm:ss";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.Ed = "d, E";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.Ehm = "E a h:mm";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.Ehms = "E a h:mm:ss";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.GyMd = "d-M-y G";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.GyMMM = "MMM y G";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.GyMMMd = "d MMM, y G";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.GyMMMEd = "E, d MMM, y G";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.h = "a h";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.H = "HH";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.hm = "a h:mm";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.hms = "a h:mm:ss";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.hmsv = "a h:mm:ss v";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.hmv = "a h:mm v";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.M = "L";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.Md = "d/M";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.MEd = "dd-MM, E";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.MMMd = "d MMM";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.MMMEd = "E, d MMM";
+	_inst.kok_Latn.dateTimeFormat.availableFormats.MMMMd = "d MMMM";
+	_inst.kok_Latn.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.kok_Latn.dateFormat = {};
+	_inst.kok_Latn.dateFormat.short = "d-M-yy";
+	_inst.kok_Latn.dateFormat.medium = "d MMM, y";
+	_inst.kok_Latn.dateFormat.long = "d MMMM, y";
+	_inst.kok_Latn.dateFormat.full = "EEEE, d MMMM, y";
+
+	_inst.kok_Latn.daysFormat = {};
+
+	_inst.kok_Latn.daysFormat.narrow = {};
+	_inst.kok_Latn.daysFormat.narrow.sun = "A";
+	_inst.kok_Latn.daysFormat.narrow.mon = "S";
+	_inst.kok_Latn.daysFormat.narrow.tue = "M";
+	_inst.kok_Latn.daysFormat.narrow.wed = "B";
+	_inst.kok_Latn.daysFormat.narrow.thu = "B";
+	_inst.kok_Latn.daysFormat.narrow.fri = "S";
+	_inst.kok_Latn.daysFormat.narrow.sat = "S";
+
+	_inst.kok_Latn.daysFormat.abbreviated = {};
+	_inst.kok_Latn.daysFormat.abbreviated.sun = "Ait";
+	_inst.kok_Latn.daysFormat.abbreviated.mon = "Som";
+	_inst.kok_Latn.daysFormat.abbreviated.tue = "Mon";
+	_inst.kok_Latn.daysFormat.abbreviated.wed = "Bud";
+	_inst.kok_Latn.daysFormat.abbreviated.thu = "Bre";
+	_inst.kok_Latn.daysFormat.abbreviated.fri = "Suk";
+	_inst.kok_Latn.daysFormat.abbreviated.sat = "Son";
+
+	_inst.kok_Latn.daysFormat.short = {};
+	_inst.kok_Latn.daysFormat.short.sun = "Ai";
+	_inst.kok_Latn.daysFormat.short.mon = "Sm";
+	_inst.kok_Latn.daysFormat.short.tue = "Mg";
+	_inst.kok_Latn.daysFormat.short.wed = "Bu";
+	_inst.kok_Latn.daysFormat.short.thu = "Br";
+	_inst.kok_Latn.daysFormat.short.fri = "Su";
+	_inst.kok_Latn.daysFormat.short.sat = "Sn";
+
+	_inst.kok_Latn.daysFormat.wide = {};
+	_inst.kok_Latn.daysFormat.wide.sun = "Aitar";
+	_inst.kok_Latn.daysFormat.wide.mon = "Somar";
+	_inst.kok_Latn.daysFormat.wide.tue = "Mongllar";
+	_inst.kok_Latn.daysFormat.wide.wed = "Budhvar";
+	_inst.kok_Latn.daysFormat.wide.thu = "Birestar";
+	_inst.kok_Latn.daysFormat.wide.fri = "Sukrar";
+	_inst.kok_Latn.daysFormat.wide.sat = "Sonvar";
+
+	_inst.en_GM = {};
+
+	_inst.en_GM.monthsFormat = {};
+
+	_inst.en_GM.monthsFormat.narrow = {};
+	_inst.en_GM.monthsFormat.narrow.two = "F";
+	_inst.en_GM.monthsFormat.narrow.three = "M";
+	_inst.en_GM.monthsFormat.narrow.four = "A";
+	_inst.en_GM.monthsFormat.narrow.five = "M";
+	_inst.en_GM.monthsFormat.narrow.six = "J";
+	_inst.en_GM.monthsFormat.narrow.seven = "J";
+	_inst.en_GM.monthsFormat.narrow.eight = "A";
+	_inst.en_GM.monthsFormat.narrow.nine = "S";
+	_inst.en_GM.monthsFormat.narrow.ten = "O";
+	_inst.en_GM.monthsFormat.narrow.eleven = "N";
+	_inst.en_GM.monthsFormat.narrow.twelve = "D";
+	_inst.en_GM.monthsFormat.narrow.one = "J";
+
+	_inst.en_GM.monthsFormat.abbreviated = {};
+	_inst.en_GM.monthsFormat.abbreviated.two = "Feb";
+	_inst.en_GM.monthsFormat.abbreviated.three = "Mar";
+	_inst.en_GM.monthsFormat.abbreviated.four = "Apr";
+	_inst.en_GM.monthsFormat.abbreviated.five = "May";
+	_inst.en_GM.monthsFormat.abbreviated.six = "Jun";
+	_inst.en_GM.monthsFormat.abbreviated.seven = "Jul";
+	_inst.en_GM.monthsFormat.abbreviated.eight = "Aug";
+	_inst.en_GM.monthsFormat.abbreviated.nine = "Sept";
+	_inst.en_GM.monthsFormat.abbreviated.ten = "Oct";
+	_inst.en_GM.monthsFormat.abbreviated.eleven = "Nov";
+	_inst.en_GM.monthsFormat.abbreviated.twelve = "Dec";
+	_inst.en_GM.monthsFormat.abbreviated.one = "Jan";
+
+	_inst.en_GM.monthsFormat.wide = {};
+	_inst.en_GM.monthsFormat.wide.two = "February";
+	_inst.en_GM.monthsFormat.wide.three = "March";
+	_inst.en_GM.monthsFormat.wide.four = "April";
+	_inst.en_GM.monthsFormat.wide.five = "May";
+	_inst.en_GM.monthsFormat.wide.six = "June";
+	_inst.en_GM.monthsFormat.wide.seven = "July";
+	_inst.en_GM.monthsFormat.wide.eight = "August";
+	_inst.en_GM.monthsFormat.wide.nine = "September";
+	_inst.en_GM.monthsFormat.wide.ten = "October";
+	_inst.en_GM.monthsFormat.wide.eleven = "November";
+	_inst.en_GM.monthsFormat.wide.twelve = "December";
+	_inst.en_GM.monthsFormat.wide.one = "January";
+
+	_inst.en_GM.symbols = {};
+	_inst.en_GM.symbols.currency = "D";
+
+	_inst.en_GM.timeFormat = {};
+	_inst.en_GM.timeFormat.short = "h:mm a";
+	_inst.en_GM.timeFormat.medium = "h:mm:ss a";
+	_inst.en_GM.currencyFormat = "¤#,##0.00";
+	_inst.en_GM.decimalFormat = "#,##0.###";
+
+	_inst.en_GM.dateTimeFormat = {};
+	_inst.en_GM.dateTimeFormat.full = "{1}, {0}";
+	_inst.en_GM.dateTimeFormat.short = "{1}, {0}";
+	_inst.en_GM.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.en_GM.dateTimeFormat.availableFormats = {};
+	_inst.en_GM.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.en_GM.dateTimeFormat.availableFormats.yM = "MM/y";
+	_inst.en_GM.dateTimeFormat.availableFormats.y = "y";
+	_inst.en_GM.dateTimeFormat.availableFormats.yMd = "dd/MM/y";
+	_inst.en_GM.dateTimeFormat.availableFormats.yMEd = "E, dd/MM/y";
+	_inst.en_GM.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.en_GM.dateTimeFormat.availableFormats.yMMMd = "d MMM y";
+	_inst.en_GM.dateTimeFormat.availableFormats.yMMMEd = "E, d MMM y";
+	_inst.en_GM.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.en_GM.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.en_GM.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.en_GM.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y";
+	_inst.en_GM.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.en_GM.dateTimeFormat.availableFormats.MMMMW_count_one = "'week' W 'of' MMMM";
+	_inst.en_GM.dateTimeFormat.availableFormats.yw_count_one = "'week' w 'of' Y";
+	_inst.en_GM.dateTimeFormat.availableFormats.Ehm_alt_ascii = "E h:mm a";
+	_inst.en_GM.dateTimeFormat.availableFormats.Ehms_alt_ascii = "E h:mm:ss a";
+	_inst.en_GM.dateTimeFormat.availableFormats.h_alt_ascii = "h a";
+	_inst.en_GM.dateTimeFormat.availableFormats.hm_alt_ascii = "h:mm a";
+	_inst.en_GM.dateTimeFormat.availableFormats.hms_alt_ascii = "h:mm:ss a";
+	_inst.en_GM.dateTimeFormat.availableFormats.hmsv_alt_ascii = "h:mm:ss a v";
+	_inst.en_GM.dateTimeFormat.availableFormats.hmv_alt_ascii = "h:mm a v";
+	_inst.en_GM.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.en_GM.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.en_GM.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.en_GM.dateTimeFormat.availableFormats.d = "d";
+	_inst.en_GM.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.en_GM.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.en_GM.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.en_GM.dateTimeFormat.availableFormats.Ed = "E d";
+	_inst.en_GM.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.en_GM.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.en_GM.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.en_GM.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.en_GM.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.en_GM.dateTimeFormat.availableFormats.GyMd = "d/M/y G";
+	_inst.en_GM.dateTimeFormat.availableFormats.GyMMM = "MMM y G";
+	_inst.en_GM.dateTimeFormat.availableFormats.GyMMMd = "d MMM y G";
+	_inst.en_GM.dateTimeFormat.availableFormats.GyMMMEd = "E, d MMM y G";
+	_inst.en_GM.dateTimeFormat.availableFormats.h = "h a";
+	_inst.en_GM.dateTimeFormat.availableFormats.H = "HH";
+	_inst.en_GM.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.en_GM.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.en_GM.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.en_GM.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.en_GM.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.en_GM.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.en_GM.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.en_GM.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.en_GM.dateTimeFormat.availableFormats.M = "L";
+	_inst.en_GM.dateTimeFormat.availableFormats.Md = "dd/MM";
+	_inst.en_GM.dateTimeFormat.availableFormats.MEd = "E, dd/MM";
+	_inst.en_GM.dateTimeFormat.availableFormats.MMdd = "dd/MM";
+	_inst.en_GM.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.en_GM.dateTimeFormat.availableFormats.MMMd = "d MMM";
+	_inst.en_GM.dateTimeFormat.availableFormats.MMMEd = "E, d MMM";
+	_inst.en_GM.dateTimeFormat.availableFormats.MMMMd = "d MMMM";
+	_inst.en_GM.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.en_GM.dateFormat = {};
+	_inst.en_GM.dateFormat.short = "dd/MM/y";
+	_inst.en_GM.dateFormat.medium = "d MMM y";
+	_inst.en_GM.dateFormat.long = "d MMMM y";
+	_inst.en_GM.dateFormat.full = "EEEE, d MMMM y";
+
+	_inst.en_GM.daysFormat = {};
+
+	_inst.en_GM.daysFormat.narrow = {};
+	_inst.en_GM.daysFormat.narrow.sun = "S";
+	_inst.en_GM.daysFormat.narrow.mon = "M";
+	_inst.en_GM.daysFormat.narrow.tue = "T";
+	_inst.en_GM.daysFormat.narrow.wed = "W";
+	_inst.en_GM.daysFormat.narrow.thu = "T";
+	_inst.en_GM.daysFormat.narrow.fri = "F";
+	_inst.en_GM.daysFormat.narrow.sat = "S";
+
+	_inst.en_GM.daysFormat.abbreviated = {};
+	_inst.en_GM.daysFormat.abbreviated.sun = "Sun";
+	_inst.en_GM.daysFormat.abbreviated.mon = "Mon";
+	_inst.en_GM.daysFormat.abbreviated.tue = "Tue";
+	_inst.en_GM.daysFormat.abbreviated.wed = "Wed";
+	_inst.en_GM.daysFormat.abbreviated.thu = "Thu";
+	_inst.en_GM.daysFormat.abbreviated.fri = "Fri";
+	_inst.en_GM.daysFormat.abbreviated.sat = "Sat";
+
+	_inst.en_GM.daysFormat.short = {};
+	_inst.en_GM.daysFormat.short.sun = "Su";
+	_inst.en_GM.daysFormat.short.mon = "Mo";
+	_inst.en_GM.daysFormat.short.tue = "Tu";
+	_inst.en_GM.daysFormat.short.wed = "We";
+	_inst.en_GM.daysFormat.short.thu = "Th";
+	_inst.en_GM.daysFormat.short.fri = "Fr";
+	_inst.en_GM.daysFormat.short.sat = "Sa";
+
+	_inst.en_GM.daysFormat.wide = {};
+	_inst.en_GM.daysFormat.wide.sun = "Sunday";
+	_inst.en_GM.daysFormat.wide.mon = "Monday";
+	_inst.en_GM.daysFormat.wide.tue = "Tuesday";
+	_inst.en_GM.daysFormat.wide.wed = "Wednesday";
+	_inst.en_GM.daysFormat.wide.thu = "Thursday";
+	_inst.en_GM.daysFormat.wide.fri = "Friday";
+	_inst.en_GM.daysFormat.wide.sat = "Saturday";
+
+	_inst.ht = {};
+
+	_inst.ht.monthsFormat = {};
+
+	_inst.ht.monthsFormat.narrow = {};
+	_inst.ht.monthsFormat.narrow.two = "F";
+	_inst.ht.monthsFormat.narrow.three = "M";
+	_inst.ht.monthsFormat.narrow.four = "A";
+	_inst.ht.monthsFormat.narrow.five = "M";
+	_inst.ht.monthsFormat.narrow.six = "J";
+	_inst.ht.monthsFormat.narrow.seven = "J";
+	_inst.ht.monthsFormat.narrow.eight = "A";
+	_inst.ht.monthsFormat.narrow.nine = "S";
+	_inst.ht.monthsFormat.narrow.ten = "O";
+	_inst.ht.monthsFormat.narrow.eleven = "N";
+	_inst.ht.monthsFormat.narrow.twelve = "D";
+	_inst.ht.monthsFormat.narrow.one = "J";
+
+	_inst.ht.monthsFormat.abbreviated = {};
+	_inst.ht.monthsFormat.abbreviated.two = "févr.";
+	_inst.ht.monthsFormat.abbreviated.three = "mars";
+	_inst.ht.monthsFormat.abbreviated.four = "avr.";
+	_inst.ht.monthsFormat.abbreviated.five = "mai";
+	_inst.ht.monthsFormat.abbreviated.six = "juin";
+	_inst.ht.monthsFormat.abbreviated.seven = "juil.";
+	_inst.ht.monthsFormat.abbreviated.eight = "août";
+	_inst.ht.monthsFormat.abbreviated.nine = "sept.";
+	_inst.ht.monthsFormat.abbreviated.ten = "oct.";
+	_inst.ht.monthsFormat.abbreviated.eleven = "nov.";
+	_inst.ht.monthsFormat.abbreviated.twelve = "déc.";
+	_inst.ht.monthsFormat.abbreviated.one = "janv.";
+
+	_inst.ht.monthsFormat.wide = {};
+	_inst.ht.monthsFormat.wide.two = "février";
+	_inst.ht.monthsFormat.wide.three = "mars";
+	_inst.ht.monthsFormat.wide.four = "avril";
+	_inst.ht.monthsFormat.wide.five = "mai";
+	_inst.ht.monthsFormat.wide.six = "juin";
+	_inst.ht.monthsFormat.wide.seven = "juillet";
+	_inst.ht.monthsFormat.wide.eight = "août";
+	_inst.ht.monthsFormat.wide.nine = "septembre";
+	_inst.ht.monthsFormat.wide.ten = "octobre";
+	_inst.ht.monthsFormat.wide.eleven = "novembre";
+	_inst.ht.monthsFormat.wide.twelve = "décembre";
+	_inst.ht.monthsFormat.wide.one = "janvier";
+
+	_inst.ht.symbols = {};
+	_inst.ht.symbols.currency = "G";
+
+	_inst.ht.timeFormat = {};
+	_inst.ht.timeFormat.short = "HH:mm";
+	_inst.ht.timeFormat.medium = "HH:mm:ss";
+	_inst.ht.currencyFormat = "#,##0.00 ¤";
+	_inst.ht.decimalFormat = "#,##0.###";
+
+	_inst.ht.dateTimeFormat = {};
+	_inst.ht.dateTimeFormat.full = "{1}, {0}";
+	_inst.ht.dateTimeFormat.short = "{1} {0}";
+	_inst.ht.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.ht.dateTimeFormat.availableFormats = {};
+	_inst.ht.dateTimeFormat.availableFormats.MMMMW_count_other = "'semaine' W (MMMM)";
+	_inst.ht.dateTimeFormat.availableFormats.yM = "MM/y";
+	_inst.ht.dateTimeFormat.availableFormats.y = "y";
+	_inst.ht.dateTimeFormat.availableFormats.yMd = "dd/MM/y";
+	_inst.ht.dateTimeFormat.availableFormats.yMEd = "E dd/MM/y";
+	_inst.ht.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.ht.dateTimeFormat.availableFormats.yMMMd = "d MMM y";
+	_inst.ht.dateTimeFormat.availableFormats.yMMMEd = "E d MMM y";
+	_inst.ht.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.ht.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.ht.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.ht.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y";
+	_inst.ht.dateTimeFormat.availableFormats.yw_count_other = "'semaine' w 'de' Y";
+	_inst.ht.dateTimeFormat.availableFormats.MMMMW_count_one = "'semaine' W (MMMM)";
+	_inst.ht.dateTimeFormat.availableFormats.yw_count_one = "'semaine' w 'de' Y";
+	_inst.ht.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.ht.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.ht.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.ht.dateTimeFormat.availableFormats.d = "d";
+	_inst.ht.dateTimeFormat.availableFormats.E = "E";
+	_inst.ht.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.ht.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.ht.dateTimeFormat.availableFormats.Ed = "E d";
+	_inst.ht.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.ht.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.ht.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.ht.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.ht.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.ht.dateTimeFormat.availableFormats.GyMd = "dd/MM/y GGGGG";
+	_inst.ht.dateTimeFormat.availableFormats.GyMMM = "MMM y G";
+	_inst.ht.dateTimeFormat.availableFormats.GyMMMd = "d MMM y G";
+	_inst.ht.dateTimeFormat.availableFormats.GyMMMEd = "E d MMM y G";
+	_inst.ht.dateTimeFormat.availableFormats.h = "h a";
+	_inst.ht.dateTimeFormat.availableFormats.H = "HH 'h'";
+	_inst.ht.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.ht.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.ht.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.ht.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.ht.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.ht.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.ht.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.ht.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.ht.dateTimeFormat.availableFormats.M = "L";
+	_inst.ht.dateTimeFormat.availableFormats.Md = "dd/MM";
+	_inst.ht.dateTimeFormat.availableFormats.MEd = "E dd/MM";
+	_inst.ht.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.ht.dateTimeFormat.availableFormats.MMMd = "d MMM";
+	_inst.ht.dateTimeFormat.availableFormats.MMMEd = "E d MMM";
+	_inst.ht.dateTimeFormat.availableFormats.MMMMd = "d MMMM";
+	_inst.ht.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.ht.dateFormat = {};
+	_inst.ht.dateFormat.short = "dd/MM/y";
+	_inst.ht.dateFormat.medium = "d MMM y";
+	_inst.ht.dateFormat.long = "d MMMM y";
+	_inst.ht.dateFormat.full = "EEEE d MMMM y";
+
+	_inst.ht.daysFormat = {};
+
+	_inst.ht.daysFormat.narrow = {};
+	_inst.ht.daysFormat.narrow.sun = "D";
+	_inst.ht.daysFormat.narrow.mon = "L";
+	_inst.ht.daysFormat.narrow.tue = "M";
+	_inst.ht.daysFormat.narrow.wed = "M";
+	_inst.ht.daysFormat.narrow.thu = "J";
+	_inst.ht.daysFormat.narrow.fri = "V";
+	_inst.ht.daysFormat.narrow.sat = "S";
+
+	_inst.ht.daysFormat.abbreviated = {};
+	_inst.ht.daysFormat.abbreviated.sun = "dim.";
+	_inst.ht.daysFormat.abbreviated.mon = "lun.";
+	_inst.ht.daysFormat.abbreviated.tue = "mar.";
+	_inst.ht.daysFormat.abbreviated.wed = "mer.";
+	_inst.ht.daysFormat.abbreviated.thu = "jeu.";
+	_inst.ht.daysFormat.abbreviated.fri = "ven.";
+	_inst.ht.daysFormat.abbreviated.sat = "sam.";
+
+	_inst.ht.daysFormat.short = {};
+	_inst.ht.daysFormat.short.sun = "di";
+	_inst.ht.daysFormat.short.mon = "lu";
+	_inst.ht.daysFormat.short.tue = "ma";
+	_inst.ht.daysFormat.short.wed = "me";
+	_inst.ht.daysFormat.short.thu = "je";
+	_inst.ht.daysFormat.short.fri = "ve";
+	_inst.ht.daysFormat.short.sat = "sa";
+
+	_inst.ht.daysFormat.wide = {};
+	_inst.ht.daysFormat.wide.sun = "dimanche";
+	_inst.ht.daysFormat.wide.mon = "lundi";
+	_inst.ht.daysFormat.wide.tue = "mardi";
+	_inst.ht.daysFormat.wide.wed = "mercredi";
+	_inst.ht.daysFormat.wide.thu = "jeudi";
+	_inst.ht.daysFormat.wide.fri = "vendredi";
+	_inst.ht.daysFormat.wide.sat = "samedi";
+
+	_inst.sd_Deva = {};
+
+	_inst.sd_Deva.monthsFormat = {};
+
+	_inst.sd_Deva.monthsFormat.narrow = {};
+	_inst.sd_Deva.monthsFormat.narrow.two = "फ़";
+	_inst.sd_Deva.monthsFormat.narrow.three = "मा";
+	_inst.sd_Deva.monthsFormat.narrow.four = "अ";
+	_inst.sd_Deva.monthsFormat.narrow.five = "मा";
+	_inst.sd_Deva.monthsFormat.narrow.six = "जू";
+	_inst.sd_Deva.monthsFormat.narrow.seven = "जु";
+	_inst.sd_Deva.monthsFormat.narrow.eight = "अग";
+	_inst.sd_Deva.monthsFormat.narrow.nine = "स";
+	_inst.sd_Deva.monthsFormat.narrow.ten = "ऑ";
+	_inst.sd_Deva.monthsFormat.narrow.eleven = "न";
+	_inst.sd_Deva.monthsFormat.narrow.twelve = "डि";
+	_inst.sd_Deva.monthsFormat.narrow.one = "ज";
+
+	_inst.sd_Deva.monthsFormat.abbreviated = {};
+	_inst.sd_Deva.monthsFormat.abbreviated.two = "फर";
+	_inst.sd_Deva.monthsFormat.abbreviated.three = "मार्च";
+	_inst.sd_Deva.monthsFormat.abbreviated.four = "अप्रै";
+	_inst.sd_Deva.monthsFormat.abbreviated.five = "मई";
+	_inst.sd_Deva.monthsFormat.abbreviated.six = "जून";
+	_inst.sd_Deva.monthsFormat.abbreviated.seven = "जु";
+	_inst.sd_Deva.monthsFormat.abbreviated.eight = "अग";
+	_inst.sd_Deva.monthsFormat.abbreviated.nine = "सप्टे";
+	_inst.sd_Deva.monthsFormat.abbreviated.ten = "ऑक्टो";
+	_inst.sd_Deva.monthsFormat.abbreviated.eleven = "नवं";
+	_inst.sd_Deva.monthsFormat.abbreviated.twelve = "डिसं";
+	_inst.sd_Deva.monthsFormat.abbreviated.one = "जन";
+
+	_inst.sd_Deva.monthsFormat.wide = {};
+	_inst.sd_Deva.monthsFormat.wide.two = "फेबरवरी";
+	_inst.sd_Deva.monthsFormat.wide.three = "मार्चु";
+	_inst.sd_Deva.monthsFormat.wide.four = "अप्रेल";
+	_inst.sd_Deva.monthsFormat.wide.five = "मई";
+	_inst.sd_Deva.monthsFormat.wide.six = "जून";
+	_inst.sd_Deva.monthsFormat.wide.seven = "जुलाई";
+	_inst.sd_Deva.monthsFormat.wide.eight = "आगस्ट";
+	_inst.sd_Deva.monthsFormat.wide.nine = "सप्टेंबर";
+	_inst.sd_Deva.monthsFormat.wide.ten = "आक्टोबर";
+	_inst.sd_Deva.monthsFormat.wide.eleven = "नवंबर";
+	_inst.sd_Deva.monthsFormat.wide.twelve = "डिसंबर";
+	_inst.sd_Deva.monthsFormat.wide.one = "जनवरी";
+
+	_inst.sd_Deva.symbols = {};
+	_inst.sd_Deva.symbols.currency = "¤";
+
+	_inst.sd_Deva.timeFormat = {};
+	_inst.sd_Deva.timeFormat.short = "h:mm a";
+	_inst.sd_Deva.timeFormat.medium = "h:mm:ss a";
+	_inst.sd_Deva.currencyFormat = "¤ #,##0.00";
+	_inst.sd_Deva.decimalFormat = "#,##0.###";
+
+	_inst.sd_Deva.dateTimeFormat = {};
+	_inst.sd_Deva.dateTimeFormat.full = "{1}, {0}";
+	_inst.sd_Deva.dateTimeFormat.short = "{1}, {0}";
+	_inst.sd_Deva.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.sd_Deva.dateTimeFormat.availableFormats = {};
+	_inst.sd_Deva.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.yM = "M/y";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.y = "y";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.yMd = "M/d/y";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.yMEd = "E, M/d/y";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.yMMMd = "MMM d, y";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.yMMMEd = "E, MMM d, y";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.d = "d";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.Ed = "d E";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.GyMd = "M/d/y GGGGG";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.GyMMM = "MMM y G";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.GyMMMd = "MMM d, y G";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.GyMMMEd = "E, MMM d, y G";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.h = "h a";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.H = "HH";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.M = "L";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.Md = "M/d";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.MEd = "E, M/d";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.MMMd = "MMM d";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.MMMEd = "E, MMM d";
+	_inst.sd_Deva.dateTimeFormat.availableFormats.MMMMd = "MMMM d";
+	_inst.sd_Deva.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.sd_Deva.dateFormat = {};
+	_inst.sd_Deva.dateFormat.short = "M/d/yy";
+	_inst.sd_Deva.dateFormat.medium = "MMM d, y";
+	_inst.sd_Deva.dateFormat.long = "MMMM d, y";
+	_inst.sd_Deva.dateFormat.full = "EEEE, MMMM d, y";
+
+	_inst.sd_Deva.daysFormat = {};
+
+	_inst.sd_Deva.daysFormat.narrow = {};
+	_inst.sd_Deva.daysFormat.narrow.sun = "आ";
+	_inst.sd_Deva.daysFormat.narrow.mon = "सू";
+	_inst.sd_Deva.daysFormat.narrow.tue = "मं";
+	_inst.sd_Deva.daysFormat.narrow.wed = "बु॒";
+	_inst.sd_Deva.daysFormat.narrow.thu = "वि";
+	_inst.sd_Deva.daysFormat.narrow.fri = "जु";
+	_inst.sd_Deva.daysFormat.narrow.sat = "छं";
+
+	_inst.sd_Deva.daysFormat.abbreviated = {};
+	_inst.sd_Deva.daysFormat.abbreviated.sun = "आर्त";
+	_inst.sd_Deva.daysFormat.abbreviated.mon = "सू";
+	_inst.sd_Deva.daysFormat.abbreviated.tue = "मंग";
+	_inst.sd_Deva.daysFormat.abbreviated.wed = "बु॒ध";
+	_inst.sd_Deva.daysFormat.abbreviated.thu = "विस";
+	_inst.sd_Deva.daysFormat.abbreviated.fri = "जुम";
+	_inst.sd_Deva.daysFormat.abbreviated.sat = "छंछ";
+
+	_inst.sd_Deva.daysFormat.short = {};
+	_inst.sd_Deva.daysFormat.short.sun = "आर्त";
+	_inst.sd_Deva.daysFormat.short.mon = "सू";
+	_inst.sd_Deva.daysFormat.short.tue = "मंग";
+	_inst.sd_Deva.daysFormat.short.wed = "बु॒ध";
+	_inst.sd_Deva.daysFormat.short.thu = "विस";
+	_inst.sd_Deva.daysFormat.short.fri = "जुम";
+	_inst.sd_Deva.daysFormat.short.sat = "छंछ";
+
+	_inst.sd_Deva.daysFormat.wide = {};
+	_inst.sd_Deva.daysFormat.wide.sun = "आर्तवार";
+	_inst.sd_Deva.daysFormat.wide.mon = "सूमर";
+	_inst.sd_Deva.daysFormat.wide.tue = "मंगलु";
+	_inst.sd_Deva.daysFormat.wide.wed = "ॿुधर";
+	_inst.sd_Deva.daysFormat.wide.thu = "विस्पत";
+	_inst.sd_Deva.daysFormat.wide.fri = "जुमो";
+	_inst.sd_Deva.daysFormat.wide.sat = "छंछर";
+
+	_inst.en_LR = {};
+
+	_inst.en_LR.monthsFormat = {};
+
+	_inst.en_LR.monthsFormat.narrow = {};
+	_inst.en_LR.monthsFormat.narrow.two = "F";
+	_inst.en_LR.monthsFormat.narrow.three = "M";
+	_inst.en_LR.monthsFormat.narrow.four = "A";
+	_inst.en_LR.monthsFormat.narrow.five = "M";
+	_inst.en_LR.monthsFormat.narrow.six = "J";
+	_inst.en_LR.monthsFormat.narrow.seven = "J";
+	_inst.en_LR.monthsFormat.narrow.eight = "A";
+	_inst.en_LR.monthsFormat.narrow.nine = "S";
+	_inst.en_LR.monthsFormat.narrow.ten = "O";
+	_inst.en_LR.monthsFormat.narrow.eleven = "N";
+	_inst.en_LR.monthsFormat.narrow.twelve = "D";
+	_inst.en_LR.monthsFormat.narrow.one = "J";
+
+	_inst.en_LR.monthsFormat.abbreviated = {};
+	_inst.en_LR.monthsFormat.abbreviated.two = "Feb";
+	_inst.en_LR.monthsFormat.abbreviated.three = "Mar";
+	_inst.en_LR.monthsFormat.abbreviated.four = "Apr";
+	_inst.en_LR.monthsFormat.abbreviated.five = "May";
+	_inst.en_LR.monthsFormat.abbreviated.six = "Jun";
+	_inst.en_LR.monthsFormat.abbreviated.seven = "Jul";
+	_inst.en_LR.monthsFormat.abbreviated.eight = "Aug";
+	_inst.en_LR.monthsFormat.abbreviated.nine = "Sept";
+	_inst.en_LR.monthsFormat.abbreviated.ten = "Oct";
+	_inst.en_LR.monthsFormat.abbreviated.eleven = "Nov";
+	_inst.en_LR.monthsFormat.abbreviated.twelve = "Dec";
+	_inst.en_LR.monthsFormat.abbreviated.one = "Jan";
+
+	_inst.en_LR.monthsFormat.wide = {};
+	_inst.en_LR.monthsFormat.wide.two = "February";
+	_inst.en_LR.monthsFormat.wide.three = "March";
+	_inst.en_LR.monthsFormat.wide.four = "April";
+	_inst.en_LR.monthsFormat.wide.five = "May";
+	_inst.en_LR.monthsFormat.wide.six = "June";
+	_inst.en_LR.monthsFormat.wide.seven = "July";
+	_inst.en_LR.monthsFormat.wide.eight = "August";
+	_inst.en_LR.monthsFormat.wide.nine = "September";
+	_inst.en_LR.monthsFormat.wide.ten = "October";
+	_inst.en_LR.monthsFormat.wide.eleven = "November";
+	_inst.en_LR.monthsFormat.wide.twelve = "December";
+	_inst.en_LR.monthsFormat.wide.one = "January";
+
+	_inst.en_LR.symbols = {};
+	_inst.en_LR.symbols.currency = "$";
+
+	_inst.en_LR.timeFormat = {};
+	_inst.en_LR.timeFormat.short = "h:mm a";
+	_inst.en_LR.timeFormat.medium = "h:mm:ss a";
+	_inst.en_LR.currencyFormat = "¤#,##0.00";
+	_inst.en_LR.decimalFormat = "#,##0.###";
+
+	_inst.en_LR.dateTimeFormat = {};
+	_inst.en_LR.dateTimeFormat.full = "{1}, {0}";
+	_inst.en_LR.dateTimeFormat.short = "{1}, {0}";
+	_inst.en_LR.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.en_LR.dateTimeFormat.availableFormats = {};
+	_inst.en_LR.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.en_LR.dateTimeFormat.availableFormats.yM = "MM/y";
+	_inst.en_LR.dateTimeFormat.availableFormats.y = "y";
+	_inst.en_LR.dateTimeFormat.availableFormats.yMd = "dd/MM/y";
+	_inst.en_LR.dateTimeFormat.availableFormats.yMEd = "E, dd/MM/y";
+	_inst.en_LR.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.en_LR.dateTimeFormat.availableFormats.yMMMd = "d MMM y";
+	_inst.en_LR.dateTimeFormat.availableFormats.yMMMEd = "E, d MMM y";
+	_inst.en_LR.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.en_LR.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.en_LR.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.en_LR.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y";
+	_inst.en_LR.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.en_LR.dateTimeFormat.availableFormats.MMMMW_count_one = "'week' W 'of' MMMM";
+	_inst.en_LR.dateTimeFormat.availableFormats.yw_count_one = "'week' w 'of' Y";
+	_inst.en_LR.dateTimeFormat.availableFormats.Ehm_alt_ascii = "E h:mm a";
+	_inst.en_LR.dateTimeFormat.availableFormats.Ehms_alt_ascii = "E h:mm:ss a";
+	_inst.en_LR.dateTimeFormat.availableFormats.h_alt_ascii = "h a";
+	_inst.en_LR.dateTimeFormat.availableFormats.hm_alt_ascii = "h:mm a";
+	_inst.en_LR.dateTimeFormat.availableFormats.hms_alt_ascii = "h:mm:ss a";
+	_inst.en_LR.dateTimeFormat.availableFormats.hmsv_alt_ascii = "h:mm:ss a v";
+	_inst.en_LR.dateTimeFormat.availableFormats.hmv_alt_ascii = "h:mm a v";
+	_inst.en_LR.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.en_LR.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.en_LR.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.en_LR.dateTimeFormat.availableFormats.d = "d";
+	_inst.en_LR.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.en_LR.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.en_LR.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.en_LR.dateTimeFormat.availableFormats.Ed = "E d";
+	_inst.en_LR.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.en_LR.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.en_LR.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.en_LR.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.en_LR.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.en_LR.dateTimeFormat.availableFormats.GyMd = "d/M/y G";
+	_inst.en_LR.dateTimeFormat.availableFormats.GyMMM = "MMM y G";
+	_inst.en_LR.dateTimeFormat.availableFormats.GyMMMd = "d MMM y G";
+	_inst.en_LR.dateTimeFormat.availableFormats.GyMMMEd = "E, d MMM y G";
+	_inst.en_LR.dateTimeFormat.availableFormats.h = "h a";
+	_inst.en_LR.dateTimeFormat.availableFormats.H = "HH";
+	_inst.en_LR.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.en_LR.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.en_LR.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.en_LR.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.en_LR.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.en_LR.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.en_LR.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.en_LR.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.en_LR.dateTimeFormat.availableFormats.M = "L";
+	_inst.en_LR.dateTimeFormat.availableFormats.Md = "dd/MM";
+	_inst.en_LR.dateTimeFormat.availableFormats.MEd = "E, dd/MM";
+	_inst.en_LR.dateTimeFormat.availableFormats.MMdd = "dd/MM";
+	_inst.en_LR.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.en_LR.dateTimeFormat.availableFormats.MMMd = "d MMM";
+	_inst.en_LR.dateTimeFormat.availableFormats.MMMEd = "E, d MMM";
+	_inst.en_LR.dateTimeFormat.availableFormats.MMMMd = "d MMMM";
+	_inst.en_LR.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.en_LR.dateFormat = {};
+	_inst.en_LR.dateFormat.short = "dd/MM/y";
+	_inst.en_LR.dateFormat.medium = "d MMM y";
+	_inst.en_LR.dateFormat.long = "d MMMM y";
+	_inst.en_LR.dateFormat.full = "EEEE, d MMMM y";
+
+	_inst.en_LR.daysFormat = {};
+
+	_inst.en_LR.daysFormat.narrow = {};
+	_inst.en_LR.daysFormat.narrow.sun = "S";
+	_inst.en_LR.daysFormat.narrow.mon = "M";
+	_inst.en_LR.daysFormat.narrow.tue = "T";
+	_inst.en_LR.daysFormat.narrow.wed = "W";
+	_inst.en_LR.daysFormat.narrow.thu = "T";
+	_inst.en_LR.daysFormat.narrow.fri = "F";
+	_inst.en_LR.daysFormat.narrow.sat = "S";
+
+	_inst.en_LR.daysFormat.abbreviated = {};
+	_inst.en_LR.daysFormat.abbreviated.sun = "Sun";
+	_inst.en_LR.daysFormat.abbreviated.mon = "Mon";
+	_inst.en_LR.daysFormat.abbreviated.tue = "Tue";
+	_inst.en_LR.daysFormat.abbreviated.wed = "Wed";
+	_inst.en_LR.daysFormat.abbreviated.thu = "Thu";
+	_inst.en_LR.daysFormat.abbreviated.fri = "Fri";
+	_inst.en_LR.daysFormat.abbreviated.sat = "Sat";
+
+	_inst.en_LR.daysFormat.short = {};
+	_inst.en_LR.daysFormat.short.sun = "Su";
+	_inst.en_LR.daysFormat.short.mon = "Mo";
+	_inst.en_LR.daysFormat.short.tue = "Tu";
+	_inst.en_LR.daysFormat.short.wed = "We";
+	_inst.en_LR.daysFormat.short.thu = "Th";
+	_inst.en_LR.daysFormat.short.fri = "Fr";
+	_inst.en_LR.daysFormat.short.sat = "Sa";
+
+	_inst.en_LR.daysFormat.wide = {};
+	_inst.en_LR.daysFormat.wide.sun = "Sunday";
+	_inst.en_LR.daysFormat.wide.mon = "Monday";
+	_inst.en_LR.daysFormat.wide.tue = "Tuesday";
+	_inst.en_LR.daysFormat.wide.wed = "Wednesday";
+	_inst.en_LR.daysFormat.wide.thu = "Thursday";
+	_inst.en_LR.daysFormat.wide.fri = "Friday";
+	_inst.en_LR.daysFormat.wide.sat = "Saturday";
+
+	_inst.ss_SZ = {};
+
+	_inst.ss_SZ.monthsFormat = {};
+
+	_inst.ss_SZ.monthsFormat.narrow = {};
+	_inst.ss_SZ.monthsFormat.narrow.two = "2";
+	_inst.ss_SZ.monthsFormat.narrow.three = "3";
+	_inst.ss_SZ.monthsFormat.narrow.four = "4";
+	_inst.ss_SZ.monthsFormat.narrow.five = "5";
+	_inst.ss_SZ.monthsFormat.narrow.six = "6";
+	_inst.ss_SZ.monthsFormat.narrow.seven = "7";
+	_inst.ss_SZ.monthsFormat.narrow.eight = "8";
+	_inst.ss_SZ.monthsFormat.narrow.nine = "9";
+	_inst.ss_SZ.monthsFormat.narrow.ten = "10";
+	_inst.ss_SZ.monthsFormat.narrow.eleven = "11";
+	_inst.ss_SZ.monthsFormat.narrow.twelve = "12";
+	_inst.ss_SZ.monthsFormat.narrow.one = "1";
+
+	_inst.ss_SZ.monthsFormat.abbreviated = {};
+	_inst.ss_SZ.monthsFormat.abbreviated.two = "M02";
+	_inst.ss_SZ.monthsFormat.abbreviated.three = "M03";
+	_inst.ss_SZ.monthsFormat.abbreviated.four = "M04";
+	_inst.ss_SZ.monthsFormat.abbreviated.five = "M05";
+	_inst.ss_SZ.monthsFormat.abbreviated.six = "M06";
+	_inst.ss_SZ.monthsFormat.abbreviated.seven = "M07";
+	_inst.ss_SZ.monthsFormat.abbreviated.eight = "M08";
+	_inst.ss_SZ.monthsFormat.abbreviated.nine = "M09";
+	_inst.ss_SZ.monthsFormat.abbreviated.ten = "M10";
+	_inst.ss_SZ.monthsFormat.abbreviated.eleven = "M11";
+	_inst.ss_SZ.monthsFormat.abbreviated.twelve = "M12";
+	_inst.ss_SZ.monthsFormat.abbreviated.one = "M01";
+
+	_inst.ss_SZ.monthsFormat.wide = {};
+	_inst.ss_SZ.monthsFormat.wide.two = "M02";
+	_inst.ss_SZ.monthsFormat.wide.three = "M03";
+	_inst.ss_SZ.monthsFormat.wide.four = "M04";
+	_inst.ss_SZ.monthsFormat.wide.five = "M05";
+	_inst.ss_SZ.monthsFormat.wide.six = "M06";
+	_inst.ss_SZ.monthsFormat.wide.seven = "M07";
+	_inst.ss_SZ.monthsFormat.wide.eight = "M08";
+	_inst.ss_SZ.monthsFormat.wide.nine = "M09";
+	_inst.ss_SZ.monthsFormat.wide.ten = "M10";
+	_inst.ss_SZ.monthsFormat.wide.eleven = "M11";
+	_inst.ss_SZ.monthsFormat.wide.twelve = "M12";
+	_inst.ss_SZ.monthsFormat.wide.one = "M01";
+
+	_inst.ss_SZ.symbols = {};
+	_inst.ss_SZ.symbols.currency = "E";
+
+	_inst.ss_SZ.timeFormat = {};
+	_inst.ss_SZ.timeFormat.short = "h:mm a";
+	_inst.ss_SZ.timeFormat.medium = "h:mm:ss a";
+	_inst.ss_SZ.currencyFormat = "¤#,##0.00";
+	_inst.ss_SZ.decimalFormat = "#,##0.###";
+
+	_inst.ss_SZ.dateTimeFormat = {};
+	_inst.ss_SZ.dateTimeFormat.full = "{1} {0}";
+	_inst.ss_SZ.dateTimeFormat.short = "{1} {0}";
+	_inst.ss_SZ.dateTimeFormat.medium = "{1} {0}";
+
+	_inst.ss_SZ.dateTimeFormat.availableFormats = {};
+	_inst.ss_SZ.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.yM = "y-MM";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.y = "y";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.yMd = "y-MM-dd";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.yMEd = "y-MM-dd, E";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.yMMM = "y MMM";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.yMMMd = "y MMM d";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.yMMMEd = "y MMM d, E";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.yMMMM = "y MMMM";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.yQQQ = "y QQQ";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.yQQQQ = "y QQQQ";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.d = "d";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.Ed = "d, E";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.Gy = "G y";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.GyMd = "GGGGG y-MM-dd";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.GyMMM = "G y MMM";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.GyMMMd = "G y MMM d";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.GyMMMEd = "G y MMM d, E";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.h = "h a";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.H = "HH";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.M = "L";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.Md = "MM-dd";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.MEd = "MM-dd, E";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.MMMd = "MMM d";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.MMMEd = "MMM d, E";
+	_inst.ss_SZ.dateTimeFormat.availableFormats.MMMMd = "MMMM d";
+	_inst.ss_SZ.dateTimeFormat.long = "{1} {0}";
+
+	_inst.ss_SZ.dateFormat = {};
+	_inst.ss_SZ.dateFormat.short = "y-MM-dd";
+	_inst.ss_SZ.dateFormat.medium = "y MMM d";
+	_inst.ss_SZ.dateFormat.long = "y MMMM d";
+	_inst.ss_SZ.dateFormat.full = "y MMMM d, EEEE";
+
+	_inst.ss_SZ.daysFormat = {};
+
+	_inst.ss_SZ.daysFormat.narrow = {};
+	_inst.ss_SZ.daysFormat.narrow.sun = "S";
+	_inst.ss_SZ.daysFormat.narrow.mon = "M";
+	_inst.ss_SZ.daysFormat.narrow.tue = "T";
+	_inst.ss_SZ.daysFormat.narrow.wed = "W";
+	_inst.ss_SZ.daysFormat.narrow.thu = "T";
+	_inst.ss_SZ.daysFormat.narrow.fri = "F";
+	_inst.ss_SZ.daysFormat.narrow.sat = "S";
+
+	_inst.ss_SZ.daysFormat.abbreviated = {};
+	_inst.ss_SZ.daysFormat.abbreviated.sun = "Sun";
+	_inst.ss_SZ.daysFormat.abbreviated.mon = "Mon";
+	_inst.ss_SZ.daysFormat.abbreviated.tue = "Tue";
+	_inst.ss_SZ.daysFormat.abbreviated.wed = "Wed";
+	_inst.ss_SZ.daysFormat.abbreviated.thu = "Thu";
+	_inst.ss_SZ.daysFormat.abbreviated.fri = "Fri";
+	_inst.ss_SZ.daysFormat.abbreviated.sat = "Sat";
+
+	_inst.ss_SZ.daysFormat.short = {};
+	_inst.ss_SZ.daysFormat.short.sun = "Sun";
+	_inst.ss_SZ.daysFormat.short.mon = "Mon";
+	_inst.ss_SZ.daysFormat.short.tue = "Tue";
+	_inst.ss_SZ.daysFormat.short.wed = "Wed";
+	_inst.ss_SZ.daysFormat.short.thu = "Thu";
+	_inst.ss_SZ.daysFormat.short.fri = "Fri";
+	_inst.ss_SZ.daysFormat.short.sat = "Sat";
+
+	_inst.ss_SZ.daysFormat.wide = {};
+	_inst.ss_SZ.daysFormat.wide.sun = "Sun";
+	_inst.ss_SZ.daysFormat.wide.mon = "Mon";
+	_inst.ss_SZ.daysFormat.wide.tue = "Tue";
+	_inst.ss_SZ.daysFormat.wide.wed = "Wed";
+	_inst.ss_SZ.daysFormat.wide.thu = "Thu";
+	_inst.ss_SZ.daysFormat.wide.fri = "Fri";
+	_inst.ss_SZ.daysFormat.wide.sat = "Sat";
+
+	_inst.ms_BN = {};
+
+	_inst.ms_BN.monthsFormat = {};
+
+	_inst.ms_BN.monthsFormat.narrow = {};
+	_inst.ms_BN.monthsFormat.narrow.two = "F";
+	_inst.ms_BN.monthsFormat.narrow.three = "M";
+	_inst.ms_BN.monthsFormat.narrow.four = "A";
+	_inst.ms_BN.monthsFormat.narrow.five = "M";
+	_inst.ms_BN.monthsFormat.narrow.six = "J";
+	_inst.ms_BN.monthsFormat.narrow.seven = "J";
+	_inst.ms_BN.monthsFormat.narrow.eight = "O";
+	_inst.ms_BN.monthsFormat.narrow.nine = "S";
+	_inst.ms_BN.monthsFormat.narrow.ten = "O";
+	_inst.ms_BN.monthsFormat.narrow.eleven = "N";
+	_inst.ms_BN.monthsFormat.narrow.twelve = "D";
+	_inst.ms_BN.monthsFormat.narrow.one = "J";
+
+	_inst.ms_BN.monthsFormat.abbreviated = {};
+	_inst.ms_BN.monthsFormat.abbreviated.two = "Feb";
+	_inst.ms_BN.monthsFormat.abbreviated.three = "Mac";
+	_inst.ms_BN.monthsFormat.abbreviated.four = "Apr";
+	_inst.ms_BN.monthsFormat.abbreviated.five = "Mei";
+	_inst.ms_BN.monthsFormat.abbreviated.six = "Jun";
+	_inst.ms_BN.monthsFormat.abbreviated.seven = "Jul";
+	_inst.ms_BN.monthsFormat.abbreviated.eight = "Ogo";
+	_inst.ms_BN.monthsFormat.abbreviated.nine = "Sep";
+	_inst.ms_BN.monthsFormat.abbreviated.ten = "Okt";
+	_inst.ms_BN.monthsFormat.abbreviated.eleven = "Nov";
+	_inst.ms_BN.monthsFormat.abbreviated.twelve = "Dis";
+	_inst.ms_BN.monthsFormat.abbreviated.one = "Jan";
+
+	_inst.ms_BN.monthsFormat.wide = {};
+	_inst.ms_BN.monthsFormat.wide.two = "Februari";
+	_inst.ms_BN.monthsFormat.wide.three = "Mac";
+	_inst.ms_BN.monthsFormat.wide.four = "April";
+	_inst.ms_BN.monthsFormat.wide.five = "Mei";
+	_inst.ms_BN.monthsFormat.wide.six = "Jun";
+	_inst.ms_BN.monthsFormat.wide.seven = "Julai";
+	_inst.ms_BN.monthsFormat.wide.eight = "Ogos";
+	_inst.ms_BN.monthsFormat.wide.nine = "September";
+	_inst.ms_BN.monthsFormat.wide.ten = "Oktober";
+	_inst.ms_BN.monthsFormat.wide.eleven = "November";
+	_inst.ms_BN.monthsFormat.wide.twelve = "Disember";
+	_inst.ms_BN.monthsFormat.wide.one = "Januari";
+
+	_inst.ms_BN.symbols = {};
+	_inst.ms_BN.symbols.currency = "$";
+
+	_inst.ms_BN.timeFormat = {};
+	_inst.ms_BN.timeFormat.short = "h:mm a";
+	_inst.ms_BN.timeFormat.medium = "h:mm:ss a";
+	_inst.ms_BN.currencyFormat = "¤ #,##0.00";
+	_inst.ms_BN.decimalFormat = "#,##0.###";
+
+	_inst.ms_BN.dateTimeFormat = {};
+	_inst.ms_BN.dateTimeFormat.full = "{1} {0}";
+	_inst.ms_BN.dateTimeFormat.short = "{1}, {0}";
+	_inst.ms_BN.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.ms_BN.dateTimeFormat.availableFormats = {};
+	_inst.ms_BN.dateTimeFormat.availableFormats.MMMMW_count_other = "'minggu' W 'daripada' MMMM";
+	_inst.ms_BN.dateTimeFormat.availableFormats.yM = "M-y";
+	_inst.ms_BN.dateTimeFormat.availableFormats.y = "y";
+	_inst.ms_BN.dateTimeFormat.availableFormats.yMd = "d/M/y";
+	_inst.ms_BN.dateTimeFormat.availableFormats.yMEd = "E, d/M/y";
+	_inst.ms_BN.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.ms_BN.dateTimeFormat.availableFormats.yMMMd = "d MMM y";
+	_inst.ms_BN.dateTimeFormat.availableFormats.yMMMEd = "E, d MMM y";
+	_inst.ms_BN.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.ms_BN.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.ms_BN.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.ms_BN.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y";
+	_inst.ms_BN.dateTimeFormat.availableFormats.yw_count_other = "'minggu' w 'daripada' Y";
+	_inst.ms_BN.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.ms_BN.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.ms_BN.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.ms_BN.dateTimeFormat.availableFormats.d = "d";
+	_inst.ms_BN.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.ms_BN.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.ms_BN.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.ms_BN.dateTimeFormat.availableFormats.Ed = "d E";
+	_inst.ms_BN.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.ms_BN.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.ms_BN.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.ms_BN.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.ms_BN.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.ms_BN.dateTimeFormat.availableFormats.GyMd = "GGGGG y-MM-dd";
+	_inst.ms_BN.dateTimeFormat.availableFormats.GyMMM = "MMM y G";
+	_inst.ms_BN.dateTimeFormat.availableFormats.GyMMMd = "d MMM y G";
+	_inst.ms_BN.dateTimeFormat.availableFormats.GyMMMEd = "E, d MMM y G";
+	_inst.ms_BN.dateTimeFormat.availableFormats.h = "h a";
+	_inst.ms_BN.dateTimeFormat.availableFormats.H = "HH";
+	_inst.ms_BN.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.ms_BN.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.ms_BN.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.ms_BN.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.ms_BN.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.ms_BN.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.ms_BN.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.ms_BN.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.ms_BN.dateTimeFormat.availableFormats.M = "L";
+	_inst.ms_BN.dateTimeFormat.availableFormats.Md = "d-M";
+	_inst.ms_BN.dateTimeFormat.availableFormats.MEd = "E, d-M";
+	_inst.ms_BN.dateTimeFormat.availableFormats.MMdd = "dd/MM";
+	_inst.ms_BN.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.ms_BN.dateTimeFormat.availableFormats.MMMd = "d MMM";
+	_inst.ms_BN.dateTimeFormat.availableFormats.MMMEd = "E, d MMM";
+	_inst.ms_BN.dateTimeFormat.availableFormats.MMMMd = "d MMMM";
+	_inst.ms_BN.dateTimeFormat.long = "{1} {0}";
+
+	_inst.ms_BN.dateFormat = {};
+	_inst.ms_BN.dateFormat.short = "d/MM/yy";
+	_inst.ms_BN.dateFormat.medium = "d MMM y";
+	_inst.ms_BN.dateFormat.long = "d MMMM y";
+	_inst.ms_BN.dateFormat.full = "dd MMMM y";
+
+	_inst.ms_BN.daysFormat = {};
+
+	_inst.ms_BN.daysFormat.narrow = {};
+	_inst.ms_BN.daysFormat.narrow.sun = "A";
+	_inst.ms_BN.daysFormat.narrow.mon = "I";
+	_inst.ms_BN.daysFormat.narrow.tue = "S";
+	_inst.ms_BN.daysFormat.narrow.wed = "R";
+	_inst.ms_BN.daysFormat.narrow.thu = "K";
+	_inst.ms_BN.daysFormat.narrow.fri = "J";
+	_inst.ms_BN.daysFormat.narrow.sat = "S";
+
+	_inst.ms_BN.daysFormat.abbreviated = {};
+	_inst.ms_BN.daysFormat.abbreviated.sun = "Ahd";
+	_inst.ms_BN.daysFormat.abbreviated.mon = "Isn";
+	_inst.ms_BN.daysFormat.abbreviated.tue = "Sel";
+	_inst.ms_BN.daysFormat.abbreviated.wed = "Rab";
+	_inst.ms_BN.daysFormat.abbreviated.thu = "Kha";
+	_inst.ms_BN.daysFormat.abbreviated.fri = "Jum";
+	_inst.ms_BN.daysFormat.abbreviated.sat = "Sab";
+
+	_inst.ms_BN.daysFormat.short = {};
+	_inst.ms_BN.daysFormat.short.sun = "Ah";
+	_inst.ms_BN.daysFormat.short.mon = "Is";
+	_inst.ms_BN.daysFormat.short.tue = "Se";
+	_inst.ms_BN.daysFormat.short.wed = "Ra";
+	_inst.ms_BN.daysFormat.short.thu = "Kh";
+	_inst.ms_BN.daysFormat.short.fri = "Ju";
+	_inst.ms_BN.daysFormat.short.sat = "Sa";
+
+	_inst.ms_BN.daysFormat.wide = {};
+	_inst.ms_BN.daysFormat.wide.sun = "Ahad";
+	_inst.ms_BN.daysFormat.wide.mon = "Isnin";
+	_inst.ms_BN.daysFormat.wide.tue = "Selasa";
+	_inst.ms_BN.daysFormat.wide.wed = "Rabu";
+	_inst.ms_BN.daysFormat.wide.thu = "Khamis";
+	_inst.ms_BN.daysFormat.wide.fri = "Jumaat";
+	_inst.ms_BN.daysFormat.wide.sat = "Sabtu";
+
+	_inst.sq = {};
+
+	_inst.sq.monthsFormat = {};
+
+	_inst.sq.monthsFormat.narrow = {};
+	_inst.sq.monthsFormat.narrow.two = "sh";
+	_inst.sq.monthsFormat.narrow.three = "m";
+	_inst.sq.monthsFormat.narrow.four = "p";
+	_inst.sq.monthsFormat.narrow.five = "m";
+	_inst.sq.monthsFormat.narrow.six = "q";
+	_inst.sq.monthsFormat.narrow.seven = "k";
+	_inst.sq.monthsFormat.narrow.eight = "g";
+	_inst.sq.monthsFormat.narrow.nine = "sh";
+	_inst.sq.monthsFormat.narrow.ten = "t";
+	_inst.sq.monthsFormat.narrow.eleven = "n";
+	_inst.sq.monthsFormat.narrow.twelve = "dh";
+	_inst.sq.monthsFormat.narrow.one = "j";
+
+	_inst.sq.monthsFormat.abbreviated = {};
+	_inst.sq.monthsFormat.abbreviated.two = "shk";
+	_inst.sq.monthsFormat.abbreviated.three = "mar";
+	_inst.sq.monthsFormat.abbreviated.four = "pri";
+	_inst.sq.monthsFormat.abbreviated.five = "maj";
+	_inst.sq.monthsFormat.abbreviated.six = "qer";
+	_inst.sq.monthsFormat.abbreviated.seven = "korr";
+	_inst.sq.monthsFormat.abbreviated.eight = "gush";
+	_inst.sq.monthsFormat.abbreviated.nine = "sht";
+	_inst.sq.monthsFormat.abbreviated.ten = "tet";
+	_inst.sq.monthsFormat.abbreviated.eleven = "nën";
+	_inst.sq.monthsFormat.abbreviated.twelve = "dhj";
+	_inst.sq.monthsFormat.abbreviated.one = "jan";
+
+	_inst.sq.monthsFormat.wide = {};
+	_inst.sq.monthsFormat.wide.two = "shkurt";
+	_inst.sq.monthsFormat.wide.three = "mars";
+	_inst.sq.monthsFormat.wide.four = "prill";
+	_inst.sq.monthsFormat.wide.five = "maj";
+	_inst.sq.monthsFormat.wide.six = "qershor";
+	_inst.sq.monthsFormat.wide.seven = "korrik";
+	_inst.sq.monthsFormat.wide.eight = "gusht";
+	_inst.sq.monthsFormat.wide.nine = "shtator";
+	_inst.sq.monthsFormat.wide.ten = "tetor";
+	_inst.sq.monthsFormat.wide.eleven = "nëntor";
+	_inst.sq.monthsFormat.wide.twelve = "dhjetor";
+	_inst.sq.monthsFormat.wide.one = "janar";
+
+	_inst.sq.symbols = {};
+	_inst.sq.symbols.currency = "¤";
+
+	_inst.sq.timeFormat = {};
+	_inst.sq.timeFormat.short = "h:mm a";
+	_inst.sq.timeFormat.medium = "h:mm:ss a";
+	_inst.sq.currencyFormat = "#,##0.00 ¤";
+	_inst.sq.decimalFormat = "#,##0.###";
+
+	_inst.sq.dateTimeFormat = {};
+	_inst.sq.dateTimeFormat.full = "{1}, {0}";
+	_inst.sq.dateTimeFormat.short = "{1}, {0}";
+	_inst.sq.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.sq.dateTimeFormat.availableFormats = {};
+	_inst.sq.dateTimeFormat.availableFormats.MMMMW_count_other = "'java' W 'e' MMMM";
+	_inst.sq.dateTimeFormat.availableFormats.yM = "M.y";
+	_inst.sq.dateTimeFormat.availableFormats.y = "y";
+	_inst.sq.dateTimeFormat.availableFormats.yMd = "d.M.y";
+	_inst.sq.dateTimeFormat.availableFormats.yMEd = "E, d.M.y";
+	_inst.sq.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.sq.dateTimeFormat.availableFormats.yMMMd = "d MMM y";
+	_inst.sq.dateTimeFormat.availableFormats.yMMMEd = "E, d MMM y";
+	_inst.sq.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.sq.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.sq.dateTimeFormat.availableFormats.yQQQ = "QQQ, y";
+	_inst.sq.dateTimeFormat.availableFormats.yQQQQ = "QQQQ, y";
+	_inst.sq.dateTimeFormat.availableFormats.yw_count_other = "'java' w 'e' Y";
+	_inst.sq.dateTimeFormat.availableFormats.MMMMEd = "E, d MMMM";
+	_inst.sq.dateTimeFormat.availableFormats.MMMMW_count_one = "'java' W 'e' 'muajit' MMMM";
+	_inst.sq.dateTimeFormat.availableFormats.yw_count_one = "'java' w 'e' Y";
+	_inst.sq.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.sq.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.sq.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.sq.dateTimeFormat.availableFormats.d = "d";
+	_inst.sq.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.sq.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.sq.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.sq.dateTimeFormat.availableFormats.Ed = "E, d";
+	_inst.sq.dateTimeFormat.availableFormats.Ehm = "E, h:mm a";
+	_inst.sq.dateTimeFormat.availableFormats.EHm = "E, HH:mm";
+	_inst.sq.dateTimeFormat.availableFormats.Ehms = "E, h:mm:ss a";
+	_inst.sq.dateTimeFormat.availableFormats.EHms = "E, HH:mm:ss";
+	_inst.sq.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.sq.dateTimeFormat.availableFormats.GyMd = "d.M.y GGGG";
+	_inst.sq.dateTimeFormat.availableFormats.GyMMM = "MMM y G";
+	_inst.sq.dateTimeFormat.availableFormats.GyMMMd = "d MMM y G";
+	_inst.sq.dateTimeFormat.availableFormats.GyMMMEd = "E, d MMM y G";
+	_inst.sq.dateTimeFormat.availableFormats.h = "h a";
+	_inst.sq.dateTimeFormat.availableFormats.H = "HH";
+	_inst.sq.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.sq.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.sq.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.sq.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.sq.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a, v";
+	_inst.sq.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss, v";
+	_inst.sq.dateTimeFormat.availableFormats.hmv = "h:mm a, v";
+	_inst.sq.dateTimeFormat.availableFormats.Hmv = "HH:mm, v";
+	_inst.sq.dateTimeFormat.availableFormats.M = "L";
+	_inst.sq.dateTimeFormat.availableFormats.Md = "d.M";
+	_inst.sq.dateTimeFormat.availableFormats.MEd = "E, d.M";
+	_inst.sq.dateTimeFormat.availableFormats.MMdd = "d.M";
+	_inst.sq.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.sq.dateTimeFormat.availableFormats.MMMd = "d MMM";
+	_inst.sq.dateTimeFormat.availableFormats.MMMEd = "E, d MMM";
+	_inst.sq.dateTimeFormat.availableFormats.MMMMd = "d MMMM";
+	_inst.sq.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.sq.dateFormat = {};
+	_inst.sq.dateFormat.short = "d.M.yy";
+	_inst.sq.dateFormat.medium = "d MMM y";
+	_inst.sq.dateFormat.long = "d MMMM y";
+	_inst.sq.dateFormat.full = "EEEE, d MMMM y";
+
+	_inst.sq.daysFormat = {};
+
+	_inst.sq.daysFormat.narrow = {};
+	_inst.sq.daysFormat.narrow.sun = "d";
+	_inst.sq.daysFormat.narrow.mon = "h";
+	_inst.sq.daysFormat.narrow.tue = "m";
+	_inst.sq.daysFormat.narrow.wed = "m";
+	_inst.sq.daysFormat.narrow.thu = "e";
+	_inst.sq.daysFormat.narrow.fri = "p";
+	_inst.sq.daysFormat.narrow.sat = "sh";
+
+	_inst.sq.daysFormat.abbreviated = {};
+	_inst.sq.daysFormat.abbreviated.sun = "die";
+	_inst.sq.daysFormat.abbreviated.mon = "hën";
+	_inst.sq.daysFormat.abbreviated.tue = "mar";
+	_inst.sq.daysFormat.abbreviated.wed = "mër";
+	_inst.sq.daysFormat.abbreviated.thu = "enj";
+	_inst.sq.daysFormat.abbreviated.fri = "pre";
+	_inst.sq.daysFormat.abbreviated.sat = "sht";
+
+	_inst.sq.daysFormat.short = {};
+	_inst.sq.daysFormat.short.sun = "die";
+	_inst.sq.daysFormat.short.mon = "hën";
+	_inst.sq.daysFormat.short.tue = "mar";
+	_inst.sq.daysFormat.short.wed = "mër";
+	_inst.sq.daysFormat.short.thu = "enj";
+	_inst.sq.daysFormat.short.fri = "pre";
+	_inst.sq.daysFormat.short.sat = "sht";
+
+	_inst.sq.daysFormat.wide = {};
+	_inst.sq.daysFormat.wide.sun = "e diel";
+	_inst.sq.daysFormat.wide.mon = "e hënë";
+	_inst.sq.daysFormat.wide.tue = "e martë";
+	_inst.sq.daysFormat.wide.wed = "e mërkurë";
+	_inst.sq.daysFormat.wide.thu = "e enjte";
+	_inst.sq.daysFormat.wide.fri = "e premte";
+	_inst.sq.daysFormat.wide.sat = "e shtunë";
+
+	_inst.kaa_Cyrl = {};
+
+	_inst.kaa_Cyrl.monthsFormat = {};
+
+	_inst.kaa_Cyrl.monthsFormat.narrow = {};
+	_inst.kaa_Cyrl.monthsFormat.narrow.two = "Ф";
+	_inst.kaa_Cyrl.monthsFormat.narrow.three = "М";
+	_inst.kaa_Cyrl.monthsFormat.narrow.four = "А";
+	_inst.kaa_Cyrl.monthsFormat.narrow.five = "М";
+	_inst.kaa_Cyrl.monthsFormat.narrow.six = "И";
+	_inst.kaa_Cyrl.monthsFormat.narrow.seven = "И";
+	_inst.kaa_Cyrl.monthsFormat.narrow.eight = "А";
+	_inst.kaa_Cyrl.monthsFormat.narrow.nine = "С";
+	_inst.kaa_Cyrl.monthsFormat.narrow.ten = "О";
+	_inst.kaa_Cyrl.monthsFormat.narrow.eleven = "Н";
+	_inst.kaa_Cyrl.monthsFormat.narrow.twelve = "Д";
+	_inst.kaa_Cyrl.monthsFormat.narrow.one = "Я";
+
+	_inst.kaa_Cyrl.monthsFormat.abbreviated = {};
+	_inst.kaa_Cyrl.monthsFormat.abbreviated.two = "фев";
+	_inst.kaa_Cyrl.monthsFormat.abbreviated.three = "мар";
+	_inst.kaa_Cyrl.monthsFormat.abbreviated.four = "апр";
+	_inst.kaa_Cyrl.monthsFormat.abbreviated.five = "май";
+	_inst.kaa_Cyrl.monthsFormat.abbreviated.six = "июн";
+	_inst.kaa_Cyrl.monthsFormat.abbreviated.seven = "июл";
+	_inst.kaa_Cyrl.monthsFormat.abbreviated.eight = "авг";
+	_inst.kaa_Cyrl.monthsFormat.abbreviated.nine = "сен";
+	_inst.kaa_Cyrl.monthsFormat.abbreviated.ten = "окт";
+	_inst.kaa_Cyrl.monthsFormat.abbreviated.eleven = "ноя";
+	_inst.kaa_Cyrl.monthsFormat.abbreviated.twelve = "дек";
+	_inst.kaa_Cyrl.monthsFormat.abbreviated.one = "янв";
+
+	_inst.kaa_Cyrl.monthsFormat.wide = {};
+	_inst.kaa_Cyrl.monthsFormat.wide.two = "февраль";
+	_inst.kaa_Cyrl.monthsFormat.wide.three = "март";
+	_inst.kaa_Cyrl.monthsFormat.wide.four = "апрель";
+	_inst.kaa_Cyrl.monthsFormat.wide.five = "май";
+	_inst.kaa_Cyrl.monthsFormat.wide.six = "июнь";
+	_inst.kaa_Cyrl.monthsFormat.wide.seven = "июль";
+	_inst.kaa_Cyrl.monthsFormat.wide.eight = "август";
+	_inst.kaa_Cyrl.monthsFormat.wide.nine = "сентябрь";
+	_inst.kaa_Cyrl.monthsFormat.wide.ten = "октябрь";
+	_inst.kaa_Cyrl.monthsFormat.wide.eleven = "ноябрь";
+	_inst.kaa_Cyrl.monthsFormat.wide.twelve = "декабрь";
+	_inst.kaa_Cyrl.monthsFormat.wide.one = "январь";
+
+	_inst.kaa_Cyrl.symbols = {};
+	_inst.kaa_Cyrl.symbols.currency = "¤";
+
+	_inst.kaa_Cyrl.timeFormat = {};
+	_inst.kaa_Cyrl.timeFormat.short = "HH:mm";
+	_inst.kaa_Cyrl.timeFormat.medium = "HH:mm:ss";
+	_inst.kaa_Cyrl.currencyFormat = "¤ #,##0.00";
+	_inst.kaa_Cyrl.decimalFormat = "#,##0.###";
+
+	_inst.kaa_Cyrl.dateTimeFormat = {};
+	_inst.kaa_Cyrl.dateTimeFormat.full = "{1} {0}";
+	_inst.kaa_Cyrl.dateTimeFormat.short = "{1} {0}";
+	_inst.kaa_Cyrl.dateTimeFormat.medium = "{1} {0}";
+
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats = {};
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.yM = "y-MM";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.y = "y";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.yMd = "y-MM-dd";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.yMEd = "y-MM-dd, E";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.yMMM = "y MMM";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.yMMMd = "y MMM d";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.yMMMEd = "y MMM d, E";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.yMMMM = "y MMMM";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.yQQQ = "y QQQ";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.yQQQQ = "y QQQQ";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.d = "d";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.Ed = "d, E";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.Gy = "G y";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.GyMd = "GGGGG y-MM-dd";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.GyMMM = "G y MMM";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.GyMMMd = "G y MMM d";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.GyMMMEd = "G y MMM d, E";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.h = "h a";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.H = "HH";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.M = "L";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.Md = "MM-dd";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.MEd = "MM-dd, E";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.MMMd = "MMM d";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.MMMEd = "MMM d, E";
+	_inst.kaa_Cyrl.dateTimeFormat.availableFormats.MMMMd = "MMMM d";
+	_inst.kaa_Cyrl.dateTimeFormat.long = "{1} {0}";
+
+	_inst.kaa_Cyrl.dateFormat = {};
+	_inst.kaa_Cyrl.dateFormat.short = "y-MM-dd";
+	_inst.kaa_Cyrl.dateFormat.medium = "y MMM d";
+	_inst.kaa_Cyrl.dateFormat.long = "y MMMM d";
+	_inst.kaa_Cyrl.dateFormat.full = "y MMMM d, EEEE";
+
+	_inst.kaa_Cyrl.daysFormat = {};
+
+	_inst.kaa_Cyrl.daysFormat.narrow = {};
+	_inst.kaa_Cyrl.daysFormat.narrow.sun = "Е";
+	_inst.kaa_Cyrl.daysFormat.narrow.mon = "Д";
+	_inst.kaa_Cyrl.daysFormat.narrow.tue = "С";
+	_inst.kaa_Cyrl.daysFormat.narrow.wed = "С";
+	_inst.kaa_Cyrl.daysFormat.narrow.thu = "П";
+	_inst.kaa_Cyrl.daysFormat.narrow.fri = "Ж";
+	_inst.kaa_Cyrl.daysFormat.narrow.sat = "Ш";
+
+	_inst.kaa_Cyrl.daysFormat.abbreviated = {};
+	_inst.kaa_Cyrl.daysFormat.abbreviated.sun = "Екш";
+	_inst.kaa_Cyrl.daysFormat.abbreviated.mon = "Дүй";
+	_inst.kaa_Cyrl.daysFormat.abbreviated.tue = "Сий";
+	_inst.kaa_Cyrl.daysFormat.abbreviated.wed = "Сәр";
+	_inst.kaa_Cyrl.daysFormat.abbreviated.thu = "Пий";
+	_inst.kaa_Cyrl.daysFormat.abbreviated.fri = "Жум";
+	_inst.kaa_Cyrl.daysFormat.abbreviated.sat = "Шем";
+
+	_inst.kaa_Cyrl.daysFormat.short = {};
+	_inst.kaa_Cyrl.daysFormat.short.sun = "Ек";
+	_inst.kaa_Cyrl.daysFormat.short.mon = "Дү";
+	_inst.kaa_Cyrl.daysFormat.short.tue = "Си";
+	_inst.kaa_Cyrl.daysFormat.short.wed = "Сә";
+	_inst.kaa_Cyrl.daysFormat.short.thu = "Пи";
+	_inst.kaa_Cyrl.daysFormat.short.fri = "Жу";
+	_inst.kaa_Cyrl.daysFormat.short.sat = "Ше";
+
+	_inst.kaa_Cyrl.daysFormat.wide = {};
+	_inst.kaa_Cyrl.daysFormat.wide.sun = "екшемби";
+	_inst.kaa_Cyrl.daysFormat.wide.mon = "дүйшемби";
+	_inst.kaa_Cyrl.daysFormat.wide.tue = "сийшемби";
+	_inst.kaa_Cyrl.daysFormat.wide.wed = "сәршемби";
+	_inst.kaa_Cyrl.daysFormat.wide.thu = "пийшемби";
+	_inst.kaa_Cyrl.daysFormat.wide.fri = "жума";
+	_inst.kaa_Cyrl.daysFormat.wide.sat = "шемби";
+
+	_inst.en_PK = {};
+
+	_inst.en_PK.monthsFormat = {};
+
+	_inst.en_PK.monthsFormat.narrow = {};
+	_inst.en_PK.monthsFormat.narrow.two = "F";
+	_inst.en_PK.monthsFormat.narrow.three = "M";
+	_inst.en_PK.monthsFormat.narrow.four = "A";
+	_inst.en_PK.monthsFormat.narrow.five = "M";
+	_inst.en_PK.monthsFormat.narrow.six = "J";
+	_inst.en_PK.monthsFormat.narrow.seven = "J";
+	_inst.en_PK.monthsFormat.narrow.eight = "A";
+	_inst.en_PK.monthsFormat.narrow.nine = "S";
+	_inst.en_PK.monthsFormat.narrow.ten = "O";
+	_inst.en_PK.monthsFormat.narrow.eleven = "N";
+	_inst.en_PK.monthsFormat.narrow.twelve = "D";
+	_inst.en_PK.monthsFormat.narrow.one = "J";
+
+	_inst.en_PK.monthsFormat.abbreviated = {};
+	_inst.en_PK.monthsFormat.abbreviated.two = "Feb";
+	_inst.en_PK.monthsFormat.abbreviated.three = "Mar";
+	_inst.en_PK.monthsFormat.abbreviated.four = "Apr";
+	_inst.en_PK.monthsFormat.abbreviated.five = "May";
+	_inst.en_PK.monthsFormat.abbreviated.six = "Jun";
+	_inst.en_PK.monthsFormat.abbreviated.seven = "Jul";
+	_inst.en_PK.monthsFormat.abbreviated.eight = "Aug";
+	_inst.en_PK.monthsFormat.abbreviated.nine = "Sept";
+	_inst.en_PK.monthsFormat.abbreviated.ten = "Oct";
+	_inst.en_PK.monthsFormat.abbreviated.eleven = "Nov";
+	_inst.en_PK.monthsFormat.abbreviated.twelve = "Dec";
+	_inst.en_PK.monthsFormat.abbreviated.one = "Jan";
+
+	_inst.en_PK.monthsFormat.wide = {};
+	_inst.en_PK.monthsFormat.wide.two = "February";
+	_inst.en_PK.monthsFormat.wide.three = "March";
+	_inst.en_PK.monthsFormat.wide.four = "April";
+	_inst.en_PK.monthsFormat.wide.five = "May";
+	_inst.en_PK.monthsFormat.wide.six = "June";
+	_inst.en_PK.monthsFormat.wide.seven = "July";
+	_inst.en_PK.monthsFormat.wide.eight = "August";
+	_inst.en_PK.monthsFormat.wide.nine = "September";
+	_inst.en_PK.monthsFormat.wide.ten = "October";
+	_inst.en_PK.monthsFormat.wide.eleven = "November";
+	_inst.en_PK.monthsFormat.wide.twelve = "December";
+	_inst.en_PK.monthsFormat.wide.one = "January";
+
+	_inst.en_PK.symbols = {};
+	_inst.en_PK.symbols.currency = "Rs";
+
+	_inst.en_PK.timeFormat = {};
+	_inst.en_PK.timeFormat.short = "h:mm a";
+	_inst.en_PK.timeFormat.medium = "h:mm:ss a";
+	_inst.en_PK.currencyFormat = "¤#,##0.00";
+	_inst.en_PK.decimalFormat = "#,##0.###";
+
+	_inst.en_PK.dateTimeFormat = {};
+	_inst.en_PK.dateTimeFormat.full = "{1}, {0}";
+	_inst.en_PK.dateTimeFormat.short = "{1}, {0}";
+	_inst.en_PK.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.en_PK.dateTimeFormat.availableFormats = {};
+	_inst.en_PK.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.en_PK.dateTimeFormat.availableFormats.yM = "MM/y";
+	_inst.en_PK.dateTimeFormat.availableFormats.y = "y";
+	_inst.en_PK.dateTimeFormat.availableFormats.yMd = "dd/MM/y";
+	_inst.en_PK.dateTimeFormat.availableFormats.yMEd = "E, dd/MM/y";
+	_inst.en_PK.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.en_PK.dateTimeFormat.availableFormats.yMMMd = "d MMM y";
+	_inst.en_PK.dateTimeFormat.availableFormats.yMMMEd = "E, d MMM y";
+	_inst.en_PK.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.en_PK.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.en_PK.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.en_PK.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y";
+	_inst.en_PK.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.en_PK.dateTimeFormat.availableFormats.MMMMW_count_one = "'week' W 'of' MMMM";
+	_inst.en_PK.dateTimeFormat.availableFormats.yw_count_one = "'week' w 'of' Y";
+	_inst.en_PK.dateTimeFormat.availableFormats.Ehm_alt_ascii = "E h:mm a";
+	_inst.en_PK.dateTimeFormat.availableFormats.Ehms_alt_ascii = "E h:mm:ss a";
+	_inst.en_PK.dateTimeFormat.availableFormats.h_alt_ascii = "h a";
+	_inst.en_PK.dateTimeFormat.availableFormats.hm_alt_ascii = "h:mm a";
+	_inst.en_PK.dateTimeFormat.availableFormats.hms_alt_ascii = "h:mm:ss a";
+	_inst.en_PK.dateTimeFormat.availableFormats.hmsv_alt_ascii = "h:mm:ss a v";
+	_inst.en_PK.dateTimeFormat.availableFormats.hmv_alt_ascii = "h:mm a v";
+	_inst.en_PK.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.en_PK.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.en_PK.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.en_PK.dateTimeFormat.availableFormats.d = "d";
+	_inst.en_PK.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.en_PK.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.en_PK.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.en_PK.dateTimeFormat.availableFormats.Ed = "E d";
+	_inst.en_PK.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.en_PK.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.en_PK.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.en_PK.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.en_PK.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.en_PK.dateTimeFormat.availableFormats.GyMd = "d/M/y G";
+	_inst.en_PK.dateTimeFormat.availableFormats.GyMMM = "MMM y G";
+	_inst.en_PK.dateTimeFormat.availableFormats.GyMMMd = "d MMM y G";
+	_inst.en_PK.dateTimeFormat.availableFormats.GyMMMEd = "E, d MMM y G";
+	_inst.en_PK.dateTimeFormat.availableFormats.h = "h a";
+	_inst.en_PK.dateTimeFormat.availableFormats.H = "HH";
+	_inst.en_PK.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.en_PK.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.en_PK.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.en_PK.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.en_PK.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.en_PK.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.en_PK.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.en_PK.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.en_PK.dateTimeFormat.availableFormats.M = "L";
+	_inst.en_PK.dateTimeFormat.availableFormats.Md = "dd/MM";
+	_inst.en_PK.dateTimeFormat.availableFormats.MEd = "E, dd/MM";
+	_inst.en_PK.dateTimeFormat.availableFormats.MMdd = "dd/MM";
+	_inst.en_PK.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.en_PK.dateTimeFormat.availableFormats.MMMd = "d MMM";
+	_inst.en_PK.dateTimeFormat.availableFormats.MMMEd = "E, d MMM";
+	_inst.en_PK.dateTimeFormat.availableFormats.MMMMd = "d MMMM";
+	_inst.en_PK.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.en_PK.dateFormat = {};
+	_inst.en_PK.dateFormat.short = "dd/MM/y";
+	_inst.en_PK.dateFormat.medium = "dd-MMM-y";
+	_inst.en_PK.dateFormat.long = "d MMMM y";
+	_inst.en_PK.dateFormat.full = "EEEE, d MMMM y";
+
+	_inst.en_PK.daysFormat = {};
+
+	_inst.en_PK.daysFormat.narrow = {};
+	_inst.en_PK.daysFormat.narrow.sun = "S";
+	_inst.en_PK.daysFormat.narrow.mon = "M";
+	_inst.en_PK.daysFormat.narrow.tue = "T";
+	_inst.en_PK.daysFormat.narrow.wed = "W";
+	_inst.en_PK.daysFormat.narrow.thu = "T";
+	_inst.en_PK.daysFormat.narrow.fri = "F";
+	_inst.en_PK.daysFormat.narrow.sat = "S";
+
+	_inst.en_PK.daysFormat.abbreviated = {};
+	_inst.en_PK.daysFormat.abbreviated.sun = "Sun";
+	_inst.en_PK.daysFormat.abbreviated.mon = "Mon";
+	_inst.en_PK.daysFormat.abbreviated.tue = "Tue";
+	_inst.en_PK.daysFormat.abbreviated.wed = "Wed";
+	_inst.en_PK.daysFormat.abbreviated.thu = "Thu";
+	_inst.en_PK.daysFormat.abbreviated.fri = "Fri";
+	_inst.en_PK.daysFormat.abbreviated.sat = "Sat";
+
+	_inst.en_PK.daysFormat.short = {};
+	_inst.en_PK.daysFormat.short.sun = "Su";
+	_inst.en_PK.daysFormat.short.mon = "Mo";
+	_inst.en_PK.daysFormat.short.tue = "Tu";
+	_inst.en_PK.daysFormat.short.wed = "We";
+	_inst.en_PK.daysFormat.short.thu = "Th";
+	_inst.en_PK.daysFormat.short.fri = "Fr";
+	_inst.en_PK.daysFormat.short.sat = "Sa";
+
+	_inst.en_PK.daysFormat.wide = {};
+	_inst.en_PK.daysFormat.wide.sun = "Sunday";
+	_inst.en_PK.daysFormat.wide.mon = "Monday";
+	_inst.en_PK.daysFormat.wide.tue = "Tuesday";
+	_inst.en_PK.daysFormat.wide.wed = "Wednesday";
+	_inst.en_PK.daysFormat.wide.thu = "Thursday";
+	_inst.en_PK.daysFormat.wide.fri = "Friday";
+	_inst.en_PK.daysFormat.wide.sat = "Saturday";
+
+	_inst.hr_BA = {};
+
+	_inst.hr_BA.monthsFormat = {};
+
+	_inst.hr_BA.monthsFormat.narrow = {};
+	_inst.hr_BA.monthsFormat.narrow.two = "2.";
+	_inst.hr_BA.monthsFormat.narrow.three = "3.";
+	_inst.hr_BA.monthsFormat.narrow.four = "4.";
+	_inst.hr_BA.monthsFormat.narrow.five = "5.";
+	_inst.hr_BA.monthsFormat.narrow.six = "6.";
+	_inst.hr_BA.monthsFormat.narrow.seven = "7.";
+	_inst.hr_BA.monthsFormat.narrow.eight = "8.";
+	_inst.hr_BA.monthsFormat.narrow.nine = "9.";
+	_inst.hr_BA.monthsFormat.narrow.ten = "10.";
+	_inst.hr_BA.monthsFormat.narrow.eleven = "11.";
+	_inst.hr_BA.monthsFormat.narrow.twelve = "12.";
+	_inst.hr_BA.monthsFormat.narrow.one = "1.";
+
+	_inst.hr_BA.monthsFormat.abbreviated = {};
+	_inst.hr_BA.monthsFormat.abbreviated.two = "velj";
+	_inst.hr_BA.monthsFormat.abbreviated.three = "ožu";
+	_inst.hr_BA.monthsFormat.abbreviated.four = "tra";
+	_inst.hr_BA.monthsFormat.abbreviated.five = "svi";
+	_inst.hr_BA.monthsFormat.abbreviated.six = "lip";
+	_inst.hr_BA.monthsFormat.abbreviated.seven = "srp";
+	_inst.hr_BA.monthsFormat.abbreviated.eight = "kol";
+	_inst.hr_BA.monthsFormat.abbreviated.nine = "ruj";
+	_inst.hr_BA.monthsFormat.abbreviated.ten = "lis";
+	_inst.hr_BA.monthsFormat.abbreviated.eleven = "stu";
+	_inst.hr_BA.monthsFormat.abbreviated.twelve = "pro";
+	_inst.hr_BA.monthsFormat.abbreviated.one = "sij";
+
+	_inst.hr_BA.monthsFormat.wide = {};
+	_inst.hr_BA.monthsFormat.wide.two = "veljače";
+	_inst.hr_BA.monthsFormat.wide.three = "ožujka";
+	_inst.hr_BA.monthsFormat.wide.four = "travnja";
+	_inst.hr_BA.monthsFormat.wide.five = "svibnja";
+	_inst.hr_BA.monthsFormat.wide.six = "lipnja";
+	_inst.hr_BA.monthsFormat.wide.seven = "srpnja";
+	_inst.hr_BA.monthsFormat.wide.eight = "kolovoza";
+	_inst.hr_BA.monthsFormat.wide.nine = "rujna";
+	_inst.hr_BA.monthsFormat.wide.ten = "listopada";
+	_inst.hr_BA.monthsFormat.wide.eleven = "studenoga";
+	_inst.hr_BA.monthsFormat.wide.twelve = "prosinca";
+	_inst.hr_BA.monthsFormat.wide.one = "siječnja";
+
+	_inst.hr_BA.symbols = {};
+	_inst.hr_BA.symbols.currency = "KM";
+
+	_inst.hr_BA.timeFormat = {};
+	_inst.hr_BA.timeFormat.short = "HH:mm";
+	_inst.hr_BA.timeFormat.medium = "HH:mm:ss";
+	_inst.hr_BA.currencyFormat = "#,##0.00 ¤";
+	_inst.hr_BA.decimalFormat = "#,##0.###";
+
+	_inst.hr_BA.dateTimeFormat = {};
+	_inst.hr_BA.dateTimeFormat.full = "{1} {0}";
+	_inst.hr_BA.dateTimeFormat.short = "{1} {0}";
+	_inst.hr_BA.dateTimeFormat.medium = "{1} {0}";
+
+	_inst.hr_BA.dateTimeFormat.availableFormats = {};
+	_inst.hr_BA.dateTimeFormat.availableFormats.MMMMW_count_other = "W. 'tjedan' MMMM";
+	_inst.hr_BA.dateTimeFormat.availableFormats.yM = "MM. y.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.y = "y.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.yMd = "dd. MM. y.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.yMEd = "E, dd. MM. y.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.yMMM = "LLL y.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.yMMMd = "d. MMM y.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.yMMMEd = "E, d. MMM y.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.yMMMM = "LLLL y.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.hr_BA.dateTimeFormat.availableFormats.yQQQ = "QQQ y.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.yw_count_other = "w. 'tjedan' 'u' Y.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.MMMMEd = "E, d. MMMM";
+	_inst.hr_BA.dateTimeFormat.availableFormats.MMMMW_count_few = "W. 'tjedan' MMMM";
+	_inst.hr_BA.dateTimeFormat.availableFormats.yw_count_few = "w. 'tjedan' 'u' Y.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.MMMMW_count_one = "W. 'tjedan' MMMM";
+	_inst.hr_BA.dateTimeFormat.availableFormats.yMM = "MM. y.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.yw_count_one = "w. 'tjedan' 'u' Y.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.hr_BA.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.hr_BA.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.hr_BA.dateTimeFormat.availableFormats.d = "d.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.hr_BA.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.hr_BA.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.hr_BA.dateTimeFormat.availableFormats.Ed = "E, d.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.hr_BA.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.hr_BA.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.hr_BA.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.hr_BA.dateTimeFormat.availableFormats.Gy = "y. G";
+	_inst.hr_BA.dateTimeFormat.availableFormats.GyMd = "d. M. y. GGGGG";
+	_inst.hr_BA.dateTimeFormat.availableFormats.GyMMM = "LLL y. G";
+	_inst.hr_BA.dateTimeFormat.availableFormats.GyMMMd = "d. MMM y. G";
+	_inst.hr_BA.dateTimeFormat.availableFormats.GyMMMEd = "E, d. MMM y. G";
+	_inst.hr_BA.dateTimeFormat.availableFormats.h = "h a";
+	_inst.hr_BA.dateTimeFormat.availableFormats.H = "HH";
+	_inst.hr_BA.dateTimeFormat.availableFormats.hm = "hh:mm a";
+	_inst.hr_BA.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.hr_BA.dateTimeFormat.availableFormats.hms = "hh:mm:ss a";
+	_inst.hr_BA.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.hr_BA.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.hr_BA.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.hr_BA.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.hr_BA.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.hr_BA.dateTimeFormat.availableFormats.M = "L.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.Md = "dd. MM.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.MEd = "E, dd. MM.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.MMdd = "dd. MM.";
+	_inst.hr_BA.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.hr_BA.dateTimeFormat.availableFormats.MMMd = "d. MMM";
+	_inst.hr_BA.dateTimeFormat.availableFormats.MMMEd = "E, d. MMM";
+	_inst.hr_BA.dateTimeFormat.availableFormats.MMMMd = "d. MMMM";
+	_inst.hr_BA.dateTimeFormat.long = "{1} {0}";
+
+	_inst.hr_BA.dateFormat = {};
+	_inst.hr_BA.dateFormat.short = "d. M. yy.";
+	_inst.hr_BA.dateFormat.medium = "d. MMM y.";
+	_inst.hr_BA.dateFormat.long = "d. MMMM y.";
+	_inst.hr_BA.dateFormat.full = "EEEE, d. MMMM y.";
+
+	_inst.hr_BA.daysFormat = {};
+
+	_inst.hr_BA.daysFormat.narrow = {};
+	_inst.hr_BA.daysFormat.narrow.sun = "N";
+	_inst.hr_BA.daysFormat.narrow.mon = "P";
+	_inst.hr_BA.daysFormat.narrow.tue = "U";
+	_inst.hr_BA.daysFormat.narrow.wed = "S";
+	_inst.hr_BA.daysFormat.narrow.thu = "Č";
+	_inst.hr_BA.daysFormat.narrow.fri = "P";
+	_inst.hr_BA.daysFormat.narrow.sat = "S";
+
+	_inst.hr_BA.daysFormat.abbreviated = {};
+	_inst.hr_BA.daysFormat.abbreviated.sun = "ned";
+	_inst.hr_BA.daysFormat.abbreviated.mon = "pon";
+	_inst.hr_BA.daysFormat.abbreviated.tue = "uto";
+	_inst.hr_BA.daysFormat.abbreviated.wed = "sri";
+	_inst.hr_BA.daysFormat.abbreviated.thu = "čet";
+	_inst.hr_BA.daysFormat.abbreviated.fri = "pet";
+	_inst.hr_BA.daysFormat.abbreviated.sat = "sub";
+
+	_inst.hr_BA.daysFormat.short = {};
+	_inst.hr_BA.daysFormat.short.sun = "ned";
+	_inst.hr_BA.daysFormat.short.mon = "pon";
+	_inst.hr_BA.daysFormat.short.tue = "uto";
+	_inst.hr_BA.daysFormat.short.wed = "sri";
+	_inst.hr_BA.daysFormat.short.thu = "čet";
+	_inst.hr_BA.daysFormat.short.fri = "pet";
+	_inst.hr_BA.daysFormat.short.sat = "sub";
+
+	_inst.hr_BA.daysFormat.wide = {};
+	_inst.hr_BA.daysFormat.wide.sun = "nedjelja";
+	_inst.hr_BA.daysFormat.wide.mon = "ponedjeljak";
+	_inst.hr_BA.daysFormat.wide.tue = "utorak";
+	_inst.hr_BA.daysFormat.wide.wed = "srijeda";
+	_inst.hr_BA.daysFormat.wide.thu = "četvrtak";
+	_inst.hr_BA.daysFormat.wide.fri = "petak";
+	_inst.hr_BA.daysFormat.wide.sat = "subota";
+
+	_inst.ccp_IN = {};
+
+	_inst.ccp_IN.monthsFormat = {};
+
+	_inst.ccp_IN.monthsFormat.narrow = {};
+	_inst.ccp_IN.monthsFormat.narrow.two = "𑄜𑄬";
+	_inst.ccp_IN.monthsFormat.narrow.three = "𑄟";
+	_inst.ccp_IN.monthsFormat.narrow.four = "𑄃𑄬";
+	_inst.ccp_IN.monthsFormat.narrow.five = "𑄟𑄬";
+	_inst.ccp_IN.monthsFormat.narrow.six = "𑄎𑄪𑄚𑄴";
+	_inst.ccp_IN.monthsFormat.narrow.seven = "𑄎𑄪";
+	_inst.ccp_IN.monthsFormat.narrow.eight = "𑄃";
+	_inst.ccp_IN.monthsFormat.narrow.nine = "𑄥𑄬";
+	_inst.ccp_IN.monthsFormat.narrow.ten = "𑄃𑄧";
+	_inst.ccp_IN.monthsFormat.narrow.eleven = "𑄚𑄧";
+	_inst.ccp_IN.monthsFormat.narrow.twelve = "𑄓𑄨";
+	_inst.ccp_IN.monthsFormat.narrow.one = "𑄎";
+
+	_inst.ccp_IN.monthsFormat.abbreviated = {};
+	_inst.ccp_IN.monthsFormat.abbreviated.two = "𑄜𑄬𑄛𑄴";
+	_inst.ccp_IN.monthsFormat.abbreviated.three = "𑄟𑄢𑄴𑄌𑄧";
+	_inst.ccp_IN.monthsFormat.abbreviated.four = "𑄃𑄬𑄛𑄳𑄢𑄨𑄣𑄴";
+	_inst.ccp_IN.monthsFormat.abbreviated.five = "𑄟𑄬";
+	_inst.ccp_IN.monthsFormat.abbreviated.six = "𑄎𑄪𑄚𑄴";
+	_inst.ccp_IN.monthsFormat.abbreviated.seven = "𑄎𑄪𑄣𑄭";
+	_inst.ccp_IN.monthsFormat.abbreviated.eight = "𑄃𑄉𑄧𑄌𑄴𑄑𑄴";
+	_inst.ccp_IN.monthsFormat.abbreviated.nine = "𑄥𑄬𑄛𑄴𑄑𑄬𑄟𑄴𑄝𑄧𑄢𑄴";
+	_inst.ccp_IN.monthsFormat.abbreviated.ten = "𑄃𑄧𑄇𑄴𑄑𑄮𑄝𑄧𑄢𑄴";
+	_inst.ccp_IN.monthsFormat.abbreviated.eleven = "𑄚𑄧𑄞𑄬𑄟𑄴𑄝𑄧𑄢𑄴";
+	_inst.ccp_IN.monthsFormat.abbreviated.twelve = "𑄓𑄨𑄥𑄬𑄟𑄴𑄝𑄢𑄴";
+	_inst.ccp_IN.monthsFormat.abbreviated.one = "𑄎𑄚𑄪";
+
+	_inst.ccp_IN.monthsFormat.wide = {};
+	_inst.ccp_IN.monthsFormat.wide.two = "𑄜𑄬𑄛𑄴𑄝𑄳𑄢𑄪𑄠𑄢𑄨";
+	_inst.ccp_IN.monthsFormat.wide.three = "𑄟𑄢𑄴𑄌𑄧";
+	_inst.ccp_IN.monthsFormat.wide.four = "𑄃𑄬𑄛𑄳𑄢𑄨𑄣𑄴";
+	_inst.ccp_IN.monthsFormat.wide.five = "𑄟𑄬";
+	_inst.ccp_IN.monthsFormat.wide.six = "𑄎𑄪𑄚𑄴";
+	_inst.ccp_IN.monthsFormat.wide.seven = "𑄎𑄪𑄣𑄭";
+	_inst.ccp_IN.monthsFormat.wide.eight = "𑄃𑄉𑄧𑄌𑄴𑄑𑄴";
+	_inst.ccp_IN.monthsFormat.wide.nine = "𑄥𑄬𑄛𑄴𑄑𑄬𑄟𑄴𑄝𑄧𑄢𑄴";
+	_inst.ccp_IN.monthsFormat.wide.ten = "𑄃𑄧𑄇𑄴𑄑𑄬𑄝𑄧𑄢𑄴";
+	_inst.ccp_IN.monthsFormat.wide.eleven = "𑄚𑄧𑄞𑄬𑄟𑄴𑄝𑄧𑄢𑄴";
+	_inst.ccp_IN.monthsFormat.wide.twelve = "𑄓𑄨𑄥𑄬𑄟𑄴𑄝𑄧𑄢𑄴";
+	_inst.ccp_IN.monthsFormat.wide.one = "𑄎𑄚𑄪𑄠𑄢𑄨";
+
+	_inst.ccp_IN.symbols = {};
+	_inst.ccp_IN.symbols.currency = "₹";
+
+	_inst.ccp_IN.timeFormat = {};
+	_inst.ccp_IN.timeFormat.short = "h:mm a";
+	_inst.ccp_IN.timeFormat.medium = "h:mm:ss a";
+	_inst.ccp_IN.currencyFormat = "#,##,##0.00¤";
+	_inst.ccp_IN.decimalFormat = "#,##,##0.###";
+
+	_inst.ccp_IN.dateTimeFormat = {};
+	_inst.ccp_IN.dateTimeFormat.full = "{1} {0}";
+	_inst.ccp_IN.dateTimeFormat.short = "{1} {0}";
+	_inst.ccp_IN.dateTimeFormat.medium = "{1} {0}";
+
+	_inst.ccp_IN.dateTimeFormat.availableFormats = {};
+	_inst.ccp_IN.dateTimeFormat.availableFormats.MMMMW_count_other = "MMMM 𑄃𑄬𑄢𑄴 𑄠𑄴 𑄥𑄛𑄴𑄖 W";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.yM = "M/y";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.y = "y";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.yMd = "d/M/y";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.yMEd = "E, d/M/y";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.yMMMd = "d MMM, y";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.yMMMEd = "E, d MMM, y";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.yw_count_other = "Y 𑄃𑄬𑄢𑄴 𑄖𑄧𑄟𑄴 𑄥𑄛𑄴𑄖 w";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.MMMMEd = "E d MMMM";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.yMM = "MM-y";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.d = "d";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.Ed = "d E";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.GyMd = "GGGGG y-MM-dd";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.GyMMM = "MMM y G";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.GyMMMd = "d MMM, y G";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.GyMMMEd = "E, d MMM, y G";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.h = "h a";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.H = "HH";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.M = "L";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.Md = "d/M";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.MEd = "E, d-M";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.MMdd = "dd-MM";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.MMMd = "d MMM";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.MMMEd = "E d MMM";
+	_inst.ccp_IN.dateTimeFormat.availableFormats.MMMMd = "d MMMM";
+	_inst.ccp_IN.dateTimeFormat.long = "{1} {0}";
+
+	_inst.ccp_IN.dateFormat = {};
+	_inst.ccp_IN.dateFormat.short = "d/M/yy";
+	_inst.ccp_IN.dateFormat.medium = "d MMM, y";
+	_inst.ccp_IN.dateFormat.long = "d MMMM, y";
+	_inst.ccp_IN.dateFormat.full = "EEEE, d MMMM, y";
+
+	_inst.ccp_IN.daysFormat = {};
+
+	_inst.ccp_IN.daysFormat.narrow = {};
+	_inst.ccp_IN.daysFormat.narrow.sun = "𑄢𑄧";
+	_inst.ccp_IN.daysFormat.narrow.mon = "𑄥𑄧";
+	_inst.ccp_IN.daysFormat.narrow.tue = "𑄟𑄧";
+	_inst.ccp_IN.daysFormat.narrow.wed = "𑄝𑄪";
+	_inst.ccp_IN.daysFormat.narrow.thu = "𑄝𑄳𑄢𑄨";
+	_inst.ccp_IN.daysFormat.narrow.fri = "𑄥𑄪";
+	_inst.ccp_IN.daysFormat.narrow.sat = "𑄥𑄧";
+
+	_inst.ccp_IN.daysFormat.abbreviated = {};
+	_inst.ccp_IN.daysFormat.abbreviated.sun = "𑄢𑄧𑄝𑄨";
+	_inst.ccp_IN.daysFormat.abbreviated.mon = "𑄥𑄧𑄟𑄴";
+	_inst.ccp_IN.daysFormat.abbreviated.tue = "𑄟𑄧𑄁𑄉𑄧𑄣𑄴";
+	_inst.ccp_IN.daysFormat.abbreviated.wed = "𑄝𑄪𑄖𑄴";
+	_inst.ccp_IN.daysFormat.abbreviated.thu = "𑄝𑄳𑄢𑄨𑄥𑄪𑄛𑄴";
+	_inst.ccp_IN.daysFormat.abbreviated.fri = "𑄥𑄪𑄇𑄴𑄇𑄮𑄢𑄴";
+	_inst.ccp_IN.daysFormat.abbreviated.sat = "𑄥𑄧𑄚𑄨";
+
+	_inst.ccp_IN.daysFormat.short = {};
+	_inst.ccp_IN.daysFormat.short.sun = "𑄢𑄧𑄝𑄨";
+	_inst.ccp_IN.daysFormat.short.mon = "𑄥𑄧𑄟𑄴";
+	_inst.ccp_IN.daysFormat.short.tue = "𑄟𑄧𑄁𑄉𑄧𑄣𑄴";
+	_inst.ccp_IN.daysFormat.short.wed = "𑄝𑄪𑄖𑄴";
+	_inst.ccp_IN.daysFormat.short.thu = "𑄝𑄳𑄢𑄨𑄥𑄪𑄛𑄴";
+	_inst.ccp_IN.daysFormat.short.fri = "𑄥𑄪𑄇𑄴𑄇𑄮𑄢𑄴";
+	_inst.ccp_IN.daysFormat.short.sat = "𑄥𑄧𑄚𑄨";
+
+	_inst.ccp_IN.daysFormat.wide = {};
+	_inst.ccp_IN.daysFormat.wide.sun = "𑄢𑄧𑄝𑄨𑄝𑄢𑄴";
+	_inst.ccp_IN.daysFormat.wide.mon = "𑄥𑄧𑄟𑄴𑄝𑄢𑄴";
+	_inst.ccp_IN.daysFormat.wide.tue = "𑄟𑄧𑄁𑄉𑄧𑄣𑄴𑄝𑄢𑄴";
+	_inst.ccp_IN.daysFormat.wide.wed = "𑄝𑄪𑄖𑄴𑄝𑄢𑄴";
+	_inst.ccp_IN.daysFormat.wide.thu = "𑄝𑄳𑄢𑄨𑄥𑄪𑄛𑄴𑄝𑄢𑄴";
+	_inst.ccp_IN.daysFormat.wide.fri = "𑄥𑄪𑄇𑄴𑄇𑄮𑄢𑄴𑄝𑄢𑄴";
+	_inst.ccp_IN.daysFormat.wide.sat = "𑄥𑄧𑄚𑄨𑄝𑄢𑄴";
+
+	_inst.sat_Olck = {};
+
+	_inst.sat_Olck.monthsFormat = {};
+
+	_inst.sat_Olck.monthsFormat.narrow = {};
+	_inst.sat_Olck.monthsFormat.narrow.two = "ᱯ";
+	_inst.sat_Olck.monthsFormat.narrow.three = "ᱢ";
+	_inst.sat_Olck.monthsFormat.narrow.four = "ᱟ";
+	_inst.sat_Olck.monthsFormat.narrow.five = "ᱢ";
+	_inst.sat_Olck.monthsFormat.narrow.six = "ᱡ";
+	_inst.sat_Olck.monthsFormat.narrow.seven = "ᱡ";
+	_inst.sat_Olck.monthsFormat.narrow.eight = "ᱟ";
+	_inst.sat_Olck.monthsFormat.narrow.nine = "ᱥ";
+	_inst.sat_Olck.monthsFormat.narrow.ten = "ᱚ";
+	_inst.sat_Olck.monthsFormat.narrow.eleven = "ᱱ";
+	_inst.sat_Olck.monthsFormat.narrow.twelve = "ᱫ";
+	_inst.sat_Olck.monthsFormat.narrow.one = "ᱡ";
+
+	_inst.sat_Olck.monthsFormat.abbreviated = {};
+	_inst.sat_Olck.monthsFormat.abbreviated.two = "ᱯᱷᱟ";
+	_inst.sat_Olck.monthsFormat.abbreviated.three = "ᱢᱟᱨ";
+	_inst.sat_Olck.monthsFormat.abbreviated.four = "ᱟᱯᱨ";
+	_inst.sat_Olck.monthsFormat.abbreviated.five = "ᱢᱮ";
+	_inst.sat_Olck.monthsFormat.abbreviated.six = "ᱡᱩᱱ";
+	_inst.sat_Olck.monthsFormat.abbreviated.seven = "ᱡᱩᱞ";
+	_inst.sat_Olck.monthsFormat.abbreviated.eight = "ᱟᱜᱟ";
+	_inst.sat_Olck.monthsFormat.abbreviated.nine = "ᱥᱮᱯ";
+	_inst.sat_Olck.monthsFormat.abbreviated.ten = "ᱚᱠᱴ";
+	_inst.sat_Olck.monthsFormat.abbreviated.eleven = "ᱱᱟᱣ";
+	_inst.sat_Olck.monthsFormat.abbreviated.twelve = "ᱫᱤᱥ";
+	_inst.sat_Olck.monthsFormat.abbreviated.one = "ᱡᱟᱱ";
+
+	_inst.sat_Olck.monthsFormat.wide = {};
+	_inst.sat_Olck.monthsFormat.wide.two = "ᱯᱷᱟᱨᱣᱟᱨᱤ";
+	_inst.sat_Olck.monthsFormat.wide.three = "ᱢᱟᱨᱪ";
+	_inst.sat_Olck.monthsFormat.wide.four = "ᱟᱯᱨᱮᱞ";
+	_inst.sat_Olck.monthsFormat.wide.five = "ᱢᱮ";
+	_inst.sat_Olck.monthsFormat.wide.six = "ᱡᱩᱱ";
+	_inst.sat_Olck.monthsFormat.wide.seven = "ᱡᱩᱞᱟᱭ";
+	_inst.sat_Olck.monthsFormat.wide.eight = "ᱟᱜᱟᱥᱛ";
+	_inst.sat_Olck.monthsFormat.wide.nine = "ᱥᱮᱯᱴᱮᱢᱵᱟᱨ";
+	_inst.sat_Olck.monthsFormat.wide.ten = "ᱚᱠᱴᱚᱵᱟᱨ";
+	_inst.sat_Olck.monthsFormat.wide.eleven = "ᱱᱟᱣᱟᱢᱵᱟᱨ";
+	_inst.sat_Olck.monthsFormat.wide.twelve = "ᱫᱤᱥᱟᱢᱵᱟᱨ";
+	_inst.sat_Olck.monthsFormat.wide.one = "ᱡᱟᱱᱣᱟᱨᱤ";
+
+	_inst.sat_Olck.symbols = {};
+	_inst.sat_Olck.symbols.currency = "¤";
+
+	_inst.sat_Olck.timeFormat = {};
+	_inst.sat_Olck.timeFormat.short = "h:mm a";
+	_inst.sat_Olck.timeFormat.medium = "h:mm:ss a";
+	_inst.sat_Olck.currencyFormat = "¤ #,##0.00";
+	_inst.sat_Olck.decimalFormat = "#,##0.###";
+
+	_inst.sat_Olck.dateTimeFormat = {};
+	_inst.sat_Olck.dateTimeFormat.full = "{1} {0}";
+	_inst.sat_Olck.dateTimeFormat.short = "{1} {0}";
+	_inst.sat_Olck.dateTimeFormat.medium = "{1} {0}";
+
+	_inst.sat_Olck.dateTimeFormat.availableFormats = {};
+	_inst.sat_Olck.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.yM = "y-MM";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.y = "y";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.yMd = "y-MM-dd";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.yMEd = "y-MM-dd, E";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.yMMM = "y MMM";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.yMMMd = "y MMM d";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.yMMMEd = "y MMM d, E";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.yMMMM = "y MMMM";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.yQQQ = "y QQQ";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.yQQQQ = "y QQQQ";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.d = "d";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.Ed = "d, E";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.Gy = "G y";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.GyMd = "GGGGG y-MM-dd";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.GyMMM = "G y MMM";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.GyMMMd = "G y MMM d";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.GyMMMEd = "G y MMM d, E";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.h = "h a";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.H = "HH";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.M = "L";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.Md = "MM-dd";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.MEd = "MM-dd, E";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.MMMd = "MMM d";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.MMMEd = "MMM d, E";
+	_inst.sat_Olck.dateTimeFormat.availableFormats.MMMMd = "MMMM d";
+	_inst.sat_Olck.dateTimeFormat.long = "{1} {0}";
+
+	_inst.sat_Olck.dateFormat = {};
+	_inst.sat_Olck.dateFormat.short = "d/M/yy";
+	_inst.sat_Olck.dateFormat.medium = "d MMM y";
+	_inst.sat_Olck.dateFormat.long = "d MMMM y";
+	_inst.sat_Olck.dateFormat.full = "EEEE, d MMMM y";
+
+	_inst.sat_Olck.daysFormat = {};
+
+	_inst.sat_Olck.daysFormat.narrow = {};
+	_inst.sat_Olck.daysFormat.narrow.sun = "ᱥ";
+	_inst.sat_Olck.daysFormat.narrow.mon = "ᱚ";
+	_inst.sat_Olck.daysFormat.narrow.tue = "ᱵ";
+	_inst.sat_Olck.daysFormat.narrow.wed = "ᱥ";
+	_inst.sat_Olck.daysFormat.narrow.thu = "ᱥ";
+	_inst.sat_Olck.daysFormat.narrow.fri = "ᱡ";
+	_inst.sat_Olck.daysFormat.narrow.sat = "ᱧ";
+
+	_inst.sat_Olck.daysFormat.abbreviated = {};
+	_inst.sat_Olck.daysFormat.abbreviated.sun = "ᱥᱤᱸ";
+	_inst.sat_Olck.daysFormat.abbreviated.mon = "ᱚᱛ";
+	_inst.sat_Olck.daysFormat.abbreviated.tue = "ᱵᱟ";
+	_inst.sat_Olck.daysFormat.abbreviated.wed = "ᱥᱟᱹ";
+	_inst.sat_Olck.daysFormat.abbreviated.thu = "ᱥᱟᱹᱨ";
+	_inst.sat_Olck.daysFormat.abbreviated.fri = "ᱡᱟᱹ";
+	_inst.sat_Olck.daysFormat.abbreviated.sat = "ᱧᱩ";
+
+	_inst.sat_Olck.daysFormat.short = {};
+	_inst.sat_Olck.daysFormat.short.sun = "ᱥᱤᱸ";
+	_inst.sat_Olck.daysFormat.short.mon = "ᱚᱛ";
+	_inst.sat_Olck.daysFormat.short.tue = "ᱵᱟ";
+	_inst.sat_Olck.daysFormat.short.wed = "ᱥᱟᱹ";
+	_inst.sat_Olck.daysFormat.short.thu = "ᱥᱟᱹᱨ";
+	_inst.sat_Olck.daysFormat.short.fri = "ᱡᱟᱹ";
+	_inst.sat_Olck.daysFormat.short.sat = "ᱧᱩ";
+
+	_inst.sat_Olck.daysFormat.wide = {};
+	_inst.sat_Olck.daysFormat.wide.sun = "ᱥᱤᱸᱜᱮ";
+	_inst.sat_Olck.daysFormat.wide.mon = "ᱚᱛᱮ";
+	_inst.sat_Olck.daysFormat.wide.tue = "ᱵᱟᱞᱮ";
+	_inst.sat_Olck.daysFormat.wide.wed = "ᱥᱟᱹᱜᱩᱱ";
+	_inst.sat_Olck.daysFormat.wide.thu = "ᱥᱟᱹᱨᱫᱤ";
+	_inst.sat_Olck.daysFormat.wide.fri = "ᱡᱟᱹᱨᱩᱢ";
+	_inst.sat_Olck.daysFormat.wide.sat = "ᱧᱩᱦᱩᱢ";
+
+	_inst.vai = {};
+
+	_inst.vai.monthsFormat = {};
+
+	_inst.vai.monthsFormat.narrow = {};
+	_inst.vai.monthsFormat.narrow.two = "2";
+	_inst.vai.monthsFormat.narrow.three = "3";
+	_inst.vai.monthsFormat.narrow.four = "4";
+	_inst.vai.monthsFormat.narrow.five = "5";
+	_inst.vai.monthsFormat.narrow.six = "6";
+	_inst.vai.monthsFormat.narrow.seven = "7";
+	_inst.vai.monthsFormat.narrow.eight = "8";
+	_inst.vai.monthsFormat.narrow.nine = "9";
+	_inst.vai.monthsFormat.narrow.ten = "10";
+	_inst.vai.monthsFormat.narrow.eleven = "11";
+	_inst.vai.monthsFormat.narrow.twelve = "12";
+	_inst.vai.monthsFormat.narrow.one = "1";
+
+	_inst.vai.monthsFormat.abbreviated = {};
+	_inst.vai.monthsFormat.abbreviated.two = "ꕒꕡ";
+	_inst.vai.monthsFormat.abbreviated.three = "ꕾꖺ";
+	_inst.vai.monthsFormat.abbreviated.four = "ꖢꖕ";
+	_inst.vai.monthsFormat.abbreviated.five = "ꖑꕱ";
+	_inst.vai.monthsFormat.abbreviated.six = "ꖱꘋ";
+	_inst.vai.monthsFormat.abbreviated.seven = "ꖱꕞ";
+	_inst.vai.monthsFormat.abbreviated.eight = "ꗛꔕ";
+	_inst.vai.monthsFormat.abbreviated.nine = "ꕢꕌ";
+	_inst.vai.monthsFormat.abbreviated.ten = "ꕭꖃ";
+	_inst.vai.monthsFormat.abbreviated.eleven = "ꔞꘋ";
+	_inst.vai.monthsFormat.abbreviated.twelve = "ꖨꖕꗏ";
+	_inst.vai.monthsFormat.abbreviated.one = "ꖨꖕꔞ";
+
+	_inst.vai.monthsFormat.wide = {};
+	_inst.vai.monthsFormat.wide.two = "ꕒꕡꖝꖕ";
+	_inst.vai.monthsFormat.wide.three = "ꕾꖺ";
+	_inst.vai.monthsFormat.wide.four = "ꖢꖕ";
+	_inst.vai.monthsFormat.wide.five = "ꖑꕱ";
+	_inst.vai.monthsFormat.wide.six = "ꖱꘋ";
+	_inst.vai.monthsFormat.wide.seven = "ꖱꕞꔤ";
+	_inst.vai.monthsFormat.wide.eight = "ꗛꔕ";
+	_inst.vai.monthsFormat.wide.nine = "ꕢꕌ";
+	_inst.vai.monthsFormat.wide.ten = "ꕭꖃ";
+	_inst.vai.monthsFormat.wide.eleven = "ꔞꘋꕔꕿ ꕸꖃꗏ";
+	_inst.vai.monthsFormat.wide.twelve = "ꖨꖕ ꕪꕴ ꗏꖺꕮꕊ";
+	_inst.vai.monthsFormat.wide.one = "ꖨꖕ ꕪꕴ ꔞꔀꕮꕊ";
+
+	_inst.vai.symbols = {};
+	_inst.vai.symbols.currency = "¤";
+
+	_inst.vai.timeFormat = {};
+	_inst.vai.timeFormat.short = "h:mm a";
+	_inst.vai.timeFormat.medium = "h:mm:ss a";
+	_inst.vai.currencyFormat = "¤#,##0.00";
+	_inst.vai.decimalFormat = "#,##0.###";
+
+	_inst.vai.dateTimeFormat = {};
+	_inst.vai.dateTimeFormat.full = "{1} {0}";
+	_inst.vai.dateTimeFormat.short = "{1} {0}";
+	_inst.vai.dateTimeFormat.medium = "{1} {0}";
+
+	_inst.vai.dateTimeFormat.availableFormats = {};
+	_inst.vai.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.vai.dateTimeFormat.availableFormats.yM = "M/y";
+	_inst.vai.dateTimeFormat.availableFormats.y = "y";
+	_inst.vai.dateTimeFormat.availableFormats.yMd = "y-MM-dd";
+	_inst.vai.dateTimeFormat.availableFormats.yMEd = "E, M/d/y";
+	_inst.vai.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.vai.dateTimeFormat.availableFormats.yMMMd = "y MMM d";
+	_inst.vai.dateTimeFormat.availableFormats.yMMMEd = "E, MMM d, y";
+	_inst.vai.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.vai.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.vai.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.vai.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y";
+	_inst.vai.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.vai.dateTimeFormat.availableFormats.MMMMEd = "E, MMMM d";
+	_inst.vai.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.vai.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.vai.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.vai.dateTimeFormat.availableFormats.d = "d";
+	_inst.vai.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.vai.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.vai.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.vai.dateTimeFormat.availableFormats.Ed = "d, E";
+	_inst.vai.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.vai.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.vai.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.vai.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.vai.dateTimeFormat.availableFormats.Gy = "G y";
+	_inst.vai.dateTimeFormat.availableFormats.GyMd = "GGGGG y-MM-dd";
+	_inst.vai.dateTimeFormat.availableFormats.GyMMM = "G y MMM";
+	_inst.vai.dateTimeFormat.availableFormats.GyMMMd = "G y MMM d";
+	_inst.vai.dateTimeFormat.availableFormats.GyMMMEd = "G y MMM d, E";
+	_inst.vai.dateTimeFormat.availableFormats.h = "h a";
+	_inst.vai.dateTimeFormat.availableFormats.H = "HH";
+	_inst.vai.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.vai.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.vai.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.vai.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.vai.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.vai.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.vai.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.vai.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.vai.dateTimeFormat.availableFormats.M = "L";
+	_inst.vai.dateTimeFormat.availableFormats.Md = "M/d";
+	_inst.vai.dateTimeFormat.availableFormats.MEd = "E, M/d";
+	_inst.vai.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.vai.dateTimeFormat.availableFormats.MMMd = "MMM d";
+	_inst.vai.dateTimeFormat.availableFormats.MMMEd = "E, MMM d";
+	_inst.vai.dateTimeFormat.availableFormats.MMMMd = "MMMM d";
+	_inst.vai.dateTimeFormat.long = "{1} {0}";
+
+	_inst.vai.dateFormat = {};
+	_inst.vai.dateFormat.short = "dd/MM/y";
+	_inst.vai.dateFormat.medium = "d MMM y";
+	_inst.vai.dateFormat.long = "d MMMM y";
+	_inst.vai.dateFormat.full = "EEEE, d MMMM y";
+
+	_inst.vai.daysFormat = {};
+
+	_inst.vai.daysFormat.narrow = {};
+	_inst.vai.daysFormat.narrow.sun = "S";
+	_inst.vai.daysFormat.narrow.mon = "M";
+	_inst.vai.daysFormat.narrow.tue = "T";
+	_inst.vai.daysFormat.narrow.wed = "W";
+	_inst.vai.daysFormat.narrow.thu = "T";
+	_inst.vai.daysFormat.narrow.fri = "F";
+	_inst.vai.daysFormat.narrow.sat = "S";
+
+	_inst.vai.daysFormat.abbreviated = {};
+	_inst.vai.daysFormat.abbreviated.sun = "ꕞꕌꔵ";
+	_inst.vai.daysFormat.abbreviated.mon = "ꗳꗡꘉ";
+	_inst.vai.daysFormat.abbreviated.tue = "ꕚꕞꕚ";
+	_inst.vai.daysFormat.abbreviated.wed = "ꕉꕞꕒ";
+	_inst.vai.daysFormat.abbreviated.thu = "ꕉꔤꕆꕢ";
+	_inst.vai.daysFormat.abbreviated.fri = "ꕉꔤꕀꕮ";
+	_inst.vai.daysFormat.abbreviated.sat = "ꔻꔬꔳ";
+
+	_inst.vai.daysFormat.short = {};
+	_inst.vai.daysFormat.short.sun = "ꕞꕌꔵ";
+	_inst.vai.daysFormat.short.mon = "ꗳꗡꘉ";
+	_inst.vai.daysFormat.short.tue = "ꕚꕞꕚ";
+	_inst.vai.daysFormat.short.wed = "ꕉꕞꕒ";
+	_inst.vai.daysFormat.short.thu = "ꕉꔤꕆꕢ";
+	_inst.vai.daysFormat.short.fri = "ꕉꔤꕀꕮ";
+	_inst.vai.daysFormat.short.sat = "ꔻꔬꔳ";
+
+	_inst.vai.daysFormat.wide = {};
+	_inst.vai.daysFormat.wide.sun = "ꕞꕌꔵ";
+	_inst.vai.daysFormat.wide.mon = "ꗳꗡꘉ";
+	_inst.vai.daysFormat.wide.tue = "ꕚꕞꕚ";
+	_inst.vai.daysFormat.wide.wed = "ꕉꕞꕒ";
+	_inst.vai.daysFormat.wide.thu = "ꕉꔤꕆꕢ";
+	_inst.vai.daysFormat.wide.fri = "ꕉꔤꕀꕮ";
+	_inst.vai.daysFormat.wide.sat = "ꔻꔬꔳ";
+
+	_inst.ko_KP = {};
+
+	_inst.ko_KP.monthsFormat = {};
+
+	_inst.ko_KP.monthsFormat.narrow = {};
+	_inst.ko_KP.monthsFormat.narrow.two = "2월";
+	_inst.ko_KP.monthsFormat.narrow.three = "3월";
+	_inst.ko_KP.monthsFormat.narrow.four = "4월";
+	_inst.ko_KP.monthsFormat.narrow.five = "5월";
+	_inst.ko_KP.monthsFormat.narrow.six = "6월";
+	_inst.ko_KP.monthsFormat.narrow.seven = "7월";
+	_inst.ko_KP.monthsFormat.narrow.eight = "8월";
+	_inst.ko_KP.monthsFormat.narrow.nine = "9월";
+	_inst.ko_KP.monthsFormat.narrow.ten = "10월";
+	_inst.ko_KP.monthsFormat.narrow.eleven = "11월";
+	_inst.ko_KP.monthsFormat.narrow.twelve = "12월";
+	_inst.ko_KP.monthsFormat.narrow.one = "1월";
+
+	_inst.ko_KP.monthsFormat.abbreviated = {};
+	_inst.ko_KP.monthsFormat.abbreviated.two = "2월";
+	_inst.ko_KP.monthsFormat.abbreviated.three = "3월";
+	_inst.ko_KP.monthsFormat.abbreviated.four = "4월";
+	_inst.ko_KP.monthsFormat.abbreviated.five = "5월";
+	_inst.ko_KP.monthsFormat.abbreviated.six = "6월";
+	_inst.ko_KP.monthsFormat.abbreviated.seven = "7월";
+	_inst.ko_KP.monthsFormat.abbreviated.eight = "8월";
+	_inst.ko_KP.monthsFormat.abbreviated.nine = "9월";
+	_inst.ko_KP.monthsFormat.abbreviated.ten = "10월";
+	_inst.ko_KP.monthsFormat.abbreviated.eleven = "11월";
+	_inst.ko_KP.monthsFormat.abbreviated.twelve = "12월";
+	_inst.ko_KP.monthsFormat.abbreviated.one = "1월";
+
+	_inst.ko_KP.monthsFormat.wide = {};
+	_inst.ko_KP.monthsFormat.wide.two = "2월";
+	_inst.ko_KP.monthsFormat.wide.three = "3월";
+	_inst.ko_KP.monthsFormat.wide.four = "4월";
+	_inst.ko_KP.monthsFormat.wide.five = "5월";
+	_inst.ko_KP.monthsFormat.wide.six = "6월";
+	_inst.ko_KP.monthsFormat.wide.seven = "7월";
+	_inst.ko_KP.monthsFormat.wide.eight = "8월";
+	_inst.ko_KP.monthsFormat.wide.nine = "9월";
+	_inst.ko_KP.monthsFormat.wide.ten = "10월";
+	_inst.ko_KP.monthsFormat.wide.eleven = "11월";
+	_inst.ko_KP.monthsFormat.wide.twelve = "12월";
+	_inst.ko_KP.monthsFormat.wide.one = "1월";
+
+	_inst.ko_KP.symbols = {};
+	_inst.ko_KP.symbols.currency = "₩";
+
+	_inst.ko_KP.timeFormat = {};
+	_inst.ko_KP.timeFormat.short = "a h:mm";
+	_inst.ko_KP.timeFormat.medium = "a h:mm:ss";
+	_inst.ko_KP.currencyFormat = "¤#,##0.00";
+	_inst.ko_KP.decimalFormat = "#,##0.###";
+
+	_inst.ko_KP.dateTimeFormat = {};
+	_inst.ko_KP.dateTimeFormat.full = "{1} {0}";
+	_inst.ko_KP.dateTimeFormat.short = "{1} {0}";
+	_inst.ko_KP.dateTimeFormat.medium = "{1} {0}";
+
+	_inst.ko_KP.dateTimeFormat.availableFormats = {};
+	_inst.ko_KP.dateTimeFormat.availableFormats.MMMd = "MMM d일";
+	_inst.ko_KP.dateTimeFormat.availableFormats.MMMEd = "MMM d일 (E)";
+	_inst.ko_KP.dateTimeFormat.availableFormats.MMMMd = "MMMM d일";
+	_inst.ko_KP.dateTimeFormat.availableFormats.MMMMW_count_other = "MMMM W번째 주";
+	_inst.ko_KP.dateTimeFormat.availableFormats.yM = "y. M.";
+	_inst.ko_KP.dateTimeFormat.availableFormats.EEEEd = "d일 EEEE";
+	_inst.ko_KP.dateTimeFormat.availableFormats.yMd = "y. M. d.";
+	_inst.ko_KP.dateTimeFormat.availableFormats.y = "y년";
+	_inst.ko_KP.dateTimeFormat.availableFormats.yMEd = "y. M. d. (E)";
+	_inst.ko_KP.dateTimeFormat.availableFormats.HHmmss = "HH:mm:ss";
+	_inst.ko_KP.dateTimeFormat.availableFormats.yMMM = "y년 MMM";
+	_inst.ko_KP.dateTimeFormat.availableFormats.MEEEEd = "M. d. EEEE";
+	_inst.ko_KP.dateTimeFormat.availableFormats.yMMMd = "y년 MMM d일";
+	_inst.ko_KP.dateTimeFormat.availableFormats.yMMMEd = "y년 MMM d일 (E)";
+	_inst.ko_KP.dateTimeFormat.availableFormats.yMMMM = "y년 MMMM";
+	_inst.ko_KP.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.ko_KP.dateTimeFormat.availableFormats.yQQQ = "y년 QQQ";
+	_inst.ko_KP.dateTimeFormat.availableFormats.yQQQQ = "y년 QQQQ";
+	_inst.ko_KP.dateTimeFormat.availableFormats.yw_count_other = "Y년 w번째 주";
+	_inst.ko_KP.dateTimeFormat.availableFormats.yMM = "y. M.";
+	_inst.ko_KP.dateTimeFormat.availableFormats.yMEEEEd = "y. M. d. EEEE";
+	_inst.ko_KP.dateTimeFormat.availableFormats.Bh = "B h시";
+	_inst.ko_KP.dateTimeFormat.availableFormats.Bhm = "B h:mm";
+	_inst.ko_KP.dateTimeFormat.availableFormats.Bhms = "B h:mm:ss";
+	_inst.ko_KP.dateTimeFormat.availableFormats.d = "d일";
+	_inst.ko_KP.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.ko_KP.dateTimeFormat.availableFormats.EBhm = "(E) B h:mm";
+	_inst.ko_KP.dateTimeFormat.availableFormats.EBhms = "(E) B h:mm:ss";
+	_inst.ko_KP.dateTimeFormat.availableFormats.GyMMMEEEEd = "G y년 MMM d일 EEEE";
+	_inst.ko_KP.dateTimeFormat.availableFormats.Ed = "d일 (E)";
+	_inst.ko_KP.dateTimeFormat.availableFormats.MMMEEEEd = "MMM d일 EEEE";
+	_inst.ko_KP.dateTimeFormat.availableFormats.Ehm = "(E) a h:mm";
+	_inst.ko_KP.dateTimeFormat.availableFormats.EHm = "(E) HH:mm";
+	_inst.ko_KP.dateTimeFormat.availableFormats.yMMMEEEEd = "y년 MMM d일 EEEE";
+	_inst.ko_KP.dateTimeFormat.availableFormats.Ehms = "(E) a h:mm:ss";
+	_inst.ko_KP.dateTimeFormat.availableFormats.EHms = "(E) HH:mm:ss";
+	_inst.ko_KP.dateTimeFormat.availableFormats.Gy = "G y년";
+	_inst.ko_KP.dateTimeFormat.availableFormats.GyMd = "GGGGG y/M/d";
+	_inst.ko_KP.dateTimeFormat.availableFormats.GyMMM = "G y년 MMM";
+	_inst.ko_KP.dateTimeFormat.availableFormats.GyMMMd = "G y년 MMM d일";
+	_inst.ko_KP.dateTimeFormat.availableFormats.GyMMMEd = "G y년 MMM d일 (E)";
+	_inst.ko_KP.dateTimeFormat.availableFormats.mmss = "mm:ss";
+	_inst.ko_KP.dateTimeFormat.availableFormats.h = "a h시";
+	_inst.ko_KP.dateTimeFormat.availableFormats.H = "H시";
+	_inst.ko_KP.dateTimeFormat.availableFormats.hm = "a h:mm";
+	_inst.ko_KP.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.ko_KP.dateTimeFormat.availableFormats.hms = "a h:mm:ss";
+	_inst.ko_KP.dateTimeFormat.availableFormats.Hms = "H시 m분 s초";
+	_inst.ko_KP.dateTimeFormat.availableFormats.hmsv = "a h:mm:ss v";
+	_inst.ko_KP.dateTimeFormat.availableFormats.Hmsv = "H시 m분 s초 v";
+	_inst.ko_KP.dateTimeFormat.availableFormats.hmv = "a h:mm v";
+	_inst.ko_KP.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.ko_KP.dateTimeFormat.availableFormats.M = "M월";
+	_inst.ko_KP.dateTimeFormat.availableFormats.Md = "M. d.";
+	_inst.ko_KP.dateTimeFormat.availableFormats.MEd = "M. d. (E)";
+	_inst.ko_KP.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.ko_KP.dateTimeFormat.long = "{1} {0}";
+
+	_inst.ko_KP.dateFormat = {};
+	_inst.ko_KP.dateFormat.short = "yy. M. d.";
+	_inst.ko_KP.dateFormat.medium = "y. M. d.";
+	_inst.ko_KP.dateFormat.long = "y년 MMMM d일";
+	_inst.ko_KP.dateFormat.full = "y년 MMMM d일 EEEE";
+
+	_inst.ko_KP.daysFormat = {};
+
+	_inst.ko_KP.daysFormat.narrow = {};
+	_inst.ko_KP.daysFormat.narrow.sun = "일";
+	_inst.ko_KP.daysFormat.narrow.mon = "월";
+	_inst.ko_KP.daysFormat.narrow.tue = "화";
+	_inst.ko_KP.daysFormat.narrow.wed = "수";
+	_inst.ko_KP.daysFormat.narrow.thu = "목";
+	_inst.ko_KP.daysFormat.narrow.fri = "금";
+	_inst.ko_KP.daysFormat.narrow.sat = "토";
+
+	_inst.ko_KP.daysFormat.abbreviated = {};
+	_inst.ko_KP.daysFormat.abbreviated.sun = "일";
+	_inst.ko_KP.daysFormat.abbreviated.mon = "월";
+	_inst.ko_KP.daysFormat.abbreviated.tue = "화";
+	_inst.ko_KP.daysFormat.abbreviated.wed = "수";
+	_inst.ko_KP.daysFormat.abbreviated.thu = "목";
+	_inst.ko_KP.daysFormat.abbreviated.fri = "금";
+	_inst.ko_KP.daysFormat.abbreviated.sat = "토";
+
+	_inst.ko_KP.daysFormat.short = {};
+	_inst.ko_KP.daysFormat.short.sun = "일";
+	_inst.ko_KP.daysFormat.short.mon = "월";
+	_inst.ko_KP.daysFormat.short.tue = "화";
+	_inst.ko_KP.daysFormat.short.wed = "수";
+	_inst.ko_KP.daysFormat.short.thu = "목";
+	_inst.ko_KP.daysFormat.short.fri = "금";
+	_inst.ko_KP.daysFormat.short.sat = "토";
+
+	_inst.ko_KP.daysFormat.wide = {};
+	_inst.ko_KP.daysFormat.wide.sun = "일요일";
+	_inst.ko_KP.daysFormat.wide.mon = "월요일";
+	_inst.ko_KP.daysFormat.wide.tue = "화요일";
+	_inst.ko_KP.daysFormat.wide.wed = "수요일";
+	_inst.ko_KP.daysFormat.wide.thu = "목요일";
+	_inst.ko_KP.daysFormat.wide.fri = "금요일";
+	_inst.ko_KP.daysFormat.wide.sat = "토요일";
+
+	_inst.mn_Mong_MN = {};
+
+	_inst.mn_Mong_MN.monthsFormat = {};
+
+	_inst.mn_Mong_MN.monthsFormat.narrow = {};
+	_inst.mn_Mong_MN.monthsFormat.narrow.two = "II";
+	_inst.mn_Mong_MN.monthsFormat.narrow.three = "III";
+	_inst.mn_Mong_MN.monthsFormat.narrow.four = "IV";
+	_inst.mn_Mong_MN.monthsFormat.narrow.five = "V";
+	_inst.mn_Mong_MN.monthsFormat.narrow.six = "VI";
+	_inst.mn_Mong_MN.monthsFormat.narrow.seven = "VII";
+	_inst.mn_Mong_MN.monthsFormat.narrow.eight = "VIII";
+	_inst.mn_Mong_MN.monthsFormat.narrow.nine = "IX";
+	_inst.mn_Mong_MN.monthsFormat.narrow.ten = "X";
+	_inst.mn_Mong_MN.monthsFormat.narrow.eleven = "XI";
+	_inst.mn_Mong_MN.monthsFormat.narrow.twelve = "XII";
+	_inst.mn_Mong_MN.monthsFormat.narrow.one = "I";
+
+	_inst.mn_Mong_MN.monthsFormat.abbreviated = {};
+	_inst.mn_Mong_MN.monthsFormat.abbreviated.two = "2 ᠊ᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.abbreviated.three = "3᠊ᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.abbreviated.four = "4 ᠊ᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.abbreviated.five = "5 ᠊ᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.abbreviated.six = "6 ᠊ᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.abbreviated.seven = "7 ᠊ᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.abbreviated.eight = "8᠊ᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.abbreviated.nine = "9 ᠊ᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.abbreviated.ten = "10 ᠊ᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.abbreviated.eleven = "11 ᠊ᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.abbreviated.twelve = "12 ᠊ᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.abbreviated.one = "1 ᠊ᠷ ᠰᠠᠷ᠎ᠠ";
+
+	_inst.mn_Mong_MN.monthsFormat.wide = {};
+	_inst.mn_Mong_MN.monthsFormat.wide.two = "ᠬᠣᠶᠠᠳᠣᠭᠠᠷ ᠰᠠᠷ ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.wide.three = "ᠭᠣᠷᠪᠡᠳᠣᠭᠠᠷ ᠰᠠᠷ ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.wide.four = "ᠳᠥᠷᠪᠡᠳᠥᠭᠡᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.wide.five = "ᠲᠠᠪᠣᠳᠣᠭᠠᠷ ᠰᠠᠷ ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.wide.six = "ᠵᠢᠷᠭᠣᠭᠠᠳᠣᠭᠠᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.wide.seven = "ᠲᠣᠯᠣᠭᠠᠳᠣᠭᠠᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.wide.eight = "ᠨᠠᠢᠮᠠᠳᠥᠭᠠᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.wide.nine = "ᠶᠢᠰᠥᠳᠥᠭᠡᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.wide.ten = "ᠠᠷᠪᠠᠳᠣᠭᠠᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.wide.eleven = "ᠠᠷᠪᠠᠨ ᠨᠢᠭᠡᠳᠥᠭᠡᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.wide.twelve = "ᠠᠷᠪᠠᠨ ᠬᠣᠶᠠᠳᠣᠭᠠᠷ ᠰᠠᠷ᠎ᠠ";
+	_inst.mn_Mong_MN.monthsFormat.wide.one = "ᠨᠢᠭᠡᠳᠥᠭᠡᠷ ᠰᠠᠷ᠎ᠠ";
+
+	_inst.mn_Mong_MN.symbols = {};
+	_inst.mn_Mong_MN.symbols.currency = "¤";
+
+	_inst.mn_Mong_MN.timeFormat = {};
+	_inst.mn_Mong_MN.timeFormat.short = "HH:mm";
+	_inst.mn_Mong_MN.timeFormat.medium = "HH:mm:ss";
+	_inst.mn_Mong_MN.currencyFormat = "¤#,##0.00";
+	_inst.mn_Mong_MN.decimalFormat = "#,##0.###";
+
+	_inst.mn_Mong_MN.dateTimeFormat = {};
+	_inst.mn_Mong_MN.dateTimeFormat.full = "{1} {0}";
+	_inst.mn_Mong_MN.dateTimeFormat.short = "{1} {0}";
+	_inst.mn_Mong_MN.dateTimeFormat.medium = "{1} {0}";
+
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats = {};
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.yM = "y-MM";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.y = "y";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.yMd = "y-MM-dd";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.yMEd = "y-MM-dd, E";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.yMMM = "y MMM";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.yMMMd = "y MMM d";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.yMMMEd = "y MMM d, E";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.yMMMM = "y MMMM";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.yQQQ = "y QQQ";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.yQQQQ = "y QQQQ";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.d = "d";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.Ed = "d, E";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.Gy = "G y";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.GyMd = "GGGGG y-MM-dd";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.GyMMM = "G y MMM";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.GyMMMd = "G y MMM d";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.GyMMMEd = "G y MMM d, E";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.h = "h a";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.H = "HH";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.M = "L";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.Md = "MM-dd";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.MEd = "MM-dd, E";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.MMMd = "MMM d";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.MMMEd = "MMM d, E";
+	_inst.mn_Mong_MN.dateTimeFormat.availableFormats.MMMMd = "MMMM d";
+	_inst.mn_Mong_MN.dateTimeFormat.long = "{1} {0}";
+
+	_inst.mn_Mong_MN.dateFormat = {};
+	_inst.mn_Mong_MN.dateFormat.short = "y.MM.dd";
+	_inst.mn_Mong_MN.dateFormat.medium = "y.MM.dd";
+	_inst.mn_Mong_MN.dateFormat.long = "y ᠋ᠣᠨ ᠤMMMM᠎᠎ ᠤᠩ d";
+	_inst.mn_Mong_MN.dateFormat.full = "y ᠣᠨ ᠎᠎᠎ᠤ MMMM᠎᠎ᠢᠢᠨd. EEEE ᠋ᠭᠠᠷᠠᠭ";
+
+	_inst.mn_Mong_MN.daysFormat = {};
+
+	_inst.mn_Mong_MN.daysFormat.narrow = {};
+	_inst.mn_Mong_MN.daysFormat.narrow.sun = "ᠨᠢ";
+	_inst.mn_Mong_MN.daysFormat.narrow.mon = "ᠳᠠ";
+	_inst.mn_Mong_MN.daysFormat.narrow.tue = "ᠮᠢᠭ";
+	_inst.mn_Mong_MN.daysFormat.narrow.wed = "ᡀᠠ";
+	_inst.mn_Mong_MN.daysFormat.narrow.thu = "ᠫᠥᠷ";
+	_inst.mn_Mong_MN.daysFormat.narrow.fri = "ᠪᠠ";
+	_inst.mn_Mong_MN.daysFormat.narrow.sat = "ᠪᠢ";
+
+	_inst.mn_Mong_MN.daysFormat.abbreviated = {};
+	_inst.mn_Mong_MN.daysFormat.abbreviated.sun = "ᠨᠢ";
+	_inst.mn_Mong_MN.daysFormat.abbreviated.mon = "ᠲᠠ";
+	_inst.mn_Mong_MN.daysFormat.abbreviated.tue = "ᠮᠢᠭ";
+	_inst.mn_Mong_MN.daysFormat.abbreviated.wed = "ᡀᠠ";
+	_inst.mn_Mong_MN.daysFormat.abbreviated.thu = "ᠫᠥᠷ";
+	_inst.mn_Mong_MN.daysFormat.abbreviated.fri = "ᠪᠠ";
+	_inst.mn_Mong_MN.daysFormat.abbreviated.sat = "ᠪᠢᠮ";
+
+	_inst.mn_Mong_MN.daysFormat.short = {};
+	_inst.mn_Mong_MN.daysFormat.short.sun = "ᠨᠢ";
+	_inst.mn_Mong_MN.daysFormat.short.mon = "ᠲᠠ";
+	_inst.mn_Mong_MN.daysFormat.short.tue = "ᠮᠢᠭ";
+	_inst.mn_Mong_MN.daysFormat.short.wed = "ᡀᠠ";
+	_inst.mn_Mong_MN.daysFormat.short.thu = "ᠫᠥᠷ";
+	_inst.mn_Mong_MN.daysFormat.short.fri = "ᠪᠠ";
+	_inst.mn_Mong_MN.daysFormat.short.sat = "ᠪᠢᠮ";
+
+	_inst.mn_Mong_MN.daysFormat.wide = {};
+	_inst.mn_Mong_MN.daysFormat.wide.sun = "ᠨᠢᠮ᠎ᠠ";
+	_inst.mn_Mong_MN.daysFormat.wide.mon = "ᠳᠠᠸᠠ";
+	_inst.mn_Mong_MN.daysFormat.wide.tue = "ᠮᠢᠠᠠᠮᠠᠷ";
+	_inst.mn_Mong_MN.daysFormat.wide.wed = "ᡀᠠᠭᠪᠠ";
+	_inst.mn_Mong_MN.daysFormat.wide.thu = "ᠫᠦᠷᠪᠦ";
+	_inst.mn_Mong_MN.daysFormat.wide.fri = "ᠪᠠᠰᠠᠩ";
+	_inst.mn_Mong_MN.daysFormat.wide.sat = "ᠪᠢᠮᠪᠠ";
+
+	_inst.de_AT = {};
+
+	_inst.de_AT.monthsFormat = {};
+
+	_inst.de_AT.monthsFormat.narrow = {};
+	_inst.de_AT.monthsFormat.narrow.two = "F";
+	_inst.de_AT.monthsFormat.narrow.three = "M";
+	_inst.de_AT.monthsFormat.narrow.four = "A";
+	_inst.de_AT.monthsFormat.narrow.five = "M";
+	_inst.de_AT.monthsFormat.narrow.six = "J";
+	_inst.de_AT.monthsFormat.narrow.seven = "J";
+	_inst.de_AT.monthsFormat.narrow.eight = "A";
+	_inst.de_AT.monthsFormat.narrow.nine = "S";
+	_inst.de_AT.monthsFormat.narrow.ten = "O";
+	_inst.de_AT.monthsFormat.narrow.eleven = "N";
+	_inst.de_AT.monthsFormat.narrow.twelve = "D";
+	_inst.de_AT.monthsFormat.narrow.one = "J";
+
+	_inst.de_AT.monthsFormat.abbreviated = {};
+	_inst.de_AT.monthsFormat.abbreviated.two = "Feb.";
+	_inst.de_AT.monthsFormat.abbreviated.three = "März";
+	_inst.de_AT.monthsFormat.abbreviated.four = "Apr.";
+	_inst.de_AT.monthsFormat.abbreviated.five = "Mai";
+	_inst.de_AT.monthsFormat.abbreviated.six = "Juni";
+	_inst.de_AT.monthsFormat.abbreviated.seven = "Juli";
+	_inst.de_AT.monthsFormat.abbreviated.eight = "Aug.";
+	_inst.de_AT.monthsFormat.abbreviated.nine = "Sep.";
+	_inst.de_AT.monthsFormat.abbreviated.ten = "Okt.";
+	_inst.de_AT.monthsFormat.abbreviated.eleven = "Nov.";
+	_inst.de_AT.monthsFormat.abbreviated.twelve = "Dez.";
+	_inst.de_AT.monthsFormat.abbreviated.one = "Jän.";
+
+	_inst.de_AT.monthsFormat.wide = {};
+	_inst.de_AT.monthsFormat.wide.two = "Februar";
+	_inst.de_AT.monthsFormat.wide.three = "März";
+	_inst.de_AT.monthsFormat.wide.four = "April";
+	_inst.de_AT.monthsFormat.wide.five = "Mai";
+	_inst.de_AT.monthsFormat.wide.six = "Juni";
+	_inst.de_AT.monthsFormat.wide.seven = "Juli";
+	_inst.de_AT.monthsFormat.wide.eight = "August";
+	_inst.de_AT.monthsFormat.wide.nine = "September";
+	_inst.de_AT.monthsFormat.wide.ten = "Oktober";
+	_inst.de_AT.monthsFormat.wide.eleven = "November";
+	_inst.de_AT.monthsFormat.wide.twelve = "Dezember";
+	_inst.de_AT.monthsFormat.wide.one = "Jänner";
+
+	_inst.de_AT.symbols = {};
+	_inst.de_AT.symbols.currency = "€";
+
+	_inst.de_AT.timeFormat = {};
+	_inst.de_AT.timeFormat.short = "HH:mm";
+	_inst.de_AT.timeFormat.medium = "HH:mm:ss";
+	_inst.de_AT.currencyFormat = "¤ #,##0.00";
+	_inst.de_AT.decimalFormat = "#,##0.###";
+
+	_inst.de_AT.dateTimeFormat = {};
+	_inst.de_AT.dateTimeFormat.full = "{1}, {0}";
+	_inst.de_AT.dateTimeFormat.short = "{1}, {0}";
+	_inst.de_AT.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.de_AT.dateTimeFormat.availableFormats = {};
+	_inst.de_AT.dateTimeFormat.availableFormats.MMMMW_count_other = "'Woche' W 'im' MMMM";
+	_inst.de_AT.dateTimeFormat.availableFormats.yM = "M/y";
+	_inst.de_AT.dateTimeFormat.availableFormats.y = "y";
+	_inst.de_AT.dateTimeFormat.availableFormats.yMd = "d.M.y";
+	_inst.de_AT.dateTimeFormat.availableFormats.yMEd = "E, d.M.y";
+	_inst.de_AT.dateTimeFormat.availableFormats.yMMM = "MMM y";
+	_inst.de_AT.dateTimeFormat.availableFormats.yMMMd = "d. MMM y";
+	_inst.de_AT.dateTimeFormat.availableFormats.yMMMEd = "E, d. MMM y";
+	_inst.de_AT.dateTimeFormat.availableFormats.yMMMM = "MMMM y";
+	_inst.de_AT.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.de_AT.dateTimeFormat.availableFormats.yQQQ = "QQQ y";
+	_inst.de_AT.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y";
+	_inst.de_AT.dateTimeFormat.availableFormats.yw_count_other = "'Woche' w 'des' 'Jahres' Y";
+	_inst.de_AT.dateTimeFormat.availableFormats.MMd = "d.MM.";
+	_inst.de_AT.dateTimeFormat.availableFormats.MMMMEd = "E, d. MMMM";
+	_inst.de_AT.dateTimeFormat.availableFormats.MMMMW_count_one = "'Woche' W 'im' MMMM";
+	_inst.de_AT.dateTimeFormat.availableFormats.yMM = "MM.y";
+	_inst.de_AT.dateTimeFormat.availableFormats.yw_count_one = "'Woche' w 'des' 'Jahres' Y";
+	_inst.de_AT.dateTimeFormat.availableFormats.yMMdd = "dd.MM.y";
+	_inst.de_AT.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.de_AT.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.de_AT.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.de_AT.dateTimeFormat.availableFormats.d = "d";
+	_inst.de_AT.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.de_AT.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.de_AT.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.de_AT.dateTimeFormat.availableFormats.Ed = "E, d.";
+	_inst.de_AT.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.de_AT.dateTimeFormat.availableFormats.EHm = "E, HH:mm";
+	_inst.de_AT.dateTimeFormat.availableFormats.Ehms = "E, h:mm:ss a";
+	_inst.de_AT.dateTimeFormat.availableFormats.EHms = "E, HH:mm:ss";
+	_inst.de_AT.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.de_AT.dateTimeFormat.availableFormats.GyMd = "dd.MM.y G";
+	_inst.de_AT.dateTimeFormat.availableFormats.GyMMM = "MMM y G";
+	_inst.de_AT.dateTimeFormat.availableFormats.GyMMMd = "d. MMM y G";
+	_inst.de_AT.dateTimeFormat.availableFormats.GyMMMEd = "E, d. MMM y G";
+	_inst.de_AT.dateTimeFormat.availableFormats.h = "h 'Uhr' a";
+	_inst.de_AT.dateTimeFormat.availableFormats.H = "HH 'Uhr'";
+	_inst.de_AT.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.de_AT.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.de_AT.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.de_AT.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.de_AT.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.de_AT.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.de_AT.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.de_AT.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.de_AT.dateTimeFormat.availableFormats.M = "L";
+	_inst.de_AT.dateTimeFormat.availableFormats.Md = "d.M.";
+	_inst.de_AT.dateTimeFormat.availableFormats.MEd = "E, d.M.";
+	_inst.de_AT.dateTimeFormat.availableFormats.MMdd = "dd.MM.";
+	_inst.de_AT.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.de_AT.dateTimeFormat.availableFormats.MMMd = "d. MMM";
+	_inst.de_AT.dateTimeFormat.availableFormats.MMMEd = "E, d. MMM";
+	_inst.de_AT.dateTimeFormat.availableFormats.MMMMd = "d. MMMM";
+	_inst.de_AT.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.de_AT.dateFormat = {};
+	_inst.de_AT.dateFormat.short = "dd.MM.yy";
+	_inst.de_AT.dateFormat.medium = "dd.MM.y";
+	_inst.de_AT.dateFormat.long = "d. MMMM y";
+	_inst.de_AT.dateFormat.full = "EEEE, d. MMMM y";
+
+	_inst.de_AT.daysFormat = {};
+
+	_inst.de_AT.daysFormat.narrow = {};
+	_inst.de_AT.daysFormat.narrow.sun = "S";
+	_inst.de_AT.daysFormat.narrow.mon = "M";
+	_inst.de_AT.daysFormat.narrow.tue = "D";
+	_inst.de_AT.daysFormat.narrow.wed = "M";
+	_inst.de_AT.daysFormat.narrow.thu = "D";
+	_inst.de_AT.daysFormat.narrow.fri = "F";
+	_inst.de_AT.daysFormat.narrow.sat = "S";
+
+	_inst.de_AT.daysFormat.abbreviated = {};
+	_inst.de_AT.daysFormat.abbreviated.sun = "So.";
+	_inst.de_AT.daysFormat.abbreviated.mon = "Mo.";
+	_inst.de_AT.daysFormat.abbreviated.tue = "Di.";
+	_inst.de_AT.daysFormat.abbreviated.wed = "Mi.";
+	_inst.de_AT.daysFormat.abbreviated.thu = "Do.";
+	_inst.de_AT.daysFormat.abbreviated.fri = "Fr.";
+	_inst.de_AT.daysFormat.abbreviated.sat = "Sa.";
+
+	_inst.de_AT.daysFormat.short = {};
+	_inst.de_AT.daysFormat.short.sun = "So.";
+	_inst.de_AT.daysFormat.short.mon = "Mo.";
+	_inst.de_AT.daysFormat.short.tue = "Di.";
+	_inst.de_AT.daysFormat.short.wed = "Mi.";
+	_inst.de_AT.daysFormat.short.thu = "Do.";
+	_inst.de_AT.daysFormat.short.fri = "Fr.";
+	_inst.de_AT.daysFormat.short.sat = "Sa.";
+
+	_inst.de_AT.daysFormat.wide = {};
+	_inst.de_AT.daysFormat.wide.sun = "Sonntag";
+	_inst.de_AT.daysFormat.wide.mon = "Montag";
+	_inst.de_AT.daysFormat.wide.tue = "Dienstag";
+	_inst.de_AT.daysFormat.wide.wed = "Mittwoch";
+	_inst.de_AT.daysFormat.wide.thu = "Donnerstag";
+	_inst.de_AT.daysFormat.wide.fri = "Freitag";
+	_inst.de_AT.daysFormat.wide.sat = "Samstag";
+
+	_inst.pt_AO = {};
+
+	_inst.pt_AO.monthsFormat = {};
+
+	_inst.pt_AO.monthsFormat.narrow = {};
+	_inst.pt_AO.monthsFormat.narrow.two = "F";
+	_inst.pt_AO.monthsFormat.narrow.three = "M";
+	_inst.pt_AO.monthsFormat.narrow.four = "A";
+	_inst.pt_AO.monthsFormat.narrow.five = "M";
+	_inst.pt_AO.monthsFormat.narrow.six = "J";
+	_inst.pt_AO.monthsFormat.narrow.seven = "J";
+	_inst.pt_AO.monthsFormat.narrow.eight = "A";
+	_inst.pt_AO.monthsFormat.narrow.nine = "S";
+	_inst.pt_AO.monthsFormat.narrow.ten = "O";
+	_inst.pt_AO.monthsFormat.narrow.eleven = "N";
+	_inst.pt_AO.monthsFormat.narrow.twelve = "D";
+	_inst.pt_AO.monthsFormat.narrow.one = "J";
+
+	_inst.pt_AO.monthsFormat.abbreviated = {};
+	_inst.pt_AO.monthsFormat.abbreviated.two = "fev.";
+	_inst.pt_AO.monthsFormat.abbreviated.three = "mar.";
+	_inst.pt_AO.monthsFormat.abbreviated.four = "abr.";
+	_inst.pt_AO.monthsFormat.abbreviated.five = "mai.";
+	_inst.pt_AO.monthsFormat.abbreviated.six = "jun.";
+	_inst.pt_AO.monthsFormat.abbreviated.seven = "jul.";
+	_inst.pt_AO.monthsFormat.abbreviated.eight = "ago.";
+	_inst.pt_AO.monthsFormat.abbreviated.nine = "set.";
+	_inst.pt_AO.monthsFormat.abbreviated.ten = "out.";
+	_inst.pt_AO.monthsFormat.abbreviated.eleven = "nov.";
+	_inst.pt_AO.monthsFormat.abbreviated.twelve = "dez.";
+	_inst.pt_AO.monthsFormat.abbreviated.one = "jan.";
+
+	_inst.pt_AO.monthsFormat.wide = {};
+	_inst.pt_AO.monthsFormat.wide.two = "fevereiro";
+	_inst.pt_AO.monthsFormat.wide.three = "março";
+	_inst.pt_AO.monthsFormat.wide.four = "abril";
+	_inst.pt_AO.monthsFormat.wide.five = "maio";
+	_inst.pt_AO.monthsFormat.wide.six = "junho";
+	_inst.pt_AO.monthsFormat.wide.seven = "julho";
+	_inst.pt_AO.monthsFormat.wide.eight = "agosto";
+	_inst.pt_AO.monthsFormat.wide.nine = "setembro";
+	_inst.pt_AO.monthsFormat.wide.ten = "outubro";
+	_inst.pt_AO.monthsFormat.wide.eleven = "novembro";
+	_inst.pt_AO.monthsFormat.wide.twelve = "dezembro";
+	_inst.pt_AO.monthsFormat.wide.one = "janeiro";
+
+	_inst.pt_AO.symbols = {};
+	_inst.pt_AO.symbols.currency = "Kz";
+
+	_inst.pt_AO.timeFormat = {};
+	_inst.pt_AO.timeFormat.short = "HH:mm";
+	_inst.pt_AO.timeFormat.medium = "HH:mm:ss";
+	_inst.pt_AO.currencyFormat = "#,##0.00 ¤";
+	_inst.pt_AO.decimalFormat = "#,##0.###";
+
+	_inst.pt_AO.dateTimeFormat = {};
+	_inst.pt_AO.dateTimeFormat.full = "{1}, {0}";
+	_inst.pt_AO.dateTimeFormat.short = "{1}, {0}";
+	_inst.pt_AO.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.pt_AO.dateTimeFormat.availableFormats = {};
+	_inst.pt_AO.dateTimeFormat.availableFormats.MMMd = "d/MM";
+	_inst.pt_AO.dateTimeFormat.availableFormats.MMMEd = "E, d/MM";
+	_inst.pt_AO.dateTimeFormat.availableFormats.MMMMd = "d 'de' MMMM";
+	_inst.pt_AO.dateTimeFormat.availableFormats.MMMMW_count_other = "W.'ª' 'semana' 'de' MMMM";
+	_inst.pt_AO.dateTimeFormat.availableFormats.yM = "MM/y";
+	_inst.pt_AO.dateTimeFormat.availableFormats.yMd = "dd/MM/y";
+	_inst.pt_AO.dateTimeFormat.availableFormats.y = "y";
+	_inst.pt_AO.dateTimeFormat.availableFormats.yMEd = "E, dd/MM/y";
+	_inst.pt_AO.dateTimeFormat.availableFormats.yMMM = "MM/y";
+	_inst.pt_AO.dateTimeFormat.availableFormats.yMMMd = "d/MM/y";
+	_inst.pt_AO.dateTimeFormat.availableFormats.yMMMEd = "E, d/MM/y";
+	_inst.pt_AO.dateTimeFormat.availableFormats.yMMMM = "MMMM 'de' y";
+	_inst.pt_AO.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.pt_AO.dateTimeFormat.availableFormats.yQQQ = "QQQQ 'de' y";
+	_inst.pt_AO.dateTimeFormat.availableFormats.yQQQQ = "QQQQ 'de' y";
+	_inst.pt_AO.dateTimeFormat.availableFormats.yw_count_other = "w.'ª' 'semana' 'de' Y";
+	_inst.pt_AO.dateTimeFormat.availableFormats.MMMMEd = "ccc, d 'de' MMMM";
+	_inst.pt_AO.dateTimeFormat.availableFormats.MMMMW_count_one = "W.'ª' 'semana' 'de' MMMM";
+	_inst.pt_AO.dateTimeFormat.availableFormats.yMM = "MM/y";
+	_inst.pt_AO.dateTimeFormat.availableFormats.yw_count_one = "w.'ª' 'semana' 'de' Y";
+	_inst.pt_AO.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.pt_AO.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.pt_AO.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.pt_AO.dateTimeFormat.availableFormats.d = "d";
+	_inst.pt_AO.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.pt_AO.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.pt_AO.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.pt_AO.dateTimeFormat.availableFormats.Ed = "E, d";
+	_inst.pt_AO.dateTimeFormat.availableFormats.Ehm = "E, h:mm a";
+	_inst.pt_AO.dateTimeFormat.availableFormats.EHm = "E, HH:mm";
+	_inst.pt_AO.dateTimeFormat.availableFormats.yMMMEEEEd = "EEEE, d/MM/y";
+	_inst.pt_AO.dateTimeFormat.availableFormats.Ehms = "E, h:mm:ss a";
+	_inst.pt_AO.dateTimeFormat.availableFormats.yMMMMd = "d 'de' MMMM 'de' y";
+	_inst.pt_AO.dateTimeFormat.availableFormats.EHms = "E, HH:mm:ss";
+	_inst.pt_AO.dateTimeFormat.availableFormats.yMMMMEd = "ccc, d 'de' MMMM 'de' y";
+	_inst.pt_AO.dateTimeFormat.availableFormats.Gy = "y G";
+	_inst.pt_AO.dateTimeFormat.availableFormats.GyMd = "dd/MM/y GGGGG";
+	_inst.pt_AO.dateTimeFormat.availableFormats.GyMMM = "MMM 'de' y G";
+	_inst.pt_AO.dateTimeFormat.availableFormats.GyMMMd = "d 'de' MMM 'de' y G";
+	_inst.pt_AO.dateTimeFormat.availableFormats.GyMMMEd = "E, d 'de' MMM 'de' y G";
+	_inst.pt_AO.dateTimeFormat.availableFormats.h = "h a";
+	_inst.pt_AO.dateTimeFormat.availableFormats.H = "HH";
+	_inst.pt_AO.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.pt_AO.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.pt_AO.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.pt_AO.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.pt_AO.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.pt_AO.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.pt_AO.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.pt_AO.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.pt_AO.dateTimeFormat.availableFormats.M = "L";
+	_inst.pt_AO.dateTimeFormat.availableFormats.Md = "dd/MM";
+	_inst.pt_AO.dateTimeFormat.availableFormats.MEd = "E, dd/MM";
+	_inst.pt_AO.dateTimeFormat.availableFormats.MMdd = "dd/MM";
+	_inst.pt_AO.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.pt_AO.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.pt_AO.dateFormat = {};
+	_inst.pt_AO.dateFormat.short = "dd/MM/yy";
+	_inst.pt_AO.dateFormat.medium = "dd/MM/y";
+	_inst.pt_AO.dateFormat.long = "d 'de' MMMM 'de' y";
+	_inst.pt_AO.dateFormat.full = "EEEE, d 'de' MMMM 'de' y";
+
+	_inst.pt_AO.daysFormat = {};
+
+	_inst.pt_AO.daysFormat.narrow = {};
+	_inst.pt_AO.daysFormat.narrow.sun = "D";
+	_inst.pt_AO.daysFormat.narrow.mon = "S";
+	_inst.pt_AO.daysFormat.narrow.tue = "T";
+	_inst.pt_AO.daysFormat.narrow.wed = "Q";
+	_inst.pt_AO.daysFormat.narrow.thu = "Q";
+	_inst.pt_AO.daysFormat.narrow.fri = "S";
+	_inst.pt_AO.daysFormat.narrow.sat = "S";
+
+	_inst.pt_AO.daysFormat.abbreviated = {};
+	_inst.pt_AO.daysFormat.abbreviated.sun = "domingo";
+	_inst.pt_AO.daysFormat.abbreviated.mon = "segunda";
+	_inst.pt_AO.daysFormat.abbreviated.tue = "terça";
+	_inst.pt_AO.daysFormat.abbreviated.wed = "quarta";
+	_inst.pt_AO.daysFormat.abbreviated.thu = "quinta";
+	_inst.pt_AO.daysFormat.abbreviated.fri = "sexta";
+	_inst.pt_AO.daysFormat.abbreviated.sat = "sábado";
+
+	_inst.pt_AO.daysFormat.short = {};
+	_inst.pt_AO.daysFormat.short.sun = "dom.";
+	_inst.pt_AO.daysFormat.short.mon = "seg.";
+	_inst.pt_AO.daysFormat.short.tue = "ter.";
+	_inst.pt_AO.daysFormat.short.wed = "qua.";
+	_inst.pt_AO.daysFormat.short.thu = "qui.";
+	_inst.pt_AO.daysFormat.short.fri = "sex.";
+	_inst.pt_AO.daysFormat.short.sat = "sáb.";
+
+	_inst.pt_AO.daysFormat.wide = {};
+	_inst.pt_AO.daysFormat.wide.sun = "domingo";
+	_inst.pt_AO.daysFormat.wide.mon = "segunda-feira";
+	_inst.pt_AO.daysFormat.wide.tue = "terça-feira";
+	_inst.pt_AO.daysFormat.wide.wed = "quarta-feira";
+	_inst.pt_AO.daysFormat.wide.thu = "quinta-feira";
+	_inst.pt_AO.daysFormat.wide.fri = "sexta-feira";
+	_inst.pt_AO.daysFormat.wide.sat = "sábado";
+
+	_inst.ks_Deva = {};
+
+	_inst.ks_Deva.monthsFormat = {};
+
+	_inst.ks_Deva.monthsFormat.narrow = {};
+	_inst.ks_Deva.monthsFormat.narrow.two = "फ़";
+	_inst.ks_Deva.monthsFormat.narrow.three = "म";
+	_inst.ks_Deva.monthsFormat.narrow.four = "अ";
+	_inst.ks_Deva.monthsFormat.narrow.five = "म";
+	_inst.ks_Deva.monthsFormat.narrow.six = "ज";
+	_inst.ks_Deva.monthsFormat.narrow.seven = "ज";
+	_inst.ks_Deva.monthsFormat.narrow.eight = "अ";
+	_inst.ks_Deva.monthsFormat.narrow.nine = "स";
+	_inst.ks_Deva.monthsFormat.narrow.ten = "ओ";
+	_inst.ks_Deva.monthsFormat.narrow.eleven = "न";
+	_inst.ks_Deva.monthsFormat.narrow.twelve = "द";
+	_inst.ks_Deva.monthsFormat.narrow.one = "ज";
+
+	_inst.ks_Deva.monthsFormat.abbreviated = {};
+	_inst.ks_Deva.monthsFormat.abbreviated.two = "फ़रवरी";
+	_inst.ks_Deva.monthsFormat.abbreviated.three = "मार्च";
+	_inst.ks_Deva.monthsFormat.abbreviated.four = "अप्रैल";
+	_inst.ks_Deva.monthsFormat.abbreviated.five = "मई";
+	_inst.ks_Deva.monthsFormat.abbreviated.six = "जून";
+	_inst.ks_Deva.monthsFormat.abbreviated.seven = "जुलाई";
+	_inst.ks_Deva.monthsFormat.abbreviated.eight = "अगस्त";
+	_inst.ks_Deva.monthsFormat.abbreviated.nine = "सतुंबर";
+	_inst.ks_Deva.monthsFormat.abbreviated.ten = "अक्तूबर";
+	_inst.ks_Deva.monthsFormat.abbreviated.eleven = "नवूमबर";
+	_inst.ks_Deva.monthsFormat.abbreviated.twelve = "दसमबर";
+	_inst.ks_Deva.monthsFormat.abbreviated.one = "जनवरी";
+
+	_inst.ks_Deva.monthsFormat.wide = {};
+	_inst.ks_Deva.monthsFormat.wide.two = "फ़रवरी";
+	_inst.ks_Deva.monthsFormat.wide.three = "मार्च";
+	_inst.ks_Deva.monthsFormat.wide.four = "अप्रैल";
+	_inst.ks_Deva.monthsFormat.wide.five = "मई";
+	_inst.ks_Deva.monthsFormat.wide.six = "जून";
+	_inst.ks_Deva.monthsFormat.wide.seven = "जुलाई";
+	_inst.ks_Deva.monthsFormat.wide.eight = "अगस्त";
+	_inst.ks_Deva.monthsFormat.wide.nine = "सतमबर";
+	_inst.ks_Deva.monthsFormat.wide.ten = "अक्तूबर";
+	_inst.ks_Deva.monthsFormat.wide.eleven = "नवमबर";
+	_inst.ks_Deva.monthsFormat.wide.twelve = "दसमबर";
+	_inst.ks_Deva.monthsFormat.wide.one = "जनवरी";
+
+	_inst.ks_Deva.symbols = {};
+	_inst.ks_Deva.symbols.currency = "¤";
+
+	_inst.ks_Deva.timeFormat = {};
+	_inst.ks_Deva.timeFormat.short = "a h:mm";
+	_inst.ks_Deva.timeFormat.medium = "a h:mm:ss";
+	_inst.ks_Deva.currencyFormat = "¤ #,##0.00";
+	_inst.ks_Deva.decimalFormat = "#,##0.###";
+
+	_inst.ks_Deva.dateTimeFormat = {};
+	_inst.ks_Deva.dateTimeFormat.full = "{1}, {0}";
+	_inst.ks_Deva.dateTimeFormat.short = "{1}, {0}";
+	_inst.ks_Deva.dateTimeFormat.medium = "{1}, {0}";
+
+	_inst.ks_Deva.dateTimeFormat.availableFormats = {};
+	_inst.ks_Deva.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.yM = "y-MM";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.y = "y";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.yMd = "M/d/y";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.yMEd = "y-MM-dd, E";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.yMMM = "y MMM";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.yMMMd = "MMM d, y";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.yMMMEd = "y MMM d, E";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.yMMMM = "y MMMM";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.yQQQ = "y QQQ";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.yQQQQ = "y QQQQ";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.d = "d";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.Ed = "d, E";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.Gy = "G y";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.GyMd = "GGGGG y-MM-dd";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.GyMMM = "G y MMM";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.GyMMMd = "G y MMM d";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.GyMMMEd = "G y MMM d, E";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.h = "h a";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.H = "HH";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.M = "L";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.Md = "MM-dd";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.MEd = "MM-dd, E";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.MMMd = "MMM d";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.MMMEd = "MMM d, E";
+	_inst.ks_Deva.dateTimeFormat.availableFormats.MMMMd = "MMMM d";
+	_inst.ks_Deva.dateTimeFormat.long = "{1}, {0}";
+
+	_inst.ks_Deva.dateFormat = {};
+	_inst.ks_Deva.dateFormat.short = "d/M/yy";
+	_inst.ks_Deva.dateFormat.medium = "d MMM y";
+	_inst.ks_Deva.dateFormat.long = "d MMMM y";
+	_inst.ks_Deva.dateFormat.full = "EEEE, d MMMM y";
+
+	_inst.ks_Deva.daysFormat = {};
+
+	_inst.ks_Deva.daysFormat.narrow = {};
+	_inst.ks_Deva.daysFormat.narrow.sun = "अ";
+	_inst.ks_Deva.daysFormat.narrow.mon = "च";
+	_inst.ks_Deva.daysFormat.narrow.tue = "ब";
+	_inst.ks_Deva.daysFormat.narrow.wed = "ब";
+	_inst.ks_Deva.daysFormat.narrow.thu = "ब";
+	_inst.ks_Deva.daysFormat.narrow.fri = "ज";
+	_inst.ks_Deva.daysFormat.narrow.sat = "ब";
+
+	_inst.ks_Deva.daysFormat.abbreviated = {};
+	_inst.ks_Deva.daysFormat.abbreviated.sun = "आथवार";
+	_inst.ks_Deva.daysFormat.abbreviated.mon = "चंदिरवार";
+	_inst.ks_Deva.daysFormat.abbreviated.tue = "बुवार";
+	_inst.ks_Deva.daysFormat.abbreviated.wed = "बोदवार";
+	_inst.ks_Deva.daysFormat.abbreviated.thu = "ब्रेसवार";
+	_inst.ks_Deva.daysFormat.abbreviated.fri = "जुमा";
+	_inst.ks_Deva.daysFormat.abbreviated.sat = "बटवार";
+
+	_inst.ks_Deva.daysFormat.short = {};
+	_inst.ks_Deva.daysFormat.short.sun = "आथवार";
+	_inst.ks_Deva.daysFormat.short.mon = "चंदिरवार";
+	_inst.ks_Deva.daysFormat.short.tue = "बुवार";
+	_inst.ks_Deva.daysFormat.short.wed = "बोदवार";
+	_inst.ks_Deva.daysFormat.short.thu = "ब्रेसवार";
+	_inst.ks_Deva.daysFormat.short.fri = "जुमा";
+	_inst.ks_Deva.daysFormat.short.sat = "बटवार";
+
+	_inst.ks_Deva.daysFormat.wide = {};
+	_inst.ks_Deva.daysFormat.wide.sun = "आथवार";
+	_inst.ks_Deva.daysFormat.wide.mon = "च़ंदिरवार";
+	_inst.ks_Deva.daysFormat.wide.tue = "बोमवार";
+	_inst.ks_Deva.daysFormat.wide.wed = "बोदवार";
+	_inst.ks_Deva.daysFormat.wide.thu = "ब्रेसवार";
+	_inst.ks_Deva.daysFormat.wide.fri = "जुमा";
+	_inst.ks_Deva.daysFormat.wide.sat = "बटवार";
+
+	_inst.sr_Cyrl_ME = {};
+
+	_inst.sr_Cyrl_ME.monthsFormat = {};
+
+	_inst.sr_Cyrl_ME.monthsFormat.narrow = {};
+	_inst.sr_Cyrl_ME.monthsFormat.narrow.two = "ф";
+	_inst.sr_Cyrl_ME.monthsFormat.narrow.three = "м";
+	_inst.sr_Cyrl_ME.monthsFormat.narrow.four = "а";
+	_inst.sr_Cyrl_ME.monthsFormat.narrow.five = "м";
+	_inst.sr_Cyrl_ME.monthsFormat.narrow.six = "ј";
+	_inst.sr_Cyrl_ME.monthsFormat.narrow.seven = "ј";
+	_inst.sr_Cyrl_ME.monthsFormat.narrow.eight = "а";
+	_inst.sr_Cyrl_ME.monthsFormat.narrow.nine = "с";
+	_inst.sr_Cyrl_ME.monthsFormat.narrow.ten = "о";
+	_inst.sr_Cyrl_ME.monthsFormat.narrow.eleven = "н";
+	_inst.sr_Cyrl_ME.monthsFormat.narrow.twelve = "д";
+	_inst.sr_Cyrl_ME.monthsFormat.narrow.one = "ј";
+
+	_inst.sr_Cyrl_ME.monthsFormat.abbreviated = {};
+	_inst.sr_Cyrl_ME.monthsFormat.abbreviated.two = "феб";
+	_inst.sr_Cyrl_ME.monthsFormat.abbreviated.three = "март";
+	_inst.sr_Cyrl_ME.monthsFormat.abbreviated.four = "апр";
+	_inst.sr_Cyrl_ME.monthsFormat.abbreviated.five = "мај";
+	_inst.sr_Cyrl_ME.monthsFormat.abbreviated.six = "јун";
+	_inst.sr_Cyrl_ME.monthsFormat.abbreviated.seven = "јул";
+	_inst.sr_Cyrl_ME.monthsFormat.abbreviated.eight = "авг";
+	_inst.sr_Cyrl_ME.monthsFormat.abbreviated.nine = "септ";
+	_inst.sr_Cyrl_ME.monthsFormat.abbreviated.ten = "окт";
+	_inst.sr_Cyrl_ME.monthsFormat.abbreviated.eleven = "нов";
+	_inst.sr_Cyrl_ME.monthsFormat.abbreviated.twelve = "дец";
+	_inst.sr_Cyrl_ME.monthsFormat.abbreviated.one = "јан";
+
+	_inst.sr_Cyrl_ME.monthsFormat.wide = {};
+	_inst.sr_Cyrl_ME.monthsFormat.wide.two = "фебруар";
+	_inst.sr_Cyrl_ME.monthsFormat.wide.three = "март";
+	_inst.sr_Cyrl_ME.monthsFormat.wide.four = "април";
+	_inst.sr_Cyrl_ME.monthsFormat.wide.five = "мај";
+	_inst.sr_Cyrl_ME.monthsFormat.wide.six = "јун";
+	_inst.sr_Cyrl_ME.monthsFormat.wide.seven = "јул";
+	_inst.sr_Cyrl_ME.monthsFormat.wide.eight = "август";
+	_inst.sr_Cyrl_ME.monthsFormat.wide.nine = "септембар";
+	_inst.sr_Cyrl_ME.monthsFormat.wide.ten = "октобар";
+	_inst.sr_Cyrl_ME.monthsFormat.wide.eleven = "новембар";
+	_inst.sr_Cyrl_ME.monthsFormat.wide.twelve = "децембар";
+	_inst.sr_Cyrl_ME.monthsFormat.wide.one = "јануар";
+
+	_inst.sr_Cyrl_ME.symbols = {};
+	_inst.sr_Cyrl_ME.symbols.currency = "¤";
+
+	_inst.sr_Cyrl_ME.timeFormat = {};
+	_inst.sr_Cyrl_ME.timeFormat.short = "HH:mm";
+	_inst.sr_Cyrl_ME.timeFormat.medium = "HH:mm:ss";
+	_inst.sr_Cyrl_ME.currencyFormat = "#,##0.00 ¤";
+	_inst.sr_Cyrl_ME.decimalFormat = "#,##0.###";
+
+	_inst.sr_Cyrl_ME.dateTimeFormat = {};
+	_inst.sr_Cyrl_ME.dateTimeFormat.full = "{1} {0}";
+	_inst.sr_Cyrl_ME.dateTimeFormat.short = "{1} {0}";
+	_inst.sr_Cyrl_ME.dateTimeFormat.medium = "{1} {0}";
+
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats = {};
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.MMMMd = "d. MMMM";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.MMMMW_count_other = "W. 'сједмица' 'у' MMMM";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.yM = "M. y.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.y = "y.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.yMd = "d. M. y.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.yMEd = "E, d. M. y.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.yMMM = "MMM y.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.yMMMd = "d. MMM y.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.yMMMEd = "E, d. MMM y.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.yMMMM = "MMMM y.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.yQQQ = "QQQ y.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.yQQQQ = "QQQQ y.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.yw_count_other = "w. 'сједмица' 'у' Y.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.MMMMEd = "E, d. MMMM";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.MMMMW_count_few = "MMMM: W. 'недеља'";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.yw_count_few = "w. 'недеља' 'у' Y.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.MMMMW_count_one = "MMMM: W. 'недеља'";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.yMM = "MM.y.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.yw_count_one = "w. 'недеља' 'у' Y.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.yMMdd = "dd.MM.y.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.Bhm = "hh:mm B";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.Bhms = "hh:mm:ss B";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.d = "d";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.E = "E";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.EBhms = "E, hh:mm:ss B";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.MMMdd = "dd.MMM";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.Ed = "E d.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.Gy = "y. G";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.GyMd = "d.MM.y. GGGGG";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.GyMMM = "MMM y. G";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.GyMMMd = "d. MMM y. G";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.GyMMMEd = "E, d. MMM y. G";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.h = "h a";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.H = "HH";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.M = "L";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.Md = "d. M.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.MEd = "E, d. M.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.MMdd = "dd.MM.";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.MMMd = "d. MMM";
+	_inst.sr_Cyrl_ME.dateTimeFormat.availableFormats.MMMEd = "E d. MMM";
+	_inst.sr_Cyrl_ME.dateTimeFormat.long = "{1} {0}";
+
+	_inst.sr_Cyrl_ME.dateFormat = {};
+	_inst.sr_Cyrl_ME.dateFormat.short = "d. M. y.";
+	_inst.sr_Cyrl_ME.dateFormat.medium = "d. M. y.";
+	_inst.sr_Cyrl_ME.dateFormat.long = "d. MMMM y.";
+	_inst.sr_Cyrl_ME.dateFormat.full = "EEEE, d. MMMM y.";
+
+	_inst.sr_Cyrl_ME.daysFormat = {};
+
+	_inst.sr_Cyrl_ME.daysFormat.narrow = {};
+	_inst.sr_Cyrl_ME.daysFormat.narrow.sun = "н";
+	_inst.sr_Cyrl_ME.daysFormat.narrow.mon = "п";
+	_inst.sr_Cyrl_ME.daysFormat.narrow.tue = "у";
+	_inst.sr_Cyrl_ME.daysFormat.narrow.wed = "с";
+	_inst.sr_Cyrl_ME.daysFormat.narrow.thu = "ч";
+	_inst.sr_Cyrl_ME.daysFormat.narrow.fri = "п";
+	_inst.sr_Cyrl_ME.daysFormat.narrow.sat = "с";
+
+	_inst.sr_Cyrl_ME.daysFormat.abbreviated = {};
+	_inst.sr_Cyrl_ME.daysFormat.abbreviated.sun = "нед";
+	_inst.sr_Cyrl_ME.daysFormat.abbreviated.mon = "пон";
+	_inst.sr_Cyrl_ME.daysFormat.abbreviated.tue = "уто";
+	_inst.sr_Cyrl_ME.daysFormat.abbreviated.wed = "сре";
+	_inst.sr_Cyrl_ME.daysFormat.abbreviated.thu = "чет";
+	_inst.sr_Cyrl_ME.daysFormat.abbreviated.fri = "пет";
+	_inst.sr_Cyrl_ME.daysFormat.abbreviated.sat = "суб";
+
+	_inst.sr_Cyrl_ME.daysFormat.short = {};
+	_inst.sr_Cyrl_ME.daysFormat.short.sun = "не";
+	_inst.sr_Cyrl_ME.daysFormat.short.mon = "по";
+	_inst.sr_Cyrl_ME.daysFormat.short.tue = "ут";
+	_inst.sr_Cyrl_ME.daysFormat.short.wed = "ср";
+	_inst.sr_Cyrl_ME.daysFormat.short.thu = "че";
+	_inst.sr_Cyrl_ME.daysFormat.short.fri = "пе";
+	_inst.sr_Cyrl_ME.daysFormat.short.sat = "су";
+
+	_inst.sr_Cyrl_ME.daysFormat.wide = {};
+	_inst.sr_Cyrl_ME.daysFormat.wide.sun = "недјеља";
+	_inst.sr_Cyrl_ME.daysFormat.wide.mon = "понедељак";
+	_inst.sr_Cyrl_ME.daysFormat.wide.tue = "уторак";
+	_inst.sr_Cyrl_ME.daysFormat.wide.wed = "сриједа";
+	_inst.sr_Cyrl_ME.daysFormat.wide.thu = "четвртак";
+	_inst.sr_Cyrl_ME.daysFormat.wide.fri = "петак";
+	_inst.sr_Cyrl_ME.daysFormat.wide.sat = "субота";
+
+	_inst.shn = {};
+
+	_inst.shn.monthsFormat = {};
+
+	_inst.shn.monthsFormat.narrow = {};
+	_inst.shn.monthsFormat.narrow.two = "2";
+	_inst.shn.monthsFormat.narrow.three = "3";
+	_inst.shn.monthsFormat.narrow.four = "4";
+	_inst.shn.monthsFormat.narrow.five = "5";
+	_inst.shn.monthsFormat.narrow.six = "6";
+	_inst.shn.monthsFormat.narrow.seven = "7";
+	_inst.shn.monthsFormat.narrow.eight = "8";
+	_inst.shn.monthsFormat.narrow.nine = "9";
+	_inst.shn.monthsFormat.narrow.ten = "10";
+	_inst.shn.monthsFormat.narrow.eleven = "11";
+	_inst.shn.monthsFormat.narrow.twelve = "12";
+	_inst.shn.monthsFormat.narrow.one = "1";
+
+	_inst.shn.monthsFormat.abbreviated = {};
+	_inst.shn.monthsFormat.abbreviated.two = "M02";
+	_inst.shn.monthsFormat.abbreviated.three = "M03";
+	_inst.shn.monthsFormat.abbreviated.four = "M04";
+	_inst.shn.monthsFormat.abbreviated.five = "M05";
+	_inst.shn.monthsFormat.abbreviated.six = "M06";
+	_inst.shn.monthsFormat.abbreviated.seven = "M07";
+	_inst.shn.monthsFormat.abbreviated.eight = "M08";
+	_inst.shn.monthsFormat.abbreviated.nine = "M09";
+	_inst.shn.monthsFormat.abbreviated.ten = "M10";
+	_inst.shn.monthsFormat.abbreviated.eleven = "M11";
+	_inst.shn.monthsFormat.abbreviated.twelve = "M12";
+	_inst.shn.monthsFormat.abbreviated.one = "M01";
+
+	_inst.shn.monthsFormat.wide = {};
+	_inst.shn.monthsFormat.wide.two = "M02";
+	_inst.shn.monthsFormat.wide.three = "M03";
+	_inst.shn.monthsFormat.wide.four = "M04";
+	_inst.shn.monthsFormat.wide.five = "M05";
+	_inst.shn.monthsFormat.wide.six = "M06";
+	_inst.shn.monthsFormat.wide.seven = "M07";
+	_inst.shn.monthsFormat.wide.eight = "M08";
+	_inst.shn.monthsFormat.wide.nine = "M09";
+	_inst.shn.monthsFormat.wide.ten = "M10";
+	_inst.shn.monthsFormat.wide.eleven = "M11";
+	_inst.shn.monthsFormat.wide.twelve = "M12";
+	_inst.shn.monthsFormat.wide.one = "M01";
+
+	_inst.shn.symbols = {};
+	_inst.shn.symbols.currency = "¤";
+
+	_inst.shn.timeFormat = {};
+	_inst.shn.timeFormat.short = "HH:mm";
+	_inst.shn.timeFormat.medium = "HH:mm:ss";
+	_inst.shn.currencyFormat = "¤ #,##0.00";
+	_inst.shn.decimalFormat = "#,##0.###";
+
+	_inst.shn.dateTimeFormat = {};
+	_inst.shn.dateTimeFormat.full = "{1} {0}";
+	_inst.shn.dateTimeFormat.short = "{1} {0}";
+	_inst.shn.dateTimeFormat.medium = "{1} {0}";
+
+	_inst.shn.dateTimeFormat.availableFormats = {};
+	_inst.shn.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.shn.dateTimeFormat.availableFormats.yM = "y-MM";
+	_inst.shn.dateTimeFormat.availableFormats.y = "y";
+	_inst.shn.dateTimeFormat.availableFormats.yMd = "y-MM-dd";
+	_inst.shn.dateTimeFormat.availableFormats.yMEd = "y-MM-dd, E";
+	_inst.shn.dateTimeFormat.availableFormats.yMMM = "y MMM";
+	_inst.shn.dateTimeFormat.availableFormats.yMMMd = "y MMM d";
+	_inst.shn.dateTimeFormat.availableFormats.yMMMEd = "y MMM d, E";
+	_inst.shn.dateTimeFormat.availableFormats.yMMMM = "y MMMM";
+	_inst.shn.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.shn.dateTimeFormat.availableFormats.yQQQ = "y QQQ";
+	_inst.shn.dateTimeFormat.availableFormats.yQQQQ = "y QQQQ";
+	_inst.shn.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.shn.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.shn.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.shn.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.shn.dateTimeFormat.availableFormats.d = "d";
+	_inst.shn.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.shn.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.shn.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.shn.dateTimeFormat.availableFormats.Ed = "d, E";
+	_inst.shn.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.shn.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.shn.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.shn.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.shn.dateTimeFormat.availableFormats.Gy = "G y";
+	_inst.shn.dateTimeFormat.availableFormats.GyMd = "GGGGG y-MM-dd";
+	_inst.shn.dateTimeFormat.availableFormats.GyMMM = "G y MMM";
+	_inst.shn.dateTimeFormat.availableFormats.GyMMMd = "G y MMM d";
+	_inst.shn.dateTimeFormat.availableFormats.GyMMMEd = "G y MMM d, E";
+	_inst.shn.dateTimeFormat.availableFormats.h = "h a";
+	_inst.shn.dateTimeFormat.availableFormats.H = "HH";
+	_inst.shn.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.shn.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.shn.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.shn.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.shn.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.shn.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.shn.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.shn.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.shn.dateTimeFormat.availableFormats.M = "L";
+	_inst.shn.dateTimeFormat.availableFormats.Md = "MM-dd";
+	_inst.shn.dateTimeFormat.availableFormats.MEd = "MM-dd, E";
+	_inst.shn.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.shn.dateTimeFormat.availableFormats.MMMd = "MMM d";
+	_inst.shn.dateTimeFormat.availableFormats.MMMEd = "MMM d, E";
+	_inst.shn.dateTimeFormat.availableFormats.MMMMd = "MMMM d";
+	_inst.shn.dateTimeFormat.long = "{1} {0}";
+
+	_inst.shn.dateFormat = {};
+	_inst.shn.dateFormat.short = "y-MM-dd";
+	_inst.shn.dateFormat.medium = "y MMM d";
+	_inst.shn.dateFormat.long = "y MMMM d";
+	_inst.shn.dateFormat.full = "y MMMM d, EEEE";
+
+	_inst.shn.daysFormat = {};
+
+	_inst.shn.daysFormat.narrow = {};
+	_inst.shn.daysFormat.narrow.sun = "S";
+	_inst.shn.daysFormat.narrow.mon = "M";
+	_inst.shn.daysFormat.narrow.tue = "T";
+	_inst.shn.daysFormat.narrow.wed = "W";
+	_inst.shn.daysFormat.narrow.thu = "T";
+	_inst.shn.daysFormat.narrow.fri = "F";
+	_inst.shn.daysFormat.narrow.sat = "S";
+
+	_inst.shn.daysFormat.abbreviated = {};
+	_inst.shn.daysFormat.abbreviated.sun = "Sun";
+	_inst.shn.daysFormat.abbreviated.mon = "Mon";
+	_inst.shn.daysFormat.abbreviated.tue = "Tue";
+	_inst.shn.daysFormat.abbreviated.wed = "Wed";
+	_inst.shn.daysFormat.abbreviated.thu = "Thu";
+	_inst.shn.daysFormat.abbreviated.fri = "Fri";
+	_inst.shn.daysFormat.abbreviated.sat = "Sat";
+
+	_inst.shn.daysFormat.short = {};
+	_inst.shn.daysFormat.short.sun = "Sun";
+	_inst.shn.daysFormat.short.mon = "Mon";
+	_inst.shn.daysFormat.short.tue = "Tue";
+	_inst.shn.daysFormat.short.wed = "Wed";
+	_inst.shn.daysFormat.short.thu = "Thu";
+	_inst.shn.daysFormat.short.fri = "Fri";
+	_inst.shn.daysFormat.short.sat = "Sat";
+
+	_inst.shn.daysFormat.wide = {};
+	_inst.shn.daysFormat.wide.sun = "Sun";
+	_inst.shn.daysFormat.wide.mon = "Mon";
+	_inst.shn.daysFormat.wide.tue = "Tue";
+	_inst.shn.daysFormat.wide.wed = "Wed";
+	_inst.shn.daysFormat.wide.thu = "Thu";
+	_inst.shn.daysFormat.wide.fri = "Fri";
+	_inst.shn.daysFormat.wide.sat = "Sat";
+
+	_inst.nqo = {};
+
+	_inst.nqo.monthsFormat = {};
+
+	_inst.nqo.monthsFormat.narrow = {};
+	_inst.nqo.monthsFormat.narrow.two = "ߞ";
+	_inst.nqo.monthsFormat.narrow.three = "ߕ";
+	_inst.nqo.monthsFormat.narrow.four = "ߞ";
+	_inst.nqo.monthsFormat.narrow.five = "ߘ";
+	_inst.nqo.monthsFormat.narrow.six = "ߥ";
+	_inst.nqo.monthsFormat.narrow.seven = "ߞ";
+	_inst.nqo.monthsFormat.narrow.eight = "ߘ";
+	_inst.nqo.monthsFormat.narrow.nine = "ߕ";
+	_inst.nqo.monthsFormat.narrow.ten = "ߞ";
+	_inst.nqo.monthsFormat.narrow.eleven = "ߣ";
+	_inst.nqo.monthsFormat.narrow.twelve = "ߞ";
+	_inst.nqo.monthsFormat.narrow.one = "ߓ";
+
+	_inst.nqo.monthsFormat.abbreviated = {};
+	_inst.nqo.monthsFormat.abbreviated.two = "ߞߏ߲ߞ";
+	_inst.nqo.monthsFormat.abbreviated.three = "ߕߙߊ";
+	_inst.nqo.monthsFormat.abbreviated.four = "ߞߏ߲ߘ";
+	_inst.nqo.monthsFormat.abbreviated.five = "ߘߓߊ߬ߕ";
+	_inst.nqo.monthsFormat.abbreviated.six = "ߥߊ߬ߛ";
+	_inst.nqo.monthsFormat.abbreviated.seven = "ߞߊ߬ߙ";
+	_inst.nqo.monthsFormat.abbreviated.eight = "ߘߓߊ߬ߓ";
+	_inst.nqo.monthsFormat.abbreviated.nine = "ߕߎߟߊߝߌ߲";
+	_inst.nqo.monthsFormat.abbreviated.ten = "ߞߏ߲ߓ";
+	_inst.nqo.monthsFormat.abbreviated.eleven = "ߣߍߣ";
+	_inst.nqo.monthsFormat.abbreviated.twelve = "ߞߏߟ";
+	_inst.nqo.monthsFormat.abbreviated.one = "ߓߌ߲ߠ";
+
+	_inst.nqo.monthsFormat.wide = {};
+	_inst.nqo.monthsFormat.wide.two = "ߞߏ߲ߞߏߜߍ";
+	_inst.nqo.monthsFormat.wide.three = "ߕߙߊߓߊ";
+	_inst.nqo.monthsFormat.wide.four = "ߞߏ߲ߞߏߘߌ߬ߓߌ";
+	_inst.nqo.monthsFormat.wide.five = "ߘߓߊ߬ߕߊ";
+	_inst.nqo.monthsFormat.wide.six = "ߥߊ߬ߛߌ߬ߥߙߊ";
+	_inst.nqo.monthsFormat.wide.seven = "ߞߊ߬ߙߌߝߐ߭";
+	_inst.nqo.monthsFormat.wide.eight = "ߘߓߊ߬ߓߌߟߊ";
+	_inst.nqo.monthsFormat.wide.nine = "ߕߎߟߊߝߌ߲";
+	_inst.nqo.monthsFormat.wide.ten = "ߞߏ߲ߓߌߕߌ߮";
+	_inst.nqo.monthsFormat.wide.eleven = "ߣߍߣߍߓߊ";
+	_inst.nqo.monthsFormat.wide.twelve = "ߞߏߟߌ߲ߞߏߟߌ߲";
+	_inst.nqo.monthsFormat.wide.one = "ߓߌ߲ߠߊߥߎߟߋ߲";
+
+	_inst.nqo.symbols = {};
+	_inst.nqo.symbols.currency = "¤";
+
+	_inst.nqo.timeFormat = {};
+	_inst.nqo.timeFormat.short = "HH:mm";
+	_inst.nqo.timeFormat.medium = "HH:mm:ss";
+	_inst.nqo.currencyFormat = "¤ #,##0.00";
+	_inst.nqo.decimalFormat = "#,##0.###";
+
+	_inst.nqo.dateTimeFormat = {};
+	_inst.nqo.dateTimeFormat.full = "{1} {0}";
+	_inst.nqo.dateTimeFormat.short = "{1} {0}";
+	_inst.nqo.dateTimeFormat.medium = "{1} {0}";
+
+	_inst.nqo.dateTimeFormat.availableFormats = {};
+	_inst.nqo.dateTimeFormat.availableFormats.MMMMW_count_other = "'week' W 'of' MMMM";
+	_inst.nqo.dateTimeFormat.availableFormats.yM = "y-MM";
+	_inst.nqo.dateTimeFormat.availableFormats.y = "y";
+	_inst.nqo.dateTimeFormat.availableFormats.yMd = "y / dd / MM";
+	_inst.nqo.dateTimeFormat.availableFormats.yMEd = "y-MM-dd, E";
+	_inst.nqo.dateTimeFormat.availableFormats.yMMM = "y MMM";
+	_inst.nqo.dateTimeFormat.availableFormats.yMMMd = "y / dd MMM";
+	_inst.nqo.dateTimeFormat.availableFormats.yMMMEd = "y MMM d, E";
+	_inst.nqo.dateTimeFormat.availableFormats.yMMMM = "y MMMM";
+	_inst.nqo.dateTimeFormat.availableFormats.ms = "mm:ss";
+	_inst.nqo.dateTimeFormat.availableFormats.yQQQ = "y QQQ";
+	_inst.nqo.dateTimeFormat.availableFormats.yQQQQ = "y QQQQ";
+	_inst.nqo.dateTimeFormat.availableFormats.yw_count_other = "'week' w 'of' Y";
+	_inst.nqo.dateTimeFormat.availableFormats.Bh = "h B";
+	_inst.nqo.dateTimeFormat.availableFormats.Bhm = "h:mm B";
+	_inst.nqo.dateTimeFormat.availableFormats.Bhms = "h:mm:ss B";
+	_inst.nqo.dateTimeFormat.availableFormats.d = "d";
+	_inst.nqo.dateTimeFormat.availableFormats.E = "ccc";
+	_inst.nqo.dateTimeFormat.availableFormats.EBhm = "E h:mm B";
+	_inst.nqo.dateTimeFormat.availableFormats.EBhms = "E h:mm:ss B";
+	_inst.nqo.dateTimeFormat.availableFormats.Ed = "d, E";
+	_inst.nqo.dateTimeFormat.availableFormats.Ehm = "E h:mm a";
+	_inst.nqo.dateTimeFormat.availableFormats.EHm = "E HH:mm";
+	_inst.nqo.dateTimeFormat.availableFormats.Ehms = "E h:mm:ss a";
+	_inst.nqo.dateTimeFormat.availableFormats.EHms = "E HH:mm:ss";
+	_inst.nqo.dateTimeFormat.availableFormats.Gy = "G y";
+	_inst.nqo.dateTimeFormat.availableFormats.GyMd = "GGGGG y-MM-dd";
+	_inst.nqo.dateTimeFormat.availableFormats.GyMMM = "G y MMM";
+	_inst.nqo.dateTimeFormat.availableFormats.GyMMMd = "G y MMM d";
+	_inst.nqo.dateTimeFormat.availableFormats.GyMMMEd = "G y MMM d, E";
+	_inst.nqo.dateTimeFormat.availableFormats.h = "h a";
+	_inst.nqo.dateTimeFormat.availableFormats.H = "HH";
+	_inst.nqo.dateTimeFormat.availableFormats.hm = "h:mm a";
+	_inst.nqo.dateTimeFormat.availableFormats.Hm = "HH:mm";
+	_inst.nqo.dateTimeFormat.availableFormats.hms = "h:mm:ss a";
+	_inst.nqo.dateTimeFormat.availableFormats.Hms = "HH:mm:ss";
+	_inst.nqo.dateTimeFormat.availableFormats.hmsv = "h:mm:ss a v";
+	_inst.nqo.dateTimeFormat.availableFormats.Hmsv = "HH:mm:ss v";
+	_inst.nqo.dateTimeFormat.availableFormats.hmv = "h:mm a v";
+	_inst.nqo.dateTimeFormat.availableFormats.Hmv = "HH:mm v";
+	_inst.nqo.dateTimeFormat.availableFormats.M = "L";
+	_inst.nqo.dateTimeFormat.availableFormats.Md = "MM-dd";
+	_inst.nqo.dateTimeFormat.availableFormats.MEd = "MM-dd, E";
+	_inst.nqo.dateTimeFormat.availableFormats.MMM = "LLL";
+	_inst.nqo.dateTimeFormat.availableFormats.MMMd = "MMM d";
+	_inst.nqo.dateTimeFormat.availableFormats.MMMEd = "MMM d, E";
+	_inst.nqo.dateTimeFormat.availableFormats.MMMMd = "MMMM d";
+	_inst.nqo.dateTimeFormat.long = "{1} {0}";
+
+	_inst.nqo.dateFormat = {};
+	_inst.nqo.dateFormat.short = "y-MM-dd";
+	_inst.nqo.dateFormat.medium = "y MMM d";
+	_inst.nqo.dateFormat.long = "y MMMM d";
+	_inst.nqo.dateFormat.full = "y MMMM d, EEEE";
+
+	_inst.nqo.daysFormat = {};
+
+	_inst.nqo.daysFormat.narrow = {};
+	_inst.nqo.daysFormat.narrow.sun = "ߞ";
+	_inst.nqo.daysFormat.narrow.mon = "ߞ";
+	_inst.nqo.daysFormat.narrow.tue = "ߞ";
+	_inst.nqo.daysFormat.narrow.wed = "ߞ";
+	_inst.nqo.daysFormat.narrow.thu = "ߓ";
+	_inst.nqo.daysFormat.narrow.fri = "ߛ";
+	_inst.nqo.daysFormat.narrow.sat = "ߞ";
+
+	_inst.nqo.daysFormat.abbreviated = {};
+	_inst.nqo.daysFormat.abbreviated.sun = "ߞߊ߯ߙ";
+	_inst.nqo.daysFormat.abbreviated.mon = "ߞߐ߬ߓ";
+	_inst.nqo.daysFormat.abbreviated.tue = "ߞߐ߬ߟߏ߲";
+	_inst.nqo.daysFormat.abbreviated.wed = "ߞߎߣ";
+	_inst.nqo.daysFormat.abbreviated.thu = "ߓߌߟ";
+	_inst.nqo.daysFormat.abbreviated.fri = "ߛߌ߬ߣ";
+	_inst.nqo.daysFormat.abbreviated.sat = "ߞߍ߲ߘ";
+
+	_inst.nqo.daysFormat.short = {};
+	_inst.nqo.daysFormat.short.sun = "ߞߊ߯";
+	_inst.nqo.daysFormat.short.mon = "ߞߐ߬";
+	_inst.nqo.daysFormat.short.tue = "ߞߐ߬ߟߏ߲";
+	_inst.nqo.daysFormat.short.wed = "ߞߎ";
+	_inst.nqo.daysFormat.short.thu = "ߓߌ";
+	_inst.nqo.daysFormat.short.fri = "ߛߌ߬";
+	_inst.nqo.daysFormat.short.sat = "ߞߍ߲";
+
+	_inst.nqo.daysFormat.wide = {};
+	_inst.nqo.daysFormat.wide.sun = "ߞߊ߯ߙߌߟߏ߲";
+	_inst.nqo.daysFormat.wide.mon = "ߞߐ߬ߓߊ߬ߟߏ߲";
+	_inst.nqo.daysFormat.wide.tue = "ߞߐ߬ߟߏ߲";
+	_inst.nqo.daysFormat.wide.wed = "ߞߎߣߎ߲ߟߏ߲";
+	_inst.nqo.daysFormat.wide.thu = "ߓߌߟߏ߲";
+	_inst.nqo.daysFormat.wide.fri = "ߛߌ߬ߣߌ߲߬ߟߏ߲";
+	_inst.nqo.daysFormat.wide.sat = "ߞߍ߲ߘߍߟߏ߲";
 }
