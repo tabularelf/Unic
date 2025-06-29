@@ -24,6 +24,7 @@
   "name":"Unic",
   "resources":[
     {"id":{"name":"obj_unic_generate","path":"objects/obj_unic_generate/obj_unic_generate.yy",},},
+    {"id":{"name":"obj_unic_test","path":"objects/obj_unic_test/obj_unic_test.yy",},},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"id":{"name":"__UnicDatabase","path":"scripts/__UnicDatabase/__UnicDatabase.yy",},},
     {"id":{"name":"__UnicDatabaseGenParseStruct","path":"scripts/__UnicDatabaseGenParseStruct/__UnicDatabaseGenParseStruct.yy",},},
@@ -51,6 +52,8 @@
     {"id":{"name":"__UnicGenerateDatabase","path":"scripts/__UnicGenerateDatabase/__UnicGenerateDatabase.yy",},},
     {"id":{"name":"__UnicJSONLoad","path":"scripts/__UnicJSONLoad/__UnicJSONLoad.yy",},},
     {"id":{"name":"__UnicLocaleDbEntryClass","path":"scripts/__UnicLocaleDbEntryClass/__UnicLocaleDbEntryClass.yy",},},
+    {"id":{"name":"UnicCodeExists","path":"scripts/UnicCodeExists/UnicCodeExists.yy",},},
+    {"id":{"name":"UnicGetSymbols","path":"scripts/UnicGetSymbols/UnicGetSymbols.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
