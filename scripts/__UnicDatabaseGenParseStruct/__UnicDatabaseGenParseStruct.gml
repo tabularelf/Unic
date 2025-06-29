@@ -14,6 +14,8 @@ function __UnicDatabaseGenParseStruct(_name, _value) {
 		"eleven",
 		"twelve",
 	];
+	// Force underscore
+	_name = string_replace_all(_name, "-", "_");
 
 	var _useAccessor = _name == "or";
 
