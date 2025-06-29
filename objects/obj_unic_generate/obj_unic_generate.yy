@@ -8,8 +8,8 @@
   "name":"obj_unic_generate",
   "overriddenProperties":[],
   "parent":{
-    "name":"Unic Database Generator",
-    "path":"folders/Unic Database Generator.yy",
+    "name":"Unic",
+    "path":"Unic.yyp",
   },
   "parentObjectId":null,
   "persistent":false,
