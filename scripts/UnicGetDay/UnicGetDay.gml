@@ -1,6 +1,6 @@
 // Feather disable all
 
-/// Returns the name of the name of the week. `dayIndex` should be an integer between 0 and 6
+/// Returns the name of the day of the week. `dayIndex` should be an integer between 0 and 6
 /// inclusive. If a number is provided outside of that range then the number will wrap around.
 /// 
 /// N.B. This function is normalized such that day index 0 is Monday and day index 6 is Sunday.
