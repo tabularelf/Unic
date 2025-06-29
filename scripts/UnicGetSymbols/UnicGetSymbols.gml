@@ -75,9 +75,9 @@ function UnicGetSymbols(_localeCode)
     struct_foreach(_data.daysFormat.abbreviated, _methodAddStruct);
     struct_foreach(_data.daysFormat.wide,        _methodAddStruct);
     
-    struct_foreach(_data.daysFormat.narrow,      _methodAddStruct);
-    struct_foreach(_data.daysFormat.abbreviated, _methodAddStruct);
-    struct_foreach(_data.daysFormat.wide,        _methodAddStruct);
+    struct_foreach(_data.monthsFormat.narrow,      _methodAddStruct);
+    struct_foreach(_data.monthsFormat.abbreviated, _methodAddStruct);
+    struct_foreach(_data.monthsFormat.wide,        _methodAddStruct);
     
     _contextStruct.__systemChars = "hHkKmsabBzv";
     struct_foreach(_data.timeFormat, _methodAddStruct);
@@ -86,7 +86,13 @@ function UnicGetSymbols(_localeCode)
     struct_foreach(_data.dateFormat, _methodAddStruct);
     
     _contextStruct.__systemChars = "01{}";
-    struct_foreach(_data.dateTimeFormat, _methodAddStruct);
+    struct_foreach(_data.dateTimeFormat.availableFormats, _methodAddStruct);
+    
+    //Add the convenience formats too for full coverage
+    _funcAddString(_foundDict, _data.dateTimeFormat.full,   _contextStruct.__systemChars);
+    _funcAddString(_foundDict, _data.dateTimeFormat.long,   _contextStruct.__systemChars);
+    _funcAddString(_foundDict, _data.dateTimeFormat.short,  _contextStruct.__systemChars);
+    _funcAddString(_foundDict, _data.dateTimeFormat.medium, _contextStruct.__systemChars);
     
     var _array = struct_get_names(_foundDict);
     array_sort(_array, true);
