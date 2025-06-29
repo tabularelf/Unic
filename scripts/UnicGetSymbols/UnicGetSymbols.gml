@@ -66,8 +66,6 @@ function UnicGetSymbols(_localeCode)
         __funcAddString(__foundDict, _value, __systemChars);
     });
     
-    _funcAddString(_foundDict, _data.currencyFormat, "#0¤");
-    _funcAddString(_foundDict, _data.decimalFormat,  "#0" );
     _funcAddString(_foundDict, _data.symbols.currency);
     
     struct_foreach(_data.daysFormat.short,       _methodAddStruct);
