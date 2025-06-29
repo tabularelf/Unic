@@ -10,7 +10,7 @@
 /// length string is returned:
 /// 
 /// `0` = Narrow
-///     Typically one character long.
+///     Typically one character long. Days may be ambiguous e.g. Tuesday and Thursday are both "T"
 /// 
 /// `1` = Short
 ///     Typically two or three characters in length.
