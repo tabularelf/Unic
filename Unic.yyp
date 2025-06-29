@@ -54,6 +54,7 @@
     {"id":{"name":"__UnicLocaleDbEntryClass","path":"scripts/__UnicLocaleDbEntryClass/__UnicLocaleDbEntryClass.yy",},},
     {"id":{"name":"UnicCodeExists","path":"scripts/UnicCodeExists/UnicCodeExists.yy",},},
     {"id":{"name":"UnicGetDay","path":"scripts/UnicGetDay/UnicGetDay.yy",},},
+    {"id":{"name":"UnicGetMonth","path":"scripts/UnicGetMonth/UnicGetMonth.yy",},},
     {"id":{"name":"UnicGetSymbols","path":"scripts/UnicGetSymbols/UnicGetSymbols.yy",},},
   ],
   "resourceType":"GMProject",

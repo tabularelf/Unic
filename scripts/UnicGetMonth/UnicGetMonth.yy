@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"UnicGetMonth",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UnicGetMonth",
+  "parent":{
+    "name":"Unic",
+    "path":"folders/Unic.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

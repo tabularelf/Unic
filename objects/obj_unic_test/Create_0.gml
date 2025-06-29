@@ -13,3 +13,16 @@ repeat(4)
     
     ++_i;
 }
+
+var _i = 0;
+repeat(3)
+{
+    var _j = 0;
+    repeat(12)
+    {
+        show_debug_message(UnicGetMonth(_localeCode, _j, _i));
+        ++_j;
+    }
+    
+    ++_i;
+}
