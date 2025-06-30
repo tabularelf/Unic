@@ -31,7 +31,7 @@ function UnicGetMonth(_localeCode, _monthIndex, _lengthFormat = 2)
     
     if (_monthIndex < 0)
     {
-        _monthIndex = 12 - ((-_monthIndex) mod 12);
+        _monthIndex = 11 + ((_monthIndex + 1) mod 12);
     }
     else
     {
@@ -40,65 +40,14 @@ function UnicGetMonth(_localeCode, _monthIndex, _lengthFormat = 2)
     
     if (_lengthFormat <= 0)
     {
-        var _data = _database[$ _localeCode].monthsFormat.narrow;
+        return _database[$ _localeCode].monthsFormat.narrow[_monthIndex];
     }
     else if (_lengthFormat == 1)
     {
-        var _data = _database[$ _localeCode].monthsFormat.abbreviated;
+        return _database[$ _localeCode].monthsFormat.abbreviated[_monthIndex];
     }
     else if (_lengthFormat >= 2)
     {
-        var _data = _database[$ _localeCode].monthsFormat.wide;
+        return _database[$ _localeCode].monthsFormat.wide[_monthIndex];
     }
-    
-    if (_monthIndex == 0)
-    {
-        return _data.one;
-    }
-    else if (_monthIndex == 1)
-    {
-        return _data.two;
-    }
-    else if (_monthIndex == 2)
-    {
-        return _data.three;
-    }
-    else if (_monthIndex == 3)
-    {
-        return _data.four;
-    }
-    else if (_monthIndex == 4)
-    {
-        return _data.five;
-    }
-    else if (_monthIndex == 5)
-    {
-        return _data.six;
-    }
-    else if (_monthIndex == 6)
-    {
-        return _data.seven;
-    }
-    else if (_monthIndex == 7)
-    {
-        return _data.eight;
-    }
-    else if (_monthIndex == 8)
-    {
-        return _data.nine;
-    }
-    else if (_monthIndex == 9)
-    {
-        return _data.ten;
-    }
-    else if (_monthIndex == 10)
-    {
-        return _data.eleven;
-    }
-    else if (_monthIndex == 11)
-    {
-        return _data.twelve;
-    }
-    
-    return "???";
 }

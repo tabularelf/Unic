@@ -36,7 +36,7 @@ function UnicGetDay(_localeCode, _dayIndex, _lengthFormat = 3)
     
     if (_dayIndex < 0)
     {
-        _dayIndex = 7 - ((-_dayIndex) mod 7);
+        _dayIndex = 6 + ((_dayIndex + 1) mod 7);
     }
     else
     {
@@ -45,49 +45,18 @@ function UnicGetDay(_localeCode, _dayIndex, _lengthFormat = 3)
     
     if (_lengthFormat <= 0)
     {
-        var _data = _database[$ _localeCode].daysFormat.narrow;
+        return _database[$ _localeCode].daysFormat.narrow[_dayIndex];
     }
     else if (_lengthFormat == 1)
     {
-        var _data = _database[$ _localeCode].daysFormat.short;
+        return _database[$ _localeCode].daysFormat.short[_dayIndex];
     }
     else if (_lengthFormat == 2)
     {
-        var _data = _database[$ _localeCode].daysFormat.abbreviated;
+        return _database[$ _localeCode].daysFormat.abbreviated[_dayIndex];
     }
     else if (_lengthFormat >= 3)
     {
-        var _data = _database[$ _localeCode].daysFormat.wide;
+        return _database[$ _localeCode].daysFormat.wide[_dayIndex];
     }
-    
-    if (_dayIndex == 0)
-    {
-        return _data.mon;
-    }
-    else if (_dayIndex == 1)
-    {
-        return _data.tue;
-    }
-    else if (_dayIndex == 2)
-    {
-        return _data.wed;
-    }
-    else if (_dayIndex == 3)
-    {
-        return _data.thu;
-    }
-    else if (_dayIndex == 4)
-    {
-        return _data.fri;
-    }
-    else if (_dayIndex == 5)
-    {
-        return _data.sat;
-    }
-    else if (_dayIndex == 6)
-    {
-        return _data.sun;
-    }
-    
-    return "???";
 }

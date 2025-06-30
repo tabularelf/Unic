@@ -1,6 +1,6 @@
 // Feather disable all
 
-var _localeCode = "ru";
+var _localeCode = "fr";
 var _i = 0;
 repeat(4)
 {
