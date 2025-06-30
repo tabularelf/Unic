@@ -3,7 +3,9 @@ function __UnicDatabase() {
 	if (!is_undefined(_inst)) return _inst;
 
 	_inst = {};
-	
+	// TODO: Convert back to JSON database.
+  // YYC takes 5 minutes alone to compile
+  // And it's just faster at this point it to use JSON.
 	__UnicDatabasePart1(_inst);
 	__UnicDatabasePart2(_inst);
 	__UnicDatabasePart3(_inst);
