@@ -4,11 +4,14 @@
 /// but is a short sequence of letters in many locales (e.g. Norwegian krone is `kr`). If the
 /// locale code is invalid this function will return the generic currency symbol `¤`.
 /// 
-/// @param localeCode
+/// @param [localeCode]
 
-function UnicGetSymCurrency(_localeCode)
+function UnicGetSymCurrency(_localeCode = undefined)
 {
+    static _system   = __UnicSystem();
     static _database = __UnicDatabase();
+    
+    _localeCode ??= _system.__locale;
     
     if (not UnicCodeExists(_localeCode)) return "¤";
     

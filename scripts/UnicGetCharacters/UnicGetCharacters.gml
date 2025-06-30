@@ -3,11 +3,14 @@
 /// Returns a string containing all characters needed to render out all Unicode strings for the
 /// given locale.
 /// 
-/// @param localeCode
+/// @param [localeCode]
 
-function UnicGetCharacters(_localeCode)
+function UnicGetCharacters(_localeCode = undefined)
 {
+    static _system   = __UnicSystem();
     static _database = __UnicDatabase();
+    
+    _localeCode ??= _system.__locale;
     
     if (not UnicCodeExists(_localeCode)) return "";
     

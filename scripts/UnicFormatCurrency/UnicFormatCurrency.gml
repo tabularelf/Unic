@@ -2,11 +2,14 @@
 
 /// https://cldr.unicode.org/translation/number-currency-formats/number-and-currency-patterns
 /// 
-/// @param localeCode
 /// @param number
+/// @param [localeCode]
 /// @param [forceSymbol]
 
-function UnicFormatCurrency(_localeCode, _number, _forceSymbol = undefined)
+function UnicFormatCurrency(_number, _localeCode = undefined, _forceSymbol = undefined)
 {
+    static _system = __UnicSystem();
+    
+    _localeCode ??= _system.__locale;
     
 }

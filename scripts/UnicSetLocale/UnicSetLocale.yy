@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"UnicGetDay",
+  "%Name":"UnicSetLocale",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"UnicGetDay",
+  "name":"UnicSetLocale",
   "parent":{
-    "name":"Getters",
-    "path":"folders/Unic/Getters.yy",
+    "name":"Unic",
+    "path":"folders/Unic.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -16,13 +16,16 @@
 /// `2` = Wide
 ///     Full name for the month of the year. Length varies.
 /// 
-/// @param localeCode
 /// @param monthIndex
 /// @param [lengthFormat=2]
+/// @param [localeCode]
 
-function UnicGetMonth(_localeCode, _monthIndex, _lengthFormat = 2)
+function UnicGetMonth(_monthIndex, _lengthFormat = 2, _localeCode = undefined)
 {
+    static _system   = __UnicSystem();
     static _database = __UnicDatabase();
+    
+    _localeCode ??= _system.__locale;
     
     if (not UnicCodeExists(_localeCode)) return "???";
     

@@ -4,11 +4,14 @@
 /// "grouping separator" but we use the term accepted for Arabic numerals for convenience. If the
 /// locale code is invalid this function will return `,`.
 /// 
-/// @param localeCode
+/// @param [localeCode]
 
-function UnicGetSymThousands(_localeCode)
+function UnicGetSymThousands(_localeCode = undefined)
 {
+    static _system   = __UnicSystem();
     static _database = __UnicDatabase();
+    
+    _localeCode ??= _system.__locale;
     
     if (not UnicCodeExists(_localeCode)) return ",";
     

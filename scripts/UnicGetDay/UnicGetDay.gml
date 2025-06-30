@@ -21,13 +21,16 @@
 /// `3` = Wide
 ///     Full name for the day of the week. Length varies.
 /// 
-/// @param localeCode
 /// @param dayIndex
 /// @param [lengthFormat=3]
+/// @param [localeCode]
 
-function UnicGetDay(_localeCode, _dayIndex, _lengthFormat = 3)
+function UnicGetDay(_dayIndex, _lengthFormat = 3, _localeCode = undefined)
 {
+    static _system   = __UnicSystem();
     static _database = __UnicDatabase();
+    
+    _localeCode ??= _system.__locale;
     
     if (not UnicCodeExists(_localeCode)) return "???";
     
