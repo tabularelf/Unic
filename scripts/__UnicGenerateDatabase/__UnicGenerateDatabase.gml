@@ -43,6 +43,7 @@ function __UnicGenerateDatabase() {
 	var _len = struct_names_count(_localeDb);
 	var _numPerEntry = _len  div 19;
 	var _names = struct_get_names(_localeDb);
+	array_sort(_names, true);
 	var _namePos = 0;
 	var _j = 0;
 	

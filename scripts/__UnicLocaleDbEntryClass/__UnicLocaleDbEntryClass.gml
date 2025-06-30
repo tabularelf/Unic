@@ -1,4 +1,24 @@
 function __UnicLocaleDbEntryClass(_locale, _fileDbEntry) constructor {
+	static _ctxDays = {
+		key: undefined,
+		daysFormat: undefined,
+	};
+
+	static __dayConversion = method(_ctxDays, function(_name, _value) {
+		static _days = {
+			"mon": 0,
+			"tue": 1,
+			"wed": 2,
+			"thu": 3,
+			"fri": 4,
+			"sat": 5,
+			"sun": 6,
+		};
+
+		if (!is_array(daysFormat[$ key])) daysFormat[$ key] = [];
+		daysFormat[$ key][@ _days[$ _name]] = _value;
+	});	
+	
 	var _dateTimePath = _fileDbEntry.datetime;
 	var _numbersPath = _fileDbEntry.numbers;
 
@@ -20,6 +40,34 @@ function __UnicLocaleDbEntryClass(_locale, _fileDbEntry) constructor {
 		medium: _dateFormat[$ "medium"],
 		short: _dateFormat[$ "short"],
 	};
+
+	// TODO: Rewrite Days parser. Rather ugly to do, but just for the short term!
+	_ctxDays.daysFormat = daysFormat;
+	_ctxDays.key = "abbreviated";
+	struct_foreach(daysFormat.abbreviated, __dayConversion);
+	_ctxDays.key = "narrow";
+	struct_foreach(daysFormat.narrow, __dayConversion);
+	_ctxDays.key = "short";
+	struct_foreach(daysFormat.short, __dayConversion);
+	_ctxDays.key = "wide";
+	struct_foreach(daysFormat.wide, __dayConversion);
+
+	// TODO: Rewrite Months Parser. Rather ugly to do, but just for the short term!
+	struct_foreach(monthsFormat.abbreviated, function(_name, _value) {
+		if (!is_array(monthsFormat.abbreviated)) monthsFormat.abbreviated = [];
+		monthsFormat.abbreviated[@ real(_name)-1] = _value;
+	});
+
+	struct_foreach(monthsFormat.narrow, function(_name, _value) {
+		if (!is_array(monthsFormat.narrow)) monthsFormat.narrow = [];
+		monthsFormat.narrow[@ real(_name)-1] = _value;
+	});
+
+	struct_foreach(monthsFormat.wide, function(_name, _value) {
+		if (!is_array(monthsFormat.wide)) monthsFormat.wide = [];
+		monthsFormat.wide[@ real(_name)-1] = _value;
+	});
+
 
 	// Some of the locales do not have *-alt-ascii, so we need to fallback to the shorter version.
 	// However they include a Narrow No-Break Space. So we need to also filter those out.
@@ -50,9 +98,10 @@ function __UnicLocaleDbEntryClass(_locale, _fileDbEntry) constructor {
 	var _currencyDataRegion = global.currencyData.supplemental.currencyData.region;
 
 	// Quite bizarre names, but we need these ones specifically
-	symbols = {}; //_num[$ "symbols-numberSystem-latn"];
+	symbols = _num[$ "symbols-numberSystem-latn"];
 	decimalFormat = _num[$ "decimalFormats-numberSystem-latn"].standard;
 	currencyFormat = _num[$ "currencyFormats-numberSystem-latn"].standard;
+	percentageFormat = _num[$ "percentFormats-numberSystem-latn"].standard;
 
 	// Currency symbol
 	// Fallback
