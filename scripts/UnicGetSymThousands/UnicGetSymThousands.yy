@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"UnicGetSymThousands",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UnicGetSymThousands",
+  "parent":{
+    "name":"Getters",
+    "path":"folders/Unic/Getters.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

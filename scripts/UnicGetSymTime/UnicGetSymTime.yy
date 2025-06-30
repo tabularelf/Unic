@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"UnicGetSymTime",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UnicGetSymTime",
+  "parent":{
+    "name":"Getters",
+    "path":"folders/Unic/Getters.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
