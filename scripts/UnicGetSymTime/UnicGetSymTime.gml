@@ -5,7 +5,7 @@
 /// 
 /// @param [localeCode]
 
-function UnicGetSymThousands(_localeCode = undefined)
+function UnicGetSymTime(_localeCode = undefined)
 {
     static _system   = __UnicSystem();
     static _database = __UnicDatabase();

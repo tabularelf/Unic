@@ -8,7 +8,7 @@ function __UnicSystem()
     _system = {};
     with(_system)
     {
-        __locale = "en";
+        __locale = "en_GB";
     }
     
     return _system;
