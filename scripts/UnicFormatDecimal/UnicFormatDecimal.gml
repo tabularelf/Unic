@@ -2,7 +2,10 @@
 
 /// https://cldr.unicode.org/translation/number-currency-formats/number-and-currency-patterns
 
-function UnicGetCurrency()
+function UnicFormatDecimal()
 {
+    // #,##0.00
+    
+    
     
 }

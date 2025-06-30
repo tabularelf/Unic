@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"UnicGetSymbols",
+  "%Name":"UnicFormatCurrency",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"UnicGetSymbols",
+  "name":"UnicFormatCurrency",
   "parent":{
-    "name":"Unic",
-    "path":"folders/Unic.yy",
+    "name":"Formatters",
+    "path":"folders/Unic/Formatters.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"UnicGetDecimal",
+  "%Name":"UnicFormatPercent",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"UnicGetDecimal",
+  "name":"UnicFormatPercent",
   "parent":{
-    "name":"Unic",
-    "path":"folders/Unic.yy",
+    "name":"Formatters",
+    "path":"folders/Unic/Formatters.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

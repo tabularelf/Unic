@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"UnicGetCurrency",
+  "%Name":"UnicGetSymCurrency",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"UnicGetCurrency",
+  "name":"UnicGetSymCurrency",
   "parent":{
-    "name":"Unic",
-    "path":"folders/Unic.yy",
+    "name":"Getters",
+    "path":"folders/Unic/Getters.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

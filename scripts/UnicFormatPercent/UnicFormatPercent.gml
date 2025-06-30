@@ -2,7 +2,7 @@
 
 /// https://cldr.unicode.org/translation/number-currency-formats/number-and-currency-patterns
 
-function UnicGetDecimal()
+function UnicFormatPercent()
 {
     
 }
