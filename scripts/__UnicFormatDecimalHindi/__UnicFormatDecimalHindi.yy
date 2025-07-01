@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"__UnicDecimalInterrogate",
+  "%Name":"__UnicFormatDecimalHindi",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__UnicDecimalInterrogate",
+  "name":"__UnicFormatDecimalHindi",
   "parent":{
     "name":"Formatters",
     "path":"folders/Unic/(System)/Formatters.yy",

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"__UnicDecimalInterrogate",
+  "%Name":"__UnicFormatDecimalChineseAlt",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__UnicDecimalInterrogate",
+  "name":"__UnicFormatDecimalChineseAlt",
   "parent":{
     "name":"Formatters",
     "path":"folders/Unic/(System)/Formatters.yy",

@@ -14,15 +14,15 @@ function UnicFormatDecimal(_number, _decimalPlaces = UNIC_DEFAULT_DECIMAL_PLACES
     var _format = _database[$ _localeCode ?? _system.__locale].decimalFormat;
     if (_format == "#,##0.###")
     {
-        return __UnicFormatDecimal0(_number, _decimalPlaces, _localeCode);
+        return __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
     }
     else if (_format == "#,##,##0.###")
     {
-        return __UnicFormatDecimal1(_number, _decimalPlaces, _localeCode);
+        return __UnicFormatDecimalHindi(_number, _decimalPlaces, _localeCode);
     }
     else if (_format == "#,#0.###")
     {
-        return __UnicFormatDecimal2(_number, _decimalPlaces, _localeCode);
+        return __UnicFormatDecimalTokiPona(_number, _decimalPlaces, _localeCode);
     }
     else
     {
@@ -31,6 +31,6 @@ function UnicFormatDecimal(_number, _decimalPlaces = UNIC_DEFAULT_DECIMAL_PLACES
             __UnicError($"Decimal format not supported \"{_format}\"");
         }
         
-        return __UnicFormatDecimal0(_number, _decimalPlaces, _localeCode);
+        return __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
     }
 }
