@@ -76,6 +76,8 @@
     {"id":{"name":"UnicCurrency","path":"scripts/UnicCurrency/UnicCurrency.yy",},},
     {"id":{"name":"UnicDate","path":"scripts/UnicDate/UnicDate.yy",},},
     {"id":{"name":"UnicDateExt","path":"scripts/UnicDateExt/UnicDateExt.yy",},},
+    {"id":{"name":"UnicDateTime","path":"scripts/UnicDateTime/UnicDateTime.yy",},},
+    {"id":{"name":"UnicDateTimeExt","path":"scripts/UnicDateTimeExt/UnicDateTimeExt.yy",},},
     {"id":{"name":"UnicDecimal","path":"scripts/UnicDecimal/UnicDecimal.yy",},},
     {"id":{"name":"UnicGetCharacters","path":"scripts/UnicGetCharacters/UnicGetCharacters.yy",},},
     {"id":{"name":"UnicGetDay","path":"scripts/UnicGetDay/UnicGetDay.yy",},},
