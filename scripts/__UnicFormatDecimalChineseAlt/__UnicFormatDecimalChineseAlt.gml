@@ -1,5 +1,7 @@
 // Feather disable all
 
+/// TODO - Hook up to Chinese and Japanese locales
+/// 
 /// #,###0.###
 
 function __UnicFormatDecimalChineseAlt(_number, _decimalPlaces, _localeCode)
