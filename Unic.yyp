@@ -55,6 +55,7 @@
     {"id":{"name":"__UnicDatabasePart8","path":"scripts/__UnicDatabasePart8/__UnicDatabasePart8.yy",},},
     {"id":{"name":"__UnicDatabasePart9","path":"scripts/__UnicDatabasePart9/__UnicDatabasePart9.yy",},},
     {"id":{"name":"__UnicDecimalInterrogate","path":"scripts/__UnicDecimalInterrogate/__UnicDecimalInterrogate.yy",},},
+    {"id":{"name":"__UnicError","path":"scripts/__UnicError/__UnicError.yy",},},
     {"id":{"name":"__UnicFormatDecimal0","path":"scripts/__UnicFormatDecimal0/__UnicFormatDecimal0.yy",},},
     {"id":{"name":"__UnicFormatDecimal1","path":"scripts/__UnicFormatDecimal1/__UnicFormatDecimal1.yy",},},
     {"id":{"name":"__UnicFormatDecimal2","path":"scripts/__UnicFormatDecimal2/__UnicFormatDecimal2.yy",},},
