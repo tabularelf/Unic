@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__UnicFormatDecimal2",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__UnicFormatDecimal2",
+  "parent":{
+    "name":"Decimal",
+    "path":"folders/Unic/(System)/Formatters/Decimal.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
