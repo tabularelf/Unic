@@ -1,5 +1,26 @@
 // Feather disable all
 
+/// Returns a formatted datestamp that contains the year, month, and day. The year must be an
+/// integer greater than or equal to `0`. The month must be an integer between `1` and `12`. The
+/// day must be an integer between `1` and the number of days in the month (including respecting
+/// short/long februaries due to leap years). Integers outside of these ranges will be clamped.
+/// 
+/// The `lengthFormat` parameter should be 0, 1, 2, or 3. If you provide an integer outside of that
+/// range then `lengthFormat` will be clamped to the valid range. This parameter changes what
+/// length string is returned:
+/// 
+/// `0` = Short
+///     Shortest date. Month name is a number or heavily abbreviated.
+/// 
+/// `1` = Medium
+///     Somewhat abbreviated date. Month name is shortened.
+/// 
+/// `2` = Long
+///     Full date. Month name is written out in full.
+/// 
+/// `3` = Full
+///     Full date, typically also including the name of the day of the week.
+/// 
 /// https://cldr.unicode.org/translation/date-time/date-time-patterns
 /// 
 /// @param year
@@ -19,7 +40,6 @@ function UnicDateExt(_year, _month, _day, _lengthFormat = 1, _localeCode = undef
     _localeCode ??= _system.__locale;
     _lengthFormat = floor(_lengthFormat);
     
-    //Handle seconds straight away
     if (_lengthFormat <= 0)
     {
         var _format = _database[$ _localeCode].dateFormat.short;
@@ -50,10 +70,16 @@ function UnicDateExt(_year, _month, _day, _lengthFormat = 1, _localeCode = undef
         }
     }
     
-    var _datetime = date_create_datetime(_year, _month, 1, 0, 0, 0);
+    //Force UTC for month length calculations
+    var _oldTimezone = date_get_timezone();
+    date_set_timezone(timezone_utc);
+    
+    var _datetime = date_create_datetime(_year, _month, 1, 1, 1, 1);
     _year  = max(floor(_year), 0);
     _month = clamp(floor(_month), 1, 12);
     _day   = clamp(floor(_day), 1, date_days_in_month(_datetime));
+    
+    date_set_timezone(_oldTimezone);
     
     var _inString = false;
     var _formatLength = string_length(_format);

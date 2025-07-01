@@ -1,6 +1,6 @@
 // Feather disable all
 
-/// Returns a formatted timestamp that contains hours, minutes, and seconds. THe number of hours
+/// Returns a formatted timestamp that contains hours, minutes, and seconds. The number of hours
 /// should be an integer from 0 to 23 inclusive. The number of minutes and seconds should be an
 /// integer from 0 to 59 inclusive. Integers outside of these ranges will be clamped. If you do
 /// not wish to include seconds in the output, pass `undefined` for the `seconds` argument.
