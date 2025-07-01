@@ -40,9 +40,16 @@ show_debug_message(UnicClock(date_current_datetime(), true));
 show_debug_message(UnicClock(date_current_datetime(), true, "hi"));
 show_debug_message(UnicClock(date_current_datetime(), true, "ee"));
 
-show_debug_message(UnicDate(date_current_datetime(), 1, "en_GB"));
+show_debug_message(UnicDate(date_current_datetime(), 1));
 show_debug_message(UnicDate(date_current_datetime(), 1, "hi"));
 show_debug_message(UnicDate(date_current_datetime(), 1, "ee"));
+
+show_debug_message(UnicDateTime(date_current_datetime(), 1));
+show_debug_message(UnicDateTime(date_current_datetime(), 1, undefined, "hi"));
+show_debug_message(UnicDateTime(date_current_datetime(), 1, undefined, "ee"));
+
+show_debug_message(UnicDate(date_current_datetime(), 0, "haw"));
+show_debug_message(UnicDateTime(date_current_datetime(), 0, undefined, "haw"));
 
 UnicSetLocale("fr");
 
