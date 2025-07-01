@@ -1,15 +1,14 @@
 // Feather disable all
 
-/// Formats a number in the local currency using a localized format. You may override the currency
-/// symbol to display a custom icon in place of the localized equivalent. This is useful for
-/// fictional in-game currencies. If no valid currency symbol is found then `¤` is used.
+/// Formats a number in the local currency using a localized format. You will need to provide the
+/// currency symbol yourself ($ £ € ¥ etc.) as a string.
 /// 
+/// @param currencySymbol
 /// @param number
 /// @param [decimalPlaces=2]
-/// @param [currencySymbol]
 /// @param [localeCode]
 
-function UnicCurrency(_number, _decimalPlaces = 2, _currencySymbol = undefined, _localeCode = undefined)
+function UnicCurrency(_currencySymbol, _number, _decimalPlaces = 2, _localeCode = undefined)
 {
     static _system     = __UnicSystem();
     static _database   = __UnicDatabase();
@@ -20,8 +19,6 @@ function UnicCurrency(_number, _decimalPlaces = 2, _currencySymbol = undefined, 
     
     var _isNegative = (_number < 0);
     _number = abs(_number);
-    
-    _currencySymbol = _currencySymbol ?? "¤";
     
     var _format = _database[$ _localeCode].currencyFormat;
     if (_format == "#,##,##0.00¤")
