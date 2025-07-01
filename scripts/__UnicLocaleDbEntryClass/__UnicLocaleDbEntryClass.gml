@@ -1,3 +1,5 @@
+/// Feather ignore all
+/// @ignore
 function __UnicLocaleDbEntryClass(_locale, _fileDbEntry) constructor {
 	static _ctxDays = {
 		key: undefined,
@@ -105,17 +107,21 @@ function __UnicLocaleDbEntryClass(_locale, _fileDbEntry) constructor {
 
 	// Currency symbol
 	// Fallback
-	if (is_undefined(_currencyDataRegion[$ _region])) {
-		symbols.currency = (_locale == "en") ? "$" : "¤";
-	} else {
-		var _currencySymbolName = struct_get_names(_currencyDataRegion[$ _region][0])[0];
-		var _currencySymbolData = _currencies.main[$ _locale].numbers.currencies[$ _currencySymbolName];
-		// Fallback
-		if (is_undefined(_currencySymbolData)) {
-			symbols.currency = _currencySymbolName; 
-		} else {
-			symbols.currency = _currencySymbolData[$ "symbol-alt-narrow"] ?? (_currencySymbolData[$ "symbol"] ?? "$");
-		}
-	}
+	// 🔪 stab stab stab
+	// Removed	
+
+	//symbols.currency = "¤";
+	//if (is_undefined(_currencyDataRegion[$ _region])) {
+	//	symbols.currency = (_locale == "en") ? "$" : "¤";
+	//} else {
+	//	var _currencySymbolName = struct_get_names(_currencyDataRegion[$ _region][0])[0];
+	//	var _currencySymbolData = _currencies.main[$ _locale].numbers.currencies[$ _currencySymbolName];
+	//	// Fallback
+	//	if (is_undefined(_currencySymbolData)) {
+	//		symbols.currency = _currencySymbolName; 
+	//	} else {
+	//		symbols.currency = _currencySymbolData[$ "symbol-alt-narrow"] ?? (_currencySymbolData[$ "symbol"] ?? "$");
+	//	}
+	//}
 	#endregion
 }
