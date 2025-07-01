@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__UnicCurrencyInterrogate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__UnicCurrencyInterrogate",
+  "parent":{
+    "name":"Formatters",
+    "path":"folders/Unic/(System)/Formatters.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

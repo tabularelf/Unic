@@ -31,6 +31,7 @@
     {"id":{"name":"obj_unic_test","path":"objects/obj_unic_test/obj_unic_test.yy",},},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"id":{"name":"__UnicConfig","path":"scripts/__UnicConfig/__UnicConfig.yy",},},
+    {"id":{"name":"__UnicCurrencyInterrogate","path":"scripts/__UnicCurrencyInterrogate/__UnicCurrencyInterrogate.yy",},},
     {"id":{"name":"__UnicDatabase","path":"scripts/__UnicDatabase/__UnicDatabase.yy",},},
     {"id":{"name":"__UnicDatabaseGenParseStruct","path":"scripts/__UnicDatabaseGenParseStruct/__UnicDatabaseGenParseStruct.yy",},},
     {"id":{"name":"__UnicDatabasePart1","path":"scripts/__UnicDatabasePart1/__UnicDatabasePart1.yy",},},
