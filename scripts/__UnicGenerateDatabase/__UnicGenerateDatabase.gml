@@ -10,6 +10,10 @@ function __UnicGenerateDatabase() {
 		{
 			type: "numbers",
 			path: "cldr-numbers-full\\main\\",
+		},
+		{
+			type: "misc",
+			path: "cldr-misc-full\\main\\",
 		}
 	];
 

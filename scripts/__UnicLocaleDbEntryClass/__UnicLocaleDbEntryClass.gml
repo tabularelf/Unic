@@ -23,10 +23,13 @@ function __UnicLocaleDbEntryClass(_locale, _fileDbEntry) constructor {
 	
 	var _dateTimePath = _fileDbEntry.datetime;
 	var _numbersPath = _fileDbEntry.numbers;
+	var _miscPath = _fileDbEntry.misc;
 
 	var _numbers = __UnicJSONLoad(_numbersPath + "numbers.json");
 	var _currencies = __UnicJSONLoad(_numbersPath + "currencies.json");
 	var _dateTime = __UnicJSONLoad(_dateTimePath + "ca-gregorian.json");
+	var _layout = __UnicJSONLoad(_miscPath + "layout.json");
+	
 
 	#region Datetime 
 	var _dt = _dateTime.main[$ _locale].dates.calendars.gregorian;
@@ -105,6 +108,7 @@ function __UnicLocaleDbEntryClass(_locale, _fileDbEntry) constructor {
 	currencyFormat = _num[$ "currencyFormats-numberSystem-latn"].standard;
 	percentageFormat = _num[$ "percentFormats-numberSystem-latn"].standard;
 
+	left_to_right = _layout.main[$ _locale].layout.orientation.characterOrder == "left-to-right";
 	// Currency symbol
 	// Fallback
 	// 🔪 stab stab stab
