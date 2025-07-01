@@ -1,3 +1,5 @@
+/// Feather ignore all
+/// @ignore
 function __UnicDatabaseGenParseStruct(_name, _value) {
 	static _nums = [
 		"zero",

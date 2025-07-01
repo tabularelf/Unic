@@ -1,3 +1,5 @@
+/// Feather ignore all
+/// @ignore
 function __UnicJSONLoad(_filepath) {
 	var _buff;
 	try {

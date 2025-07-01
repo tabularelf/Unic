@@ -1,3 +1,5 @@
+/// Feather ignore all
+/// @ignore
 function __UnicDatabase() {
 	static _inst = undefined;
 	if (!is_undefined(_inst)) return _inst;

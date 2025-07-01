@@ -1,4 +1,5 @@
-// feather ignore all
+/// Feather ignore all
+/// @ignore
 function __UnicGenerateDatabase() {
 	// Declare paths prior to parsing
 	var paths = [
