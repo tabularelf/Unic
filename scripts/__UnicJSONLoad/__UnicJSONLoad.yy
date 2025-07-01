@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__UnicJSONLoad",
   "parent":{
-    "name":"Unic Database Generator",
-    "path":"folders/Unic Database Generator.yy",
+    "name":"(System)",
+    "path":"folders/Unic/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
