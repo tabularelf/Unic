@@ -106,7 +106,7 @@ function __UnicLocaleDbEntryClass(_locale, _fileDbEntry) constructor {
 	// Currency symbol
 	// Fallback
 	if (is_undefined(_currencyDataRegion[$ _region])) {
-		symbols.currency = "¤";
+		symbols.currency = (_locale == "en") ? "$" : "¤";
 	} else {
 		var _currencySymbolName = struct_get_names(_currencyDataRegion[$ _region][0])[0];
 		var _currencySymbolData = _currencies.main[$ _locale].numbers.currencies[$ _currencySymbolName];
