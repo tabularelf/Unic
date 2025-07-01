@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"UnicGetSymMinus",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UnicGetSymMinus",
+  "parent":{
+    "name":"Getters",
+    "path":"folders/Unic/Getters.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -5,5 +5,5 @@
 
 function __UnicFormatNegative(_string, _localeCode)
 {
-    return "-" + _string;
+    return UnicGetSymMinus(_localeCode) + _string;
 }

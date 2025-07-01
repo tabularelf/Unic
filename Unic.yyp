@@ -79,6 +79,7 @@
     {"id":{"name":"UnicGetMonth","path":"scripts/UnicGetMonth/UnicGetMonth.yy",},},
     {"id":{"name":"UnicGetSymCurrency","path":"scripts/UnicGetSymCurrency/UnicGetSymCurrency.yy",},},
     {"id":{"name":"UnicGetSymDecimal","path":"scripts/UnicGetSymDecimal/UnicGetSymDecimal.yy",},},
+    {"id":{"name":"UnicGetSymMinus","path":"scripts/UnicGetSymMinus/UnicGetSymMinus.yy",},},
     {"id":{"name":"UnicGetSymPercent","path":"scripts/UnicGetSymPercent/UnicGetSymPercent.yy",},},
     {"id":{"name":"UnicGetSymThousands","path":"scripts/UnicGetSymThousands/UnicGetSymThousands.yy",},},
     {"id":{"name":"UnicGetSymTime","path":"scripts/UnicGetSymTime/UnicGetSymTime.yy",},},

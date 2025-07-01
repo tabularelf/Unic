@@ -13,7 +13,153 @@ function UnicFormatCurrency(_number, _decimalPlaces = 2, _currencySymbol = undef
 {
     static _system   = __UnicSystem();
     static _database = __UnicDatabase();
+    static _nbsp     = chr(0xA0);
     
-    var _data = _database[$ _localeCode ?? _system.__locale];
-    return __UnicFormatNumberGeneral(_data.currencyFormat, _number, _currencySymbol, _decimalPlaces, _localeCode);
+    _localeCode ??= _system.__locale;
+    
+    var _isNegative = (_number < 0);
+    _number = abs(_number);
+    
+    _currencySymbol = (_currencySymbol ?? UnicGetSymCurrency(_localeCode)) ?? "¤";
+    
+    var _format = _database[$ _localeCode].currencyFormat;
+    if (_format == "#,##,##0.00¤")
+    {
+        _result = __UnicFormatDecimalHindi(_number, _decimalPlaces, _localeCode) + _currencySymbol;
+    }
+    else if (_format == "#,##0.00 ¤")
+    {
+        _result = __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode) + _nbsp + _currencySymbol;
+    }
+    else if (_format == "#,##0.00 ¤;-#,##0.00 ¤")
+    {
+        if (_isNegative)
+        {
+            return __UnicFormatNegative(__UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode), _localeCode) + _nbsp + _currencySymbol;
+        }
+        else
+        {
+            return __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode) + _nbsp + _currencySymbol;
+        }
+    }
+    else if (_format == "#,##0.00¤")
+    {
+        _result = __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode) + _currencySymbol;
+    }
+    else if (_format == "#,##0.00 ¤")
+    {
+        _result = __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode) + _nbsp + _currencySymbol;
+    }
+    else if (_format == "¤#,##,##0.00")
+    {
+        _result = _currencySymbol + __UnicFormatDecimalHindi(_number, _decimalPlaces, _localeCode);
+    }
+    else if (_format == "¤#,##0.00")
+    {
+        _result = _currencySymbol + __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
+    }
+    else if (_format == "¤#,##0.00;¤-#,##0.00")
+    {
+        if (_isNegative)
+        {
+            return _currencySymbol + __UnicFormatNegative(__UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode), _localeCode);
+        }
+        else
+        {
+            return _currencySymbol + __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
+        }
+    }
+    else if (_format == "¤#,##0.00;¤- #,##0.00")
+    {
+        if (_isNegative)
+        {
+            return _currencySymbol + __UnicFormatNegative(_nbsp + __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode), _localeCode);
+        }
+        else
+        {
+            return _currencySymbol + __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
+        }
+    }
+    else if (_format == "¤#,#0.00")
+    {
+        _result = _currencySymbol + __UnicFormatDecimalTokiPona(_number, _decimalPlaces, _localeCode);
+    }
+    else if (_format == "¤ #,##,##0.00")
+    {
+        _result = _currencySymbol + _nbsp + __UnicFormatDecimalHindi(_number, _decimalPlaces, _localeCode);
+    }
+    else if (_format == "¤ #,##0.00")
+    {
+        _result = _currencySymbol + _nbsp + __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
+    }
+    else if (_format == "¤ #,##0.00;¤-#,##0.00")
+    {
+        if (_isNegative)
+        {
+            return _currencySymbol + __UnicFormatNegative(__UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode), _localeCode);
+        }
+        else
+        {
+            return _currencySymbol + _nbsp + __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
+        }
+    }
+    else if (_format == "¤ #,##0.00;¤ #,##0.00-")
+    {
+        if (_isNegative)
+        {
+            return _currencySymbol + _nbsp + __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode) + __UnicFormatNegative("", _localeCode);
+        }
+        else
+        {
+            return _currencySymbol + _nbsp + __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
+        }
+    }
+    else if (_format == "¤ #,##0.00;¤ -#,##0.00")
+    {
+        if (_isNegative)
+        {
+            return _currencySymbol + _nbsp + __UnicFormatNegative(__UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode), _localeCode);
+        }
+        else
+        {
+            return _currencySymbol + _nbsp + __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
+        }
+    }
+    else if (_format == "¤ #,##0.00")
+    {
+        _result = _currencySymbol + _nbsp + __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
+    }
+    else if (_format == "#,##0.00 ¤;‏-#,##0.00 ¤")
+    {
+        if (_isNegative)
+        {
+            return "‏" + __UnicFormatNegative(__UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode), _localeCode) + _nbsp + _currencySymbol;
+        }
+        else
+        {
+            return __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode) + _nbsp + _currencySymbol;
+        }
+    }
+    else if (_format == "#,##0.00 ‏¤;‏-#,##0.00 ‏¤")
+    {
+        if (_isNegative)
+        {
+            return "‏" + __UnicFormatNegative(__UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode), _localeCode) + _nbsp + "‏" + _currencySymbol;
+        }
+        else
+        {
+            return __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode) + _nbsp + "‏" + _currencySymbol;
+        }
+    }
+    else
+    {
+        if (__UNIC_RUNNING_FROM_IDE)
+        {
+            __UnicError($"Decimal format not supported \"{_format}\"");
+        }
+        
+        var _result = __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
+    }
+    
+    return _isNegative? __UnicFormatNegative(_result, _localeCode) : _result;
 }
