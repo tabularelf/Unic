@@ -1,15 +1,19 @@
 // Feather disable all
 
-/// https://cldr.unicode.org/translation/number-currency-formats/number-and-currency-patterns
+/// Formats a number in the local currency using a localized format. You may override the currency
+/// symbol to display a custom icon in place of the localized equivalent. This is useful for
+/// fictional in-game currencies.
 /// 
 /// @param number
+/// @param [decimalPlaces=2]
+/// @param [currencySymbol]
 /// @param [localeCode]
-/// @param [forceSymbol]
 
-function UnicFormatCurrency(_number, _localeCode = undefined, _forceSymbol = undefined)
+function UnicFormatCurrency(_number, _decimalPlaces = 2, _currencySymbol = undefined, _localeCode = undefined)
 {
-    static _system = __UnicSystem();
+    static _system   = __UnicSystem();
+    static _database = __UnicDatabase();
     
-    _localeCode ??= _system.__locale;
-    
+    var _data = _database[$ _localeCode ?? _system.__locale];
+    return __UnicFormatNumberGeneral(_data.currencyFormat, _number, _currencySymbol, _decimalPlaces, _localeCode);
 }

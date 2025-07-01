@@ -1,14 +1,13 @@
 // Feather disable all
 
-/// https://cldr.unicode.org/translation/number-currency-formats/number-and-currency-patterns
-/// 
 /// @param number
+/// @param [decimalPlaces=0]
 /// @param [localeCode]
 
-function UnicFormatPercent(_number, _localeCode = undefined)
+function UnicFormatPercent(_number, _decimalPlaces = 0, _localeCode = undefined)
 {
-    static _system = __UnicSystem();
+    static _system   = __UnicSystem();
+    static _database = __UnicDatabase();
     
-    _localeCode ??= _system.__locale;
-    
+    return __UnicFormatNumberGeneral(_database[$ _localeCode ?? _system.__locale].percentageFormat, _number, undefined, _decimalPlaces, _localeCode);
 }

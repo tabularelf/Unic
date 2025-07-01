@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"UnicFormatInteger",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UnicFormatInteger",
+  "parent":{
+    "name":"Formatters",
+    "path":"folders/Unic/Formatters.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
