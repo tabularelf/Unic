@@ -2,14 +2,14 @@
 
 /// Formats a number in the local currency using a localized format. You may override the currency
 /// symbol to display a custom icon in place of the localized equivalent. This is useful for
-/// fictional in-game currencies.
+/// fictional in-game currencies. If no valid currency symbol is found then `¤` is used.
 /// 
 /// @param number
 /// @param [decimalPlaces=2]
 /// @param [currencySymbol]
 /// @param [localeCode]
 
-function UnicFormatCurrency(_number, _decimalPlaces = 2, _currencySymbol = undefined, _localeCode = undefined)
+function UnicCurrency(_number, _decimalPlaces = 2, _currencySymbol = undefined, _localeCode = undefined)
 {
     static _system     = __UnicSystem();
     static _database   = __UnicDatabase();

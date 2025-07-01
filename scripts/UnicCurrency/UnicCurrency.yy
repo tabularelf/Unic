@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"UnicFormatCurrency",
+  "%Name":"UnicCurrency",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"UnicFormatCurrency",
+  "name":"UnicCurrency",
   "parent":{
     "name":"Formatters",
     "path":"folders/Unic/Formatters.yy",

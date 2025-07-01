@@ -6,7 +6,7 @@
 /// @param [decimalPlaces=default]
 /// @param [localeCode]
 
-function UnicFormatDecimal(_number, _decimalPlaces = UNIC_DEFAULT_DECIMAL_PLACES, _localeCode = undefined)
+function UnicDecimal(_number, _decimalPlaces = UNIC_DEFAULT_DECIMAL_PLACES, _localeCode = undefined)
 {
     static _system   = __UnicSystem();
     static _database = __UnicDatabase();

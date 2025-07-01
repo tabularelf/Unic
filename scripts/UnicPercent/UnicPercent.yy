@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"UnicFormatPercent",
+  "%Name":"UnicPercent",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"UnicFormatPercent",
+  "name":"UnicPercent",
   "parent":{
     "name":"Formatters",
     "path":"folders/Unic/Formatters.yy",

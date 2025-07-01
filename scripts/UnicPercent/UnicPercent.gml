@@ -1,15 +1,10 @@
 // Feather disable all
 
-/// %#,##0
-/// %#,#0
-/// % #,##0
-/// % #,#0;% -#,#0
-/// 
 /// @param number
 /// @param [decimalPlaces=0]
 /// @param [localeCode]
 
-function UnicFormatPercent(_number, _decimalPlaces = 0, _localeCode = undefined)
+function UnicPercent(_number, _decimalPlaces = 0, _localeCode = undefined)
 {
     static _system     = __UnicSystem();
     static _database   = __UnicDatabase();

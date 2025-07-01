@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"UnicFormatInteger",
+  "%Name":"UnicDecimal",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"UnicFormatInteger",
+  "name":"UnicDecimal",
   "parent":{
     "name":"Formatters",
     "path":"folders/Unic/Formatters.yy",

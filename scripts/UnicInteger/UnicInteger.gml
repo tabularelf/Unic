@@ -5,7 +5,7 @@
 /// @param number
 /// @param [localeCode]
 
-function UnicFormatInteger(_number, _localeCode = undefined)
+function UnicInteger(_number, _localeCode = undefined)
 {
-    return UnicFormatDecimal(_number, 0, _localeCode);
+    return UnicDecimal(_number, 0, _localeCode);
 }

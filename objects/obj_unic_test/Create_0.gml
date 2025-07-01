@@ -2,26 +2,26 @@
 
 __UnicCurrencyInterrogate();
 
-show_debug_message(UnicFormatPercent(12300400.232323));
-show_debug_message(UnicFormatPercent(-12300400.232323));
+show_debug_message(UnicPercent(12300400.232323));
+show_debug_message(UnicPercent(-12300400.232323));
 
-show_debug_message(UnicFormatPercent(12300400.232323, undefined, "hi"));
-show_debug_message(UnicFormatPercent(-12300400.232323, undefined, "hi"));
+show_debug_message(UnicPercent(12300400.232323, undefined, "hi"));
+show_debug_message(UnicPercent(-12300400.232323, undefined, "hi"));
 
-show_debug_message(UnicFormatPercent(12300400.232323, undefined, "ar"));
-show_debug_message(UnicFormatPercent(-12300400.232323, undefined, "ar"));
+show_debug_message(UnicPercent(12300400.232323, undefined, "ar"));
+show_debug_message(UnicPercent(-12300400.232323, undefined, "ar"));
 
-show_debug_message(UnicFormatPercent(12300400.232323, undefined, "tok"));
-show_debug_message(UnicFormatPercent(-12300400.232323, undefined, "tok"));
+show_debug_message(UnicPercent(12300400.232323, undefined, "tok"));
+show_debug_message(UnicPercent(-12300400.232323, undefined, "tok"));
 
-show_debug_message(UnicFormatDecimal(00.23));
-show_debug_message(UnicFormatDecimal(-00.23));
+show_debug_message(UnicDecimal(00.23));
+show_debug_message(UnicDecimal(-00.23));
 
-show_debug_message(UnicFormatDecimal(00.23, undefined, "hi"));
-show_debug_message(UnicFormatDecimal(-00.23, undefined, "hi"));
+show_debug_message(UnicDecimal(00.23, undefined, "hi"));
+show_debug_message(UnicDecimal(-00.23, undefined, "hi"));
 
-show_debug_message(UnicFormatDecimal(00.23, undefined, "tok"));
-show_debug_message(UnicFormatDecimal(-00.23, undefined, "tok"));
+show_debug_message(UnicDecimal(00.23, undefined, "tok"));
+show_debug_message(UnicDecimal(-00.23, undefined, "tok"));
 
 UnicSetLocale("fr");
 
