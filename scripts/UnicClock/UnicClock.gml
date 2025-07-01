@@ -4,6 +4,9 @@
 /// datetime number should be in the same format as the native GameMaker datetime number as
 /// returned by functions like `date_current_datetime()`.
 /// 
+/// N.B. This function calls a few native functions which in turn depend on the current timezone.
+///      Please read the GameMaker documentation on `date_set_timezone()` for more information.
+/// 
 /// @param datetime
 /// @param [includeSeconds=false]
 /// @param [localeCode]

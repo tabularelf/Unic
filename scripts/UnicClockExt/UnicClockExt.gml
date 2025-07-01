@@ -5,6 +5,8 @@
 /// integer from 0 to 59 inclusive. Integers outside of these ranges will be clamped. If you do
 /// not wish to include seconds in the output, pass `undefined` for the `seconds` argument.
 /// 
+/// https://cldr.unicode.org/translation/date-time/date-time-patterns
+/// 
 /// @param hours
 /// @param minutes
 /// @param [seconds]
@@ -117,7 +119,7 @@ function UnicClockExt(_hours, _minutes, _seconds = undefined, _localeCode = unde
             {
                 buffer_write(_buffer, buffer_text, (_hours >= 12)? "PM" : "AM");
             }
-            else
+            else //TODO - Handle b and B
             {
                 buffer_write(_buffer, buffer_text, _char);
             }

@@ -40,6 +40,10 @@ show_debug_message(UnicClock(date_current_datetime(), true));
 show_debug_message(UnicClock(date_current_datetime(), true, "hi"));
 show_debug_message(UnicClock(date_current_datetime(), true, "ee"));
 
+show_debug_message(UnicDate(date_current_datetime(), 1, "en_GB"));
+show_debug_message(UnicDate(date_current_datetime(), 1, "hi"));
+show_debug_message(UnicDate(date_current_datetime(), 1, "ee"));
+
 UnicSetLocale("fr");
 
 var _i = 0;
