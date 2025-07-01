@@ -15,12 +15,14 @@ function UnicFormatPercent(_number, _decimalPlaces = 0, _localeCode = undefined)
     static _database = __UnicDatabase();
     static _nbsp     = chr(0xA0);
     
+    _localeCode ??= _system.__locale;
+    
     var _isNegative = (_number < 0);
     _number = abs(_number);
     
-    var _percentSymbol = "%";
+    var _percentSymbol = UnicGetSymPercent(_localeCode);
     
-    var _format = _database[$ _localeCode ?? _system.__locale].percentageFormat;
+    var _format = _database[$ _localeCode].percentageFormat;
     if (_format == "#,##,##0%")
     {
         var _result = __UnicFormatDecimalHindi(_number, _decimalPlaces, _localeCode) + _percentSymbol;
@@ -55,15 +57,24 @@ function UnicFormatPercent(_number, _decimalPlaces = 0, _localeCode = undefined)
     }
     else if (_format == "% #,#0;% -#,#0")
     {
-        if (_number < 0)
+        if (_isNegative < 0)
         {
-            return _percentSymbol + _nbsp + __UnicFormatNegative(__UnicFormatDecimalTokiPona(_number, _decimalPlaces, _localeCode));
+            return _percentSymbol + _nbsp + __UnicFormatNegative(__UnicFormatDecimalTokiPona(_number, _decimalPlaces, _localeCode), _localeCode);
         }
         else
         {
             return _percentSymbol + __UnicFormatDecimalTokiPona(_number, _decimalPlaces, _localeCode);
         }
     }
+    else
+    {
+        if (__UNIC_RUNNING_FROM_IDE)
+        {
+            __UnicError($"Percent format not supported \"{_format}\"");
+        }
+        
+        var _result = __UnicFormatDecimalHindi(_number, _decimalPlaces, _localeCode) + _percentSymbol;
+    }
     
-    return _isNegative? __UnicFormatNegative(_result) : _result;
+    return _isNegative? __UnicFormatNegative(_result, _localeCode) : _result;
 }
