@@ -2,6 +2,8 @@
 
 #macro __UNIC_RUNNING_FROM_IDE  (GM_build_type == "run")
 
+#macro __UNIC_VERSION "1.0.0"
+
 function __UnicSystem()
 {
     static _system = undefined;

@@ -2,5 +2,5 @@
 
 function __UnicError(_string)
 {
-    show_error($"\n Unic:\n{_string}\n ", true);
+    show_error($"\n Unic v{__UNIC_VERSION}:\n{_string}\n ", true);
 }
