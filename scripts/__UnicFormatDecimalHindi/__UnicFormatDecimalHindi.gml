@@ -4,6 +4,10 @@
 
 function __UnicFormatDecimalHindi(_number, _decimalPlaces, _localeCode)
 {
+    static _system = __UnicSystem();
+    
+    _localeCode ??= _system.__locale;
+    
     var _isNegative = (_number < 0);
     _number = abs(_number);
     
@@ -36,7 +40,7 @@ function __UnicFormatDecimalHindi(_number, _decimalPlaces, _localeCode)
     
     //Insert a separator at the thousand mark (x,000)
     var _workingPos = _wholeLength - 2;
-    _numberString = string_insert(",", _numberString, _workingPos);
+    _numberString = string_insert(",", _numberString, _workingPos); //TODO
     
     if (_wholeLength > 5)
     {
@@ -45,7 +49,7 @@ function __UnicFormatDecimalHindi(_number, _decimalPlaces, _localeCode)
         
         repeat(ceil((_wholeLength-3) / 2) - 1)
         {
-            _numberString = string_insert(",", _numberString, _workingPos);
+            _numberString = string_insert(",", _numberString, _workingPos); //TODO
             _workingPos -= 2;
         }
     }

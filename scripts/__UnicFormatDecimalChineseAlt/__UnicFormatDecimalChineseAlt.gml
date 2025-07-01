@@ -4,7 +4,10 @@
 
 function __UnicFormatDecimalChineseAlt(_number, _decimalPlaces, _localeCode)
 {
+    static _system = __UnicSystem();
     static _nbsp = chr(0xA0);
+    
+    _localeCode ??= _system.__locale;
     
     var _isNegative = (_number < 0);
     _number = abs(_number);

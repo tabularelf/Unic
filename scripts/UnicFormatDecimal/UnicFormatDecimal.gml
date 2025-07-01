@@ -11,7 +11,9 @@ function UnicFormatDecimal(_number, _decimalPlaces = UNIC_DEFAULT_DECIMAL_PLACES
     static _system   = __UnicSystem();
     static _database = __UnicDatabase();
     
-    var _format = _database[$ _localeCode ?? _system.__locale].decimalFormat;
+    _localeCode ??= _system.__locale;
+    
+    var _format = _database[$ _localeCode].decimalFormat;
     if (_format == "#,##0.###")
     {
         return __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);

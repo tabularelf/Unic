@@ -4,6 +4,10 @@
 
 function __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode)
 {
+    static _system = __UnicSystem();
+    
+    _localeCode ??= _system.__locale;
+    
     var _isNegative = (_number < 0);
     _number = abs(_number);
     
@@ -37,7 +41,7 @@ function __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode)
     var _workingPos = _wholeLength-2;
     repeat(ceil(_wholeLength / 3) - 1)
     {
-        _numberString = string_insert(",", _numberString, _workingPos);
+        _numberString = string_insert(",", _numberString, _workingPos); //TODO
         _workingPos -= 3;
     }
     

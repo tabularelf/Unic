@@ -6,6 +6,10 @@
 
 function __UnicFormatDecimalTokiPona(_number, _decimalPlaces, _localeCode)
 {
+    static _system = __UnicSystem();
+    
+    _localeCode ??= _system.__locale;
+    
     var _isNegative = (_number < 0);
     _number = abs(_number);
     
@@ -39,7 +43,7 @@ function __UnicFormatDecimalTokiPona(_number, _decimalPlaces, _localeCode)
     var _workingPos = _wholeLength-1;
     repeat(ceil(_wholeLength / 2) - 1)
     {
-        _numberString = string_insert(",", _numberString, _workingPos);
+        _numberString = string_insert(",", _numberString, _workingPos); //TODO
         _workingPos -= 2;
     }
     
