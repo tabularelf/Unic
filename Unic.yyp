@@ -61,7 +61,6 @@
     {"id":{"name":"__UnicFormatDecimalHindi","path":"scripts/__UnicFormatDecimalHindi/__UnicFormatDecimalHindi.yy",},},
     {"id":{"name":"__UnicFormatDecimalTokiPona","path":"scripts/__UnicFormatDecimalTokiPona/__UnicFormatDecimalTokiPona.yy",},},
     {"id":{"name":"__UnicFormatNegative","path":"scripts/__UnicFormatNegative/__UnicFormatNegative.yy",},},
-    {"id":{"name":"__UnicFormatNumberGeneral","path":"scripts/__UnicFormatNumberGeneral/__UnicFormatNumberGeneral.yy",},},
     {"id":{"name":"__UnicGenDbMacros","path":"scripts/__UnicGenDbMacros/__UnicGenDbMacros.yy",},},
     {"id":{"name":"__UnicGenerateDatabase","path":"scripts/__UnicGenerateDatabase/__UnicGenerateDatabase.yy",},},
     {"id":{"name":"__UnicJSONLoad","path":"scripts/__UnicJSONLoad/__UnicJSONLoad.yy",},},
