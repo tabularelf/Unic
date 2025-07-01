@@ -6,6 +6,7 @@
 /// not wish to include seconds in the output, pass `undefined` for the `seconds` argument.
 /// 
 /// https://cldr.unicode.org/translation/date-time/date-time-patterns
+/// https://st.unicode.org/cldr-apps/v#/fr/Gregorian/7a365a21694f0127
 /// 
 /// @param hours
 /// @param minutes
@@ -85,6 +86,16 @@ function UnicClockExt(_hours, _minutes, _seconds = undefined, _localeCode = unde
                     buffer_write(_buffer, buffer_text, (_hours12 < 10)? ("0" + string(_hours12)) : string(_hours12));
                 }
             }
+            else if (_char == "K")
+            {
+                //TODO
+                //12-hour clock between 0 and 11
+            }
+            else if (_char == "k")
+            {
+                //TODO
+                //24-hour clock between 1 and 24
+            }
             else if (_char == "m")
             {
                 if (string_char_at(_format, _formatPos+1) == "m")
@@ -119,7 +130,34 @@ function UnicClockExt(_hours, _minutes, _seconds = undefined, _localeCode = unde
             {
                 buffer_write(_buffer, buffer_text, (_hours >= 12)? "PM" : "AM");
             }
-            else //TODO - Handle b and B
+            else if (_char == "b") //Time of day phrase, standalone version
+            {
+                //TODO
+                //https://www.unicode.org/cldr/charts/45/supplemental/day_periods.html
+                
+                //am
+                //noon
+                //pm
+                //midnight
+                buffer_write(_buffer, buffer_text, (_hours >= 12)? "PM" : "AM");
+            }
+            else if (_char == "B") //Time of day phrase, formatted version
+            {
+                //TODO
+                //https://www.unicode.org/cldr/charts/45/supplemental/day_periods.html
+                //in the morning, in the evening etc.
+                
+                //morning1
+                //morning2
+                //afternoon1
+                //afternoon2
+                //afternoon1
+                //afternoon2
+                //night1
+                //night2
+                buffer_write(_buffer, buffer_text, (_hours >= 12)? "PM" : "AM");
+            }
+            else
             {
                 buffer_write(_buffer, buffer_text, _char);
             }

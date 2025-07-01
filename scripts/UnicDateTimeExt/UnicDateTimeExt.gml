@@ -29,6 +29,8 @@
 /// `3` = Full
 ///     Full date, typically also including the name of the day of the week.
 /// 
+/// https://st.unicode.org/cldr-apps/v#/fr/Gregorian/7a365a21694f0127
+/// 
 /// @param year
 /// @param month
 /// @param day

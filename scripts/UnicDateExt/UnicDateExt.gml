@@ -22,6 +22,7 @@
 ///     Full date, typically also including the name of the day of the week.
 /// 
 /// https://cldr.unicode.org/translation/date-time/date-time-patterns
+/// https://st.unicode.org/cldr-apps/v#/fr/Gregorian/7a365a21694f0127
 /// 
 /// @param year
 /// @param month
@@ -248,6 +249,7 @@ function UnicDateExt(_year, _month, _day, _lengthFormat = 1, _localeCode = undef
             else if (_char == "E") //Day of the week, format version
             {
                 //TODO - Check that the days we have are in the correct case (genitive usually)
+                //       https://cldr.unicode.org/translation/date-time/date-time-patterns#when-to-use-standalone-vs-formatting
                 
                 if (string_char_at(_format, _formatPos+1) != "E")
                 {
@@ -292,6 +294,7 @@ function UnicDateExt(_year, _month, _day, _lengthFormat = 1, _localeCode = undef
             else if (_char == "c") //Day of the week, standalone version
             {
                 //TODO - Collect standalone days from database
+                //       https://cldr.unicode.org/translation/date-time/date-time-patterns#when-to-use-standalone-vs-formatting
                 
                 if (string_char_at(_format, _formatPos+1) != "c")
                 {
