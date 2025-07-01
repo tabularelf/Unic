@@ -1,6 +1,22 @@
 // Feather disable all
 
-show_debug_message(UnicFormatCurrency(1.23));
+show_debug_message(UnicFormatDecimal(12300400.232323));
+show_debug_message(UnicFormatDecimal(-12300400.232323));
+
+show_debug_message(UnicFormatDecimal(12300400.232323, undefined, "hi"));
+show_debug_message(UnicFormatDecimal(-12300400.232323, undefined, "hi"));
+
+show_debug_message(UnicFormatDecimal(12300400.232323, undefined, "tok"));
+show_debug_message(UnicFormatDecimal(-12300400.232323, undefined, "tok"));
+
+show_debug_message(UnicFormatDecimal(00.23));
+show_debug_message(UnicFormatDecimal(-00.23));
+
+show_debug_message(UnicFormatDecimal(00.23, undefined, "hi"));
+show_debug_message(UnicFormatDecimal(-00.23, undefined, "hi"));
+
+show_debug_message(UnicFormatDecimal(00.23, undefined, "tok"));
+show_debug_message(UnicFormatDecimal(-00.23, undefined, "tok"));
 
 UnicSetLocale("fr");
 
