@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"UnicGetSymDecimal",
   "parent":{
-    "name":"Getters",
-    "path":"folders/Unic/Getters.yy",
+    "name":"Symbols",
+    "path":"folders/Unic/Getters/Symbols.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

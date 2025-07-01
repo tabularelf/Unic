@@ -17,6 +17,7 @@
     {"$GMFolder":"","%Name":"Unic Database Parts","folderPath":"folders/Unic/(System)/Unic Database Parts.yy","name":"Unic Database Parts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Formatters","folderPath":"folders/Unic/Formatters.yy","name":"Formatters","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Getters","folderPath":"folders/Unic/Getters.yy","name":"Getters","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Symbols","folderPath":"folders/Unic/Getters/Symbols.yy","name":"Symbols","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[],
   "isEcma":false,

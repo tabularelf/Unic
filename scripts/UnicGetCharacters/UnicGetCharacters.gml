@@ -25,6 +25,12 @@ function UnicGetCharacters(_localeCode = undefined)
         ++_i;
     }
     
+    //Force fallback characters
+    _foundDict[$ "-"] = true;
+    _foundDict[$ ","] = true;
+    _foundDict[$ "."] = true;
+    _foundDict[$ "¤"] = true;
+    
     var _funcAddString = function(_foundDict, _string, _systemChars = "")
     {
         var _inString = false;
