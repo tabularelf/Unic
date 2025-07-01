@@ -62,12 +62,12 @@ function UnicDateExt(_year, _month, _day, _lengthFormat = 1, _localeCode = undef
     //Handle Hawaiian
     if (is_struct(_format))
     {
-        _format = _format._value;
-        
         if (_format._numbers == "M=romanlow")
         {
             _useRomanNumerals = true;
         }
+        
+        _format = _format._value;
     }
     
     //Force UTC for month length calculations
