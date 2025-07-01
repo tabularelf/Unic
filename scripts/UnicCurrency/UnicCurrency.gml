@@ -21,7 +21,7 @@ function UnicCurrency(_number, _decimalPlaces = 2, _currencySymbol = undefined, 
     var _isNegative = (_number < 0);
     _number = abs(_number);
     
-    _currencySymbol = (_currencySymbol ?? UnicGetSymCurrency(_localeCode)) ?? "¤";
+    _currencySymbol = _currencySymbol ?? "¤";
     
     var _format = _database[$ _localeCode].currencyFormat;
     if (_format == "#,##,##0.00¤")
