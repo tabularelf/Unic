@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__UnicCurrencyInterrogate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__UnicCurrencyInterrogate",
+  "parent":{
+    "name":"(System)",
+    "path":"folders/Unic/(System).yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

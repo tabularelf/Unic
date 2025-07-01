@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__UnicFormatDecimalChineseAlt",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__UnicFormatDecimalChineseAlt",
+  "parent":{
+    "name":"Formatters",
+    "path":"folders/Unic/(System)/Formatters.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
