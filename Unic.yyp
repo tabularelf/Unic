@@ -68,6 +68,7 @@
     {"id":{"name":"__UnicLocaleDbEntryClass","path":"scripts/__UnicLocaleDbEntryClass/__UnicLocaleDbEntryClass.yy",},},
     {"id":{"name":"__UnicPercentInterrogate","path":"scripts/__UnicPercentInterrogate/__UnicPercentInterrogate.yy",},},
     {"id":{"name":"__UnicSystem","path":"scripts/__UnicSystem/__UnicSystem.yy",},},
+    {"id":{"name":"UnicClock","path":"scripts/UnicClock/UnicClock.yy",},},
     {"id":{"name":"UnicCodeExists","path":"scripts/UnicCodeExists/UnicCodeExists.yy",},},
     {"id":{"name":"UnicCurrency","path":"scripts/UnicCurrency/UnicCurrency.yy",},},
     {"id":{"name":"UnicDecimal","path":"scripts/UnicDecimal/UnicDecimal.yy",},},

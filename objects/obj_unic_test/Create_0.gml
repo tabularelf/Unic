@@ -23,6 +23,14 @@ show_debug_message(UnicDecimal(-00.23, undefined, "hi"));
 show_debug_message(UnicDecimal(00.23, undefined, "tok"));
 show_debug_message(UnicDecimal(-00.23, undefined, "tok"));
 
+show_debug_message(UnicClock(13, 20, undefined));
+show_debug_message(UnicClock(13, 20, undefined, "hi"));
+show_debug_message(UnicClock(13, 20, undefined, "tok"));
+
+show_debug_message(UnicClock(13, 20, 45));
+show_debug_message(UnicClock(13, 20, 45, "hi"));
+show_debug_message(UnicClock(13, 20, 45, "tok"));
+
 UnicSetLocale("fr");
 
 var _i = 0;
