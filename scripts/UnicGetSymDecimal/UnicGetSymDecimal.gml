@@ -12,7 +12,7 @@ function UnicGetSymDecimal(_localeCode = undefined)
     
     _localeCode ??= _system.__locale;
     
-    if (not UnicCodeExists(_localeCode)) return ".";
+    if (not UnicLocaleExists(_localeCode)) return ".";
     
     return _database[$ _localeCode].symbols.decimal;
 }

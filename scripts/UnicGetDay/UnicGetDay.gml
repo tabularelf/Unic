@@ -32,7 +32,7 @@ function UnicGetDay(_dayIndex, _lengthFormat = 3, _localeCode = undefined)
     
     _localeCode ??= _system.__locale;
     
-    if (not UnicCodeExists(_localeCode)) return "???";
+    if (not UnicLocaleExists(_localeCode)) return "???";
     
     _dayIndex = floor(_dayIndex);
     _lengthFormat = floor(_lengthFormat);

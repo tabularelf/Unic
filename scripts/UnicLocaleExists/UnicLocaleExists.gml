@@ -4,7 +4,7 @@
 /// 
 /// @param localeCode
 
-function UnicCodeExists(_localeCode)
+function UnicLocaleExists(_localeCode)
 {
     static _database = __UnicDatabase();
     

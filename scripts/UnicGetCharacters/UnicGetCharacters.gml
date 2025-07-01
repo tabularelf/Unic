@@ -12,7 +12,7 @@ function UnicGetCharacters(_localeCode = undefined)
     
     _localeCode ??= _system.__locale;
     
-    if (not UnicCodeExists(_localeCode)) return "";
+    if (not UnicLocaleExists(_localeCode)) return "";
     
     var _data = _database[$ _localeCode];
     var _foundDict = {};

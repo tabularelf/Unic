@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"UnicCodeExists",
+  "%Name":"UnicLocaleExists",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"UnicCodeExists",
+  "name":"UnicLocaleExists",
   "parent":{
     "name":"Unic",
     "path":"folders/Unic.yy",
