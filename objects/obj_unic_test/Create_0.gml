@@ -1,6 +1,7 @@
 // Feather disable all
 
-__UnicCurrencyInterrogate();
+__UnicClockShortInterrogate();
+__UnicClockMediumInterrogate();
 
 show_debug_message(UnicPercent(12300400.232323));
 show_debug_message(UnicPercent(-12300400.232323));
@@ -23,13 +24,21 @@ show_debug_message(UnicDecimal(-00.23, undefined, "hi"));
 show_debug_message(UnicDecimal(00.23, undefined, "tok"));
 show_debug_message(UnicDecimal(-00.23, undefined, "tok"));
 
-show_debug_message(UnicClock(13, 20, undefined));
-show_debug_message(UnicClock(13, 20, undefined, "hi"));
-show_debug_message(UnicClock(13, 20, undefined, "tok"));
+show_debug_message(UnicClockExt(13, 20, undefined));
+show_debug_message(UnicClockExt(13, 20, undefined, "hi"));
+show_debug_message(UnicClockExt(13, 20, undefined, "ee"));
 
-show_debug_message(UnicClock(13, 20, 45));
-show_debug_message(UnicClock(13, 20, 45, "hi"));
-show_debug_message(UnicClock(13, 20, 45, "tok"));
+show_debug_message(UnicClockExt(13, 20, 45));
+show_debug_message(UnicClockExt(13, 20, 45, "hi"));
+show_debug_message(UnicClockExt(13, 20, 45, "ee"));
+
+show_debug_message(UnicClock(date_current_datetime()));
+show_debug_message(UnicClock(date_current_datetime(), undefined, "hi"));
+show_debug_message(UnicClock(date_current_datetime(), undefined, "ee"));
+
+show_debug_message(UnicClock(date_current_datetime(), true));
+show_debug_message(UnicClock(date_current_datetime(), true, "hi"));
+show_debug_message(UnicClock(date_current_datetime(), true, "ee"));
 
 UnicSetLocale("fr");
 
