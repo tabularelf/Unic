@@ -65,6 +65,7 @@
     {"id":{"name":"__UnicGenerateDatabase","path":"scripts/__UnicGenerateDatabase/__UnicGenerateDatabase.yy",},},
     {"id":{"name":"__UnicJSONLoad","path":"scripts/__UnicJSONLoad/__UnicJSONLoad.yy",},},
     {"id":{"name":"__UnicLocaleDbEntryClass","path":"scripts/__UnicLocaleDbEntryClass/__UnicLocaleDbEntryClass.yy",},},
+    {"id":{"name":"__UnicPercentInterrogate","path":"scripts/__UnicPercentInterrogate/__UnicPercentInterrogate.yy",},},
     {"id":{"name":"__UnicSystem","path":"scripts/__UnicSystem/__UnicSystem.yy",},},
     {"id":{"name":"UnicCodeExists","path":"scripts/UnicCodeExists/UnicCodeExists.yy",},},
     {"id":{"name":"UnicFormatCurrency","path":"scripts/UnicFormatCurrency/UnicFormatCurrency.yy",},},
