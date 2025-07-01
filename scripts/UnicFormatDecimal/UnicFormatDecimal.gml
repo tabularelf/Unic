@@ -11,5 +11,26 @@ function UnicFormatDecimal(_number, _decimalPlaces = UNIC_DEFAULT_DECIMAL_PLACES
     static _system   = __UnicSystem();
     static _database = __UnicDatabase();
     
-    return __UnicFormatNumberGeneral(_database[$ _localeCode ?? _system.__locale].decimalFormat, _number, undefined, _decimalPlaces, _localeCode);
+    var _format = _database[$ _localeCode ?? _system.__locale].decimalFormat;
+    if (_format == "#,##0.###")
+    {
+        return __UnicFormatDecimal0(_number, _decimalPlaces, _localeCode);
+    }
+    else if (_format == "#,##,##0.###")
+    {
+        return __UnicFormatDecimal1(_number, _decimalPlaces, _localeCode);
+    }
+    else if (_format == "#,#0.###")
+    {
+        return __UnicFormatDecimal2(_number, _decimalPlaces, _localeCode);
+    }
+    else
+    {
+        if (__UNIC_RUNNING_FROM_IDE)
+        {
+            __UnicError($"Decimal format not supported \"{_format}\"");
+        }
+        
+        return __UnicFormatDecimal0(_number, _decimalPlaces, _localeCode);
+    }
 }

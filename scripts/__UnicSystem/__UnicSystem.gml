@@ -1,5 +1,7 @@
 // Feather disable all
 
+#macro __UNIC_RUNNING_FROM_IDE  (GM_build_type == "run")
+
 function __UnicSystem()
 {
     static _system = undefined;
