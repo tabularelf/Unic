@@ -11,9 +11,10 @@
 
 function UnicFormatCurrency(_number, _decimalPlaces = 2, _currencySymbol = undefined, _localeCode = undefined)
 {
-    static _system   = __UnicSystem();
-    static _database = __UnicDatabase();
-    static _nbsp     = chr(0xA0);
+    static _system     = __UnicSystem();
+    static _database   = __UnicDatabase();
+    static _nbsp       = chr(0xA0);
+    static _nbspNarrow = chr(0x202F);
     
     _localeCode ??= _system.__locale;
     
@@ -27,11 +28,11 @@ function UnicFormatCurrency(_number, _decimalPlaces = 2, _currencySymbol = undef
     {
         _result = __UnicFormatDecimalHindi(_number, _decimalPlaces, _localeCode) + _currencySymbol;
     }
-    else if (_format == "#,##0.00 ¤")
+    else if (_format == "#,##0.00 ¤") //nbsp
     {
         _result = __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode) + _nbsp + _currencySymbol;
     }
-    else if (_format == "#,##0.00 ¤;-#,##0.00 ¤")
+    else if (_format == "#,##0.00 ¤;-#,##0.00 ¤") //Both nbsp
     {
         if (_isNegative)
         {
@@ -46,9 +47,9 @@ function UnicFormatCurrency(_number, _decimalPlaces = 2, _currencySymbol = undef
     {
         _result = __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode) + _currencySymbol;
     }
-    else if (_format == "#,##0.00 ¤")
+    else if (_format == "#,##0.00 ¤") //Narrow nbsp
     {
-        _result = __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode) + _nbsp + _currencySymbol;
+        _result = __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode) + _nbspNarrow + _currencySymbol;
     }
     else if (_format == "¤#,##,##0.00")
     {
@@ -69,7 +70,7 @@ function UnicFormatCurrency(_number, _decimalPlaces = 2, _currencySymbol = undef
             return _currencySymbol + __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
         }
     }
-    else if (_format == "¤#,##0.00;¤- #,##0.00")
+    else if (_format == "¤#,##0.00;¤- #,##0.00") //nbsp
     {
         if (_isNegative)
         {
@@ -84,15 +85,15 @@ function UnicFormatCurrency(_number, _decimalPlaces = 2, _currencySymbol = undef
     {
         _result = _currencySymbol + __UnicFormatDecimalTokiPona(_number, _decimalPlaces, _localeCode);
     }
-    else if (_format == "¤ #,##,##0.00")
+    else if (_format == "¤ #,##,##0.00") //nbsp
     {
         _result = _currencySymbol + _nbsp + __UnicFormatDecimalHindi(_number, _decimalPlaces, _localeCode);
     }
-    else if (_format == "¤ #,##0.00")
+    else if (_format == "¤ #,##0.00") //nbsp
     {
         _result = _currencySymbol + _nbsp + __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
     }
-    else if (_format == "¤ #,##0.00;¤-#,##0.00")
+    else if (_format == "¤ #,##0.00;¤-#,##0.00") //nbsp
     {
         if (_isNegative)
         {
@@ -103,7 +104,7 @@ function UnicFormatCurrency(_number, _decimalPlaces = 2, _currencySymbol = undef
             return _currencySymbol + _nbsp + __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
         }
     }
-    else if (_format == "¤ #,##0.00;¤ #,##0.00-")
+    else if (_format == "¤ #,##0.00;¤ #,##0.00-") //Both nbsp
     {
         if (_isNegative)
         {
@@ -114,7 +115,7 @@ function UnicFormatCurrency(_number, _decimalPlaces = 2, _currencySymbol = undef
             return _currencySymbol + _nbsp + __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
         }
     }
-    else if (_format == "¤ #,##0.00;¤ -#,##0.00")
+    else if (_format == "¤ #,##0.00;¤ -#,##0.00") //Both nbsp
     {
         if (_isNegative)
         {
@@ -125,11 +126,11 @@ function UnicFormatCurrency(_number, _decimalPlaces = 2, _currencySymbol = undef
             return _currencySymbol + _nbsp + __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
         }
     }
-    else if (_format == "¤ #,##0.00")
+    else if (_format == "¤ #,##0.00") //nbsp
     {
         _result = _currencySymbol + _nbsp + __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
     }
-    else if (_format == "#,##0.00 ¤;‏-#,##0.00 ¤")
+    else if (_format == "#,##0.00 ¤;‏-#,##0.00 ¤") //nbsp. Uses bidi direction mark
     {
         if (_isNegative)
         {
@@ -140,7 +141,7 @@ function UnicFormatCurrency(_number, _decimalPlaces = 2, _currencySymbol = undef
             return __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode) + _nbsp + _currencySymbol;
         }
     }
-    else if (_format == "#,##0.00 ‏¤;‏-#,##0.00 ‏¤")
+    else if (_format == "#,##0.00 ‏¤;‏-#,##0.00 ‏¤") //Both nbsp. Uses bidi direction marks
     {
         if (_isNegative)
         {

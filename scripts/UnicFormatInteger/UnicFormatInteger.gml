@@ -7,8 +7,5 @@
 
 function UnicFormatInteger(_number, _localeCode = undefined)
 {
-    static _system   = __UnicSystem();
-    static _database = __UnicDatabase();
-    
-    return __UnicFormatNumberGeneral(_database[$ _localeCode ?? _system.__locale].decimalFormat, _number, undefined, 0, _localeCode);
+    return UnicFormatDecimal(_number, 0, _localeCode);
 }

@@ -11,9 +11,10 @@
 
 function UnicFormatPercent(_number, _decimalPlaces = 0, _localeCode = undefined)
 {
-    static _system   = __UnicSystem();
-    static _database = __UnicDatabase();
-    static _nbsp     = chr(0xA0);
+    static _system     = __UnicSystem();
+    static _database   = __UnicDatabase();
+    static _nbsp       = chr(0xA0);
+    static _nbspNarrow = chr(0x202F);
     
     _localeCode ??= _system.__locale;
     
@@ -27,7 +28,7 @@ function UnicFormatPercent(_number, _decimalPlaces = 0, _localeCode = undefined)
     {
         var _result = __UnicFormatDecimalHindi(_number, _decimalPlaces, _localeCode) + _percentSymbol;
     }
-    else if (_format == "#,##,##0 %")
+    else if (_format == "#,##,##0 %") //nbsp
     {
         var _result = __UnicFormatDecimalHindi(_number, _decimalPlaces, _localeCode) + _nbsp + _percentSymbol;
     }
@@ -35,13 +36,13 @@ function UnicFormatPercent(_number, _decimalPlaces = 0, _localeCode = undefined)
     {
         var _result = __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode) + _percentSymbol;
     }
-    else if (_format == "#,##0 %")
+    else if (_format == "#,##0 %") //nbsp
     {
         var _result = __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode) + _nbsp + _percentSymbol;
     }
-    else if (_format == "#,##0 %")
+    else if (_format == "#,##0 %") //Narrow nbsp
     {
-        var _result = __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode) + _nbsp + _percentSymbol;
+        var _result = __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode) + _nbspNarrow + _percentSymbol;
     }
     else if (_format == "%#,##0")
     {
@@ -51,11 +52,11 @@ function UnicFormatPercent(_number, _decimalPlaces = 0, _localeCode = undefined)
     {
         var _result = _percentSymbol + __UnicFormatDecimalTokiPona(_number, _decimalPlaces, _localeCode);
     }
-    else if (_format == "% #,##0")
+    else if (_format == "% #,##0") //nbsp
     {
         var _result = _percentSymbol + _nbsp + __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode);
     }
-    else if (_format == "% #,#0;% -#,#0")
+    else if (_format == "% #,#0;% -#,#0") //Both nbsp
     {
         if (_isNegative < 0)
         {
