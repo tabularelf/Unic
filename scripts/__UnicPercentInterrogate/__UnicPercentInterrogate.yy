@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__UnicPercentInterrogate",
   "parent":{
-    "name":"(System)",
-    "path":"folders/Unic/(System).yy",
+    "name":"Unic Database Generator",
+    "path":"folders/Unic Database Generator.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
