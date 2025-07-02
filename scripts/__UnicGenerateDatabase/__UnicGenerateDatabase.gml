@@ -41,6 +41,7 @@ function __UnicGenerateDatabase() {
 	with(_localeDb) {
 		struct_foreach(_filesDb, function(_name, _value) {
 			self[$ string_replace_all(_name, "-", "_")] = new __UnicLocaleDbEntryClass(_name, _value);
+			static_set(self[$ string_replace_all(_name, "-", "_")], {}); // Bypass
 		}); 
 	}
 
