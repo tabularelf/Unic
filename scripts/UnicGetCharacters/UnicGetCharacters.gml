@@ -29,7 +29,8 @@ function UnicGetCharacters(_localeCode = undefined)
     _foundDict[$ "-"] = true;
     _foundDict[$ ","] = true;
     _foundDict[$ "."] = true;
-    _foundDict[$ "¤"] = true;
+    _foundDict[$ "%"] = true;
+    _foundDict[$ ":"] = true;
     
     var _funcAddString = function(_foundDict, _string, _systemChars = "")
     {
@@ -74,6 +75,10 @@ function UnicGetCharacters(_localeCode = undefined)
     {
         __funcAddString(__foundDict, _value, __systemChars);
     });
+    
+    _funcAddString(_foundDict, _data.decimalFormat,    "#");
+    _funcAddString(_foundDict, _data.currencyFormat,   "#");
+    _funcAddString(_foundDict, _data.percentageFormat, "#");
     
     struct_foreach(_data.symbols, _methodAddStruct);
     
