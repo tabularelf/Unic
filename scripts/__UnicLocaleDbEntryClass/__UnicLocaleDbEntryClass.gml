@@ -74,13 +74,12 @@ function __UnicLocaleDbEntryClass(_locale, _fileDbEntry) constructor {
 	});
 
 
-	// Some of the locales do not have *-alt-ascii, so we need to fallback to the shorter version.
-	// However they include a Narrow No-Break Space. So we need to also filter those out.
+	// Some of the locales do not have *-alt-ascii, so we need to fallback to the shorter version
 	timeFormat = {
 		//full: _timeFormat[$ "full-alt-ascii"] ?? string_replace_all(_timeFormat[$ "full"], chr(0x202F), " "),
 		//long: _timeFormat[$ "long-alt-ascii"] ?? string_replace_all(_timeFormat[$ "long"], chr(0x202F), " "),
-		medium: _timeFormat[$ "medium-alt-ascii"] ?? string_replace_all(_timeFormat[$ "medium"], chr(0x202F), " "),
-		short: _timeFormat[$ "short-alt-ascii"] ?? string_replace_all(_timeFormat[$ "short"], chr(0x202F), " "),
+		medium: _timeFormat[$ "medium-alt-ascii"] ?? _timeFormat[$ "medium"],
+		short: _timeFormat[$ "short-alt-ascii"] ?? _timeFormat[$ "short"],
 	};
 
 	dateTimeFormat = {
