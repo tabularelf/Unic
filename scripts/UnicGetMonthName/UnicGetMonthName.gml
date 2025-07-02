@@ -3,6 +3,9 @@
 /// Returns the name of a month of the year. `monthIndex` should be an integer between 0 and 11
 /// inclusive. If a number is provided outside of that range then the number will wrap around.
 /// 
+/// N.B. This function is normalized such that month index 0 is January and month index 11 is
+///      December.
+/// 
 /// The `lengthFormat` parameter should be 0, 1, or 2. If you provide an integer outside of that
 /// range then `lengthFormat` will be clamped to the valid range. This parameter changes what
 /// length string is returned:
@@ -20,7 +23,7 @@
 /// @param [lengthFormat=2]
 /// @param [localeCode]
 
-function UnicGetMonth(_monthIndex, _lengthFormat = 2, _localeCode = undefined)
+function UnicGetMonthName(_monthIndex, _lengthFormat = 2, _localeCode = undefined)
 {
     static _system   = __UnicSystem();
     static _database = __UnicDatabase();

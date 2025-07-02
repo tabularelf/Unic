@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"UnicGetDay",
+  "%Name":"UnicGetLeftToRight",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"UnicGetDay",
+  "name":"UnicGetLeftToRight",
   "parent":{
     "name":"Getters",
     "path":"folders/Unic/Getters.yy",

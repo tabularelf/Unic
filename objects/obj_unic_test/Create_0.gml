@@ -59,7 +59,7 @@ repeat(4)
     var _j = 0;
     repeat(7)
     {
-        show_debug_message(UnicGetDay(_j, _i));
+        show_debug_message(UnicGetDayName(_j, _i));
         ++_j;
     }
     
@@ -72,7 +72,7 @@ repeat(3)
     var _j = 0;
     repeat(12)
     {
-        show_debug_message(UnicGetMonth(_j, _i));
+        show_debug_message(UnicGetMonthName(_j, _i));
         ++_j;
     }
     

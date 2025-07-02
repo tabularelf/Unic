@@ -25,7 +25,7 @@
 /// @param [lengthFormat=3]
 /// @param [localeCode]
 
-function UnicGetDay(_dayIndex, _lengthFormat = 3, _localeCode = undefined)
+function UnicGetDayName(_dayIndex, _lengthFormat = 3, _localeCode = undefined)
 {
     static _system   = __UnicSystem();
     static _database = __UnicDatabase();

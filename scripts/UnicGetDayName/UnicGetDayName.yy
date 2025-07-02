@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"UnicGetMonth",
+  "%Name":"UnicGetDayName",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"UnicGetMonth",
+  "name":"UnicGetDayName",
   "parent":{
     "name":"Getters",
     "path":"folders/Unic/Getters.yy",
