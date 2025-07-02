@@ -1,9 +1,0 @@
-
-_inst.twq.symbols.timeSeparator = ":"; //Keep
-_inst.twq.symbols.decimal = "."; //Keep
-_inst.twq.symbols.currency = "¤"; //Keep
-_inst.twq.symbols.group = " "; //Keep
-_inst.twq.symbols.list = ";";
-_inst.twq.symbols.percentSign = "%"; //Keep
-
-annotate nbsp

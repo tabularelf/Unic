@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__UnicFormatDecimalCommon",
   "parent":{
-    "name":"Formatters",
-    "path":"folders/Unic/(System)/Formatters.yy",
+    "name":"(System)",
+    "path":"folders/Unic/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
