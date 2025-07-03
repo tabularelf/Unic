@@ -102,7 +102,15 @@ function __UnicLocaleDbEntryClass(_locale, _fileDbEntry) constructor {
 	var _currencyDataRegion = global.currencyData.supplemental.currencyData.region;
 
 	// Quite bizarre names, but we need these ones specifically
-	symbols = _num[$ "symbols-numberSystem-latn"];
+	//symbols = _num[$ "symbols-numberSystem-latn"];
+	var _symbols = _num[$ "symbols-numberSystem-latn"];
+	symbols = {
+		decimal: _symbols.decimal,
+		timeSeparator: _symbols.timeSeparator,
+		group: _symbols.group,
+		percentSign: _symbols.percentSign,
+		minusSign: _symbols.minusSign,
+	};
 	decimalFormat = _num[$ "decimalFormats-numberSystem-latn"].standard;
 	currencyFormat = _num[$ "currencyFormats-numberSystem-latn"].standard;
 	percentageFormat = _num[$ "percentFormats-numberSystem-latn"].standard;
