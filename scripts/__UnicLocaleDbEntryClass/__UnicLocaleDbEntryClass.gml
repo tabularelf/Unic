@@ -115,7 +115,9 @@ function __UnicLocaleDbEntryClass(_locale, _fileDbEntry) constructor {
 	currencyFormat = _num[$ "currencyFormats-numberSystem-latn"].standard;
 	percentageFormat = _num[$ "percentFormats-numberSystem-latn"].standard;
 
-	leftToRight = _layout.main[$ _locale].layout.orientation.characterOrder == "left-to-right";
+	layout = {
+		leftToRight: _layout.main[$ _locale].layout.orientation.characterOrder == "left-to-right",
+	};
 	// Currency symbol
 	// Fallback
 	// 🔪 stab stab stab

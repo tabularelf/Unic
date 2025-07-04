@@ -14,5 +14,5 @@ function UnicGetLeftToRight(_localeCode)
     
     if (not UnicLocaleExists(_localeCode)) return false;
     
-    return _database[$ _localeCode].leftToRight;
+    return _database[$ _localeCode].layout.leftToRight;
 }
