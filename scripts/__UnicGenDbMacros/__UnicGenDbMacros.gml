@@ -1,3 +1,5 @@
+#macro __UNIC_SPECIFICS_PATH (filename_path(GM_project_filename) + "unicode-specifics\\")
+
 #macro __UNIC_PARSER_LOOP_STAGE var _unicFilepath = filename_path(GM_project_filename) + $"\\Scripts\\__UnicDatabasePart{_i+1}\\__UnicDatabasePart{_i+1}.gml"; \
 	var _str = { \
 		value: "// feather ignore all \n" + \

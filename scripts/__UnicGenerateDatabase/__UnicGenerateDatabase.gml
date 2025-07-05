@@ -18,7 +18,7 @@ function __UnicGenerateDatabase() {
 	];
 
 	// Fetch all relevant locale files
-	var _mainPath = filename_path(GM_project_filename) + "cldr-json\\";
+	var _mainPath = __UNIC_SPECIFICS_PATH;
 	var _filesDb = {};
 	for(var _i = 0; _i < array_length(paths); ++_i) {
 		var _file = file_find_first(_mainPath + paths[_i].path + "*", fa_directory);
@@ -34,7 +34,7 @@ function __UnicGenerateDatabase() {
 	}
 
 	// Need this to fetch the current currency data between each locale
-	global.currencyData = __UnicJSONLoad(filename_path(GM_project_filename) + "\\cldr-json\\cldr-core\\supplemental\\currencyData.json");
+	global.currencyData = __UnicJSONLoad(filename_path(GM_project_filename) + "\\unicode-specifics\\cldr-core\\supplemental\\currencyData.json");
 
 	// Generating the locale database with the necessary metadata.
 	var _localeDb = {};

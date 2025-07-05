@@ -10,7 +10,8 @@
   },
   "defaultScriptType":1,
   "Folders":[
-    {"$GMFolder":"","%Name":"Unic Database Generator","folderPath":"folders/Unic Database Generator.yy","name":"Unic Database Generator","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Unic Linebreak Database Generator","folderPath":"folders/Unic Linebreak Database Generator.yy","name":"Unic Linebreak Database Generator","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Unic CLDR Database Generator","folderPath":"folders/Unic CLDR Database Generator.yy","name":"Unic CLDR Database Generator","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Unic","folderPath":"folders/Unic.yy","name":"Unic","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"(System)","folderPath":"folders/Unic/(System).yy","name":"(System)","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Formatters","folderPath":"folders/Unic/Formatters.yy","name":"Formatters","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -46,6 +47,7 @@
     {"id":{"name":"__UnicGenDbMacros","path":"scripts/__UnicGenDbMacros/__UnicGenDbMacros.yy",},},
     {"id":{"name":"__UnicGenerateDatabase","path":"scripts/__UnicGenerateDatabase/__UnicGenerateDatabase.yy",},},
     {"id":{"name":"__UnicJSONLoad","path":"scripts/__UnicJSONLoad/__UnicJSONLoad.yy",},},
+    {"id":{"name":"__UnicLineBreakGenerateDatabase","path":"scripts/__UnicLineBreakGenerateDatabase/__UnicLineBreakGenerateDatabase.yy",},},
     {"id":{"name":"__UnicLocaleDbEntryClass","path":"scripts/__UnicLocaleDbEntryClass/__UnicLocaleDbEntryClass.yy",},},
     {"id":{"name":"__UnicPercentInterrogate","path":"scripts/__UnicPercentInterrogate/__UnicPercentInterrogate.yy",},},
     {"id":{"name":"__UnicSystem","path":"scripts/__UnicSystem/__UnicSystem.yy",},},
