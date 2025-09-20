@@ -1,6 +1,8 @@
 // Feather disable all
 
-/// Formats a number as a decimal using a localized format and localized symbols.
+/// Formats a number as a decimal using a localized format and localized symbols. The fractional
+/// part is rounded to the nearest whole decimal. For example, an input of `0.4269` using 3 decimal
+/// places will output `"0.427"`.
 /// 
 /// @param number
 /// @param [decimalPlaces=default]

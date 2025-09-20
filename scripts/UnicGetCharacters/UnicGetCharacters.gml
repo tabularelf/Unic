@@ -1,7 +1,7 @@
 // Feather disable all
 
-/// Returns a string containing all characters needed to render out all Unicode strings for the
-/// given locale.
+/// Returns a string containing all characters needed to render out all Unicode formats for the
+/// given locale. This includes symbols, month names, and day names.
 /// 
 /// @param [localeCode]
 

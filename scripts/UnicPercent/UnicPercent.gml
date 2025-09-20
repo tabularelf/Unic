@@ -1,5 +1,8 @@
 // Feather disable all
 
+/// Formats a number as a percentage using a localized format and localized symbols. For example,
+/// an input of `100` will output `"100%"` in the US English locale.
+/// 
 /// @param number
 /// @param [decimalPlaces=0]
 /// @param [localeCode]

@@ -1,7 +1,8 @@
 // Feather disable all
 
 /// Formats a number in the local currency using a localized format. You will need to provide the
-/// currency symbol yourself ($ £ € ¥ etc.) as a string.
+/// currency symbol yourself ($ £ € ¥ etc.) as a string. The fractional part will be rounded to the
+/// nearest decimal, as per `UnicDecimal()`.
 /// 
 /// @param currencySymbol
 /// @param number
