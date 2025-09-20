@@ -4,7 +4,8 @@
 
 #macro __UNIC_VERSION "1.0.0"
 
-#macro __UNIC_MAX_GLYPH  0x10FFFF
+#macro __UNIC_MAX_GLYPH    0x10FFFF
+#macro __UNIC_GLYPH_COUNT  (__UNIC_MAX_GLYPH+1)
 
 function __UnicSystem()
 {

@@ -79,4 +79,4 @@ repeat(3)
     ++_i;
 }
 
-show_debug_message(UnicGlyphGetLineBreak(ord("\n")));
+show_debug_message(UnicGlyphGetBidi(ord("\n")));
