@@ -11,7 +11,7 @@
 function UnicDecimal(_number, _decimalPlaces = UNIC_DEFAULT_DECIMAL_PLACES, _localeCode = undefined)
 {
     static _system   = __UnicSystem();
-    static _database = __UnicDatabase();
+    static _database = __UnicDatabaseCLDR();
     
     _localeCode ??= _system.__locale;
     

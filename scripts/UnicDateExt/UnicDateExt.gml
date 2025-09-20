@@ -33,7 +33,7 @@
 function UnicDateExt(_year, _month, _day, _lengthFormat = 1, _localeCode = undefined)
 {
     static _system   = __UnicSystem();
-    static _database = __UnicDatabase();
+    static _database = __UnicDatabaseCLDR();
     static _buffer   = buffer_create(1024, buffer_grow, 1);
     
     buffer_seek(_buffer, buffer_seek_start, 0);

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"__UnicDatabase",
+  "%Name":"__UnicDatabaseCLDR",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__UnicDatabase",
+  "name":"__UnicDatabaseCLDR",
   "parent":{
     "name":"(System)",
     "path":"folders/Unic/(System).yy",

@@ -2,7 +2,7 @@
 
 function __UnicPercentInterrogate()
 {
-    var _database = __UnicDatabase();
+    var _database = __UnicDatabaseCLDR();
     
     var _foundFormats = ds_map_create();
     

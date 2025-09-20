@@ -12,7 +12,7 @@
 function UnicCurrency(_currencySymbol, _number, _decimalPlaces = 2, _localeCode = undefined)
 {
     static _system     = __UnicSystem();
-    static _database   = __UnicDatabase();
+    static _database   = __UnicDatabaseCLDR();
     static _nbsp       = chr(0xA0);
     static _nbspNarrow = chr(0x202F);
     

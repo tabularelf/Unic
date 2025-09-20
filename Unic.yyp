@@ -36,7 +36,7 @@
     {"id":{"name":"__UnicClockShortInterrogate","path":"scripts/__UnicClockShortInterrogate/__UnicClockShortInterrogate.yy",},},
     {"id":{"name":"__UnicConfig","path":"scripts/__UnicConfig/__UnicConfig.yy",},},
     {"id":{"name":"__UnicCurrencyInterrogate","path":"scripts/__UnicCurrencyInterrogate/__UnicCurrencyInterrogate.yy",},},
-    {"id":{"name":"__UnicDatabase","path":"scripts/__UnicDatabase/__UnicDatabase.yy",},},
+    {"id":{"name":"__UnicDatabaseCLDR","path":"scripts/__UnicDatabaseCLDR/__UnicDatabaseCLDR.yy",},},
     {"id":{"name":"__UnicDatabaseGenParseStruct","path":"scripts/__UnicDatabaseGenParseStruct/__UnicDatabaseGenParseStruct.yy",},},
     {"id":{"name":"__UnicDecimalInterrogate","path":"scripts/__UnicDecimalInterrogate/__UnicDecimalInterrogate.yy",},},
     {"id":{"name":"__UnicError","path":"scripts/__UnicError/__UnicError.yy",},},

@@ -6,7 +6,7 @@
 
 function UnicLocaleExists(_localeCode)
 {
-    static _database = __UnicDatabase();
+    static _database = __UnicDatabaseCLDR();
     
     return variable_struct_exists(_database, _localeCode);
 }

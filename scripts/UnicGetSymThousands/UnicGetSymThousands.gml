@@ -9,7 +9,7 @@
 function UnicGetSymThousands(_localeCode = undefined)
 {
     static _system   = __UnicSystem();
-    static _database = __UnicDatabase();
+    static _database = __UnicDatabaseCLDR();
     
     _localeCode ??= _system.__locale;
     

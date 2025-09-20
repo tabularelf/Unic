@@ -1,6 +1,6 @@
 /// Feather ignore all
 /// @ignore
-function __UnicDatabase() {
+function __UnicDatabaseCLDR() {
 	static _inst = undefined;
 	if (!is_undefined(_inst)) return _inst;
 
@@ -8,4 +8,4 @@ function __UnicDatabase() {
 
 	return _inst;
 };
-__UnicDatabase();
+__UnicDatabaseCLDR();
