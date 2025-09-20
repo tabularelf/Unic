@@ -14,7 +14,7 @@ enum UnicLineBreak {
 	BREAK_OPPORTUNITY_BEFORE = 12,                 // BB
 	CONTINGENT_BREAK_OP = 13,                      // CB
 	HYPHEN_MINUS = 14,                             // HY
-	HYPHEN = 15,                                   // HH - Unused currently?
+	HYPHEN = 15,                                   // HH
 	IDEOGRAPHIC = 16,                              // ID
 	OPEN_PUNCTUATION = 17,                         // OP
 	QUOTATIONS = 18,                               // QU
@@ -295,28 +295,6 @@ function __UnicLineBreakGenerateDatabase() {
 
 function __UnicLineBreakBufferWrite(_buff, _charCode, _value) {
 	buffer_write(_buff, buffer_u8, _value);
-	return;
-}
-
-function __UnicLineBreakGetSize(_value) {
-	static _utf8Ranges = [
-		[0x0000, 0x007F, 1],    // 1 byte
-		[0x0080, 0x07FF, 2],    // 2 bytes
-		[0x0800, 0xFFFF, 3],    // 3 bytes
-		[0x10000, 0x10FFFF, 4]  // 4 bytes
-	];
-
-	static _len = array_length(_utf8Ranges);
-	var _i = 0;
-	repeat(_len) {
-		var _range = _utf8Ranges[_i];
-		if (_value >= _range[0] && _value <= _range[1]) {
-			return _range[2];
-		}
-		++_i;
-	}
-	
-	return 0;
 }
 
 function __UnicLineBreakLexer(_buff, _size = buffer_get_size(_buff)) constructor {
