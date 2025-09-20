@@ -1,3 +1,5 @@
+// feather ignore all
+/// @ignore
 function __UnicDatabaseBlocks() {
 	static _inst = [
 		{

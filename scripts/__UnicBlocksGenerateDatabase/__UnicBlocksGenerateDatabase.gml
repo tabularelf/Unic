@@ -5,6 +5,7 @@ function __UnicBlocksGenerateDatabase() {
 	buffer_delete(_buff);
 	
 	var _writeBuff = buffer_create(1, buffer_grow, 1);
+	buffer_write(_writeBuff, buffer_text, "// feather ignore all\n/// @ignore\n");
 	buffer_write(_writeBuff, buffer_text, "function __UnicDatabaseBlocks() {\n	static _inst = [\n");
 	var _results = string_split(_str, "\n");
 	for(var _i = 0; _i < array_length(_results); ++_i) {
