@@ -11,9 +11,9 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"(Unic Generators)","folderPath":"folders/(Unic Generators).yy","name":"(Unic Generators)","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Unic UnicodeData.txt Database Generator","folderPath":"folders/(Unic Generators)/Unic UnicodeData.txt Database Generator.yy","name":"Unic UnicodeData.txt Database Generator","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Unic CLDR Database Generator","folderPath":"folders/(Unic Generators)/Unic CLDR Database Generator.yy","name":"Unic CLDR Database Generator","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Unic Linebreak Database Generator","folderPath":"folders/(Unic Generators)/Unic Linebreak Database Generator.yy","name":"Unic Linebreak Database Generator","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Unic UnicodeData.txt Database Generator","folderPath":"folders/(Unic Generators)/Unic UnicodeData.txt Database Generator.yy","name":"Unic UnicodeData.txt Database Generator","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Unic Blocks","folderPath":"folders/Unic Blocks.yy","name":"Unic Blocks","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Unic","folderPath":"folders/Unic.yy","name":"Unic","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"(System)","folderPath":"folders/Unic/(System).yy","name":"(System)","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -22,6 +22,7 @@
     {"$GMFolder":"","%Name":"Getters","folderPath":"folders/Unic/Getters.yy","name":"Getters","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Symbols","folderPath":"folders/Unic/Getters/Symbols.yy","name":"Symbols","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Glyph","folderPath":"folders/Unic/Glyph.yy","name":"Glyph","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"String","folderPath":"folders/Unic/String.yy","name":"String","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"unic_cldr.json","CopyToMask":-1,"filePath":"datafiles","name":"unic_cldr.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -95,6 +96,8 @@
     {"id":{"name":"UnicLocaleExists","path":"scripts/UnicLocaleExists/UnicLocaleExists.yy",},},
     {"id":{"name":"UnicPercent","path":"scripts/UnicPercent/UnicPercent.yy",},},
     {"id":{"name":"UnicSetLocale","path":"scripts/UnicSetLocale/UnicSetLocale.yy",},},
+    {"id":{"name":"UnicStringLower","path":"scripts/UnicStringLower/UnicStringLower.yy",},},
+    {"id":{"name":"UnicStringUpper","path":"scripts/UnicStringUpper/UnicStringUpper.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
