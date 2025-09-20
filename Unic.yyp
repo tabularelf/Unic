@@ -35,6 +35,7 @@
     {"id":{"name":"__UnicClockMediumInterrogate","path":"scripts/__UnicClockMediumInterrogate/__UnicClockMediumInterrogate.yy",},},
     {"id":{"name":"__UnicClockShortInterrogate","path":"scripts/__UnicClockShortInterrogate/__UnicClockShortInterrogate.yy",},},
     {"id":{"name":"__UnicConfig","path":"scripts/__UnicConfig/__UnicConfig.yy",},},
+    {"id":{"name":"__UnicConstants","path":"scripts/__UnicConstants/__UnicConstants.yy",},},
     {"id":{"name":"__UnicCurrencyInterrogate","path":"scripts/__UnicCurrencyInterrogate/__UnicCurrencyInterrogate.yy",},},
     {"id":{"name":"__UnicDatabaseCLDR","path":"scripts/__UnicDatabaseCLDR/__UnicDatabaseCLDR.yy",},},
     {"id":{"name":"__UnicDatabaseGenParseStruct","path":"scripts/__UnicDatabaseGenParseStruct/__UnicDatabaseGenParseStruct.yy",},},
