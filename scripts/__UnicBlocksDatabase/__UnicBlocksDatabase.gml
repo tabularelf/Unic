@@ -1,4 +1,4 @@
-function __UnicDatabaseBlocks() {
+function __UnicBlocksDatabase() {
 	static _inst = [
 		{
 			min: 0x0000,

@@ -21,6 +21,6 @@ function __UnicBlocksGenerateDatabase(){
 	}
 
 	buffer_write(_writeBuff, buffer_text, "	];\n\n	return _inst;\n}");
-	buffer_save(_writeBuff, filename_path(GM_project_filename) + "scripts/__UnicBlocksDatabase/__UnicBlocksDatabase.gml");
+	buffer_save(_writeBuff, filename_path(GM_project_filename) + "scripts/__UnicDatabaseBlocks/__UnicDatabaseBlocks.gml");
 	buffer_delete(_writeBuff);
 }
