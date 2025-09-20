@@ -54,7 +54,7 @@ enum UnicLineBreak {
 function __UnicLineBreakGenerateDatabase() {
 	var _lineBreakBuff = buffer_load(__UNIC_SPECIFICS_PATH + "LineBreak.txt");
 	var _lexer = new __UnicLineBreakLexer(_lineBreakBuff);
-	var _destBuff = buffer_create(0x10FFFF, buffer_grow, 1);
+	var _destBuff = buffer_create(__UNIC_MAX_GLYPH, buffer_grow, 1);
 	var _codePoints = 0;
 	var _totalMissing = 0;
 	while(true) {

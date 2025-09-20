@@ -78,3 +78,5 @@ repeat(3)
     
     ++_i;
 }
+
+show_debug_message(UnicGlyphGetLineBreak(ord("\n")));

@@ -4,6 +4,8 @@
 
 #macro __UNIC_VERSION "1.0.0"
 
+#macro __UNIC_MAX_GLYPH  0x10FFFF
+
 function __UnicSystem()
 {
     static _system = undefined;
