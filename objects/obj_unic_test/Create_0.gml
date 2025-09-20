@@ -78,7 +78,3 @@ repeat(3)
     
     ++_i;
 }
-
-show_debug_message(UnicGlyphGetBidi(ord("\n")));
-show_message(UnicStringUpper("hello world"));
-show_message(UnicStringLower("HELLO WORLD"));

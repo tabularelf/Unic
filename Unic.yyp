@@ -97,6 +97,7 @@
     {"id":{"name":"UnicPercent","path":"scripts/UnicPercent/UnicPercent.yy",},},
     {"id":{"name":"UnicSetLocale","path":"scripts/UnicSetLocale/UnicSetLocale.yy",},},
     {"id":{"name":"UnicStringLower","path":"scripts/UnicStringLower/UnicStringLower.yy",},},
+    {"id":{"name":"UnicStringTitle","path":"scripts/UnicStringTitle/UnicStringTitle.yy",},},
     {"id":{"name":"UnicStringUpper","path":"scripts/UnicStringUpper/UnicStringUpper.yy",},},
   ],
   "resourceType":"GMProject",
