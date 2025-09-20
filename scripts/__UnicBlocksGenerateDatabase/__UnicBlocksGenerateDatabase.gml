@@ -4,7 +4,7 @@ function __UnicBlocksGenerateDatabase(){
 	buffer_delete(_buff);
 	
 	var _writeBuff = buffer_create(1, buffer_grow, 1);
-	buffer_write(_writeBuff, buffer_text, "function __UnicBlocksDatabase() {\n	static _inst = [\n");
+	buffer_write(_writeBuff, buffer_text, "function __UnicDatabaseBlocks() {\n	static _inst = [\n");
 	var _results = string_split(_str, "\n");
 	for(var _i = 0; _i < array_length(_results); ++_i) {
 		if (string_starts_with(_results[_i], "#") || string_length(_results[_i]) == 0) {
