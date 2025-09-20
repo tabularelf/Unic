@@ -1,5 +1,7 @@
 // Feather disable all
 
+/// Converts a string to lowercase using Unicode mappings and returns it.
+/// 
 /// @param string
 
 function UnicStringLower(_string)

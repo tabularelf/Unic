@@ -1,5 +1,7 @@
 // Feather disable all
 
+/// Converts a string to uppercase using Unicode mappings and returns it.
+/// 
 /// @param string
 
 function UnicStringUpper(_string)

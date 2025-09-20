@@ -1,5 +1,7 @@
 // Feather disable all
 
+/// Converts a string to titlecase using Unicode mappings and returns it.
+/// 
 /// @param string
 
 function UnicStringTitle(_string)
