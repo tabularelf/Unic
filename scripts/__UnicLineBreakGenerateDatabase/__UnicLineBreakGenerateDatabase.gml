@@ -1,3 +1,56 @@
+enum UnicLineBreak {
+	MANDATORY_BREAK = 0,                           // BK
+	CARRIAGE_RETURN = 1,                           // CR
+	LINE_FEED = 2,                                 // LF
+	COMBINING_MARKS = 3,                           // CM
+	WORD_JOINER = 4,                               // WJ
+	SURROGATE = 5,                                 // SG
+	ZERO_WIDTH_SPACE = 6,                          // ZW
+	SPACE_INDIRECT_BREAK = 7,                      // SP
+	ZERO_WIDTH_JOINER = 8,                         // ZW
+	SYMBOLS_ALLOW_BREAK_AFTER = 9,                 // SY
+	BREAK_OPPORTUNITY_BEFORE_AFTER = 10,           // B2
+	BREAK_OPPORTUNITY_AFTER = 11,                  // BA
+	BREAK_OPPORTUNITY_BEFORE = 12,                 // BB
+	CONTINGENT_BREAK_OP = 13,                      // CB
+	HYPHEN_MINUS = 14,                             // HY
+	HYPHEN = 15,                                   // HH - Unused currently?
+	IDEOGRAPHIC = 16,                              // ID
+	OPEN_PUNCTUATION = 17,                         // OP
+	QUOTATIONS = 18,                               // QU
+	ALPHABETIC = 19,                               // AL
+	NUMERIC = 20,                                  // NU
+	PRE_NUMERIC = 21,                              // PR
+	POST_NUMERIC = 22,                             // PO
+	NUMERIC_SEPARATOR = 23,                        // IS
+	EMOJI_BASE = 24,                               // EB
+	EMOJI_MODIFIER = 25,                           // EM
+	REGIONAL_INDICATOR = 26,                       // RI
+	AMBIGUOUS = 27,                                // AI
+	CONJOINING_JAMO_L = 28,                        // JL
+	CONJOINING_JAMO_V = 29,                        // JV
+	CONJOINING_JAMO_T = 30,                        // JT
+	NON_STARTER = 31,                              // NS
+	CONDITIONAL_JAPANESE_STARTER = 32,             // CJ
+	HANGUL_LV = 33,                                // H2
+	HANGUL_LVT = 34,                               // H3
+	HEBREW = 35,                                   // HL
+	COMPLEX_CONTEXT_DEPENDENT_SEA = 36,            // SA
+	VIRAMA_FINAL = 37,                             // VF
+	VIRAMA = 38,                                   // VI
+	AKSARA = 39,                                   // AK
+	AKSARA_START = 40,                             // AS
+	AKSARA_PREBASE = 41,                           // AP
+	NO_BREAK_BEFORE_ELLIPSES = 42,                 // IN
+	NO_BREAK_GLUE = 43,                            // GL
+	NEXT_LINE_BREAK = 44,                          // NL
+	CLOSE_PUNCTUATION = 45,                        // CL
+	CLOSE_PARENTHESIS = 46,                        // CP
+	EXCLAIMATION = 47,                             // EM
+	UNKNOWN = 255,                                 // Misc, Unknown yet.
+	LENGTH
+}
+
 function __UnicLineBreakGenerateDatabase() {
 	var _lineBreakBuff = buffer_load(__UNIC_SPECIFICS_PATH + "LineBreak.txt");
 	var _lexer = new __UnicLineBreakLexer(_lineBreakBuff);
@@ -28,10 +81,16 @@ function __UnicLineBreakGenerateDatabase() {
 		repeat(_loops) {
 			switch(_type) {
 				case "CM":
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.COMBINING_MARKS);
+				break;
 				case "LF":
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.LINE_FEED);
+				break;
 				case "BK":
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.MANDATORY_BREAK);
+				break;
 				case "NL":
-					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.FORCE_BREAK);
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.NEXT_LINE_BREAK);
 				break;
 		
 				case "BA":
@@ -47,49 +106,57 @@ function __UnicLineBreakGenerateDatabase() {
 				break;                                   
                                                          
 				case "SP":                               
-					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.INDIRECT_BREAK);
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.SPACE_INDIRECT_BREAK);
 				break;                                   
 				                                         
 				case "CR":                               
-					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.FORCE_BREAK_CR);
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.CARRIAGE_RETURN);
 				break;                                   
                                                          
 				case "WJ":                               
-					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.NO_LINE_BREAK_BETWEEN_PROCEEDING);
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.WORD_JOINER);
 				break;                                   
 				                                         
 				case "ZW":                             
-					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.BREAK_OPPORTUNITY);
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.ZERO_WIDTH_SPACE);
 				break;                                   
                                                          
 				case "ZWJ":                              
-					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.NO_BREAK_JOINER);
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.ZERO_WIDTH_JOINER);
 				break;                                   
             	                                         
 				case "SG":                               
 					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.SURROGATE);
 				break;                                   
                                                          
-				case "CL":                               
-				case "CP":                               
+				case "CL":       
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.CLOSE_PUNCTUATION);
+				break;                        
+				case "CP":                        
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.CLOSE_PARENTHESIS);
+				break;       
 				case "EX":                               
-					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.NO_BREAK_BEFORE);
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.EXCLAIMATION);
 				break;                                   
 			                                             
 				case "OP":                               
-					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.NO_BREAK_AFTER);
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.OPEN_PUNCTUATION);
 				break;                                   
                                                          
 				case "QU":                               
-					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.OPEN_CLOSE_BOTH);
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.QUOTATIONS);
 				break;
 
 				case "CB":
-					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.BREAK_OPPORTUNITY_ADDITIONAL_INFO);
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.CONTINGENT_BREAK_OP);
 				break;
 
 				case "HY":
-					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.BREAK_OPPORTUNITY_AFTER_NO_NUMERIC);
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.HYPHEN_MINUS);
+				break;
+
+				case "HH":
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.HYPHEN);
 				break;
 
 				case "AL":
@@ -113,7 +180,7 @@ function __UnicLineBreakGenerateDatabase() {
 				break;
 
 				case "SY":
-					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.ALLOW_BREAK_AFTER);
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.SYMBOLS_ALLOW_BREAK_AFTER);
 				break;
 
 				case "ID":
@@ -129,7 +196,7 @@ function __UnicLineBreakGenerateDatabase() {
 				break;
 				
 				case "RI":
-					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.KEEP_PAIRS_TOGETHER);
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.REGIONAL_INDICATOR);
 				break;
 
 				case "AI":
@@ -137,9 +204,13 @@ function __UnicLineBreakGenerateDatabase() {
 				break;
 
 				case "JL":
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.CONJOINING_JAMO_L);
+				break;
 				case "JV":
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.CONJOINING_JAMO_V);
+				break;
 				case "JT":
-					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.CONJOINING_JAMO);
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.CONJOINING_JAMO_T);
 				break;
 
 				case "NS":
@@ -191,7 +262,7 @@ function __UnicLineBreakGenerateDatabase() {
 				break;
 
 				case "GL":
-					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.NO_BREAK_AFTER_NBSP_AND_RELATED);
+					__UnicLineBreakBufferWrite(_destBuff, _charCode, UnicLineBreak.NO_BREAK_GLUE);
 				break;
 
 				case "XX":
@@ -217,13 +288,13 @@ function __UnicLineBreakGenerateDatabase() {
 	buffer_resize(_destBuff, buffer_tell(_destBuff));
 	show_debug_message($"Missing {_totalMissing}")
 	show_debug_message("Done!");
+	
+	buffer_save(_destBuff, filename_path(GM_project_filename) + "datafiles/unic_linebreak.bin");
+	buffer_delete(_destBuff);
 }
 
-
-__UnicLineBreakGenerateDatabase();
-
 function __UnicLineBreakBufferWrite(_buff, _charCode, _value) {
-	buffer_write(_buff, buffer_u8, _value+65);
+	buffer_write(_buff, buffer_u8, _value);
 	return;
 }
 
@@ -246,51 +317,6 @@ function __UnicLineBreakGetSize(_value) {
 	}
 	
 	return 0;
-}
-
-enum UnicLineBreak {
-	FORCE_BREAK,
-	FORCE_BREAK_CR,
-	NO_LINE_BREAK_BETWEEN_PROCEEDING,
-	SURROGATE,
-	NO_LINE_BREAK_BEFORE_AFTER,
-	BREAK_OPPORTUNITY,
-	INDIRECT_BREAK,
-	NO_BREAK_JOINER,
-	ALLOW_BREAK_AFTER,
-	BREAK_OPPORTUNITY_BEFORE_AFTER,
-	BREAK_OPPORTUNITY_AFTER,
-	BREAK_OPPORTUNITY_BEFORE,
-	BREAK_OPPORTUNITY_ADDITIONAL_INFO,
-	BREAK_OPPORTUNITY_AFTER_NO_NUMERIC,
-	IDEOGRAPHIC,
-	NO_BREAK_BEFORE,
-	NO_BREAK_AFTER,
-	OPEN_CLOSE_BOTH,
-	ALPHABETIC,
-	NUMERIC,
-	PRE_NUMERIC,
-	POST_NUMERIC,
-	NUMERIC_SEPARATOR,
-	EMOJI_BASE,
-	EMOJI_MODIFIER,
-	KEEP_PAIRS_TOGETHER,
-	AMBIGUOUS,
-	CONJOINING_JAMO,
-	NON_STARTER,
-	CONDITIONAL_JAPANESE_STARTER,
-	HANGUL_LV,
-	HANGUL_LVT,
-	HEBREW,
-	COMPLEX_CONTEXT_DEPENDENT_SEA,
-	VIRAMA_FINAL,
-	VIRAMA,
-	AKSARA,
-	AKSARA_START,
-	AKSARA_PREBASE,
-	NO_BREAK_BEFORE_ELLIPSES,
-	NO_BREAK_AFTER_NBSP_AND_RELATED,
-	UNKNOWN,
 }
 
 function __UnicLineBreakLexer(_buff, _size = buffer_get_size(_buff)) constructor {

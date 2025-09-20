@@ -61,5 +61,5 @@ function __UnicGenerateDatabase() {
 	// TODO: Write out a proper parser for struct -> JSON, so everything is sorted by name.	
 	var _buff = buffer_create(1, buffer_grow, 1);
 	buffer_write(_buff, buffer_text, json_stringify(_localeDb, true));
-	buffer_save(_buff, filename_path(GM_project_filename) + "\\datafiles\\UnicCLDR.json");
+	buffer_save(_buff, filename_path(GM_project_filename) + "\\datafiles\\unic_cldr.json");
 }

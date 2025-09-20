@@ -10,8 +10,8 @@
   },
   "defaultScriptType":1,
   "Folders":[
-    {"$GMFolder":"","%Name":"Unic Linebreak Database Generator","folderPath":"folders/Unic Linebreak Database Generator.yy","name":"Unic Linebreak Database Generator","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Unic CLDR Database Generator","folderPath":"folders/Unic CLDR Database Generator.yy","name":"Unic CLDR Database Generator","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Unic Linebreak Database Generator","folderPath":"folders/Unic Linebreak Database Generator.yy","name":"Unic Linebreak Database Generator","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Unic","folderPath":"folders/Unic.yy","name":"Unic","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"(System)","folderPath":"folders/Unic/(System).yy","name":"(System)","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Formatters","folderPath":"folders/Unic/Formatters.yy","name":"Formatters","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -19,7 +19,8 @@
     {"$GMFolder":"","%Name":"Symbols","folderPath":"folders/Unic/Getters/Symbols.yy","name":"Symbols","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":"UnicCLDR.json","CopyToMask":-1,"filePath":"datafiles","name":"UnicCLDR.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"unic_cldr.json","CopyToMask":-1,"filePath":"datafiles","name":"unic_cldr.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"unic_linebreak.bin","CopyToMask":-1,"filePath":"datafiles","name":"unic_linebreak.bin","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
