@@ -6,7 +6,7 @@
   "name":"__UnicCurrencyInterrogate",
   "parent":{
     "name":"Unic CLDR Database Generator",
-    "path":"folders/Unic CLDR Database Generator.yy",
+    "path":"folders/(Unic Generators)/Unic CLDR Database Generator.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

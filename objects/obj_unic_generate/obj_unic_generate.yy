@@ -8,8 +8,8 @@
   "name":"obj_unic_generate",
   "overriddenProperties":[],
   "parent":{
-    "name":"Unic CLDR Database Generator",
-    "path":"folders/Unic CLDR Database Generator.yy",
+    "name":"(Unic Generators)",
+    "path":"folders/(Unic Generators).yy",
   },
   "parentObjectId":null,
   "persistent":false,
