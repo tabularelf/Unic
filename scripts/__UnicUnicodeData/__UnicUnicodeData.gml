@@ -2,72 +2,76 @@
 
 enum UnicUnicodeDataCategory
 {
-    UPPERCASE_LETTER = 0x01, //Lu
-    LOWERCASE_LETTER = 0x02, //Ll
-    TITLECASE_LETTER = 0x03, //Lt
-    MODIFIER_LETTER  = 0x04, //Lm
-    OTHER_LETTER     = 0x05, //Lo
+    INVALID = 0x00,
     
-    NONSPACING_MARK = 0x11, //Mn
-    SPACING_MARK    = 0x12, //Mc
-    ENCLOSING_MARK  = 0x13, //Me
+    UPPERCASE_LETTER = 0x11, //Lu
+    LOWERCASE_LETTER = 0x12, //Ll
+    TITLECASE_LETTER = 0x13, //Lt
+    MODIFIER_LETTER  = 0x14, //Lm
+    OTHER_LETTER     = 0x15, //Lo
     
-    DECIMAL_NUMBER = 0x21, //Nd
-    LETTER_NUMBER  = 0x22, //Nl
-    OTHER_NUMBER   = 0x23, //No
+    NONSPACING_MARK = 0x21, //Mn
+    SPACING_MARK    = 0x22, //Mc
+    ENCLOSING_MARK  = 0x23, //Me
     
-    CONNECTOR_PUNCTUATION = 0x31, //Pc
-    DASH_PUNCTUATION      = 0x32, //Pd
-    OPEN_PUNCTUATION      = 0x33, //Ps
-    CLOSE_PUNCTUATION     = 0x34, //Pe
-    INITIAL_PUNCTUATION   = 0x35, //Pi
-    FINAL_PUNCTUATION     = 0x36, //Pf
-    OTHER_PUNCTUATION     = 0x37, //Po
+    DECIMAL_NUMBER = 0x31, //Nd
+    LETTER_NUMBER  = 0x32, //Nl
+    OTHER_NUMBER   = 0x33, //No
     
-    MATH_SYMBOL     = 0x41, //Sm
-    CURRENCY_SYMBOL = 0x42, //Sc
-    MODIFIER_SYMBOL = 0x43, //Sk
-    OTHER_SYMBOL    = 0x44, //So
+    CONNECTOR_PUNCTUATION = 0x41, //Pc
+    DASH_PUNCTUATION      = 0x42, //Pd
+    OPEN_PUNCTUATION      = 0x43, //Ps
+    CLOSE_PUNCTUATION     = 0x44, //Pe
+    INITIAL_PUNCTUATION   = 0x45, //Pi
+    FINAL_PUNCTUATION     = 0x46, //Pf
+    OTHER_PUNCTUATION     = 0x47, //Po
     
-    SPACE_SEPARATOR     = 0x51, //Zs
-    LINE_SEPARATOR      = 0x52, //Zl
-    PARAGRAPH_SEPARATOR = 0x53, //Zp
+    MATH_SYMBOL     = 0x51, //Sm
+    CURRENCY_SYMBOL = 0x52, //Sc
+    MODIFIER_SYMBOL = 0x53, //Sk
+    OTHER_SYMBOL    = 0x54, //So
     
-    CONTROL     = 0x61, //Cc
-    FORMAT      = 0x62, //Cf
-    SURROGATE   = 0x63, //Cs
-    PRIVATE_USE = 0x64, //Co
-    UNASSIGNED  = 0x65, //Cn
+    SPACE_SEPARATOR     = 0x61, //Zs
+    LINE_SEPARATOR      = 0x62, //Zl
+    PARAGRAPH_SEPARATOR = 0x63, //Zp
+    
+    CONTROL     = 0x71, //Cc
+    FORMAT      = 0x72, //Cf
+    SURROGATE   = 0x73, //Cs
+    PRIVATE_USE = 0x74, //Co
+    UNASSIGNED  = 0x75, //Cn
 }
 
 // https://www.unicode.org/reports/tr44/#Bidi_Class_Values
 
 enum UnicUnicodeDataBidi
 {
-    LEFT_TO_RIGHT = 0x01, //L
-    RIGHT_TO_LEFT = 0x02, //R
-    ARABIC_LETTER = 0x03, //AL
+    INVALID = 0x00,
     
-    EUROPEAN_NUMBER     = 0x11, //EN
-    EUROPEAN_SEPARATOR  = 0x12, //ES
-    EUROPEAN_TERMINATOR = 0x13, //ET
-    ARABIC_NUMBER       = 0x14, //AN
-    COMMON_SEPARATOR    = 0x15, //CS
-    NONSPACING_MARK     = 0x16, //NSM
-    BOUNDARY_NEUTRAL    = 0x17, //BN
+    LEFT_TO_RIGHT = 0x11, //L
+    RIGHT_TO_LEFT = 0x12, //R
+    ARABIC_LETTER = 0x13, //AL
     
-    PARAGRAPH_SEPARATOR = 0x21, //B
-    SEGMENT_SEPARATOR   = 0x22, //S
-    WHITE_SPACE         = 0x23, //WS
-    OTHER_NEUTRAL       = 0x24, //ON
+    EUROPEAN_NUMBER     = 0x21, //EN
+    EUROPEAN_SEPARATOR  = 0x22, //ES
+    EUROPEAN_TERMINATOR = 0x23, //ET
+    ARABIC_NUMBER       = 0x24, //AN
+    COMMON_SEPARATOR    = 0x25, //CS
+    NONSPACING_MARK     = 0x26, //NSM
+    BOUNDARY_NEUTRAL    = 0x27, //BN
     
-    LEFT_TO_RIGHT_EMBEDDING = 0x31, //LRE
-    LEFT_TO_RIGHT_OVERRIDE  = 0x32, //LRO
-    RIGHT_TO_LEFT_EMBEDDING = 0x33, //RLE
-    RIGHT_TO_LEFT_OVERRIDE  = 0x34, //RLO
-    POP_DIRECTIONAL_FORMAT  = 0x35, //PDF
-    LEFT_TO_RIGHT_ISOLATE   = 0x36, //LRI
-    RIGHT_TO_LEFT_ISOLATE   = 0x37, //RLI
-    FIRST_STRONG_ISOLATE    = 0x38, //FSI
-    POP_DIRECTIONAL_ISOLATE = 0x39, //PDI
+    PARAGRAPH_SEPARATOR = 0x31, //B
+    SEGMENT_SEPARATOR   = 0x32, //S
+    WHITE_SPACE         = 0x33, //WS
+    OTHER_NEUTRAL       = 0x34, //ON
+    
+    LEFT_TO_RIGHT_EMBEDDING = 0x41, //LRE
+    LEFT_TO_RIGHT_OVERRIDE  = 0x42, //LRO
+    RIGHT_TO_LEFT_EMBEDDING = 0x43, //RLE
+    RIGHT_TO_LEFT_OVERRIDE  = 0x44, //RLO
+    POP_DIRECTIONAL_FORMAT  = 0x45, //PDF
+    LEFT_TO_RIGHT_ISOLATE   = 0x46, //LRI
+    RIGHT_TO_LEFT_ISOLATE   = 0x47, //RLI
+    FIRST_STRONG_ISOLATE    = 0x48, //FSI
+    POP_DIRECTIONAL_ISOLATE = 0x49, //PDI
 }

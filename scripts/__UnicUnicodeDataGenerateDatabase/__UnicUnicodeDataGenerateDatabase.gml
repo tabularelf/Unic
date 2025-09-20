@@ -48,8 +48,8 @@ function __UnicUnicodeDataGenerateDatabase()
     //via the index lookup above.
     
     //Write in some null data. We use 0x00 as an index to indicate glyph data is missing
-    buffer_write(_outBuffer, buffer_u8,  0x00);
-    buffer_write(_outBuffer, buffer_u8,  0x00);
+    buffer_write(_outBuffer, buffer_u8,  UnicUnicodeDataCategory.INVALID);
+    buffer_write(_outBuffer, buffer_u8,  UnicUnicodeDataBidi.INVALID);
     buffer_write(_outBuffer, buffer_u32, 0x00);
     buffer_write(_outBuffer, buffer_u32, 0x00);
     buffer_write(_outBuffer, buffer_u32, 0x00);

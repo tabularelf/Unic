@@ -37,8 +37,8 @@ function UnicStringTitle(_string)
         var _categoryClass = buffer_peek(_dataBuffer, __UNIC_UNICODEDATA_INDEX_OFFSET + buffer_sizeof(__UNIC_UNICODEDATA_INDEX_DATATYPE)*__UNIC_GLYPH_COUNT + __UNIC_UNICODEDATA_DATA_STRIDE*_index, buffer_u8)
                              >> 4;
         
-        __nextUpper = ((_categoryClass != 0x0)  //Letters
-                   &&  (_categoryClass != 0x2)) //Numbers
+        __nextUpper = ((_categoryClass != 0x1)  //Letters
+                   &&  (_categoryClass != 0x3)) //Numbers
     }
     ));
     
