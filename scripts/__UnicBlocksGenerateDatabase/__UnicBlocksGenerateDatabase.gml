@@ -1,6 +1,7 @@
-function __UnicBlocksGenerateDatabase(){
+function __UnicBlocksGenerateDatabase() {
 	var _buff = buffer_load(__UNIC_SPECIFICS_PATH + "Blocks.txt");
 	var _str = buffer_read(_buff, buffer_string);
+	_str = string_replace_all(_str, "\r", "");
 	buffer_delete(_buff);
 	
 	var _writeBuff = buffer_create(1, buffer_grow, 1);
@@ -15,7 +16,7 @@ function __UnicBlocksGenerateDatabase(){
 		buffer_write(_writeBuff, buffer_text, "		{\n");
 		buffer_write(_writeBuff, buffer_text, $"			min: 0x{_range[0]},\n");
 		buffer_write(_writeBuff, buffer_text, $"			max: 0x{_range[1]},\n");
-		buffer_write(_writeBuff, buffer_text, $"			description: \"{_range[2]}\",\n");
+		buffer_write(_writeBuff, buffer_text, $"			description: \"{string_trim(_range[2])}\",\n");
 		buffer_write(_writeBuff, buffer_text, "		},\n");
 		
 	}
