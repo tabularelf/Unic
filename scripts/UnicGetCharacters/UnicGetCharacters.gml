@@ -71,25 +71,25 @@ function UnicGetCharacters(_localeCode = undefined)
     };
     
     var _methodAddStruct = method(_contextStruct,
-    function(_name, _value)
+    function(_char, _pos)
     {
-        __funcAddString(__foundDict, _value, __systemChars);
+        __funcAddString(__foundDict, _char, __systemChars);
     });
     
     _funcAddString(_foundDict, _data.decimalFormat,    "#");
     _funcAddString(_foundDict, _data.currencyFormat,   "#");
     _funcAddString(_foundDict, _data.percentageFormat, "#");
     
-    struct_foreach(_data.symbols, _methodAddStruct);
+    string_foreach(_data.symbols, _methodAddStruct);
     
-    struct_foreach(_data.daysFormat.short,       _methodAddStruct);
-    struct_foreach(_data.daysFormat.narrow,      _methodAddStruct);
-    struct_foreach(_data.daysFormat.abbreviated, _methodAddStruct);
-    struct_foreach(_data.daysFormat.wide,        _methodAddStruct);
+    array_foreach(_data.daysFormat.short,       _methodAddStruct);
+    array_foreach(_data.daysFormat.narrow,      _methodAddStruct);
+    array_foreach(_data.daysFormat.abbreviated, _methodAddStruct);
+    array_foreach(_data.daysFormat.wide,        _methodAddStruct);
     
-    struct_foreach(_data.monthsFormat.narrow,      _methodAddStruct);
-    struct_foreach(_data.monthsFormat.abbreviated, _methodAddStruct);
-    struct_foreach(_data.monthsFormat.wide,        _methodAddStruct);
+    array_foreach(_data.monthsFormat.narrow,      _methodAddStruct);
+    array_foreach(_data.monthsFormat.abbreviated, _methodAddStruct);
+    array_foreach(_data.monthsFormat.wide,        _methodAddStruct);
     
     _contextStruct.__systemChars = "hHkKmsabBzv";
     struct_foreach(_data.timeFormat, _methodAddStruct);
