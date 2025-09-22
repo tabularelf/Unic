@@ -41,11 +41,11 @@ jobs:
         run: |
            Expand-Archive ${{ steps.build.outputs.out-dir }}\Unic.zip -DestinationPath ${{ github.workspace }}
            cd ${{ github.workspace }}
-           Start-Process -FilePath "${{ github.workspace }}\Unic.exe" -ArgumentList "-output output.txt"
+           Start-Process -Wait -FilePath "${{ github.workspace }}\Unic.exe" -ArgumentList "-output output.txt"
       - name: Upload output
         id: upload_output
         uses: actions/upload-artifact@v4
         with:
           name: output
           path: ${{ github.workspace }}\output.txt
-          retention-days: 1 # Longer retention days can incur additional charges. See https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts
+          retention-days: 14 # Longer retention days can incur additional charges. See https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts
