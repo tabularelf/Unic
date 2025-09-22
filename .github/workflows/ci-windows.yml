@@ -41,7 +41,7 @@ jobs:
         run: |
            Expand-Archive ${{ steps.build.outputs.out-dir }}\Unic.zip -DestinationPath ${{ github.workspace }}
            cd ${{ github.workspace }}
-           Start-Process -FilePath "${{ github.workspace }}\Unic.exe" -ArgumentList "-output" "output.txt"
+           Start-Process -FilePath "${{ github.workspace }}\Unic.exe" -ArgumentList "-output output.txt"
       - name: Upload output
         id: upload_output
         uses: actions/upload-artifact@v4
