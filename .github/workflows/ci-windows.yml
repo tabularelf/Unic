@@ -39,13 +39,13 @@ jobs:
       - name: Unzip and run result
         id: run_result
         run: |
-           Expand-Archive ${{ steps.build.outputs.out-dir }} -DestinationPath ${{ steps.build.outputs.out-dir }}\game
-           cd ${{ steps.build.outputs.out-dir }}\game
-           Start-Process -FilePath "${{ steps.build.outputs.out-dir }}\game\Unic.exe" -ArgumentList "-debug" "output.txt"
+           Expand-Archive ${{ steps.build.outputs.out-dir }}\Unic.zip -DestinationPath ${{ github.workspace }}
+           cd ${{ github.workspace }}
+           Start-Process -FilePath "${{ github.workspace }}\Unic.exe" -ArgumentList "-output" "output.txt"
       - name: Upload output
         id: upload_output
         uses: actions/upload-artifact@v4
         with:
           name: output
-          path: ${{ steps.build.outputs.out-dir }}\game\output.txt
+          path: ${{ github.workspace }}\output.txt
           retention-days: 1 # Longer retention days can incur additional charges. See https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts
