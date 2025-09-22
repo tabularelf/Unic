@@ -80,3 +80,4 @@ repeat(3)
 }
 
 show_debug_message(UnicGetCharacters("ja"));
+game_end();

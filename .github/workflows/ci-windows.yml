@@ -1,0 +1,51 @@
+name: Continuous Integration for Windows export - Context
+on: 
+  workflow_dispatch: #This line allows you to run the workflow manually from the GitHub Actions page
+  workflow_call: #This line allows you to run the workflow from another workflow
+  #push: #Uncomment this line to run the workflow on push
+    #branches:
+      #- main
+jobs:
+  build:
+    runs-on: windows-2022
+    steps:
+      # Check out the repository with the GameMaker project
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      # This step finds the yyp file in the repository and saves the path to an output
+      - id: find_yyp
+        name: Find the yyp file
+        run: |
+          $yyp = Get-ChildItem -Path ${{ github.workspace }} -Recurse -Filter *.yyp
+          Write-Output "YYP file found at: $yyp"
+          "yyp-path=$yyp" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+      # This step sets up the GameMaker build CLI tool Igor https://github.com/bscotch/igor-setup
+      - name: use Igor Setup
+        uses: bscotch/igor-setup@v3
+        id: igor
+        with:
+          cache: true
+          target-yyp: ${{ steps.find_yyp.outputs.yyp-path }}
+          access-key: ${{ secrets.GAMEMAKER_ACCESS_KEY }} # 📝 To generate your Access Key, check out the Access Key section of the GameMaker Manual's Building via Command Line page: https://manual.gamemaker.io/monthly/en/#t=Settings%2FBuilding_via_Command_Line.htm
+      # This step uses Igor to build the GameMaker project https://github.com/bscotch/igor-build
+      - name: use Igor build
+        uses: bscotch/igor-build@v1
+        id: build
+        with:
+          yyp-path: ${{ steps.find_yyp.outputs.yyp-path }}
+          user-dir: ${{ steps.igor.outputs.user-dir }}
+          yyc: false
+      - name: Unzip and run result
+        id: run_result
+        run: |
+           Expand-Archive ${{ steps.build.outputs.out-dir }} -DestinationPath ${{ steps.build.outputs.out-dir }}\game
+           cd ${{ steps.build.outputs.out-dir }}\game
+           Start-Process -FilePath "${{ steps.build.outputs.out-dir }}\game\Unic.exe" -ArgumentList "-debug" "output.txt"
+      - name: Upload output
+        id: upload_output
+        uses: actions/upload-artifact@v4
+        with:
+          name: output
+          path: ${{ steps.build.outputs.out-dir }}\game\output.txt
+          retention-days: 1 # Longer retention days can incur additional charges. See https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts
