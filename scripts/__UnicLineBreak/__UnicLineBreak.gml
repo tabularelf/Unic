@@ -1,3 +1,5 @@
+// https://www.unicode.org/reports/tr14/
+
 enum UnicLineBreak {
 	MANDATORY_BREAK = 0,                           // BK
 	CARRIAGE_RETURN = 1,                           // CR

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"__UnicDatabaseBlocks",
+  "%Name":"UnicBlockGetRangesExt",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__UnicDatabaseBlocks",
+  "name":"UnicBlockGetRangesExt",
   "parent":{
-    "name":"(System)",
-    "path":"folders/Unic/(System).yy",
+    "name":"Blocks",
+    "path":"folders/Unic/Blocks.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
