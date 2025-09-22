@@ -5,7 +5,7 @@
 /// 
 /// @param {String} string
 /// @return {Array<Struct>}
-function UnicBlockGetRange(_str) {
+function UnicBlockGetRanges(_str) {
 	var _results = [];
 	UnicBlockGetRangesExt(_results, _str);
 	return _results;
