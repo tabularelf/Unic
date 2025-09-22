@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"__UnicFormatDecimalChineseAlt",
+  "%Name":"__UnicFormatDecimalTenThousand",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__UnicFormatDecimalChineseAlt",
+  "name":"__UnicFormatDecimalTenThousand",
   "parent":{
     "name":"(System)",
     "path":"folders/Unic/(System).yy",

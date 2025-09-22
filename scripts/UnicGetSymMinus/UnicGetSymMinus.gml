@@ -1,5 +1,8 @@
 // Feather disable all
 
+/// Returns the minus sign symbol for the locale. If the locale code is invalid this function will
+/// return `-`.
+/// 
 /// @param [localeCode]
 
 function UnicGetSymMinus(_localeCode = undefined)

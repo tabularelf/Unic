@@ -1,10 +1,22 @@
 // Feather disable all
 
+__UnicLocaleInterrogate();
 __UnicClockShortInterrogate();
 __UnicClockMediumInterrogate();
 
 show_debug_message(UnicPercent(12300400.232323));
 show_debug_message(UnicPercent(-12300400.232323));
+
+UnicSetAltNumberFormat(true);
+show_debug_message(UnicPercent(12300400.232323, undefined, "zh"));
+show_debug_message(UnicPercent(-12300400.232323, undefined, "zh"));
+
+show_debug_message(UnicPercent(12300400.232323, undefined, "ja"));
+show_debug_message(UnicPercent(-12300400.232323, undefined, "ja"));
+UnicSetAltNumberFormat(false);
+
+show_debug_message(UnicPercent(12300400.232323, undefined, "hi"));
+show_debug_message(UnicPercent(-12300400.232323, undefined, "hi"));
 
 show_debug_message(UnicPercent(12300400.232323, undefined, "hi"));
 show_debug_message(UnicPercent(-12300400.232323, undefined, "hi"));
