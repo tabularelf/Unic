@@ -226,8 +226,8 @@ function __UnicUnicodeDataGenerateDatabase()
         var _titleHex = _entryArray[14];
         if (_titleHex == "")
         {
-            //Null values don't change
-            var _titleCodepoint = _codepoint;
+            //Null values fall back on uppercase
+            var _titleCodepoint = _upperCodepoint;
         }
         else
         {

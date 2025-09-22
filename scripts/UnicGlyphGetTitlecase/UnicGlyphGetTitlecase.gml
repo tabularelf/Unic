@@ -1,8 +1,8 @@
 // Feather disable all
 
 /// Returns the Unicode codepoint that is the titlecase variant of the given codepoint. For many
-/// codepoints, there is no canonical titlecase counterpart. This function will return the input
-/// codepoint if no titlecase equivalent can be found.
+/// codepoints, there is no canonical titlecase counterpart so the Unicode specification defaults
+/// to the uppercase version of the codepoint (if one exists).
 /// 
 /// @param codepoint
 
