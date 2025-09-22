@@ -9,7 +9,7 @@ function UnicTestTrace(_str) {
 		_str = string_ext(_str, _args);
 	}
 
-	if (extension_exists("GMConsole")) {
+	if (os_get_config() == "Unit_Test") && (os_type == os_windows) {
 		GMConsolePrint(_str);
 	} else {
 		show_debug_message(_str);
