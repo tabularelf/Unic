@@ -36,6 +36,7 @@ jobs:
           yyp-path: ${{ steps.find_yyp.outputs.yyp-path }}
           user-dir: ${{ steps.igor.outputs.user-dir }}
           yyc: false
+          config: Unit_Test
       - name: Unzip and run result
         id: run_result
         run: |

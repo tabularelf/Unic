@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"UnicTester",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UnicTester",
+  "parent":{
+    "name":"Unic",
+    "path":"Unic.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
