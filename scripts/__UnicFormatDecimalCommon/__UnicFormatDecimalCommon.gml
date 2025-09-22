@@ -5,8 +5,28 @@
 function __UnicFormatDecimalCommon(_number, _decimalPlaces, _localeCode)
 {
     static _system = __UnicSystem();
+    static _tenThousandDict = {
+        "ja": true,
+        "zh": true,
+        "zh_Hans": true,
+        "zh_Hans_HK": true,
+        "zh_Hans_MO": true,
+        "zh_Hans_MY": true,
+        "zh_Hans_SG": true,
+        "zh_Hant": true,
+        "zh_Hant_HK": true,
+        "zh_Hant_MO": true,
+        "zh_Hant_MY": true,
+        //"zh_Latn": false, //Don't use ten thousand units for Latin
+    }
     
     _localeCode ??= _system.__locale;
+    
+    //Try to remap to ten thousands if we're using the alternate number format
+    if (_system.__altNumberFormat && struct_exists(_tenThousandDict, _localeCode))
+    {
+        return __UnicFormatDecimalTenThousand(_number, _decimalPlaces, _localeCode);
+    }
     
     var _isNegative = (_number < 0);
     _number = abs(_number);
