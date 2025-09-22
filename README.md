@@ -17,7 +17,7 @@ This library gives you a handful of helpful localization tools:
 - There's a function to export character ranges too
 - Linebreak data
 
-Got questions? Make an [issue](https://github.com/tabularelf/Unic/issues)! (Or alternatively join the [GameMaker Kitchen Discord server](https://github.com/tabularelf/Unic/))
+Got questions? Make an [issue](https://github.com/tabularelf/Unic/issues)! (Or alternatively join the [GameMaker Kitchen Discord server](https://discord.gg/UJeUdCqeNY))
 
 Credits:
 - [JujuAdams](https://github.com/JujuAdams)
