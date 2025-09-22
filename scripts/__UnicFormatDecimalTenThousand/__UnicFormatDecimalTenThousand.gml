@@ -4,7 +4,7 @@
 /// 
 /// #,###0.###
 
-function __UnicFormatDecimalChineseAlt(_number, _decimalPlaces, _localeCode)
+function __UnicFormatDecimalTenThousand(_number, _decimalPlaces, _localeCode)
 {
     static _system = __UnicSystem();
     static _nbsp = chr(0xA0);

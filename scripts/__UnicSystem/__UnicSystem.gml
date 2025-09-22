@@ -16,6 +16,7 @@ function __UnicSystem()
     with(_system)
     {
         __locale = UNIC_DEFAULT_LOCALE_CODE;
+        __altNumberFormat = false;
     }
     
     return _system;
