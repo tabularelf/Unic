@@ -38,7 +38,6 @@
   },
   "name":"Unic",
   "resources":[
-    {"id":{"name":"GMConsole","path":"extensions/GMConsole/GMConsole.yy",},},
     {"id":{"name":"obj_unic_generate","path":"objects/obj_unic_generate/obj_unic_generate.yy",},},
     {"id":{"name":"obj_unic_test","path":"objects/obj_unic_test/obj_unic_test.yy",},},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},

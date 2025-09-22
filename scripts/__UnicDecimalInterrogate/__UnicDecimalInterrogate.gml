@@ -23,7 +23,7 @@ function __UnicDecimalInterrogate()
     var _i = 0;
     repeat(array_length(_valueArray))
     {
-        UnicTestTrace(_valueArray[_i]);
+        show_debug_message(_valueArray[_i]);
         ++_i;
     }
     
