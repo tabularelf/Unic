@@ -1,4 +1,4 @@
-// feather ignore all
+// Feather ignore all
 /// @ignore
 function __UnicDatabaseBlocks() {
 	static _inst = [
@@ -978,6 +978,11 @@ function __UnicDatabaseBlocks() {
 			description: "Lydian",
 		},
 		{
+			min: 0x10940,
+			max: 0x1095F,
+			description: "Sidetic",
+		},
+		{
 			min: 0x10980,
 			max: 0x1099F,
 			description: "Meroitic Hieroglyphs",
@@ -1233,6 +1238,11 @@ function __UnicDatabaseBlocks() {
 			description: "Devanagari Extended-A",
 		},
 		{
+			min: 0x11B60,
+			max: 0x11B7F,
+			description: "Sharada Supplement",
+		},
+		{
 			min: 0x11BC0,
 			max: 0x11BFF,
 			description: "Sunuwar",
@@ -1256,6 +1266,11 @@ function __UnicDatabaseBlocks() {
 			min: 0x11D60,
 			max: 0x11DAF,
 			description: "Gunjala Gondi",
+		},
+		{
+			min: 0x11DB0,
+			max: 0x11DEF,
+			description: "Tolong Siki",
 		},
 		{
 			min: 0x11EE0,
@@ -1358,6 +1373,11 @@ function __UnicDatabaseBlocks() {
 			description: "Medefaidrin",
 		},
 		{
+			min: 0x16EA0,
+			max: 0x16EDF,
+			description: "Beria Erfe",
+		},
+		{
 			min: 0x16F00,
 			max: 0x16F9F,
 			description: "Miao",
@@ -1386,6 +1406,11 @@ function __UnicDatabaseBlocks() {
 			min: 0x18D00,
 			max: 0x18D7F,
 			description: "Tangut Supplement",
+		},
+		{
+			min: 0x18D80,
+			max: 0x18DFF,
+			description: "Tangut Components Supplement",
 		},
 		{
 			min: 0x1AFF0,
@@ -1426,6 +1451,11 @@ function __UnicDatabaseBlocks() {
 			min: 0x1CC00,
 			max: 0x1CEBF,
 			description: "Symbols for Legacy Computing Supplement",
+		},
+		{
+			min: 0x1CEC0,
+			max: 0x1CEFF,
+			description: "Miscellaneous Symbols Supplement",
 		},
 		{
 			min: 0x1CF00,
@@ -1516,6 +1546,11 @@ function __UnicDatabaseBlocks() {
 			min: 0x1E5D0,
 			max: 0x1E5FF,
 			description: "Ol Onal",
+		},
+		{
+			min: 0x1E6C0,
+			max: 0x1E6FF,
+			description: "Tai Yo",
 		},
 		{
 			min: 0x1E7E0,
@@ -1671,6 +1706,11 @@ function __UnicDatabaseBlocks() {
 			min: 0x31350,
 			max: 0x323AF,
 			description: "CJK Unified Ideographs Extension H",
+		},
+		{
+			min: 0x323B0,
+			max: 0x3347F,
+			description: "CJK Unified Ideographs Extension J",
 		},
 		{
 			min: 0xE0000,

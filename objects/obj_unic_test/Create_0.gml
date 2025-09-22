@@ -95,6 +95,7 @@ repeat(3)
 }
 
 show_debug_message(UnicGetCharacters("ja"));
+show_debug_message(json_stringify(UnicBlockGetRanges(UnicGetCharacters("ja")), true));
 
 if (os_get_config() == "Unit_Test") {
 	game_end();
