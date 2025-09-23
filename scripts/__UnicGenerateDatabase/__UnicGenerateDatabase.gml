@@ -1,4 +1,4 @@
-/// Feather ignore all
+// Feather ignore all
 /// @ignore
 function __UnicGenerateDatabase() {
 	// Declare paths prior to parsing
@@ -45,21 +45,18 @@ function __UnicGenerateDatabase() {
 		}); 
 	}
 
-	// GML Generation
-	//var _len = struct_names_count(_localeDb);
-	//var _numPerEntry = _len  div 19;
-	//var _names = struct_get_names(_localeDb);
-	//array_sort(_names, true);
-	//var _namePos = 0;
-	//var _j = 0;
-	//
-	//for(var _i = 0; _i < 19; ++_i) {
-	//	__UNIC_PARSER_LOOP_STAGE;
-	//}
-	//
-	//__UNIC_PARSER_LOOP_STAGE;
-	// TODO: Write out a proper parser for struct -> JSON, so everything is sorted by name.	
 	var _buff = buffer_create(1, buffer_grow, 1);
-	buffer_write(_buff, buffer_text, json_stringify(_localeDb, true));
-	buffer_save(_buff, filename_path(GM_project_filename) + "\\datafiles\\unic_cldr.json");
+	SnapBufferWriteJSON(_buff, _localeDb, true, true, true);
+	buffer_resize(_buff, buffer_tell(_buff));
+	buffer_save(_buff, __UNIC_SPECIFICS_PATH + "unic_cldr.json");
+
+	buffer_resize(_buff, 0);
+	SnapBufferWriteJSON(_buff, _localeDb, false, true, true);
+	buffer_resize(_buff, buffer_tell(_buff));
+
+	var _compressedBuffer = buffer_compress(_buff, 0, buffer_get_size(_buff));
+	buffer_save(_compressedBuffer, filename_path(GM_project_filename) + "\\datafiles\\unic_cldr.bin");
+
+	buffer_delete(_buff);
+	buffer_delete(_compressedBuffer);
 }
