@@ -97,6 +97,15 @@ repeat(3)
 show_debug_message(UnicGetCharacters("ja"));
 show_debug_message(json_stringify(UnicBlockGetRanges(UnicGetCharacters("ja")), true));
 
+show_debug_message(UnicConvertTimestamp("<t:1763816220:d>"));
+show_debug_message(UnicConvertTimestamp("<t:1763816220:D>"));
+show_debug_message(UnicConvertTimestamp("<t:1763816220:t>"));
+show_debug_message(UnicConvertTimestamp("<t:1763816220:T>"));
+show_debug_message(UnicConvertTimestamp("<t:1763816220:f>"));
+show_debug_message(UnicConvertTimestamp("<t:1763816220:F>"));
+show_debug_message(UnicConvertTimestamp("<t:1763816220:s>"));
+show_debug_message(UnicConvertTimestamp("<t:1763816220:S>"));
+
 if (os_get_config() == "Unit_Test") {
 	game_end();
 }
