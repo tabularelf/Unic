@@ -1,8 +1,8 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"Unic",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[
@@ -26,6 +26,7 @@
     {"$GMFolder":"","%Name":"Glyph","folderPath":"folders/Unic/Glyph.yy","name":"Glyph","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"String","folderPath":"folders/Unic/String.yy","name":"String","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"unic_cldr.bin","CopyToMask":-1,"filePath":"datafiles","name":"unic_cldr.bin","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"unic_data.bin","CopyToMask":-1,"filePath":"datafiles","name":"unic_data.bin","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -34,7 +35,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.14.4.221",
   },
   "name":"Unic",
   "resources":[
